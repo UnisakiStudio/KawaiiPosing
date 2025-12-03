@@ -12,6 +12,12 @@ namespace jp.unisakistudio.kawaiiposingeditor
     {
         const string REGKEY = @"SOFTWARE\UnisakiStudio";
         const string APPKEY = "kawaiiposing";
+        private bool isKawaiiPosingLicensed = false;
+
+        static KawaiiPosingEditor()
+        {
+            checkFunctions.Add(CheckExistFolderKawaiiPosing);
+        }
 
         public override void OnInspectorGUI()
         {
@@ -22,7 +28,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
              * つまり購入者はライセンスにまつわるこの先のソースコードを削除して再配布を行うことができます。
              * 逆に、購入をせずにGithubなどからソースコードを取得しただけの場合、このライセンスに関するソースコードに手を加えることは許可しません。
              */
-            if (kawaiiPosing.isKawaiiPosingLicensed)
+            if (isKawaiiPosingLicensed)
             {
                 base.OnInspectorGUI();
                 return;
@@ -33,7 +39,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
 
             if (regValue == "licensed")
             {
-                kawaiiPosing.isKawaiiPosingLicensed = true;
+                isKawaiiPosingLicensed = true;
                 base.OnInspectorGUI();
                 return;
             }
@@ -51,14 +57,14 @@ namespace jp.unisakistudio.kawaiiposingeditor
 
         }
 
-        private readonly List<string> folderDefines = new()
+        private static readonly List<string> folderDefines = new()
         {
             "Assets/UnisakiStudio/KawaiiPosing",
         };
 
-        override protected List<string> CheckExistFolder()
+        static public List<string> CheckExistFolderKawaiiPosing()
         {
-            List<string> existFolders = base.CheckExistFolder();
+            List<string> existFolders = new();
             foreach (var folderDefine in folderDefines)
             {
                 if (AssetDatabase.IsValidFolder(folderDefine))

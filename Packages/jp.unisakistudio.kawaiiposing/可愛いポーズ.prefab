@@ -3093,7 +3093,7 @@ MonoBehaviour:
       previewImage: {fileID: 2800000, guid: 4a1fc899400e9354db4703b1c5dbdae2, type: 2}
       menuImage: {fileID: 0}
   SubmenuRoot: {fileID: 1246480959746876431}
-  data: test
+  data: 
   isKawaiiPosingLicensed: 1
 --- !u!1 &5094569379812538518 stripped
 GameObject:
@@ -3118,11 +3118,11 @@ MonoBehaviour:
   height: 3
   position: {x: 0, y: -2, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
+  localOnly: 0
   collisionTags:
   - KawaiiPosing_IsDown
   allowSelf: 1
   allowOthers: 0
-  localOnly: 0
   receiverType: 0
   parameter: KawaiiPosing_IsDown
   minVelocity: 0.05
@@ -3149,5 +3149,6 @@ MonoBehaviour:
   height: 2
   position: {x: 0, y: 0, z: 0}
   rotation: {x: 0, y: 0, z: 0, w: 1}
+  localOnly: 0
   collisionTags:
   - KawaiiPosing_IsDown

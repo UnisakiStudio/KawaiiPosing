@@ -7,7 +7,5 @@ namespace jp.unisakistudio.kawaiiposing
 {
     public class KawaiiPosing : PosingSystem
     {
-        [HideInInspector]
-        public bool isKawaiiPosingLicensed = false;
     }
 }
