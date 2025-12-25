@@ -28,33 +28,71 @@ namespace jp.unisakistudio.kawaiiposingeditor
              * つまり購入者はライセンスにまつわるこの先のソースコードを削除して再配布を行うことができます。
              * 逆に、購入をせずにGitHubなどからソースコードを取得しただけの場合、このライセンスに関するソースコードに手を加えることは許可しません。
              */
-            if (isKawaiiPosingLicensed)
+            if (!isKawaiiPosingLicensed)
             {
-                base.OnInspectorGUI();
-                return;
-            }
+                bool hasLicense = false;
 
-            var regKey = Registry.CurrentUser.CreateSubKey(REGKEY);
-            var regValue = (string)regKey.GetValue(APPKEY);
+                // Windows: レジストリをチェック
+#if UNITY_EDITOR_WIN
+                try
+                {
+                    var regKey = Registry.CurrentUser.CreateSubKey(REGKEY);
+                    var regValue = (string)regKey.GetValue(APPKEY);
+                    if (regValue == "licensed")
+                    {
+                        hasLicense = true;
+                    }
+                }
+                catch (System.Exception)
+                {
+                    // レジストリアクセスに失敗した場合は次のチェックへ
+                }
+#endif
 
-            if (regValue == "licensed")
-            {
-                isKawaiiPosingLicensed = true;
-                base.OnInspectorGUI();
-                return;
+                // Mac/Linux: 設定ファイルをチェック
+#if UNITY_EDITOR_OSX || UNITY_EDITOR_LINUX
+                if (!hasLicense)
+                {
+                    try
+                    {
+                        string licenseFilePath = GetLicenseFilePath();
+                        if (File.Exists(licenseFilePath))
+                        {
+                            string fileContent = File.ReadAllText(licenseFilePath);
+                            if (fileContent == "licensed")
+                            {
+                                hasLicense = true;
+                            }
+                        }
+                    }
+                    catch (System.Exception)
+                    {
+                        // ファイルアクセスに失敗
+                    }
+                }
+#endif
+
+                if (hasLicense)
+                {
+                    isKawaiiPosingLicensed = true;
+                }
+                else
+                {
+                    EditorGUILayout.LabelField("可愛いポーズツール", new GUIStyle() { fontStyle = FontStyle.Bold, fontSize = 20, }, GUILayout.Height(30));
+
+                    EditorGUILayout.HelpBox("このコンピュータには可愛いポーズツールの使用が許諾されていません。Boothのショップから可愛いポーズツールを購入して、コンピュータにライセンスをインストールしてください", MessageType.Error);
+                    if (EditorGUILayout.LinkButton("可愛いポーズツール(Booth)"))
+                    {
+                        Application.OpenURL("https://yunisaki.booth.pm/items/5479202");
+                    }
+                    return;
+                }
             }
             /*
              * ライセンス処理ここまで
              */
 
-            EditorGUILayout.LabelField("可愛いポーズツール", new GUIStyle() { fontStyle = FontStyle.Bold, fontSize = 20, }, GUILayout.Height(30));
-
-            EditorGUILayout.HelpBox("このコンピュータには可愛いポーズツールの使用が許諾されていません。Boothのショップから可愛いポーズツールを購入して、コンピュータにライセンスをインストールしてください", MessageType.Error);
-            if (EditorGUILayout.LinkButton("可愛いポーズツール(Booth)"))
-            {
-                Application.OpenURL("https://yunisaki.booth.pm/items/5479202");
-            }
-
+            base.OnInspectorGUI();
         }
 
         private static readonly List<string> folderDefines = new()
