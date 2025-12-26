@@ -1746,7 +1746,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6832260626802651101, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
-      insertIndex: 2
+      insertIndex: 1
       addedObject: {fileID: 6152927264298880756}
     - targetCorrespondingSourceObject: {fileID: 3914514350218046423, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
       insertIndex: -1
@@ -1778,9 +1778,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   developmentMode: 0
-  isPosingSystemLicensed: 1
   settingName: "\u53EF\u611B\u3044\u30DD\u30FC\u30BA\u30C4\u30FC\u30EB\u8A2D\u5B9A"
   isIconDisabled: 0
+  previewAvatarObject: {fileID: 0}
   defines:
   - menuName: "\u7ACB\u3061\u59FF\u52E2"
     description: "\uFF08\u666E\u901A\u306B\u7ACB\u3063\u3066\u3044\u308B\u6642\u304F\u3089\u3044\u306E\u9AD8\u3055\uFF09"
@@ -1789,231 +1789,231 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: b1eb2cf3a5e19e0448d3b8a4c0c8a5d3, type: 3}
     locomotionTypeValue: 1
     animations:
-    - displayName: "\u508D\u89B3\u8005"
-      enabled: 1
-      initial: 0
-      initialSet: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: c77e98f81d2760c4fa321548501aeed8, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: d7fb3dce2ccd0e9459ce5bd267267254, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5824\u9632"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u508D\u89B3\u8005"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 860f1b2f849ebf24fb7954459775b8aa, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 43fb551f3d1f2b04caaa93995276686f, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u76F4\u7ACB"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5824\u9632"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: e56ccd008e054e1468b104cf5b00b792, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 5a5499062f0187840914f2c2f131dd20, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5F8C\u65B9\u5F7C\u6C0F"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u76F4\u7ACB"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: e1db492c58035d049a86e4e20d601150, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8990aec4ecbe2cd459ba394202df782b, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306E\u30FC\u3093\u3073\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5F8C\u65B9\u5F7C\u6C0F"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: dfca7660123afde46ba96673f1a731ea, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 1974ba2b3cd88ae40bd21d04e76658d1, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304A\u3059\u307E\u3057"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306E\u30FC\u3093\u3073\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 49a195f00f11a0048bf88fe993f12499, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8238e1aabcde7f54681dd67a2f5d91b6, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u7167\u308C"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304A\u3059\u307E\u3057"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 5b4b5721ce1686249b7b5ed71cc7a0f6, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 7adc2b0deca718d46a4956ed626b1c02, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5F85\u3061\u307C\u3046\u3051"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u7167\u308C"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 31aea867c7cdb78488efc783433902bd, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: e70eec2b1e5a6d8488dc80d40de43bdc, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30A2\u30A4\u30C9\u30EB"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5F85\u3061\u307C\u3046\u3051"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: c0323ff8388c3854ca97911717e4d458, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 1760d3003b60b294e9a991207a986d37, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8B66\u6212"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30A2\u30A4\u30C9\u30EB"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: feb01b821700d4a4794552beca6e1c4f, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 282d232ab700a7e4b82111a6fe8d2f05, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u4E0D\u6A5F\u5ACC"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8B66\u6212"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 12b32646ea4eb484ab6123eaf292912b, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 0dd1c67f0fce58e468b966c5aa854d58, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30D0\u30F3\u30B6\u30A4"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u4E0D\u6A5F\u5ACC"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: a070f58fc7f260c4c8f9934f48fd1082, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: d895ae9bc6023d34a9614d3ccc39f8d8, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306F\u308A\u3064\u3051"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30D0\u30F3\u30B6\u30A4"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 88574f61792f4644cbe418f3a62a0bc1, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: b8fb1b6534377be4787c95d403c21d1c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3073\u3063\u304F\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306F\u308A\u3064\u3051"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: f698c481b42cf76469fcded914e1618c, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 7b8fc1d7c1c0ae3419d68331d005b9c6, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30BE\u30F3\u30D3"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3073\u3063\u304F\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
+      animationClip: {fileID: 7400000, guid: e150991e81e7d4345a88ff240ef6d123, type: 2}
+      previewImage: {fileID: 2800000, guid: 60cb1e6c3cdba99469c6bb90e4370818, type: 2}
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30BE\u30F3\u30D3"
+      initial: 0
+      initialSet: 0
       isCustomIcon: 0
       icon: {fileID: 0}
-      animationClip: {fileID: 7400000, guid: e150991e81e7d4345a88ff240ef6d123, type: 2}
       typeParameterValue: 0
       syncdParameterValue: 0
-      previewImage: {fileID: 2800000, guid: 60cb1e6c3cdba99469c6bb90e4370818, type: 2}
-      menuImage: {fileID: 0}
   - menuName: "\u4E2D\u8170\u59FF\u52E2"
     description: "\uFF08\u6905\u5B50\u306B\u5EA7\u3063\u3066\u3044\u308B\u6642\u304F\u3089\u3044\u306E\u9AD8\u3055\uFF09"
     stateMachineName: SitShallow
@@ -2021,306 +2021,306 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: eb18d586014d0e140be4a13c7271941a, type: 3}
     locomotionTypeValue: 12
     animations:
-    - displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9"
-      enabled: 1
-      initial: 0
-      initialSet: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: a5dae2d71b0d882469fe9c3112a6e1c5, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: a1cc0201f1c42e4459b121c5b6b2ec08, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5185\u80A1\u5EA7\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 56f62ec7f888cce4cb68131611bd0bb1, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: d8fd1a605cd679d44affbef67c69e34c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8DB3\u7D44\u307F"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5185\u80A1\u5EA7\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 107547836ea895b40afe32fe7af5c36d, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: f29b55c00c927d24794f35efa87295c0, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8DB3\u7D44\u307F\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8DB3\u7D44\u307F"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 4dae7a3e6d0c508499f4ad793fd5b724, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8ff636f25f493eb4cae83b01333db694, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u4F4E\u59FF\u52E2"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8DB3\u7D44\u307F\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: bd7c423967e62e74faa1b014ca896120, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: fb73563893b681942b62281e50965c32, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304A\u4F3A\u3044\u30DD\u30FC\u30BA"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u4F4E\u59FF\u52E2"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: c8aba7ec829f0f04cae248d115e6a0de, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 17c6ed5065615534282edc406b785e4c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304F\u305A\u3057"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304A\u4F3A\u3044\u30DD\u30FC\u30BA"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: a359beeb2956db245a2f11dadf98b64e, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: e3b71f760b99781409347846861b6ef3, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u524D\u304B\u304C\u307F"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304F\u305A\u3057"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: f8443d1fcdb246e41abd7b1c1cfe8251, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 86e3c9f46127cb745983642460302d41, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u9762\u63A5"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u524D\u304B\u304C\u307F"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 2699a83e5aef09a42b4c139003f33bfe, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 3ec7436371640b24aa1f3ec19983f9e2, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8098\u4ED8\u304D"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u9762\u63A5"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: d1ec60167e5573c42810e07ea4b7d963, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 332ebd048504ff74a919da871e8dd82c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u89B3\u5BDF\u4E2D"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8098\u4ED8\u304D"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 3fae11c20f3401649a257b4887770661, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 52dd85fbf3ba9084292a6161ec1a40d1, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8DB3\u964D\u308D\u3057"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u89B3\u5BDF\u4E2D"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 2be9074e104a60a41a83e58dd5b6d6a5, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 46d900e91aa112f468b509d23f402888, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3088\u308A\u304B\u304B\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8DB3\u964D\u308D\u3057"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: b13eebc7ee061a54e8f2bc103d52c825, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 2217fc14ac136b4479be28c54c30c211, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u7A7A\u6C17\u6905\u5B50"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3088\u308A\u304B\u304B\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 58efcca63da75174caaa50047a5f694e, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 7937cd812fd4f2c499fd1c5c8d88b4f1, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30E9\u30C0\u30FC\u904B\u52D5"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u7A7A\u6C17\u6905\u5B50"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 02110917dcb2db6499a34cc90747d524, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8ff31ca6dde5cc543b21098544d925cc, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8B66\u6212\uFF08\u5DE6\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30E9\u30C0\u30FC\u904B\u52D5"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: d51ba0b5d14eab94aa1491cf70d0be14, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 144cd2d6310792f4a96e49a07c5dab27, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8B66\u6212\uFF08\u53F3\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8B66\u6212\uFF08\u5DE6\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 0a24c1ce2b5282040a279c6504a1838e, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: f72efaea06d6b94449d954779b787be0, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5F93\u8005\u306E\u30DD\u30FC\u30BA"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8B66\u6212\uFF08\u53F3\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 94f7b72805749fa4fa2cddf86b85ff01, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: b86456598cc5ba244909d44a9a4b5458, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5FCD\u8005\u8D70\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5F93\u8005\u306E\u30DD\u30FC\u30BA"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 003e1de24ddd73944ac024ea6502ec1e, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 0d88195f8fcf4a94d91edb2419d33b3e, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8E72\u8E1E"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5FCD\u8005\u8D70\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
+      animationClip: {fileID: 7400000, guid: 1ad1b8c6dc5650a49b13a8eaddf1e574, type: 2}
+      previewImage: {fileID: 2800000, guid: 904c3f7d29f0aaf489e8ab48b6db3d9e, type: 2}
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8E72\u8E1E"
+      initial: 0
+      initialSet: 0
       isCustomIcon: 0
       icon: {fileID: 0}
-      animationClip: {fileID: 7400000, guid: 1ad1b8c6dc5650a49b13a8eaddf1e574, type: 2}
       typeParameterValue: 0
       syncdParameterValue: 0
-      previewImage: {fileID: 2800000, guid: 904c3f7d29f0aaf489e8ab48b6db3d9e, type: 2}
-      menuImage: {fileID: 0}
   - menuName: "\u5EA7\u308A\u59FF\u52E2"
     description: "\uFF08\u5E8A\u306B\u5EA7\u3063\u3066\u3044\u308B\u6642\u304F\u3089\u3044\u306E\u9AD8\u3055\uFF09"
     stateMachineName: SitDeep
@@ -2328,261 +2328,261 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: 7af11d5d3c81526449adefe9cecf450a, type: 3}
     locomotionTypeValue: 22
     animations:
-    - displayName: "\u5973\u306E\u5B50\u5EA7\u308A"
-      enabled: 1
-      initial: 0
-      initialSet: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 838e7adc009b79c46a481638332a4e6c, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: acf689084a288e044adf39b4157cc4d0, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304A\u59C9\u3055\u3093\u5EA7\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5973\u306E\u5B50\u5EA7\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 932687015e8356e489f44d02264c9120, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 0205d78f3025c604db4cea65ca6ccb92, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3042\u3050\u3089"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304A\u59C9\u3055\u3093\u5EA7\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: fdae8f5fcbb3d0249a8bc1b9d1d74816, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: b6793033105e0934ab2cdfa14950dfbd, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3042\u3050\u3089\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3042\u3050\u3089"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 6ee0d36c0dd3a4844a38aa21f1e2da4c, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: f7a6d00603f29e14f8e070da1244cfd7, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u4F53\u80B2\u5EA7\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3042\u3050\u3089\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 9ed5e30de6dd8d3428b77069e70663b7, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: d5a6336d722634d4993bab388751339c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u819D\u7ACB\u3066"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u4F53\u80B2\u5EA7\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 1bbe904c874923b40944bd89c4f93c03, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 81e575f1be290ff43bd23f67eab5eba5, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u659C\u3081\u5EA7\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u819D\u7ACB\u3066"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 216fcf8e2381e13418dc705b1d1b18f7, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8fdfb47805ded8246affcdd2c3cf9394, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306D\u3053\u308D\u3073"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u659C\u3081\u5EA7\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 30a0d53bccc189e4d9e548a096d9b8dd, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 6f6d5fca0dda1d549b51d58da4a089fe, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306D\u3053\u308D\u3073\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306D\u3053\u308D\u3073"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: b69745de136437343a767af3c685990f, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 247c88aef7c7d604e91e0f53bbc287af, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306D\u3053\u308D\u3073\uFF13"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306D\u3053\u308D\u3073\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 5ab89879515760b4091258005e6206ab, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 3e39a7b556c130f41a139e7ddaf03ca7, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30AD\u30C3\u30AF"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306D\u3053\u308D\u3073\uFF13"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 6d8801b81a00b0540b5714a26a6ecf8a, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 271ad58e261810b4fa1f9145a16043a7, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF11"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30AD\u30C3\u30AF"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 5641cad65708ce84aade08658e5a6d70, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: e365f7d8e987fca4585abcbccefd887d, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF11"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: b68a71e36e5640f448df72b3e7747bc8, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 41e5bdf568d6675499520de2e79a8c3d, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF13"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: fa61220442bcd334ea43f5a1f1532637, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 727abc67706fadc4db4d5972fd528a45, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30AF\u30DE\u4EBA\u5F62"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9\uFF13"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 9e1d0d0b3dac3b849bdcc1d7c2281bff, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 0183a0052d2dc9b459453ad3a74fd595, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8DB3\u7D44\u307F"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30AF\u30DE\u4EBA\u5F62"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 90d75555824c00749a925d1826a8659c, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 877fd120395dc9749b54ce0a832fe941, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5408\u8E60\u306E\u30DD\u30FC\u30BA"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8DB3\u7D44\u307F"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
+      animationClip: {fileID: 7400000, guid: dbdc3f7fa2872854db35c223d02236bc, type: 2}
+      previewImage: {fileID: 2800000, guid: f7d116cbb2bb11142bf67e6c0af2f55f, type: 2}
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5408\u8E60\u306E\u30DD\u30FC\u30BA"
+      initial: 0
+      initialSet: 0
       isCustomIcon: 0
       icon: {fileID: 0}
-      animationClip: {fileID: 7400000, guid: dbdc3f7fa2872854db35c223d02236bc, type: 2}
       typeParameterValue: 0
       syncdParameterValue: 0
-      previewImage: {fileID: 2800000, guid: f7d116cbb2bb11142bf67e6c0af2f55f, type: 2}
-      menuImage: {fileID: 0}
   - menuName: "\u4EF0\u5411\u3051\u5BDD"
     description: "\uFF08\u4E0A\u3092\u5411\u3044\u3066\u5BDD\u3066\u3044\u308B\u6642\u304F\u3089\u3044\u306E\u9AD8\u3055\uFF09"
     stateMachineName: SitSleepUp
@@ -2590,261 +2590,261 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: c7218a9ddadeeb346b88a11fa5308d07, type: 3}
     locomotionTypeValue: 32
     animations:
-    - displayName: "\u8DB3\u4F38\u3070\u3057"
-      enabled: 1
-      initial: 0
-      initialSet: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 9db0d9ce95c79674393d1c74e888d259, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: e07c89c325a604249b28ace571c48ca8, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8DB3\u4F38\u3070\u3057"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: c8033d802317b5943a6895884f36bb48, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 343d1a69f19b9cd47aae39f0215a7a30, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u819D\u7ACB\u3066"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30EA\u30E9\u30C3\u30AF\u30B9"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 222133fd7cbf1fa4b86175931d60dacd, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 66435fc922cb97943963a207e180339c, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u663C\u5BDD"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u819D\u7ACB\u3066"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 067d4d14b68962a449216863a469d752, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 75c86815638f20a46a95ab2495b2a4d4, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8155\u6795\uFF08\u5DE6\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u663C\u5BDD"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 123dc0152f89c64478c0b843045850f8, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: bc10917f5328031498f808c71b6ec15a, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8155\u6795\uFF08\u53F3\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8155\u6795\uFF08\u5DE6\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 012bc5ceefcdd4045ad082aeb85d076d, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: ea8d8e3a02693e346b250b38135139e7, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304A\u75B2\u308C"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8155\u6795\uFF08\u53F3\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: b8e29a03bf7e2db46b3b2a9854bb8009, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 21f4fa9fdcb959a4fb4d6fc55c215efc, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u732B\u306E\u30DD\u30FC\u30BA\uFF08\u5DE6\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304A\u75B2\u308C"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 902ad4ab6d534ee43805314dcead6805, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8c2538fea6cb22f40ae4dceb3c6f7624, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u732B\u306E\u30DD\u30FC\u30BA\uFF08\u53F3\uFF09"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u732B\u306E\u30DD\u30FC\u30BA\uFF08\u5DE6\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: ac6db46d677e69040a77f7be5392a6ff, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 778f464825cbe2f4282736c7f0ad977f, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5DE6\u5411\u304D\u5BDD"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u732B\u306E\u30DD\u30FC\u30BA\uFF08\u53F3\uFF09"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 5fcae14398f1f974c941d9c105e61087, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 4045422b2a19c8140931e0e60f569a00, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5DE6\u5411\u304D\u663C\u5BDD"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5DE6\u5411\u304D\u5BDD"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 2daebc95c70d6cc4ea8bd1c34dbd6f12, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: b7cd86105fb36db43a6d5f45ea4aa546, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5DE6\u5411\u304D\u663C\u5BDD\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5DE6\u5411\u304D\u663C\u5BDD"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 712818bc8e519784699771a792e58efd, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: c11b3b2e8b8bbf449825c1cbef98c666, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u53F3\u5411\u304D\u5BDD"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5DE6\u5411\u304D\u663C\u5BDD\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: c17da3874f65b0146bf603a449e9c10e, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8938c8bdfb44ecb40b82c1f7f6dfa04a, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u53F3\u5411\u304D\u663C\u5BDD"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u53F3\u5411\u304D\u5BDD"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 5592dd0c5bd3400418fa2839c653f39d, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: c4d5e35dca546374eaffa9793896b1a0, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u4E94\u4F53\u6295\u5730"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u53F3\u5411\u304D\u663C\u5BDD"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 3ef531b3c7d365e469dbd434c8ad4628, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: ddf33f26a17ed5e46ba0ace731f4c6fa, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u670D\u5F93"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u4E94\u4F53\u6295\u5730"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 8d7328d627a9f3e419facfb69701f89a, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 321f4ec7b8819194a9ecefb6c69989e7, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u62B1\u304D\u3057\u3081"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u670D\u5F93"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
+      animationClip: {fileID: 7400000, guid: 17ab34d80843e8341a1abff56170b81d, type: 2}
+      previewImage: {fileID: 2800000, guid: d9df7f5e87975ae448187b639a2f1a90, type: 2}
+      adjustmentClip: {fileID: 0}
+      displayName: "\u62B1\u304D\u3057\u3081"
+      initial: 0
+      initialSet: 0
       isCustomIcon: 0
       icon: {fileID: 0}
-      animationClip: {fileID: 7400000, guid: 17ab34d80843e8341a1abff56170b81d, type: 2}
       typeParameterValue: 0
       syncdParameterValue: 0
-      previewImage: {fileID: 2800000, guid: d9df7f5e87975ae448187b639a2f1a90, type: 2}
-      menuImage: {fileID: 0}
   - menuName: "\u3046\u3064\u4F0F\u305B\u5BDD"
     description: "\uFF08\u4E0B\u3084\u6A2A\u3092\u5411\u3044\u3066\u5BDD\u3066\u3044\u308B\u6642\u304F\u3089\u3044\u306E\u9AD8\u3055\uFF09"
     stateMachineName: SitSleepDown
@@ -2852,249 +2852,251 @@ MonoBehaviour:
     icon: {fileID: 2800000, guid: 0fdb23f4d405d7c40886f56fc9566d73, type: 3}
     locomotionTypeValue: 33
     animations:
-    - displayName: "\u304F\u3064\u308D\u304E\uFF12"
-      enabled: 1
-      initial: 0
-      initialSet: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 57018441ba3216642ad7ac5cde4ff313, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 03cc7a0e0cc58d24cadf4b316fcb4218, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3050\u3060\u308A\uFF11"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304F\u3064\u308D\u304E\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: fc76b95be8520a54aa14811ffa6e27a4, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 843fe606d8b2fab4e9c78e5ddb1a6105, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3050\u3060\u308A\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3050\u3060\u308A\uFF11"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 8f23255dd0a4e7e44a98fd196c2c6f80, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: aeac36d040c4aa6498da045cc5305e13, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3050\u3060\u308A\uFF13"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3050\u3060\u308A\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 6e54a2931691d9c4bacc192bdfdc2971, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: cb518dff805519d4fb875651f7a4ac95, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306D\u3053\u308D\u3073\uFF11"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3050\u3060\u308A\uFF13"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 8eb55f234b2c46a498f2b03436d03970, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 0ce032c6573d3fe44962a99682b09010, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u304F\u3064\u308D\u304E\uFF11"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306D\u3053\u308D\u3073\uFF11"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 13bff8c92dbe80a4fb4acc6a797ab8f0, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: ff54aed6eb9bcd04b886184868d2fb76, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306D\u3053\u308D\u3073\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u304F\u3064\u308D\u304E\uFF11"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: aff4ac4753f6cc54783fa2c66038beb9, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: b3ccbfc0601affa408d3ba09a8e861c5, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u306E\u3093\u3073\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306D\u3053\u308D\u3073\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: f6f7f45d9c7d84b46984ae9f6ac16656, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: c0bfdf92eec8eaf418a872c76aa2e027, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u3046\u305A\u304F\u307E\u308A"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u306E\u3093\u3073\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: fe1e222d68b55ce4cb91a2b12191afe3, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 86af5494f0e54a644b2916fcdde74cf6, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u884C\u304D\u5012\u308C"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u3046\u305A\u304F\u307E\u308A"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: cc3cd75a22d314e4892077c1b169de86, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 951aef5d885b46e4899722df7753b625, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u4F0F\u305B"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u884C\u304D\u5012\u308C"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: b8081ae7e97c22348a6d2ec7f716f979, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 63af74baa3bc1804c8d359112a85df79, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u5F85\u3061\u4F0F\u305B"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u4F0F\u305B"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: cbd7374240cdc8240a5570f6e1c6f221, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 8bcef01b849681a4ab022bb5a744feb4, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30AB\u30A8\u30EB\u306E\u30DD\u30FC\u30BA\uFF11"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u5F85\u3061\u4F0F\u305B"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 6579e8995b93a794085b021bb6518765, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: 97e93e29f44ec444fac3569b5ecf6a7d, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30AB\u30A8\u30EB\u306E\u30DD\u30FC\u30BA\uFF12"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30AB\u30A8\u30EB\u306E\u30DD\u30FC\u30BA\uFF11"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 50152206ed34b734f83f1c8687d2f9ed, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: f022981ea439f7a4d82eebdfa9dece6f, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u30D7\u30E9\u30F3\u30AF"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30AB\u30A8\u30EB\u306E\u30DD\u30FC\u30BA\uFF12"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
-      isCustomIcon: 0
-      icon: {fileID: 0}
       animationClip: {fileID: 7400000, guid: 77f94a2b4fdc3fc4bb08b202b84c1f38, type: 2}
-      typeParameterValue: 0
-      syncdParameterValue: 0
       previewImage: {fileID: 2800000, guid: acf2844a46748d144a6ce5e5de2be985, type: 2}
-      menuImage: {fileID: 0}
-    - displayName: "\u8155\u7ACB\u3066\u4F0F\u305B"
-      enabled: 1
+      adjustmentClip: {fileID: 0}
+      displayName: "\u30D7\u30E9\u30F3\u30AF"
       initial: 0
       initialSet: 0
+      isCustomIcon: 0
+      icon: {fileID: 0}
+      typeParameterValue: 0
+      syncdParameterValue: 0
+    - enabled: 1
       isRotate: 0
       rotate: 0
       isMotionTime: 0
       motionTimeParamName: 
+      animationClip: {fileID: 7400000, guid: 2e34e3de9f0cdbc4498907ddc8436886, type: 2}
+      previewImage: {fileID: 2800000, guid: 4a1fc899400e9354db4703b1c5dbdae2, type: 2}
+      adjustmentClip: {fileID: 0}
+      displayName: "\u8155\u7ACB\u3066\u4F0F\u305B"
+      initial: 0
+      initialSet: 0
       isCustomIcon: 0
       icon: {fileID: 0}
-      animationClip: {fileID: 7400000, guid: 2e34e3de9f0cdbc4498907ddc8436886, type: 2}
       typeParameterValue: 0
       syncdParameterValue: 0
-      previewImage: {fileID: 2800000, guid: 4a1fc899400e9354db4703b1c5dbdae2, type: 2}
-      menuImage: {fileID: 0}
+  overrideDefines: []
   SubmenuRoot: {fileID: 1246480959746876431}
   data: 
-  isKawaiiPosingLicensed: 1
+  savedInstanceId: 
+  thumbnailPackObject: {fileID: 0}
 --- !u!1 &5094569379812538518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3914514350218046423, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
