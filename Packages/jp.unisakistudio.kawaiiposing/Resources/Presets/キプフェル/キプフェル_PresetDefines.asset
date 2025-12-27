@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30AD\u30D7\u30D5\u30A7\u30EB_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30AD\u30D7\u30D5\u30A7\u30EB"
+    preset: {fileID: 2655988077585873504, guid: 90691b16a0124af41847d74c1109c638, type: 2}
+    prefabsHashes:
+    - 01f2790ad6da949d00e325638e00f552
+    - 40af9e3622de724b80a9aaba0b180c6c
+    - f8ac20f7a8bc105f3d7612c5162b4653
+    - 012c5a762f25a8e3e57fabcc483d0bf7
+    - 48b81b496be7c8bb504fee66055c6c25
+    - e8fd0c2170e6e1fcbc6058b25614c9fb
+    prefabsNames:
+    - Kipfel
+    - Kipfel_Mobile
+    - Kipfel_kisekae
+    - Kipfel_Mobile_kisekae

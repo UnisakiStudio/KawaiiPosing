@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u6854\u6897_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u6854\u6897"
+    preset: {fileID: 2655988077585873504, guid: 4d0bb6a3544c4c141b6b3f8db982af3a, type: 2}
+    prefabsHashes:
+    - 7ec7f78adc5d7a7f9cc8d869c7ecc676
+    - c87ef117d6320dc8de2e550e1da3b7cf
+    - 67c0d8839c6d23cba3be3106193678fc
+    - 9443ce887dfd043e2b4633dc1a94c436
+    prefabsNames:
+    - Kikyo_DB
+    - Kikyo_DB_kisekae
+    - Kikyo_PB
+    - Kikyo_PB_kisekae
