@@ -1,6 +1,6 @@
 {
   "name": "jp.unisakistudio.kawaiiposing",
-  "version": "3.0.0-rc.1",
+  "version": "3.0.0",
   "displayName": "\u53ef\u611b\u3044\u30dd\u30fc\u30ba\u30c4\u30fc\u30eb",
   "description": "\u53ef\u611b\u3044\u30dd\u30fc\u30ba\u30c4\u30fc\u30eb\u306f3\u70b9\u30c8\u30e9\u30c3\u30ad\u30f3\u30b0\u3084\u30c7\u30b9\u30af\u30c8\u30c3\u30d7\u30e2\u30fc\u30c9\u3067\u3082\u53ef\u611b\u3044\u30dd\u30fc\u30ba\u304c\u64ae\u308c\u308b\u3088\u3046\u306b\u3059\u308bVRChat\u30a2\u30d0\u30bf\u30fc\u5411\u3051\u30ae\u30df\u30c3\u30af\u306e\u8a2d\u5b9a\u30c4\u30fc\u30eb\u3067\u3059",
   "author": {
@@ -13,12 +13,12 @@
   "keywords": [
     "VRChat"
   ],
-  "url": "https://github.com/UnisakiStudio/KawaiiPosing/releases/download/3.0.0-rc.1/jp.unisakistudio.kawaiiposing-3.0.0-rc.1.zip?",
+  "url": "https://github.com/UnisakiStudio/KawaiiPosing/releases/download/3.0.0/jp.unisakistudio.kawaiiposing-3.0.0.zip?",
   "repo": "https://github.com/UnisakiStudio/KawaiiPosing",
   "dependencies": {
-    "jp.unisakistudio.posingsystem": "3.0.0-rc.1"
+    "jp.unisakistudio.posingsystem": "3.0.0"
   },
   "vpmDependencies": {
-    "jp.unisakistudio.posingsystem": "^3.0.0-rc.1"
+    "jp.unisakistudio.posingsystem": "^3.0.0"
   }
 }
