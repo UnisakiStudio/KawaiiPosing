@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30DE\u30CC\u30AB_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30DE\u30CC\u30AB"
+    preset: {fileID: 2655988077585873504, guid: 75044ded91721774280134328600007d, type: 2}
+    prefabsHashes:
+    - 7ff36f739c9c0dd907b866450e5ba667
+    - 87e407e284573d6863c8f987b0c56fa7
+    - 0482e10841f18c8afa25a35bb949c2c5
+    prefabsNames:
+    - MANUKA
+    - MANUKA_lilToon
+    - MANUKA_Poiyomi
