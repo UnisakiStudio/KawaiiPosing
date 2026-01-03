@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using Microsoft.Win32;
 using jp.unisakistudio.kawaiiposing;
@@ -56,9 +56,9 @@ namespace jp.unisakistudio.kawaiiposingeditor
                     try
                     {
                         string licenseFilePath = GetLicenseFilePath();
-                        if (File.Exists(licenseFilePath))
+                        if (System.IO.File.Exists(licenseFilePath))
                         {
-                            string fileContent = File.ReadAllText(licenseFilePath);
+                            string fileContent = System.IO.File.ReadAllText(licenseFilePath);
                             if (fileContent == "licensed")
                             {
                                 hasLicense = true;
@@ -93,6 +93,19 @@ namespace jp.unisakistudio.kawaiiposingeditor
              */
 
             base.OnInspectorGUI();
+        }
+
+        private static string GetLicenseFilePath()
+        {
+#if UNITY_EDITOR_OSX
+            string appSupport = System.Environment.GetFolderPath(System.Environment.SpecialFolder.ApplicationData);
+            return System.IO.Path.Combine(appSupport, "UnisakiStudio", $"{APPKEY}.lic");
+#elif UNITY_EDITOR_LINUX
+            string homeDir = System.Environment.GetEnvironmentVariable("HOME");
+            return System.IO.Path.Combine(homeDir, ".local", "share", "UnisakiStudio", $"{APPKEY}.lic");
+#else
+            return null;
+#endif
         }
 
         private static readonly List<string> folderDefines = new()
