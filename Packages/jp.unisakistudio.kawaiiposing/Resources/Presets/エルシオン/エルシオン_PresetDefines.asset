@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30A8\u30EB\u30B7\u30AA\u30F3_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30A8\u30EB\u30B7\u30AA\u30F3"
+    preset: {fileID: 2655988077585873504, guid: 13f0b0283b32c35419cff6b08f74cb15, type: 2}
+    prefabsHashes:
+    - c8dc92ac133b6a4b797f1f9b0b04ff45
+    - f731e640800cd1b676243126396f74c7
+    - 28bf61872766192d20023e5ebc3bd926
+    - 77943903b97f7885fdca12b532b7dc0b
+    - 8b2c7941f13565baf39cae57de401008
+    prefabsNames:
+    - ELusion
+    - ELusion_Full
+    - ELusion_Kisekae
+    - ELusion_Kisekae_Full

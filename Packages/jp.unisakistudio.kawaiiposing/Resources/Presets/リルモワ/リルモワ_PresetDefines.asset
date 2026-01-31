@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30EA\u30EB\u30E2\u30EF_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30EA\u30EB\u30E2\u30EF"
+    preset: {fileID: 2655988077585873504, guid: d80db4e8aa4f05e45b0f569304f76f02, type: 2}
+    prefabsHashes:
+    - ce888a1d94da3dc5afbb4451b0fd10da
+    - ca44198feb65dc9f4378a4c5a48b7cff
+    - 1ae32f709d633b50d6e2911b18eefdbb
+    - 2a0d2f43d259fcb046dd76445a337965
+    - bedd8b05dba598cff23b78b73f0156ff
+    - c1352e600f4b96a5c49f2f519c9b0d1c
+    - 0f1039b2d28fd6e8f808421732931f2b
+    prefabsNames:
+    - Liloumois_v2
+    - Liloumois
+    - Liloumois_2P
+    - Liloumois_2P_Kisekae
+    - Liloumois_3P
+    - Liloumois_3P_Kisekae
+    - Liloumois_Kisekae

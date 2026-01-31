@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30E9\u30E0\u30CD_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30E9\u30E0\u30CD"
+    preset: {fileID: 2655988077585873504, guid: 20c2cb1cb7608b04ebb11ce888d83d6f, type: 2}
+    prefabsHashes:
+    - 280933953861810f7a343cfe57f56b06
+    - fc48819e222c31ba653993cae101607d
+    - de95afc3ca6a2886c780101723bdbc8a
+    - aa8c2de7621dd8f4b28097d16da929ac
+    prefabsNames:
+    - Ramune_Base
+    - Ramune
+    - Ramune_Kisekae

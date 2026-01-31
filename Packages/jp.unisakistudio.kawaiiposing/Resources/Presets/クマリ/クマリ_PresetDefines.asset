@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30AF\u30DE\u30EA_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30AF\u30DE\u30EA"
+    preset: {fileID: 2655988077585873504, guid: f27513d6b61fe4e4f9e5a625e3c521fc, type: 2}
+    prefabsHashes:
+    - 5d8620f2f6916e3ca3210556c6f05f4a
+    - 85b45467c48a29f1932903f5120f6eca
+    - fd1b905e9df6934a81003a597832ed27
+    - de515f2bed8f41a6e988e4c727f1331f
+    - 48478d560dd78a4039dcadb48d371070
+    prefabsNames:
+    - KUMALY
+    - KUMALY_Kisekae
+    - KUMALY_Kisekae_Poi Variant
+    - KUMALY_Poi Variant

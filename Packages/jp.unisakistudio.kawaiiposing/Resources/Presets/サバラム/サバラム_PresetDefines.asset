@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30B5\u30D0\u30E9\u30E0_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30B5\u30D0\u30E9\u30E0"
+    preset: {fileID: 2655988077585873504, guid: 55a6f306d2dd91e4fa6b79b0765d0cc3, type: 2}
+    prefabsHashes:
+    - 0b8cd6ee1a4b49bba6ce549b389d982e
+    - f80982e733259dd8fe8ba5e31b49050b
+    - f0922c99a834418727d0c3a592dd90ff
+    prefabsNames:
+    - Savarum_Body
+    - Savarum_DefaultStyle

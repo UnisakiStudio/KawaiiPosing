@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: Lapwing_PresetDefines
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: Lapwing
+    preset: {fileID: 2655988077585873504, guid: 590534e9883a16d4c8363913fc66205e, type: 2}
+    prefabsHashes:
+    - 3d22f9fd71d48c67d65462c77b17dbde
+    - 1421b269cc31141a2c39894b6586e2ba
+    - ee5e4be7b1ee7e4ece00255d0915a5fe
+    - 7629e3b7511048119e6c776e3d2f8bc2
+    - b2db09259300e17f8530a0f8eb136027
+    - e4c973ac8328cd74fa357f884a454a35
+    prefabsNames:
+    - Lapwing
+    - LapwingBody
+    - LapwingBodyColor2 Variant
+    - LapwingBodyHighHeels Variant
+    - LapwingBodyT
+    - LapwingWithoutBorello Variant
