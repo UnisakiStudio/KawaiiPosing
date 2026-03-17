@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u3081\u3044\u3086\u3093_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u3081\u3044\u3086\u3093"
+    preset: {fileID: 2655988077585873504, guid: 397bf0a85634060488e1e1ae63789f5c, type: 2}
+    prefabsHashes:
+    - adfd23f0241a4752bf5ef909442da72d
+    - 654f9e5cdb1045d5e6170e52fcc3d232
+    - 798b36f79f6195688dcfaa0e04cf8d2d
+    - 54e21ab78afdf3aabdf7fc0df4f93e23
+    - 10f293b7bb38d44a705db74c38158e4c
+    - c6cdced61c8c9cca5391391f63611afa
+    - 271f8c5c62993cd5747eb72c86af765b
+    - 54d45285409710f0641858fb52204f1d
+    prefabsNames:
+    - "Meiyu_\u6539\u5909 2P"
+    - Meiyun 2P
+    - Meiyun_ChangeColor
+    - Meiyun_Costume1
+    - Meiyun_Costume2
+    - Meiyun_Costume3
+    - "Meiyu_\u6539\u5909"
+    - Meiyun

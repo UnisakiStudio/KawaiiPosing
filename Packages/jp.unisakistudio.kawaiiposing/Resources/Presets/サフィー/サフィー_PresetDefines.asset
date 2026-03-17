@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30B5\u30D5\u30A3\u30FC_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30B5\u30D5\u30A3\u30FC"
+    preset: {fileID: 2655988077585873504, guid: cdfd8f62c75bda547aa7633e9025840e, type: 2}
+    prefabsHashes:
+    - 52dd8d1b268afb4762129125f8f5a0a2
+    - 99706b7a5f3ec60686524c5d6bf611e2
+    - aac44790a7f5877e5017963f16a08b5c
+    - d6d450dcfb0024f9e9a6598bdc05cff9
+    - eaa3d195936c3e302b5b884f83647ef1
+    - 630e8f014dfcbed843fa65d101b36e07
+    prefabsNames:
+    - SapphyParts
+    - SapphySotai
+    - SapphyParts Variant
+    - SapphySotai Variant

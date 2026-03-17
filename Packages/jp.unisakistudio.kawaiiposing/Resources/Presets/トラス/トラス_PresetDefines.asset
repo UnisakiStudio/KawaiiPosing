@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30C8\u30E9\u30B9_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30C8\u30E9\u30B9"
+    preset: {fileID: 2655988077585873504, guid: 6617201ee851aea49acd72492d0eefdf, type: 2}
+    prefabsHashes:
+    - 41d46cd7683fec4d95d64e4a4b4d0b23
+    - 09dd4f3eb896d8f545abc3693d5c57a2
+    - e01a293ee9f125fde180d4854aff4140
+    - b1950e39baee2eb73a7955138afaa069
+    - e8d8d39f443a4caa741155f92ed155a5
+    - 45d0d3cd3babce8eaa73002c8dfd755e
+    prefabsNames:
+    - Tolass4.53
+    - Wedge4.0
+    - Tolass4.5
+    - Tolass4.5_BodyModel
+    - Tolass4.5_WithAOToggle

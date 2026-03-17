@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u3046\u3055\u3055\u304D_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u3046\u3055\u3055\u304D"
+    preset: {fileID: 2655988077585873504, guid: 6220ac2721ad56c458020a8013256a3c, type: 2}
+    prefabsHashes:
+    - 55016b2dee6afa719dab06d2de936666
+    - eba426a0be8634b07c275e3d5d4f7737
+    - 6344d6419e929e7b738e3648df2a145f
+    - a0443b6dff64cee47bde91fce14e9988
+    - cf685e5323eeb7c866c1558d2449ac31
+    - 6c440ea61ff652d9df21f1dce1ef24e8
+    - 8322027e4688c43ae1574811d839c385
+    prefabsNames:
+    - usasaki
+    - usasaki_noDB
+    - usasaki_quest
+    - usasaki_Fallback
+    - usasaki_kisekae
+    - usasaki_Mobile

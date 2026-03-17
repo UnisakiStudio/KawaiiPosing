@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30CA\u30CA\u30BB\u30CE\u30EF\u30FC\u30EB_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30CA\u30CA\u30BB\u30CE\u30EF\u30FC\u30EB"
+    preset: {fileID: 2655988077585873504, guid: 4b3517e5d6e34e344b733e3620d38149, type: 2}
+    prefabsHashes:
+    - 00ff34eadfc77935c9cf67f45ced5db2
+    - 87cd30d6e15667b3f651e0e3a5850a43
+    - bdcdadddda7bef25dd5f8e88df0bd901
+    - 115ee33c2291564862970c7f39fc427a
+    - 8a6de145ad03f6dca59494d925fd590f
+    - 0a4c1a8dcb1d43c5fe284fe52ccd51a4
+    - 151ef119bfb2809de2004aee2dca768e
+    - 03997148679a062365377d9d6a5acf43
+    - f604b3e56820810f122f6f4d9c37b2e8
+    - ed72ae8025115ce8133775fc36078448
+    - a43c9f53789ad1c4e3d2467982b1b1c2
+    - 81f7a98538b31b6a5fbfe5b9e17e1d57
+    - 317bfa72fd0841665e774da0ff9ea6f4
+    - 9ea37a00b9e9068e5481feec1517edac
+    - 5890fd196782d5eab7f60bcb241cfe92
+    - 2440f5732cf1481fac3e3abc4b70006f
+    - 512ada58674aef35846a0ddd7711fbd6
+    - 7694bd30147c5005b716575daaede02a
+    prefabsNames:
+    - ch05_NanaseNoir_gen2.2
+    - ch05_NanaseNoir_gen2.2_2p
+    - ch05_NanaseNoir_gen2.2_front_hair_short_2p
+    - ch05_NanaseNoir_gen2.2_kemomimi_2p
+    - ch05_NanaseNoir_gen2.2_sotai_2p_(no EXmenu)
+    - ch05_NanaseNoir_gen2.2_3p
+    - ch05_NanaseNoir_gen2.2_front_hair_short_3p
+    - ch05_NanaseNoir_gen2.2_kemomimi_3p
+    - ch05_NanaseNoir_gen2.2_sotai_3p_(no EXmenu)
+    - ch05_NanaseNoir_gen2.2_4p
+    - ch05_NanaseNoir_gen2.2_front_hair_short_4p
+    - ch05_NanaseNoir_gen2.2_kemomimi_4p
+    - ch05_NanaseNoir_gen2.2_sotai_4p_(no EXmenu)
+    - ch05_NanaseNoir_gen2.2_front_hair_short
+    - ch05_NanaseNoir_gen2.2_kemomimi
+    - ch05_NanaseNoir_gen2.2_sotai_(no EXmenu)

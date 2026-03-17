@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30E8\u30EB_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30E8\u30EB"
+    preset: {fileID: 2655988077585873504, guid: 40b1903479607a645bb4044fe4626fba, type: 2}
+    prefabsHashes:
+    - fe30857a4210019c2e415bdc793002a2
+    - 6e8450a94c2dbe4dfb78a5fb4f264334
+    - 160f55b7f3c3b5d0a8dc8ee97f9deee0
+    - cd1982367884dbf8d9f73f971221d752
+    - 3c8e503f5c7dee14e20a1f548373e6b1
+    - 7cbf33384b95f73c42056b962f86409c
+    - 80a06c206026ca7ad68c9caa5c05e8b5
+    - 6d36f5f00c46bd72d4b0d80e9a793f81
+    - 76c523e03b12346bd1082d216aa8146f
+    prefabsNames:
+    - Yoll4_1_Col2
+    - Yoll4_1_flat
+    - Yoll4_1_flat_Sotai_Heel
+    - Yoll4_1_flatStai
+    - Yoll4_1_Pat1
+    - Yoll4_1_sotai
+    - Yoll4_1_sotai_Heel
+    - Yoll4_1Pat2
+    - Yoll4PNT

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u3057\u3089\u3064\u3081_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u3057\u3089\u3064\u3081"
+    preset: {fileID: 2655988077585873504, guid: ccaf502f5a4d71746a9aadf824b53b72, type: 2}
+    prefabsHashes:
+    - aa9b57b2cf7c7734876bb8be034e2fd6
+    - d1752b87a1f8b20421bac0565010e4bf
+    - 6f46cabb7f96a3abcda2366ce7336a87
+    - 1ab2cadffa8e9b678236a5f0b824370d
+    - f2c2e6ca29a28ceb741da1b95c7549f0
+    - aa0f2b265a384cb7e78f8aeb82c86825
+    - a9a9289132ca109ffe927020a395241a
+    - c0f218442069f2f2987d2b3db784d67a
+    - 778d6fe6b134b538973c8c4d4194add9
+    - c6ef29500c04f230cccc3634ff28f2b0
+    - c61402262fe8c3fb91129825c14d3947
+    - 08f1da9c3230da3f03b7f712b97ff20a
+    - 747933c53964cefa0bc7878c79d3d3fa
+    - 41e4116465283a7eee85dd312b35cdc4
+    - 961255ca7c43556e766daa0172795e2e
+    - 0518603f4ef08e26c39c0a5d96d12c96
+    - 06614625bd0f0c8a566322212df11317
+    - 80bb9c0d57abb7f57c95bb821520a38b
+    - ed25aa5895495e3d46b939fcfb4e0967
+    - a27d90e158bd81b857adee5395fc9a46
+    - 8dc448740e1fbb557aadd757096a167d
+    - 309df7285ca825401c137da4f4ced9a4
+    - a882002d403c4e215899f1b384f69f93
+    - 2595c9a4613a1f981cb9ed48e6fe2687
+    - ae695510383895e2968f09d8e04323f2
+    - f47d5856c652372727811c2615c94346
+    - 0408c04962fafe35fef6da9483b5119a
+    - 5a2d8677664d7108b7a9ddd4af9e2392
+    - bb91c6a5205e2976cf9941a0ecc2db60
+    - 4699daa3e14aefc3e5e8107a0fce25eb
+    prefabsNames:
+    - Shiratsume_All_FBX
+    - Shiratsume_Body_FBX
+    - Shiratsume_Body_FaceEmo
+    - Shiratsume_Body_kuro_FaceEmo
+    - Shiratsume_Body_moca_FaceEmo
+    - Shiratsume_Body_momo_FaceEmo
+    - Shiratsume_Body_sora_FaceEmo
+    - Shiratsume_Body_tuki_FaceEmo
+    - Shiratsume_Body_yume_FaceEmo
+    - Shiratsume_All_FaceEmo
+    - Shiratsume_All_kuro_FaceEmo
+    - Shiratsume_All_moca_FaceEmo
+    - Shiratsume_All_momo_FaceEmo
+    - Shiratsume_All_sora_FaceEmo
+    - Shiratsume_All_tuki_FaceEmo
+    - Shiratsume_All_yume_FaceEmo
+    - Shiratsume_Body
+    - Shiratsume_Body_kuro_Variant
+    - Shiratsume_Body_moca_Variant
+    - Shiratsume_Body_momo_Variant
+    - Shiratsume_Body_sora_Variant
+    - Shiratsume_Body_tuki_Variant
+    - Shiratsume_Body_yume_Variant
+    - Shiratsume_All
+    - Shiratsume_All_kuro_Variant
+    - Shiratsume_All_moca_Variant
+    - Shiratsume_All_momo_Variant
+    - Shiratsume_All_sora_Variant
+    - Shiratsume_All_tuki_ Variant
+    - Shiratsume_All_yume_ Variant

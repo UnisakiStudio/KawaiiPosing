@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u771F\u51AC_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u771F\u51AC"
+    preset: {fileID: 2655988077585873504, guid: 33af7347dbc1b5c44b2f340c98684944, type: 2}
+    prefabsHashes:
+    - e26ad70f3d94cf98dd5b85736cb1fe14
+    - f39a97b528d3592523ab5ba18979e1e7
+    - a94a1707ddd1ffb05bbc1049dcdd0c40
+    - 12541dbc7389f8099d811f33812f7276
+    - 087f7a65a2ea1b5be9623fe678a9a5a5
+    - a6a43e9a9a12f2f88214394b72915581
+    prefabsNames:
+    - Mafuyu_Another
+    - Mafuyu_Another_Kisekae
+    - Mafuyu_Another_Kisekae_Underwear Variant
+    - Mafuyu
+    - Mafuyu_Kisekae
+    - Mafuyu_Kisekae_Underwear Variant

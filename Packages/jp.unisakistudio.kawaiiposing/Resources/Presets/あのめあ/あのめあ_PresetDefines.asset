@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u3042\u306E\u3081\u3042_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u3042\u306E\u3081\u3042"
+    preset: {fileID: 2655988077585873504, guid: dc39fe1613b36cc4ba6d19439407c119, type: 2}
+    prefabsHashes:
+    - 53b214abd21ef8ab96ef58dbd1fcacf0
+    - 65e9c88375f6b4b372a7e402b16bf7dc
+    - 984883692caff6b0e862684e0b4845f4
+    - 4f14a44b1a24838c48eaa1698bc685a0
+    - d6672bd9a15ab80c7a9b06cc57db29c1
+    - e62c2e60f24a6cb1f75bebd1ec19a127
+    prefabsNames:
+    - Anomea
+    - Anomea Variant
+    - Anomea_Dress-Up Variant
+    - Anomea_pre_1 Variant
+    - Anomea_pre_2 Variant
+    - Anomea_pre_3 Variant

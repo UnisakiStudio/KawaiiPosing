@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30BD\u30D5\u30A3\u30CA_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30BD\u30D5\u30A3\u30CA"
+    preset: {fileID: 2655988077585873504, guid: 29953436332481e4d883d424b804054e, type: 2}
+    prefabsHashes:
+    - ecb3968b6c1529547315d97a87e64fd3
+    - dec11bf0b3a6bb44fa54f1decb2de4cf
+    - c92a289fbb1b2e30830ad517f9807875
+    - b63797e9535f8f98809ee6b8cd3c4e25
+    - 7fe79c070ba1b57a66aae090b29f1616
+    - a44eac202a3e93befa09896bff909203
+    - 2251ae036c4db8884ef56b53d7e07aa4
+    - 572488e984b64f3b79130bd7171ec9db
+    - 8d52df1bc686ae5f9a10a11f3a9cd56d
+    - 99a89e3bd5b5f746842289ae9893fc44
+    - 33ffa8b45114ffa89e57c7295520e069
+    prefabsNames:
+    - Sophina
+    - Sophina Child
+    - Sophina Child2
+    - Sophina DEFAULT ONLY
+    - Sophina_Blue
+    - Sophina_Pink
+    - "Sophina \u6539\u5909\u7528 DEFAULT ONLY"
+    - "Sophina \u6539\u5909\u7528 Hair,Face change"
+    - Sophina dress shirt
+    - "Sophina \u7C21\u6613\u6539\u5909\u7528"
