@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30EB\u30EB\u30CD_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30EB\u30EB\u30CD"
+    preset: {fileID: 2655988077585873504, guid: 0ff3f49597276e64ca1e834026687c0e,
+      type: 2}
+    prefabsHashes:
+    - fd76e3267ac9b84e08898ed5b424e0cf
+    - 97f79b4ec68c45895c213399c8d991fe
+    - b8037a9d6386b2ae96f8c1f8c2a5173c
+    - c915f36f897bdda359369f2197e5ff00
+    - 4242e58b10ed123194b9277cd8c26c44
+    - 8d0605c444b231aae31cc7309dbb47c3
+    - 4a4f6c75fc18ce5921e5444bbea5da96
+    prefabsNames:
+    - rurune
+    - rurune F
+    - rurune_kaihen F
+    - rurune_None F
+    - rurune_kaihen
+    - rurune_None

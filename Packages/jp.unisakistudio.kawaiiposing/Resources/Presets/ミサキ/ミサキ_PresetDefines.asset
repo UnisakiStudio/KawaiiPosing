@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30DF\u30B5\u30AD_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30DF\u30B5\u30AD"
+    preset: {fileID: 2655988077585873504, guid: bb9777ac640178d4785d349929f470b4,
+      type: 2}
+    prefabsHashes:
+    - ea31105cf070d2c6e4c715fac38b3554
+    - 7e62fe5ad95603c158715bd8b9744b33
+    - 171bd56ac712563fbcb4681f11ab0bf5
+    prefabsNames:
+    - Misaki
+    - Misaki_kisekae

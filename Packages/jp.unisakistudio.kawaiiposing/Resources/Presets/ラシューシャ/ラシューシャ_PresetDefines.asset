@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30E9\u30B7\u30E5\u30FC\u30B7\u30E3_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30E9\u30B7\u30E5\u30FC\u30B7\u30E3"
+    preset: {fileID: 2655988077585873504, guid: 7af7081f08bd5e142a907587f5c931aa,
+      type: 2}
+    prefabsHashes:
+    - 8762f6405a8a8bd60a0f803655602294
+    - 714968f8b49c8d50161802b3169dba20
+    - 4323187035958117126f84c411f55a54
+    prefabsNames:
+    - Lasyusha_C1_Ver1.1
+    - Lasyusha_C2_Ver1.1
+    - Lasyusha_C3_Ver1.1

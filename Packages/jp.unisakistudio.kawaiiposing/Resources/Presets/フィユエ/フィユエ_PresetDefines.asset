@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30D5\u30A3\u30E6\u30A8_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30D5\u30A3\u30E6\u30A8"
+    preset: {fileID: 2655988077585873504, guid: 6f86426c26a009b4598b7974efd2ef49,
+      type: 2}
+    prefabsHashes:
+    - 90af49cdc0cbeb06a26e41401608533c
+    - 8e78538ea27fae36b51364f0614b218c
+    - cf89a734845b7fe55093980753e8660d
+    - ce7fd7e14316d86d47ee98be5cde25d1
+    - 7430ebedd10687acfc0cf8790e65257e
+    - c874bd06703cc52180c32772103733ec
+    - 1741d3855ed0f191acc03a15b8b080a0
+    - b0b08b6868ea75b1465d50dbdf222cd9
+    - 5cf693046ea13228123f5469c7fbc6e8
+    - 2fe667b49983ba52d54ea211cb1a1f8f
+    - c6a49aaaf19f8269fa4dc93a3d939289
+    - 21510042c8f5e8cc53cbac660069d77d
+    - 562e42b0c70d8932623388611c9481c1
+    - 2bac5528c36a1ebefa01fc37dff7d4c0
+    - 7f9396427a4c34a8925327e456534367
+    - 623de7bcf7664d9fde255592f08192b7
+    - 56abd6411cdbefdbcf4085d95a28b766
+    - c42806f4a79dcf66b58ea4c71f31d1a8
+    - fb143b38c2300e7570570e012e1cd583
+    - a304ccf0bcb02cb8209089d5bf62e1a4
+    - f4f0584a3b5369960cb558806fd27bd6
+    - fc3521e9b7bde4ad7e75e7cc13f57780
+    - 98a7f83026444a0242e0fc203a0fcddd
+    - f81cdfbb2c76a356fd12d019018c9559
+    - a8892eaf03fe7559a83b971b7abd1288
+    - 2db89ebf261d5048d22b6025035d9b8a
+    - c109af955e89beaec1e722e54b0b0d59
+    - c1cef6e3714fdfc8207dc4cdc1726641
+    - d6d5916a328750f9bf5e2966a77ed272
+    - 0b811b865a2e6820245183c9ee2b5009
+    prefabsNames:
+    - Fyuett_All
+    - Fyuett_Kisekae
+    - Fyuett_All_Coco
+    - Fyuett_All_Hina
+    - Fyuett_All_Lala
+    - Fyuett_All_Nagu
+    - Fyuett_All_Rubi
+    - Fyuett_All_Towa
+    - Fyuett_FaceEmo
+    - Fyuett_FaceEmo_Coco
+    - Fyuett_FaceEmo_Hina
+    - Fyuett_FaceEmo_Lala
+    - Fyuett_FaceEmo_Nagu
+    - Fyuett_FaceEmo_Rubi
+    - Fyuett_FaceEmo_Towa
+    - Fyuett_Kisekae_Coco
+    - Fyuett_Kisekae_Hina
+    - Fyuett_Kisekae_Lala
+    - Fyuett_Kisekae_Nagu
+    - Fyuett_Kisekae_Rubi
+    - Fyuett_Kisekae_Towa
+    - Fyuett_Kisekae_FaceEmo
+    - Fyuett_Kisekae_FaceEmo_Coco
+    - Fyuett_Kisekae_FaceEmo_Hina
+    - Fyuett_Kisekae_FaceEmo_Lala
+    - Fyuett_Kisekae_FaceEmo_Nagu
+    - Fyuett_Kisekae_FaceEmo_Rubi
+    - Fyuett_Kisekae_FaceEmo_Towa

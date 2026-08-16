@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30AB\u30D7\u30EA\u30A3\u30CA_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30AB\u30D7\u30EA\u30A3\u30CA"
+    preset: {fileID: 2655988077585873504, guid: 63a2bd9d3b3f69d4996072314efb5974,
+      type: 2}
+    prefabsHashes:
+    - c810dd2a27666f1f948c0ab430349f5d
+    - 53f09fe6a5f31e017c1b1b66472e53c6
+    - baebc885e77fd4f4c1cee0776906c46f
+    - 84533ee8349ebcb86bca6da9bd9281de
+    prefabsNames:
+    - Caprilina
+    - Caprilina_kaihen

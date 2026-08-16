@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30D7\u30E9\u30E0_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30D7\u30E9\u30E0"
+    preset: {fileID: 2655988077585873504, guid: 98b3d32527980564aad239646510b6bd,
+      type: 2}
+    prefabsHashes:
+    - 5ad299bf0e01544a01412f927422c0cf
+    - bfcf379df2a83f329bbe09d3c21e5cea
+    - 273cc5e92c04da62bcb60f16043a91ee
+    - e9dae4ed30de445cf28519a703f83fdc
+    - e07ca9217c04ee449c7005203ce1a2f1
+    prefabsNames:
+    - Plum
+    - Plum_kaihen
+    - Plum_kaihen_kisekae
+    - Plum_kisekae

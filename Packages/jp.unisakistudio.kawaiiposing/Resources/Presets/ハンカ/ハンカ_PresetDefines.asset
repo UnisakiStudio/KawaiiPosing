@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30CF\u30F3\u30AB_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30CF\u30F3\u30AB"
+    preset: {fileID: 2655988077585873504, guid: 412b8ddba7a2f0c46975ad2083a9bc6b,
+      type: 2}
+    prefabsHashes:
+    - bc973de0fa464044003c66fcb9190775
+    - a0e91076085519b7ef2dfc16aadb2190
+    - 05cf013a0a4113a7c5e74e99af6b480b
+    - f4f3cf6ccb00df8bf3ea138308da733a
+    - 468bc72f8cbcdf4bd598535ebbb34e60
+    prefabsNames:
+    - Hanka
+    - Hanka_2PColor
+    - Hanka_3PColor
+    - Hanka_ForCustom
+    - Hanka_ForCustomNaked
