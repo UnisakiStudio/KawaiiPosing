@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.7] - 2026-08-18
+- PosingSystem 3.0.8に更新し、高さ再補正時に姿勢データが不正になる可能性がある不具合を修正
+
 ## [3.0.6] - 2026-08-12
 - アバタープリセットを追加（うらら、ウェンディ、カザリス、カプリィナ、キリサメ、シウシウ、ハンカ、フィユエ、プラム、マヨ、ミサキ、ラシューシャ、ルルネ）
 
