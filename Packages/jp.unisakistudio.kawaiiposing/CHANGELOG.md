@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.9] - 2026-08-29
+- PosingSystem 3.0.10に更新し、プリセット読込とHierarchyアイコン判定の負荷を軽減
+- 同一アバターに複数のポーズシステムがある場合のプレビルドエラーを修正
+
 ## [3.0.8] - 2026-08-26
 - PosingSystem 3.0.9に更新し、NDMF処理後にプレビュー用Avatarが無効になってPlay時に`Avatar is null`で失敗する不具合を修正
 
