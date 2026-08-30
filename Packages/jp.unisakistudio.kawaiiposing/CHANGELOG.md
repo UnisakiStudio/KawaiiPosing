@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.10] - 2026-08-31
+- PosingSystem 3.0.11に更新し、NDMF最新版でプレビルドが失敗する不具合とエラー表示時の例外を修正
+
 ## [3.0.9] - 2026-08-29
 - PosingSystem 3.0.10に更新し、プリセット読込とHierarchyアイコン判定の負荷を軽減
 - 同一アバターに複数のポーズシステムがある場合のプレビルドエラーを修正
