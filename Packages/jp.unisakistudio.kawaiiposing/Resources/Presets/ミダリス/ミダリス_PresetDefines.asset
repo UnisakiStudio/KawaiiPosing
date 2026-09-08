@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07cf4bb8c6b157c4b941e7958f6ae8a6, type: 3}
+  m_Name: "\u30DF\u30C0\u30EA\u30B9_PresetDefines"
+  m_EditorClassIdentifier: 
+  presetDefines:
+  - prefabs:
+    - {fileID: 3328649421508394140, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7978952140411402290, guid: 27ac1b7ee5664254c83f7f21d620a049, type: 3}
+    avatarName: "\u30DF\u30C0\u30EA\u30B9"
+    preset: {fileID: 2655988077585873504, guid: 34bc1ca1245dcc843ba2afc144f2ec2d,
+      type: 2}
+    prefabsHashes:
+    - 84c4e04eefedeaff3486a9703cf2fd4e
+    - 0c5e23bea2043d662c140ceae3844c30
+    - 431f5f892ae8847428546666906e55f2
+    - 4b46fdfbed87b7d9b160e2f847f83158
+    - 2f6b6faf20066ded84c52837f7c72684
+    - 08fe612e47ccfb73b2461790b899206e
+    - c9b985af926406dfac50b5e0962dcc49
+    - fcfda962945d775e24e852dcada96e00
+    - 1ea02911f81c97386e79c37c24683417
+    - 29effd3846635412dce6eeceacae1575
+    - 674c3ffe36358a41b5c40a64d7527eff
+    - 411a95e986fc3c55ba258b7d99de2426
+    - c7df3e18ec4d10ccda5002ac14f02b4c
+    - 3e5392947793fb4fca3a0d0314650732
+    - a727fa101ee0d7bb17d17b842fa312d0
+    - 3e37eb7b1c9c1535a42858c808dc46cb
+    - 5af928a6f75225a6e37acd135d54619f
+    - 94fd80fdedabeed1b52137a97154ae3a
+    - 62deea068464ad2ddad0e742877281fe
+    - 759ec4789daeeb2bf1896dd80db9594a
+    - 27483fca3b66ada34feaa8b462a00efc
+    - 7e323b7fd10f9733a8f55a678b1a9180
+    - 1d0acd92c399b69ddd4886a45fc42edd
+    - bd14f429c230c344e184ee0c6b724c7b
+    - 916077d96316b8e00b1c81faddf9a115
+    - 9debcb568d74e90e3d03b9237c753726
+    - 84156bf28d9a563f628ed9b747837174
+    - e7bce2d98392551c89ffef5a1783fb0f
+    - 50e61b18a267403f5e0603794dfe2b04
+    - ad8af5b493f916c77c36189101f2d762
+    - 63e45720d41b211f0de72db59bc7cc5c
+    - bd667d5ad8cd6dd4f0670556dafdf4de
+    - f95a406c94e51096123a69cb4d129910
+    prefabsNames:
+    - AFK_simple
+    - crouch_still
+    - fall_jamp
+    - fall_jamp_low
+    - fall_long
+    - fall_long_low
+    - fall_short
+    - fall_short_low
+    - land_quick
+    - land_quick_backward
+    - land_quick_forward
+    - land_quick_low
+    - land_quick_right
+    - landing
+    - landing_low
+    - low_crawl_still
+    - run_backward
+    - run_forward
+    - run_forward_fast
+    - run_strafe_right
+    - run_strafe_right_45
+    - run_strafe_right_135
+    - sitting
+    - stand_still
+    - strafe_right
+    - strafe_right_45
+    - strafe_right_135
+    - walk_backward
+    - walk_forward
+    - midaris
+    - midaris_kaihen
+    - AFK
