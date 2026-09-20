@@ -7,5 +7,6 @@ namespace jp.unisakistudio.kawaiiposing
 {
     public class KawaiiPosing : PosingSystem
     {
+        public override string AvatarReferenceProfileResourceName => "KawaiiPosingAvatarReference";
     }
 }
