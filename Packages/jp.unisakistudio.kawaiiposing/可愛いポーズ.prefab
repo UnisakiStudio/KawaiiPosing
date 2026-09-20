@@ -1778,6 +1778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   developmentMode: 0
+  autoPoseCatalog: {fileID: 11400000, guid: c6a00fb882d54a478971a49ad4c9f991, type: 2}
   settingName: "\u53EF\u611B\u3044\u30DD\u30FC\u30BA\u30C4\u30FC\u30EB\u8A2D\u5B9A"
   isIconDisabled: 0
   previewAvatarObject: {fileID: 0}
