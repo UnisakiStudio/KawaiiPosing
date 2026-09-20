@@ -73,6 +73,10 @@ PrefabInstance:
       value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5682723799641153210, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+      propertyPath: parameters.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 5682723799641153210, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
       propertyPath: parameters.Array.data[1].saved
       value: 0
       objectReference: {fileID: 0}
@@ -98,6 +102,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6152927264298880756, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
       propertyPath: developmentMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152927264298880756, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+      propertyPath: isEightBitVersion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6152927264298880756, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+      propertyPath: additiveBreathing.enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615503849297187891, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
@@ -480,6 +492,8 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 952178253054085982, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
     - {fileID: 421692249156893719, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 2963680704797829815, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
+    - {fileID: 7427224063009333337, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebbb07b93f9f2a6409f9eb86f5f4a75c, type: 3}
