@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.0.13] - 2026-09-22
+- PosingSystem 3.0.17に更新し、アバター全体の均等なスケール変更によるポーズの水平位置ずれを修正
+- 自動足踏み・プレビルド未実行・設定変更の警告を個別または一括で無視する設定を追加
+- 移動用モーションの手動インポート時に、不適切な単発アニメーションが取り込まれる問題を修正
+
 ## [3.0.12] - 2026-09-15
 - アバタープリセットを追加（ルリエ）
 
