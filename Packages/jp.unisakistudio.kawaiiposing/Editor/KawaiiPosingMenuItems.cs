@@ -27,8 +27,6 @@ namespace jp.unisakistudio.kawaiiposingeditor
 
         [MenuItem("GameObject/ゆにさきスタジオ/可愛いポーズツール追加", false, 20)]
         static public void AddPrefab01() { PosingSystemMenuItems.AddPrefab("可愛いポーズ"); }
-        [MenuItem("GameObject/ゆにさきスタジオ/可愛いポーズツール追加(8bit・足の高さなし)", false, 21)]
-        static public void AddPrefab10() { PosingSystemMenuItems.AddPrefab("可愛いポーズ(8bit・足の高さなし)"); }
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/可愛い座り(男)ツール追加", false, 30)]
         static public void AddPrefab02() { PosingSystemMenuItems.AddPrefab("可愛い座り[男]"); }
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/可愛い座り(女)ツール追加", false, 31)]
@@ -43,7 +41,6 @@ namespace jp.unisakistudio.kawaiiposingeditor
         static public void AddPrefab09() { PosingSystemMenuItems.AddPrefab("少女モーション集"); }
 
         [MenuItem("GameObject/ゆにさきスタジオ/可愛いポーズツール追加", true)]
-        [MenuItem("GameObject/ゆにさきスタジオ/可愛いポーズツール追加(8bit・足の高さなし)", true)]
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/可愛い座り(男)ツール追加", true)]
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/可愛い座り(女)ツール追加", true)]
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/三点だいしゅき(男)ツール追加", true)]
