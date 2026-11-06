@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEditor;
 using Microsoft.Win32;
 using jp.unisakistudio.kawaiiposing;
@@ -80,9 +80,9 @@ namespace jp.unisakistudio.kawaiiposingeditor
                 }
                 else
                 {
-                    EditorGUILayout.LabelField("可愛いポーズツール", header1Label, GUILayout.Height(30));
+                    EditorGUILayout.LabelField(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール"), header1Label, GUILayout.Height(30));
 
-                    EditorGUILayout.HelpBox("このコンピュータには可愛いポーズツールの使用が許諾されていません。Boothのショップから可愛いポーズツールを購入して、コンピュータにライセンスをインストールしてください。可愛いポーズツールを購入しているのにこのエラーが表示される場合は、Boothから最新版のZipファイルをダウンロードして、「KawaiiPosing.unitypackage」をインポートしてください。（この作業は１つのパソコンにつき一回行う必要があります）", MessageType.Error);
+                    EditorGUILayout.HelpBox(posingsystemeditor.PosingSystemLocalization.Text("このコンピュータには可愛いポーズツールの使用が許諾されていません。Boothのショップから可愛いポーズツールを購入して、コンピュータにライセンスをインストールしてください。可愛いポーズツールを購入しているのにこのエラーが表示される場合は、Boothから最新版のZipファイルをダウンロードして、「KawaiiPosing.unitypackage」をインポートしてください。（この作業は１つのパソコンにつき一回行う必要があります）"), MessageType.Error);
                     if (EditorGUILayout.LinkButton("可愛いポーズツール(Booth)"))
                     {
                         Application.OpenURL("https://yunisaki.booth.pm/items/5479202");
