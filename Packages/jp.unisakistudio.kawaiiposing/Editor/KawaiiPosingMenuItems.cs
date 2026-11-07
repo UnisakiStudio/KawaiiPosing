@@ -1,4 +1,4 @@
-﻿/*
+/*
  * KawaiiPosingEditor
  * 可愛いポーズツールの簡易設定用ツール
  * 
@@ -32,7 +32,18 @@ namespace jp.unisakistudio.kawaiiposingeditor
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/可愛い座り(女)ツール追加", false, 31)]
         static public void AddPrefab03() { PosingSystemMenuItems.AddPrefab("可愛い座り[女]"); }
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/添い寝ツール追加", false, 34)]
-        static public void AddPrefab06() { PosingSystemMenuItems.AddPrefab("添い寝"); }
+        static public void AddPrefab06()
+        {
+            // 連携用Prefabの中に配置される「添い寝ツール」本体。
+            var path = AssetDatabase.GUIDToAssetPath("9b5493684b5c2a349bee03c894c7ac79");
+            if (string.IsNullOrEmpty(path) || AssetDatabase.LoadAssetAtPath<GameObject>(path) == null)
+            {
+                posingsystemeditor.PosingSystemLocalization.Dialog("添い寝ツールが見つかりません",
+                    "連携するには「添い寝ツール」本体を先にインポートしてください。可愛いポーズ単体で使う場合は「可愛いポーズツール追加」を選んでください。", "閉じる");
+                return;
+            }
+            PosingSystemMenuItems.AddPrefab("添い寝");
+        }
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/ごろ寝システムEX追加", false, 35)]
         static public void AddPrefab07() { PosingSystemMenuItems.AddPrefab("ごろ寝システムEX"); }
         [MenuItem("GameObject/ゆにさきスタジオ/他商品連携用Prefabs/VRC想定移動モーション(無料配布)追加", false, 36)]
@@ -128,7 +139,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
         {
             if (!IsLicensed())
             {
-                EditorUtility.DisplayDialog(
+                posingsystemeditor.PosingSystemLocalization.Dialog(
                     "ライセンスの削除",
                     "可愛いポーズツールのライセンスはインストールされていません。",
                     "OK"
@@ -136,7 +147,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
                 return;
             }
             
-            bool shouldUninstall = EditorUtility.DisplayDialog(
+            bool shouldUninstall = posingsystemeditor.PosingSystemLocalization.Dialog(
                 "ライセンス削除",
                 "可愛いポーズツールのライセンスを削除しますか？\n\n" +
                 "削除すると、ツールの機能が制限されます。\n" +
@@ -230,7 +241,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
             }
 #endif
             
-            EditorUtility.DisplayDialog(
+            posingsystemeditor.PosingSystemLocalization.Dialog(
                 "ライセンス削除",
                 resultMessage,
                 "OK"
