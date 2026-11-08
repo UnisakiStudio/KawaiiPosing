@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pl" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historia zmian</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Polski · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Historia zmian</a><a href="UserGuide.html">Kawaii Posing Tool — polska instrukcja użytkownika</a></nav>
+<main><h1>Historia zmian</h1>
+<h2>[3.2.0] - Niewydane</h2>
+<h3>Dodano</h3>
+<ul>
+<li>Wyświetlanie Inspectora, operacji edycji, okien instalacji, standardowych nazw poz i generowanego menu VRChat w 30 językach.</li>
+<li>Połączono wybór języka Inspectora i menu gry. Domyślnie używany jest język komputera, a ostatni wybór dotyczy także innych projektów tego samego użytkownika systemu.</li>
+<li>README, historia zmian i instrukcja offline otwierają się w wybranym języku.</li>
+<li>Przygotowano nazwy wszystkich 128 standardowych poz i opisy funkcji zgodnie z dotychczasową terminologią.</li>
+</ul>
+<h3>Zgodność</h3>
+<ul>
+<li>Zachowywane są istniejące ustawienia awatara, własne nazwy, odwołania do zasobów, identyfikatory parametrów i sposób przechowywania licencji.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Blokadę głowy można przełączać w „Ustawienia → Automatyczna blokada głowy na plecach” menu EX nawet po wyłączeniu wysokości stóp. Pozycja znikająca w dawnych wersjach wraca po zbudowaniu zaktualizowanego awatara.</li>
+<li>Dodano obsługę Unisaki Posing System 3.1.2. Naprawiono pozostawanie twarzy skierowanej w górę po wstaniu z brzucha przy ograniczaniu deformacji pozy od obrotu głowy.</li>
+</ul>
+<p>Zaktualizuj Kawaii Posing Tool do 3.1.2 w ALCOM / VCC. Wymagany jest także Unisaki Posing System 3.1.2. Jeśli korzystano z budowania wstępnego, naciśnij Aktualizuj budowanie wstępne, zapisz scenę, a następnie ponownie zbuduj i prześlij awatara.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>Włączone Wysokość ziemi i Obróć się są teraz widoczne w Ustawieniach menu EX VRChat także po wyłączeniu Odbicia.</li>
+<li>Po przestawieniu, usunięciu lub zmianie nazw poz w starej wersji zachowywane są właściwe obroty dla Nogi w przód, Relaks i Jedno kolano w górę. Działa to także po pełnym Unpack, jeśli można rozpoznać oryginalną pozę. Własne pozy, samodzielnie wyłączone obracanie i zastąpione ruchy boczne pozostają.</li>
+<li>Naprawiono chwilową pozycję na brzuchu podczas wybierania awatara w VRChat. Naprawiono też chwilowe leżenie na plecach przy skoku, gdy wybrano tylko brzuch. Przełączanie skokiem można wyłączyć przez „Funkcje → Udogodnienia → Zmieniaj pozycję leżącą skokiem”. Domyślnie jest włączone.</li>
+<li>Jeśli po aktualizacji odłączy się odwołanie do wspólnego Animator Controllera poz i da się je odtworzyć, pokazywane jest ostrzeżenie, a Controller powstaje ponownie z ustawień. Zachowywane są odwołania do Controllera wspólnego dla kilku awatarów.</li>
+<li>Menu dodawania narzędzia umieszcza teraz oficjalny Prefab nawet wtedy, gdy zapisano własny Prefab 可愛いポーズ (Kawaii Posing) o takiej samej nazwie.</li>
+<li>Jeśli podczas dodawania Sleep-together tool nie znaleziono wymaganego produktu integracji, wskazywany jest produkt do zainstalowania najpierw.</li>
+</ul>
+<p>Zaktualizuj Kawaii Posing Tool i Unisaki Posing System do 3.1.1 w ALCOM / VCC. Jeśli korzystano z budowania wstępnego, wybierz 可愛いポーズ (Kawaii Posing) w scenie, naciśnij Aktualizuj budowanie wstępne i zapisz scenę. Ponownie zbuduj i prześlij awatara, aby zmiany były widoczne w VRChat.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>W 53 z 85 dołączonych poz kończyny są automatycznie dopasowywane do budowy awatara za pomocą IK.</li>
+<li>Pozy na plecach Nogi w przód, Relaks i Jedno kolano w górę obsługują obracanie sterowane przechyleniem głowy.</li>
+<li>Tryb zdjęć pozwala zmieniać pozycję i kierunek awatara. Można wybrać synchronizację pozycji i kierunku oraz widoczność własnej głowy podczas zdjęć.</li>
+<li>Wysokość ziemi przesuwa całe ciało do 3m w górę lub w dół, uzupełniając wysokość stóp.</li>
+<li>Dodano oddech, wyłączanie standardowego kołysania w spoczynku i ograniczanie deformacji pozy od kierunku głowy.</li>
+<li>Używane funkcje i zużycie parametrów są widoczne w Inspectorze. Dodano wyszukiwanie poz, dodawanie zbiorcze, sortowanie i uproszczony podgląd w Scene.</li>
+<li>Przyspieszono zmiany między staniem, kucaniem i siedzeniem w trybie pulpitu.</li>
+<li>Poprawiono ostrzeżenia po zmianie ustawień budowania wstępnego, obciążenie przewijaniem Inspectora i długie zatrzymania przy porządkowaniu zasobów.</li>
+<li>Dodano obsługę Unisaki Posing System 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Otwarta beta (2026-11-05)</h2>
+<ul>
+<li>Rozpoczęto udostępnianie otwartej bety przez GitHub Releases i VPM. W 53 z 85 dołączonych poz kończyny są dopasowywane do budowy ciała przez IK.</li>
+<li>Dodano obsługę wspólnego pakietu 3.1.0-beta.2. Poprawiono pokazywanie zmian po budowaniu wstępnym, koszt przewijania Inspectora i zatrzymania podczas porządkowania zasobów.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Otwarta beta (2026-11-04)</h2>
+<ul>
+<li>Dodano obsługę Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Zwykłe przełączanie poz w trybie pulpitu używa jednego obliczenia. Działa przy zwykłym budowaniu i budowaniu wstępnym; VR i szczególne warunki zachowują dotychczasową ścieżkę.</li>
+<li>Wyniki budowania wstępnego z alpha.3 i starszych wersji są rozpoznawane jako wymagające aktualizacji.</li>
+<li>Punkt widzenia pozostaje zachowany przy zmianie wysokości ziemi podczas zdjęć, a po zakończeniu wraca do ostatniej wysokości ziemi.</li>
+<li>Uwzględniono poprawki automatycznego importu, dostosowania importowanych ruchów i zarządzania generowanymi Controllerami do alpha.3 włącznie.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Zamknięta wersja testowa (2026-10-26)</h2>
+<h3>Poprawki i zmiany</h3>
+<ul>
+<li>Zaktualizowano wspólny system poz do 3.1.0-alpha.2 z poprawkami debugowania.</li>
+<li>Rozszerzono wysokość ziemi do 3m w górę i w dół. 50% to pierwotna wysokość i wartość początkowa.</li>
+<li>Standardowe i własne ruchy bez wybranej pozy również objęto korekcją zdjęć i wysokości ziemi.</li>
+<li>Naprawiono problemy korekcji ręcznej, poz o tej samej nazwie, pozy początkowej, ustawień obracania starych presetów i inne.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Przed publikacją</h2>
+<h3>Dodano</h3>
+<ul>
+<li>Dodano automatyczną korekcję kończyn (IK) do budowy ciała.</li>
+<li>Dodano ogólny i indywidualny przełącznik IK oraz zapis wyniku do animacji korekcji.</li>
+<li>Pozy na plecach Nogi w przód, Relaks i Jedno kolano w górę obsługują obracanie przechyleniem głowy.</li>
+<li>Dodano ustawienia obracania dla każdej pozy i przypisanie animacji bocznej.</li>
+<li>Dodano tryb zdjęć do przesuwania do przodu i obracania.</li>
+<li>Dodano synchronizację trybu zdjęć: tylko lokalnie — 0 bit, synchronizacja — 16 bit.</li>
+<li>Dodano zachowanie widoczności własnej głowy w trybie zdjęć.</li>
+<li>Dodano Wysokość ziemi, podnoszącą całe ciało wraz z głową.</li>
+<li>Dodano ruch i siłę oddechu oraz przełącznik w grze.</li>
+<li>Dodano wyłączanie standardowego kołysania VRChat.</li>
+<li>Dodano ograniczanie deformacji pozy od kierunku głowy.</li>
+<li>Dodano zapobieganie wyginaniu kolan do tyłu i minimalny kąt zgięcia.</li>
+<li>Dodano przełączniki funkcji i widok zużycia ExpressionParameters.</li>
+<li>Dodano uproszczony podgląd w Scene, wyszukiwanie poz, dodawanie zbiorcze i wybór docelowej kolejności.</li>
+<li>Dodano historię zmian w Inspectorze.</li>
+</ul>
+<h3>Zmieniono</h3>
+<ul>
+<li>Inspector podzielono na 3 karty: Funkcje, Pozy i Konfiguracja awatara.</li>
+<li>Uporządkowano miejsca szczegółów oddechu, importu własnych ruchów i presetów.</li>
+<li>Ograniczono powielanie animacji tworzonych do regulacji wysokości stóp.</li>
+<li>Dodano potwierdzenie aktualizacji obrazów poz i zebrano ustawienia ostrzeżeń w Sprawdź ustawienia.</li>
+<li>Usunięto menu nowego dodawania wersji 8bit, zastępując je wyborem funkcji zwykłego Prefabu. Istniejące odwołania pozostają.</li>
+<li>Dodano obsługę Unisaki Posing System 3.1.0-alpha.1. Minimalną wersję VRChat Avatars SDK zmieniono na 3.10.4.</li>
+</ul>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono przechodzenie wpisywanej nazwy do innej pozy oraz zamykanie szczegółów przy sortowaniu.</li>
+<li>Naprawiono nakładanie podglądów, przesunięcia rozmieszczenia i błędy niektórych awatarów.</li>
+<li>Naprawiono odświeżanie ostrzeżeń i stanu budowania wstępnego po zmianach ustawień oraz niektóre błędy budowania.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>Zaktualizowano do PosingSystem 3.0.17 i naprawiono poziome przesunięcie poz po równomiernej zmianie skali całego awatara</li>
+<li>Dodano ustawienia ignorowania ostrzeżeń o automatycznym stąpaniu, braku budowania wstępnego i zmianie ustawień osobno lub razem</li>
+<li>Naprawiono import niewłaściwych pojedynczych animacji podczas ręcznego importowania ruchów lokomocji</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Dodano preset awatara (ルリエ)</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Dodano presety awatarów (メルヴィ, ミダリス)</li>
+<li>Naprawiono zastępowanie ruchów presetu うらら</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>Zaktualizowano do PosingSystem 3.0.11 i naprawiono błędy budowania wstępnego z najnowszym NDMF oraz wyjątek podczas wyświetlania błędów</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>Zaktualizowano do PosingSystem 3.0.10 i ograniczono koszt wczytywania presetów oraz oceny ikon Hierarchy</li>
+<li>Naprawiono błąd budowania wstępnego kilku systemów poz w jednym awatarze</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>Zaktualizowano do PosingSystem 3.0.9 i naprawiono nieprawidłowy Avatar podglądu po NDMF, powodujący błąd <code dir="ltr">Avatar is null</code> w Play</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>Zaktualizowano do PosingSystem 3.0.8 i naprawiono możliwe uszkodzenie danych poz przy ponownej korekcji wysokości</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Dodano presety awatarów (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ)</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Dodano presety awatarów (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール)</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Dodano presety awatarów (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing)</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Poprawiono funkcje instalacji i usuwania licencji</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Naprawiono obsługę licencji w wersjach Mac i Linux</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Dodano presety awatarów (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ)</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Dodano budowanie wstępne</li>
+<li>Dodano dostosowywanie animacji</li>
+<li>Dodano presety</li>
+<li>Produkt można teraz dodać do projektu przez unitypackage</li>
+<li>Dodano presety awatarów (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ)</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Rozwiązano problemy zgodności z niektórymi funkcjami awatara</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Naprawiono brak zmiany poz z niektórymi awatarami i wersjami ModularAvatar</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Naprawiono nieprawidłowe ruchy niektórych awatarów, np. skok 森羅</li>
+<li>Naprawiono czasami niewłaściwą wartość początkową Bez gestów</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Naprawiono błąd w niektórych środowiskach</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Naprawiono awarie Unity</li>
+<li>Dodano wersję do nazwy narzędzia w NDMF Console</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Dodano opcję wyłączenia gestów i używania kształtu dłoni z animacji</li>
+<li>Dodano dane kształtu dłoni do wszystkich poz</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Naprawiono psucie poz z niektórymi narzędziami</li>
+<li>Naprawiono błędy zależne od ustawień</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Usunięto konflikty z niektórymi funkcjami awatara</li>
+<li>Dodano przycisk usuwania wersji Unitypackage</li>
+<li>Wydano wersję VCC 三点だいしゅきツール, więc usunięto Prefaby integracji</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Naprawiono błąd zależny od awatara</li>
+<li>Naprawiono brak blokady stóp wskutek konfliktów funkcji lub awatara</li>
+<li>Naprawiono powrót pozy awatara do standardowej VRC w trybie pulpitu</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Naprawiono brak zmian poz z awatarami lub funkcjami używającymi niewłaściwego typu VRMode</li>
+<li>Dodano wyświetlanie konfliktów różnych typów parametrów między funkcjami w NDMF-Console</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Dodano wyjaśnienie w NDMF-Console, gdy błąd innego narzędzia powoduje błąd Unisaki Posing System przy budowaniu awatara</li>
+<li>Naprawiono błąd budowania niektórych awatarów</li>
+<li>Poprawiono działanie tuż po wczytaniu awatara</li>
+<li>Oryginalna obsługa ruchu awatara jest teraz usuwana, bo uniemożliwiała działanie niektórych awatarów</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Naprawiono brak możliwości budowania</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Rozwiązano zapadanie stóp i bioder w ziemię w trybie pulpitu, aby każda poza wyglądała poprawnie</li>
+<li>Dodano zmianę pozy niezależnie od wysokości głowy</li>
+<li>Dodano tryb bez generowania ikon do przesyłania awatarów Quest</li>
+<li>Dodano ostrzeżenia o niektórych problemach awatara</li>
+<li>Rozwiązano konflikty blokad z AFK, blokadą ramion innych narzędzi i podobnymi funkcjami</li>
+<li>Dodano automatyczną blokadę głowy na plecach</li>
+<li>Zmieniono ExpressionsMenu: wybór poz wydzielono do folderu, a blokady przeniesiono na górę</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Zmieniono na pakiet VPM dla obsługi VCC</li>
+<li>Naprawiono zużycie 17bit przez wersję 8bit</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono błędy i usterki</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono problem z VRCFury</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Dodano ustawienia integracji z ごろ寝システムEX</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono niedostępność narzędzia w niektórych stanach ExMenu</li>
+<li>Dodano odbicie do ustawień</li>
+<li>Poprawiono pozę kota</li>
+<li>Dodano ５ pozy leżące na boku</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono nieprawidłową pozę przy wysokiej pozycji głowy</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Dodano obsługę stania i 15 poz</li>
+<li>Naprawiono samoczynne ruchy nóg u niektórych awatarów i w niektórych środowiskach</li>
+<li>Dodano wersję ExpressionParameters8bit</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono samoczynne ruchy nóg u niektórych awatarów</li>
+<li>Ujednolicono WriteDefaults</li>
+<li>Dodano ７ poz kucających i ８ siedzących</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono błąd przesyłania z ModularAvatar1.9.0 i nowszym</li>
+<li>ModualrAvatar1.9.0 lub nowszy jest teraz wymagany</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Dodano zmianę progu wysokości głowy każdej pozy</li>
+<li>Naprawiono problemy poz i nóg niektórych awatarów np. podczas skoku</li>
+<li>Zużycie ExpressionParameter zmniejszono z 54 do 16bit</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono brak możliwości przyjęcia pozy siedzącej w VR</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>W trybie pulpitu można teraz siedzieć również przy wciśniętym C</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono niedostępność integracji 添い寝 bez integracji 三点だいしゅき</li>
+<li>Naprawiono zastyganie nóg przy skoku</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono nienormalnie dużą liczbę VRCContactSender/Receiver</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono błąd budowania podczas przesyłania</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Naprawiono</h3>
+<ul>
+<li>Naprawiono nieprawidłowe ustawienia domyślne przy kilku Prefabs</li>
+<li>Naprawiono błędną konfigurację integracji 可愛い座り</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Wydanie</h3></main>
+</body></html>

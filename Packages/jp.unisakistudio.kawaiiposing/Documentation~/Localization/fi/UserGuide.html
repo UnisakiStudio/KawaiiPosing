@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fi" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool — suomenkielinen käyttöohje</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Suomi · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Muutosloki</a><a href="UserGuide.html">Kawaii Posing Tool — suomenkielinen käyttöohje</a></nav>
+<main><h1>Kawaii Posing Tool — suomenkielinen käyttöohje</h1>
+<p>Kawaii Posing sisältää 85 asentoa työpöytätilaan ja kolmen pisteen VR-seurantaan: 15 seisoma-asentoa, 20 kyykky-/tuoli-istuntaa, 17 lattiaistuntaa, 17 selinmakuuasentoa ja 16 vatsamakuuasentoa.</p>
+<p>Tämä ohje kattaa asennuksen, avatarin asetukset, VRChat-ohjaimet, asentojen muokkauksen, päivitykset ja vianmäärityksen. Ostetun ZIP-paketin <code dir="ltr">START_HERE.html</code> opastaa nopeimmin asennukseen.</p>
+<h2>Ennen aloittamista</h2>
+<ul>
+<li>Käytä Unity 2022.3:n VRChat-<strong>avatar</strong>projektia, joka on luotu tai jota hallitaan VRChat Creator Companionilla (VCC) tai ALCOMilla.</li>
+<li>Vaaditut paketit: VRChat Avatars SDK 3.10.4 tai uudempi; Modular Avatar 1.x, vähintään 1.15.1; ja NDMF 1.x, vähintään 1.14.0.</li>
+<li>Työkalu on tarkoitettu Humanoid-avatareille työpöytätilassa ja kolmen pisteen VR-seurannassa (lasit ja kaksi ohjainta). Asennon lukitusta aktiivisessa kokovartaloseurannassa ei tueta.</li>
+<li>Varmuuskopioi olemassa oleva projekti ennen asennusta tai päivitystä. Korjaa ensin Unityn nykyiset käännösvirheet.</li>
+<li>Asennusohjelma lataa tuotteen ja riippuvuudet pakettirepositorioista. Internet-yhteys tarvitaan. Avatarimallit, VRChat SDK, Modular Avatar ja NDMF eivät sisälly tähän ZIP-pakettiin.</li>
+</ul>
+<h2>1. Asenna lisenssi ja tuote</h2>
+<ol>
+<li>Pura koko ZIP tavalliseen kansioon Unity-projektin ulkopuolelle.</li>
+<li>Avaa oikea avatarprojekti Unityssa. Tuo <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> kohdasta <strong>Assets &gt; Import Package &gt; Custom Package</strong> tai avaa tiedosto Unitylla.</li>
+<li>Lue tuonti- ja asennuskehotteet. Lisenssivahvistus kertoo asennettavat tuotelisenssit. Vaihda asennusohjelman kieltä vahvistusikkunan <strong>Kieli…</strong>-painikkeella (tai <strong>言語...</strong>).</li>
+<li>Vahvista lisenssin asennus. Lisenssi kattaa myös tuotteen käyttämän yhteisen Unisaki Posing Systemin. Asennusohjelma voi tarjota omien asennustiedostojensa poistoa tämän jälkeen. Siivous ei poista asennettua tuotelisenssiä.</li>
+<li>Tarkista automaattisen pakettiasennuksen vahvistus. Siinä luetellaan lisättävät paketit ja repositoriot sekä poistettaviksi ehdotetut vanhat tiedostot tai kansiot. Jatka, kun kohteet ovat tarkoittamiasi.</li>
+<li>Odota Unityn tuonnin ja kääntämisen valmistumista. Jos pakettiasennus ei valmistu automaattisesti, avaa projekti VCC:ssä tai ALCOMissa ja lisää <strong>Kawaii Posing Tool</strong> ja <strong>Modular Avatar</strong>. Yhteinen <strong>Unisaki Posing System</strong> ja <strong>NDMF</strong> ovat riippuvuuksia. <code dir="ltr">Optional-VCC-Links</code> sisältää tuotteen alkuperäiset repositoriopikakuvakkeet Windowsin VCC-käyttäjille.</li>
+<li>Jos peruit vahvistuksen, tuo asennusohjelma uudelleen sopivana ajankohtana. Voit käyttää myös sen lisenssin asennuskomentoa kohdasta <strong>Tools &gt; Unisaki Studio</strong>, kun aktivointiskripti on yhä mukana. Vanhemmissa koonneissa alivalikon nimi on <strong>ゆにさきスタジオ</strong>.</li>
+</ol>
+<h3>Tämän latauksen asentama sisältö</h3>
+<p><strong>Kawaii Posing Tool 3.2.0 ja Unisaki Posing System 3.2.0.</strong> Tämä versio on kehitteillä eikä sitä ole julkaistu. Se lisää 30 kielen asennusikkunat, Unityn Inspectorin ja valikot, vakioasentojen nimet, pelivalikot sekä offline-ohjeet. Julkaisupäivää ei ole päätetty. Vaihda työkalun kieltä Inspectorin yläosan kielivalitsimesta. Julkaisun jälkeen asennusohjelma lataa nämä versiot ja niiden yhteensopivat riippuvuudet VPM-repositorioista. Paikallinen julkaisuvalmistelu ei julkaise paketteja.</p>
+<p>Kawaii Posing Tool sisältää asentokirjaston, asetustyökalut ja avatarin säätöesiasetukset. Asennusohjelma aktivoi tuotteen nykyisen paikallisen lisenssin. Uutta Gumroad-lisenssiavaimen kenttää ei tarvita. Älä koskaan julkaise asennustiedostoja tai lisenssitietoja julkisessa tukipyynnössä.</p>
+<p>Kieliasetukset tallennetaan Unity EditorPrefsiin nykyiselle käyttöjärjestelmäkäyttäjälle, ja ne ovat yhteisiä tämän tietokoneen Unity-projekteille. Ilman tallennettua valintaa asennusohjelma seuraa käyttöjärjestelmän kieltä. Jos kieltä ei tueta, käytetään englantia. Tuotelisenssien nykyinen tallennus säilyy: Windowsissa nykyisen käyttäjän <code dir="ltr">Software/UnisakiStudio</code>-rekisteriavain ja macOS/Linuxissa käyttäjäkohtaiset lisenssitiedostot. Kielen vaihtaminen ei poista lisenssiä.</p>
+<h2>2. Lisää työkalu avatariin</h2>
+<ol>
+<li>Valitse <strong>Hierarchysta</strong> avatar, jolla on <strong>VRC Avatar Descriptor</strong>, tai sen lapsiobjekti. Käytä kohtaukseen sijoitettua avataria, älä Project-ikkunan Prefab-resurssia tai Prefab Modea.</li>
+<li>Napsauta avataria hiiren oikealla painikkeella ja valitse <strong>Unisaki Studio &gt; Lisää Kawaii Posing</strong>. Jos asennettu koonti käyttää japaninkielisiä valikoita, valitse <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>.</li>
+<li>Työkalu lisätään avatarin sisälle. Sen tallennettu objektinimi voi olla edelleen <strong>可愛いポーズ</strong>, vaikka näyttötekstit on käännetty.</li>
+<li>Jos sopivaa avatarin esiasetusta tarjotaan, käytä sitä alkusovitukseen. Muussa tapauksessa avaa <strong>Avatarin asetukset</strong> ja valitse esiasetus tai säädä asennot itse.</li>
+<li>Asennus voi tarjota esikoontia. Se on vapaaehtoinen, sillä myös tavallinen avatarin koonti luo tarvittavan datan. Esikoonnin uudelleenkäyttö lyhentää myöhempien koontien kestoa.</li>
+<li>Valitse työkalun objekti, haluamasi asennot ja toiminnot ja lataa avatar normaalisti VRChat SDK:lla.</li>
+</ol>
+<h3>Kielivalinta ja tutut nimet</h3>
+<p>Tässä versiossa <strong>Language / 言語</strong> on työkalun Inspectorin yläosassa. Sama valinta koskee Inspectoria ja luotavaa pelivalikkoa. Avatar tallentaa valitun kielensä, ja viimeinen valinta muistetaan tämän tietokoneen muissa työkaluissa ja projekteissa. Lataa avatar uudelleen palveluun vaihtaaksesi VRChatissa näkyvän kielen.</p>
+<p>Käytä alla olevaa nimitaulukkoa seuratessasi vanhoja japaninkielisiä ohjeita. Tämä versio sisältää kielivalitsimen, käännetyn Inspectorin, vakioasentojen nimet ja pelivalikot kaikille 30 kielelle.</p>
+<div class="table-scroll"><table><thead><tr><th>Suomenkielinen nimi</th><th>Japaninkielinen nimi vanhoissa koonneissa</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Toiminnot</td><td>機能</td></tr>
+<tr><td>Asennot</td><td>ポーズ一覧</td></tr>
+<tr><td>Avatarin asetukset</td><td>アバター調整</td></tr>
+<tr><td>Avaa asetukset</td><td>設定を開く</td></tr>
+<tr><td>Päivitä esikoonti</td><td>プレビルドを更新</td></tr>
+<tr><td>Tarkista asetukset</td><td>設定の確認</td></tr>
+<tr><td>Esikatselu</td><td>プレビュー</td></tr>
+<tr><td>Animaatiosäätö</td><td>アニメーション調整</td></tr>
+<tr><td>Lataa uudelleen</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Mukana toimitettujen Inspectorin, muokkaus- ja asennusikkunoiden, vakioasentojen nimien sekä luotujen valikoiden käännökset kattavat kaikki 30 valittavaa kieltä. README, muutosloki ja offline-käyttöohje toimitetaan jokaiselle valittavalle kielelle. Avatarien nimet, tallennetut objektinimet, omat asentojen nimet, resurssien tiedostonimet ja sisäiset parametrien tunnisteet voivat säilyttää alkuperäisen kirjoitusasunsa.</p>
+<p><a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">30 kielen pikaohjeet</a> sisältävät toimintojen kuvaukset ja vakioasentojen nimitaulukot. Ne ovat tiiviitä viitteitä. Avaa täydelliset ohjeet kielihakemistosta.</p>
+<h2>3. Valitse asennot ja toiminnot</h2>
+<p>Inspectorissa on kolme päävälilehteä:</p>
+<div class="table-scroll"><table><thead><tr><th>Välilehti</th><th>Käyttötarkoitus</th></tr></thead><tbody>
+<tr><td><strong>Toiminnot</strong></td><td>Pelivalikon ohjaimet, lisätoiminnot, hengitys, kuvakeasetukset ja expression-parametrien kulutus.</td></tr>
+<tr><td><strong>Asennot</strong></td><td>Käytössä olevat asennot, luokat ja haku, järjestys, animaatioiden lisääminen, esikatselu, lisätiedot ja animaatiosäätö.</td></tr>
+<tr><td><strong>Avatarin asetukset</strong></td><td>Avatarikohtainen korjaus, polvikorjaus, alkuperäisten ja omien liikkeiden tuonti sekä esiasetukset.</td></tr>
+</tbody></table></div>
+<p>Ota käyttöön vain tarvitsemasi valikko-ohjaimet. Esimerkiksi <strong>Peilaa</strong>-toiminnon lisääminen valikkoon antaa vaihtaa peilauksen VRChatissa. Se ei pakota kaikkia asentoja pysymään peilattuina.</p>
+<p>Kawaii Posing sisältää avatarien esiasetukset ja tuettujen asentojen IK:n. Kolmelle vakioselinmakuuasennolle on jo määritetty sivuttaisliike: <strong>Jalat ojossa (足伸ばし)</strong>, <strong>Rentona (リラックス)</strong> ja <strong>Yksi polvi ylös (膝立て)</strong>. Käytä sopivaa esiasetusta ja tarkista kunkin asennon kääntymisasetus, jos olet muokannut tai korvannut näitä kohteita.</p>
+<h3>Esiasetukset ja sovittaminen</h3>
+<p>Esiasetukset ovat <strong>Avatarin asetukset</strong> -välilehden lopussa. Hae avatarin nimellä ja korvaa nykyiset asentoasetukset käyttämällä esiasetusta. Tallenna tai varmuuskopioi säädöt ennen vaihtamista. Esiasetus on lähtökohta. Mittasuhteet, asut ja avatarin muutokset voivat edelleen edellyttää manuaalista säätöä.</p>
+<p>Käytä asennon <strong>Animaatiosäätöä</strong> kehon ja raajojen sijainnin esikatseluun ja muokkaamiseen. Tallenna säätöanimaatio ikkunasta, kun olet valmis. Tuetuissa asennoissa käsien ja jalkojen automaattisen säädön (IK) voi kytkeä yleisesti ja asentokohtaisesti. Nykyisen IK-tuloksen tallentaminen säätöihin luo säätöanimaation ja poistaa asennon IK:n käytöstä käsin viimeistelyä varten. Alkuperäinen lähdeleike säilytetään.</p>
+<p><strong>Estä polvien taittuminen taakse</strong> tarjoaa lisäasetuksia, kuten polven vähimmäistaivutuskulman. Avatarikohtaiset korjaukset ovat käytettävissä vain vastaavan korjausdatan kanssa. Joitakin korjauksia ei voi käyttää yhdessä asennon IK:n kanssa.</p>
+<h3>Alkuperäiset ja omat liikkeet</h3>
+<p><strong>Käytä alkuperäisiä seisoma-, kyykky- ja vatsa-asentoja</strong> tunnistaa liikkeet avatarin Base-tasosta luonnin aikana. <strong>Käytä omia liikkeitä</strong> avaa erilliset tuontiasetukset kullekin liiketyypille. Valitse yksi liike tyyppiä kohden. Manuaalinen valinta ohittaa kyseisen tyypin automaattituonnin.</p>
+<p>Automaattituonti kohdistuu koontikopioon. Tunnistettuja animaatioita ei kirjoiteta kohtauksen manuaalisten valintojen luetteloon, eikä alkuperäisiä Controllereita muokata. Tyhjennä tyypin manuaalinen korvaus, jos haluat automaattisen tunnistuksen käsittelevän sen jälleen. Omat Base-tasot ja muut liikkumisjärjestelmät voivat vaatia yksilöllisiä säätöjä.</p>
+<h2>4. Työkalun käyttö VRChatissa</h2>
+<p>Avaa avatarin <strong>Expressions</strong>-valikko ja siirry kohtaan <strong>Kawaii Posing</strong>. Valitse asento kullekin haluamallesi asentoluokalle. Asennon ja toiminnon valinta ovat eri asioita.</p>
+<ul>
+<li><strong>Kolmen pisteen VR:</strong> laske tai nosta päätä siirtyäksesi seisomisen, kyykyn/tuoli-istunnan, lattiaistunnan ja makuuasentojen välillä. Säädä työkalun asetusvalikon korkeusrajoja, jos asento vaihtuu liian aikaisin tai myöhään.</li>
+<li><strong>Työpöytätila:</strong> kyykisty <strong>C</strong>:llä ja mene makuulle <strong>Z</strong>:lla. Jos Z jättää istumaan, nosta makuuasennon korkeusrajaa asetusvalikossa.</li>
+<li><strong>Selin- ja vatsamakuu:</strong> kasvojen suunta valitsee selin- tai vatsamakuun. Jos molemmat ovat valittuina, paikallaan hyppääminen voi vaihtaa niiden välillä. Voit poistaa hypyllä vaihtamisen käytöstä Unityn kohdasta <strong>Toiminnot &gt; Lisätoiminnot</strong>. Se ei lisää synkronoitujen parametrien kulutusta.</li>
+<li><strong>Lukitukset:</strong> käytä pään, käsien ja jalkojen lukituksia tarpeen mukaan. Poista eleet käytöstä, jos haluat asennon kädenmuodon ohjaimen eleen sijaan.</li>
+<li><strong>Peilaa:</strong> käännä valittu asento peilikuvaksi esimerkiksi kaveria kohti tai sommitteluun sopivaksi.</li>
+</ul>
+<h3>Jalkojen korkeus ja lattian korkeus</h3>
+<p><strong>Jalkojen kork.</strong> säätää jalkoja pitäen pään paikallaan. Käytä sitä jalkojen leijuessa tai upotessa, kun pää on jo oikealla korkeudella.</p>
+<p><strong>Lattian kork.</strong> siirtää koko kehoa pää mukaan lukien. Käytä sitä sohvalla, sängyllä tai korokkeella, myös ilman collideria olevissa huonekaluissa. Yhteisen järjestelmän nykyisessä keskitetyssä säätimessä <strong>50% on alkuperäinen korkeus</strong>, 0% on 3 m alempana ja 100% on 3 m ylempänä. Paluu lähelle 50% lopettaa siirron. Vanhemmat julkaisut voivat toimia eri tavalla. Tarkista asennettu versio ja päivitä yhteinen järjestelmä tuotteen kanssa.</p>
+<h3>Kuvatila</h3>
+<p>Ota <strong>Kuvatila</strong>-valikkokohde käyttöön Unityssa ennen latausta. Valitse VRChatissa asento, siirry <strong>Etäisyys</strong>-säätimellä enintään 3 m eteenpäin ja käännä avataria <strong>Suunta</strong>-säätimellä. Jalkojen lukitus on valinnainen kuvaa sommiteltaessa. <strong>Lopeta kuvaus</strong> palauttaa etäisyyden ja suunnan sekä vapauttaa jalkojen lukituksen.</p>
+<p>Kuvatila on oletuksena paikallinen. Näyttääksesi sijainnin ja suunnan muille ota <strong>Synkronoi Kuvatila</strong> käyttöön Unityssa ennen latausta. Se kuluttaa 16 synkronoitua bittiä. <strong>Pidä pää näkyvissä Kuvatilassa</strong> vaikuttaa omaan näkymääsi eikä kuluta synkronoituja bittejä.</p>
+<h3>Hengitys ja Käänny</h3>
+<p>Hengitys voidaan asettaa asentoluokittain kohdasta <strong>Toiminnot &gt; Lisätoiminnot &gt; Animoi hengitys</strong>. Valitse Ei mitään, Heikko, Keskivahva, Vahva, Nopea tai oma hengitysanimaatio. Pelkkä liike ei kuluta synkronoituja bittejä. Hengityksen valikkokytkin käyttää 1 bit.</p>
+<p>Käänny-toiminto vaatii tuetun makuuasennon ja <strong>Käänny</strong>-valikkokohteen. Ota toiminto asennolle käyttöön ja määritä tarvittaessa sen sivuttaisanimaatio. Valitse asento VRChatissa, ota kääntyminen käyttöön ja vapauta pään/kaulan lukitus. Pään sivuttaiskallistus ohjaa kääntymistä. Tavallinen MotionTime-ohjaus ei ole käytettävissä kyseiselle asennolle Käänny-toimintoa käytettäessä.</p>
+<p>Edellä mainituilla kolmella vakioselinmakuuasennolla on sivuttaisliikkeet. Muut asennot vaativat sopivan liikkeen ja asentoasetuksen. Tuotujen tai omien esiasetusten määritykset voivat poiketa.</p>
+<h2>5. Asentojen muokkaus, lisääminen ja esikatselu</h2>
+<p>Valitse <strong>Asennot</strong>-välilehdessä luokka tai hakuvälilehti. Haku hyväksyy alkuperäiset japaninkieliset nimet ja käytettävissä olevat käännökset. Avaa asennon <strong>Lisätiedot</strong> muokataksesi animaatiota, kuvaketta, järjestystä ja ajoitusasetuksia.</p>
+<p>Lisää useita animaatioita vetämällä leikkeet lisäysalueelle tai valitsemalla ne Project-ikkunasta ja käyttämällä valittujen leikkeiden tuontikomentoa. Saman leikkeen päällekkäiset viittaukset poistetaan. Vaihda kohdejärjestys Lisätiedoissa tai käytä ylös- ja alas-ohjaimia.</p>
+<p><strong>Esikatselu</strong> näyttää asennon Scene-näkymässä avaamatta koko säätöikkunaa. Kevyt esikatselu ei suorita Modular Avataria tai NDMF:ää, joten tarkista asut, lattiakorjaus ja muut koontitoiminnot lopullisesta avatarin koonnista.</p>
+<p>Avatarista luodut asentokuvakkeet helpottavat asentojen tunnistamista. Luonti kuitenkin vie aikaa ja voi lisätä avatarin datakokoa. Pienennä kuvaketarkkuutta säästääksesi tilaa. Android-koonnit eivät luo asentokuvakkeita. Luo kuvakkeet tarvittaessa uudelleen avatarin tai asun muuttamisen jälkeen.</p>
+<h2>6. Parametrimuisti</h2>
+<p>Inspector näyttää asentotyökalujen osuuden, ei koko avatarin yhteiskulutusta. Asut ja muut järjestelmät voivat kuluttaa lisäksi parametrimuistia. Usean asentotyökalun yhteisiä asetuksia ei lasketa kahdesti. Omat kokoonpanot, joissa on paljon lisäasentoja, voivat tarvita lisää asennonvalintabittejä.</p>
+<div class="table-scroll"><table><thead><tr><th>Toiminto</th><th>Synkronoitujen bittien lisäkulutus</th></tr></thead><tbody>
+<tr><td>Asennon valinta, tavallinen vähimmäiskokoonpano</td><td>8</td></tr>
+<tr><td>Peilaa</td><td>1</td></tr>
+<tr><td>Eleet pois</td><td>1</td></tr>
+<tr><td>Hengitysliike</td><td>0</td></tr>
+<tr><td>Hengityksen valikkokytkin</td><td>1</td></tr>
+<tr><td>Jalkojen kork.</td><td>8</td></tr>
+<tr><td>Lattian kork.</td><td>8</td></tr>
+<tr><td>Kuvatila, vain paikallinen</td><td>0</td></tr>
+<tr><td>Synkronoi Kuvatila</td><td>16</td></tr>
+<tr><td>Pidä pää näkyvissä Kuvatilassa</td><td>0</td></tr>
+<tr><td>Poista VRChatin oletushuojunta</td><td>0</td></tr>
+<tr><td>Käänny</td><td>10</td></tr>
+</tbody></table></div>
+<p>Käänny jakaa 1 bit pään suunnan aiheuttaman asentokorjauksen kanssa. Molempien käyttöönotto kuluttaa edelleen yhteensä 10 bittiä näille kahdelle toiminnolle. Asennetussa versiossasi näkyvä kulutus on käytännön viite valitsemallesi kokoonpanolle.</p>
+<h2>7. Päivittäminen ja esikoonti</h2>
+<ol>
+<li>Varmuuskopioi projekti ja tallenna työkohtaus.</li>
+<li>Päivitä <strong>Kawaii Posing Tool</strong> ja yhteinen <strong>Unisaki Posing System</strong> yhdessä VCC:ssä tai ALCOMissa. Pidä myös vaaditut SDK-, Modular Avatar- ja NDMF-versiot yhteensopivina.</li>
+<li>Odota kääntämisen valmistumista. Valitse jo asennettu työkalu ja tarkista asennot, asetukset ja parametrikulutus.</li>
+<li>Jos käytät esikoontia, valitse <strong>Päivitä esikoonti</strong> ja lataa sitten avatar uudelleen.</li>
+</ol>
+<p>Nykyiset työkalun asetukset säilyvät. Vanhat 8-bit-Prefabit säilytetään yhteensopivuuden vuoksi. Nykyiset viittaukset eivät edellytä työkalun poistamista tai korvaamista. Uudet asennukset käyttävät tavallista Prefabia. Tarpeettomia toimintoja voi poistaa käytöstä parametrikulutuksen vähentämiseksi.</p>
+<p>Vanhentuneen esikoonnin varoitus tarkoittaa, että asetukset ovat muuttuneet välimuistissa olevan koontidatan luonnin jälkeen. Esikoonnin päivitys luo datan uudelleen. Varoituksen piilottaminen ei päivitä esikoontia eikä ratkaise sen syytä. Tavallinen avatarin koonti voi luoda tarvittavan datan ilman, että teet esikoonnin käsin joka kerta.</p>
+<h2>8. Vianmääritys</h2>
+<div class="table-scroll"><table><thead><tr><th>Oire</th><th>Tarkistettavaa</th></tr></thead><tbody>
+<tr><td>Työkalun lisäysvalikko puuttuu</td><td>Tarkista, että tuote <strong>ja</strong> Unisaki Posing System on asennettu, ja korjaa Unity Consolen käännösvirheet. Pelkkä lisenssin asennusohjelma ei ole asentokirjasto.</td></tr>
+<tr><td>Asennus peruttu tai tiedostot poistettu</td><td>Tuo ostettu asennusohjelma uudelleen sopivana ajankohtana. Lue vahvistukset uudelleen.</td></tr>
+<tr><td>Lisenssi näyttää puuttuvan toisessa projektissa</td><td>Tuo ostettu asennusohjelma samalla käyttöjärjestelmätilillä. Jos vaihdoit tietokonetta tai tiliä, asenna lisenssi myös sinne. Kieliasetukset eivät siirry tietokoneiden välillä automaattisesti.</td></tr>
+<tr><td>Asennot puuttuvat VRChatista</td><td>Lisää työkalu oikean kohtausavatarin alle, ota halutut asennot käyttöön, tarkista Inspectorin varoitukset ja lataa kyseinen avatar. Tarkista SDK ja muut liikkumistyökalut.</td></tr>
+<tr><td>Z ei vaihda makuuasentoon</td><td>Nosta makuuasennon korkeusrajaa työkalun peliasetuksissa.</td></tr>
+<tr><td>Kädet tai polvet eivät osu kohdalleen</td><td>Kokeile sopivaa avatarin esiasetusta ja käytä sitten tuettua IK:ta ja/tai Animaatiosäätöä. Tarkista asun muodonmuutos lopullisessa koonnissa.</td></tr>
+<tr><td>Kääntyminen ei toimi</td><td>Käytä tuettua makuuasentoa, ota käyttöön asennon kääntymisasetus ja valikkokohde sekä vapauta pään/kaulan lukitus. Kokeile ensin yhtä kolmesta tuetusta vakioasennosta.</td></tr>
+<tr><td>Kaverit eivät näe Kuvatilan liikettä</td><td>Ota <strong>Synkronoi Kuvatila</strong> käyttöön Unityssa, tarkista parametrikulutus ja lataa uudelleen.</td></tr>
+<tr><td>Kieli vaihtuu Unityssa mutta ei VRChatissa</td><td>Lataa avatar uudelleen. Tarkista monikielisen koonnin yhteinen kielivalitsin Inspectorin yläosasta.</td></tr>
+<tr><td>Koonnin tai esikoonnin virheet</td><td>Lue <strong>ensimmäinen</strong> asiaan liittyvä Console-virhe. Varmuuskopioi kohtaus, päivitä tai lataa tuote ja yhteinen järjestelmä uudelleen VCC:llä/ALCOMilla ja ota yhteyttä tukeen, jos ongelma jatkuu. Säilytä säädetyt objektit ja GeneratedResources, ellei tuki anna tarkkaa palautusohjetta.</td></tr>
+</tbody></table></div>
+<p>Liitä tukipyyntöön tuotteen ja yhteisen järjestelmän versiot, Unityn, SDK:n, Modular Avatarin ja NDMF:n versiot, avatarin nimi, tarkat toistamisvaiheet ja olennainen Console-virhe. Poista julkisista viesteistä yksityiset tiedostot, asennusohjelman sisältö, lisenssiarvot ja tilitiedot.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Tuki</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Kuvallinen verkko-ohje (japaniksi)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Gumroad-tuotesivu</a></li>
+</ul>
+<h2>Lisenssit ja kiitokset</h2>
+<p><a href="../../Terms.en.html">Tuotesopimuksen englanninkielinen viitteellinen käännös</a> toimitetaan alkuperäisen japaninkielisen sopimuksen rinnalla.</p>
+<p>Lue alkuperäinen tuotesopimus ja yhteisen järjestelmän sopimus paketin READMEn vierestä tai ostetun ZIP-paketin <code dir="ltr">Licenses</code>-kansiosta. Toimitettu englanninkielinen Unisaki Posing Systemin sopimus on järjestelmän olemassa oleva viitteellinen käännös. Tuotteen japaninkielinen sopimus sisältyy edelleen erikseen. Käyttöohje ei muuta sopimuksia eikä myönnä lisäoikeuksia. Ota yhteyttä tukeen tuotetietojen käyttöä tai uudelleenjakelua koskevissa kysymyksissä.</p>
+<p>Asennusohjelma sisältää <strong>anatawa12</strong>:n muokatun <strong>VPMPackageAutoInstallerin</strong> sekä <strong>SimpleJsonin</strong> ja <strong>semver.netin</strong>. Niiden tekijänoikeusilmoitukset ja MIT-lisenssitekstit ovat ostetun ZIP-paketin <code dir="ltr">ThirdPartyNotices.txt</code>-tiedostossa. Asentokirjastolla ja muilla tuoteresursseilla on omat tuotelisenssinsä.</p></main>
+</body></html>

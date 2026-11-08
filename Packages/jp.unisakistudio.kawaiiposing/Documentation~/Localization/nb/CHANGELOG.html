@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="nb" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Endringslogg</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Norsk · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Endringslogg</a><a href="UserGuide.html">Kawaii Posing Tool — Norsk brukerveiledning</a></nav>
+<main><h1>Endringslogg</h1>
+<h2>[3.2.0] - Ikke utgitt</h2>
+<h3>Lagt til</h3>
+<ul>
+<li>Inspector, redigering, installasjonsdialoger, standardpositurnavn og genererte VRChat-menyer kan vises på 30 språk.</li>
+<li>Felles språkvalg for Inspector og spillmeny. Maskinens språk brukes først, og siste valg gjenbrukes i andre prosjekter for samme OS-bruker.</li>
+<li>README, endringslogg og offlineveiledning kan åpnes på valgt språk.</li>
+<li>Visningsnavn for 128 standardpositurer og funksjonsbeskrivelser følger eksisterende terminologi.</li>
+</ul>
+<h3>Kompatibilitet</h3>
+<ul>
+<li>Eksisterende avatarinnstillinger, egne navn, assetreferanser, parameteridentifikatorer og lisenslagring beholdes.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Hodelås kan endres i EX-menyens «Innstillinger → Automatisk hodelås i ryggleie» selv med Fothøyde av. Valg som forsvant tidligere kommer tilbake ved bygg etter oppdatering.</li>
+<li>Støtte for Unisaki Posing System 3.1.2. Rettet vedvarende oppovervendt ansikt etter oppreisning fra mageleie med Reduser positurforvrengning fra hoderotasjon.</li>
+</ul>
+<p>Oppdater Kawaii Posing til 3.1.2 i ALCOM / VCC. Unisaki Posing System 3.1.2 kreves også. Brukte du forhåndsbygg, trykker du Oppdater forhåndsbygget, lagrer scenen og bygger/laster opp på nytt.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>Aktive Gulvhøyde og Snu deg vises i Innstillinger i VRChats EX-meny selv med Speilvend av.</li>
+<li>Riktig snuing for Bena ut, Avslappet og Ett kne opp beholdes etter eldre omordning, sletting og navneendring, også etter full Unpack hvis opphavet kan finnes. Egne positurer, uttrykkelig deaktivert snuing og erstattede sidebevegelser beholdes.</li>
+<li>Rettet kort mageleie ved avatarvalg og kort ryggleie ved hopp med bare magepositurer valgt. Hoppbytte deaktiveres under «Funksjoner → Praktiske funksjoner → Bytt liggende positur ved å hoppe» og er på som standard.</li>
+<li>Tapt gjenopprettbar felles positur-Animator Controller-referanse gir advarsel og gjenoppbygging fra innstillinger. Referanser delt av avatarer beholdes.</li>
+<li>Tilleggsmenyen plasserer offisielt Prefab selv om eget Prefab med samme navn «可愛いポーズ» finnes.</li>
+<li>Ved tillegg av 添い寝ツール angis nødvendig produkt som må installeres først hvis det mangler.</li>
+</ul>
+<p>Oppdater både Kawaii Posing og Unisaki Posing System til 3.1.1 i ALCOM / VCC. Brukte du forhåndsbygg, trykker du Oppdater forhåndsbygget på sceneobjektet «可愛いポーズ» og lagrer. Bygg og last opp på nytt for å bruke i VRChat.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>53 av 85 positurer tilpasser lemmer automatisk med IK etter kroppsbygning.</li>
+<li>Ryggpositurene Bena ut, Avslappet og Ett kne opp støtter Snu deg med hodehelling.</li>
+<li>Fotomodus justerer posisjon/retning med valgfri synkronisering og synlig eget hode.</li>
+<li>Gulvhøyde flytter hele kroppen 3m opp/ned, atskilt fra Fothøyde.</li>
+<li>Lagt til pust, stopp av hvilebevegelse og redusert forvrengning fra hoderotasjon.</li>
+<li>Inspector viser funksjoner og parameterforbruk. Søk, massetillegg, sortering og Scene-forhåndsvisning støttes.</li>
+<li>Raskere stå-/huk-/sittebytte på skrivebordet.</li>
+<li>Bedre forhåndsbyggadvarsler, Inspector-rulling og lange oppryddingsstopp.</li>
+<li>Støtte for Unisaki Posing System 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Åpen beta (2026-11-05)</h2>
+<ul>
+<li>Åpen beta via GitHub Releases og VPM. 53 av 85 positurer tilpasser lemmer med IK etter kroppsbygning.</li>
+<li>Støtte for fellesspakke 3.1.0-beta.2 med bedre endringsvisning etter forhåndsbygg, Inspector-rulling og oppryddingsstopp.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Åpen beta (2026-11-04)</h2>
+<ul>
+<li>Støtte for Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Vanlig skrivebordsbytte bruker én evaluering i vanlige bygg og forhåndsbygg; VR og spesielle forhold beholder tidligere vei.</li>
+<li>Forhåndsbygg fra alpha.3 eller før krever oppdatering.</li>
+<li>Synspunkt beholdes ved gulvhøydeendring i Fotomodus, og siste gulvhøyde gjenopprettes etter avslutning.</li>
+<li>Inkluderer forbedringer gjennom alpha.3 for automatisk import, justering av importerte bevegelser og genererte Controllers.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Lukket test (2026-10-26)</h2>
+<h3>Rettelser og endringer</h3>
+<ul>
+<li>Felles positursystem oppdatert til 3.1.0-alpha.2 med feilrettinger.</li>
+<li>Gulvhøyde utvidet til 3m opp/ned, med 50% som originalhøyde og standard.</li>
+<li>Standard-/egne bevegelser uten valgt positur korrigeres også av Fotomodus og Gulvhøyde.</li>
+<li>Rettet manuell korrigering, like navn, startpositurer og eldre forhåndsinnstillingers innstillinger for snuing.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Før offentlig utgivelse</h2>
+<h3>Lagt til</h3>
+<ul>
+<li>Lagt til automatisk lemjustering (IK) etter kroppsbygning.</li>
+<li>Lagt til IK på/av globalt og per positur, og lagring i justeringsanimasjon.</li>
+<li>Ryggpositurene Bena ut, Avslappet og Ett kne opp støtter Snu deg med hodehelling.</li>
+<li>Lagt til innstillinger for snuing og sideanimasjon per positur.</li>
+<li>Lagt til Fotomodus med fremflytting og rotasjon.</li>
+<li>Fotomodus-synkronisering: bare lokalt 0 bit, synkronisert 16 bit.</li>
+<li>Lagt til valg om å beholde eget hode synlig i Fotomodus.</li>
+<li>Lagt til Gulvhøyde for å heve hele kroppen inkludert hodet.</li>
+<li>Lagt til pustebevegelse, styrke og på/av-meny i spillet.</li>
+<li>Lagt til stopp av VRChats hvilebevegelse.</li>
+<li>Lagt til redusert forvrengning fra hoderotasjon.</li>
+<li>Lagt til vern mot bakoverbøyde knær og minste bøyevinkel.</li>
+<li>Lagt til på/av per funksjon og ExpressionParameters-forbruk.</li>
+<li>Lagt til Scene-forhåndsvisning, søk, massetillegg og målplassering ved sortering.</li>
+<li>Lagt til endringslogg i Inspector.</li>
+</ul>
+<h3>Endret</h3>
+<ul>
+<li>Inspector delt i Funksjoner, Positurer og Avataroppsett.</li>
+<li>Pustedetaljer, import av egne bevegelser og forhåndsinnstillinger omorganisert.</li>
+<li>Færre dupliserte animasjoner for Fothøyde.</li>
+<li>Bekreftelse ved positurbildeoppdatering og advarselsvalg samlet i Kontroller innstillinger.</li>
+<li>Meny for nytt 8bit-tillegg avviklet til fordel for vanlig Prefab med funksjonsvalg; eksisterende referanser beholdes.</li>
+<li>Støtte for Unisaki Posing System 3.1.0-alpha.1. Minste VRChat Avatars SDK-versjon er 3.10.4.</li>
+</ul>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet navneinput som flyttet til annen positur, og detaljer som lukket ved sortering.</li>
+<li>Rettet overlappende forhåndsvisning, feil plassering og feil på enkelte avatarer.</li>
+<li>Rettet oppdatering av advarsler/forhåndsbyggstatus etter endringer og enkelte byggfeil.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>Oppdatert til PosingSystem 3.0.17 og rettet vannrett positurforskyvning ved jevn skalering av hele avataren.</li>
+<li>Lagt til individuell eller samlet ignorering av advarsler om automatisk tråkking, manglende forhåndsbygg og endrede innstillinger.</li>
+<li>Rettet import av uegnede engangsanimasjoner ved manuell import av forflytningsbevegelser.</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstilling (ルリエ).</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstillinger (メルヴィ, ミダリス).</li>
+<li>Rettet bevegelseserstatning i うらら-forhåndsinnstillingen.</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>Oppdatert til PosingSystem 3.0.11 og rettet forhåndsbyggfeil med siste NDMF og unntak ved feilvisning.</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>Oppdatert til PosingSystem 3.0.10 med lavere belastning ved forhåndsinnstillingslasting og Hierarchy-ikonvurdering.</li>
+<li>Rettet forhåndsbyggfeil med flere positursystemer på samme avatar.</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>Oppdatert til PosingSystem 3.0.9 og rettet <code dir="ltr">Avatar is null</code> i Play etter ugyldig forhåndsvisnings-Avatar fra NDMF-behandling.</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>Oppdatert til PosingSystem 3.0.8 og rettet fare for ugyldige positurdata ved gjentatt høydekorrigering.</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstillinger (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ).</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstillinger (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール).</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstillinger (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing).</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Bedre lisensinstallasjon og -sletting.</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Rettet lisensbehandling på Mac og Linux.</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Lagt til avatarforhåndsinnstillinger (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ).</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Lagt til forhåndsbygg.</li>
+<li>Lagt til animasjonsjustering.</li>
+<li>Lagt til forhåndsinnstillinger.</li>
+<li>Prosjektinstallasjon med unitypackage.</li>
+<li>Lagt til avatarforhåndsinnstillinger (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ).</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Løst kompatibilitetsproblemer med enkelte verktøy.</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Rettet manglende positurbytte med enkelte avatarer og ModularAvatar-versjoner.</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Rettet feil bevegelser på enkelte avatarer, for eksempel hopp med 森羅.</li>
+<li>Rettet iblant feil standardverdi for Gester av.</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Rettet feil i enkelte miljøer.</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Rettet Unity-krasj.</li>
+<li>Versjon lagt til i verktøynavnet i NDMF Console.</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Lagt til Gester av for animasjonens håndform.</li>
+<li>Håndformsdata for alle positurer.</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Rettet ødelagte positurer med enkelte andre verktøy.</li>
+<li>Rettet innstillingsavhengige feil.</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Løst enkelte verktøykonflikter.</li>
+<li>Lagt til knapp for fjerning av Unitypackage-versjon.</li>
+<li>Samordnings-Prefabs for 三点だいしゅきツール fjernet siden VCC-versjonen ble utgitt.</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Rettet feil på enkelte avatarer.</li>
+<li>Rettet ubrukelig fotlås ved verktøy-/avatarkonflikter.</li>
+<li>Rettet retur til VRC-standardpositur på skrivebordet.</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Rettet manglende positurbytte med avatarer/verktøy som bruker feil VRMode-type.</li>
+<li>Lagt til visning i NDMF-Console av verktøykonflikter fra ulike parametertyper.</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Lagt til NDMF-Console-forklaring når andre verktøys feil fører til Unisaki Posing System-feil under bygg.</li>
+<li>Rettet byggfeil på enkelte avatarer.</li>
+<li>Bedre oppførsel straks etter avatarlasting.</li>
+<li>Opprinnelig avatarforflytning fjernes fordi den kan hindre funksjon på enkelte avatarer.</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Rettet manglende byggmulighet.</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Løst føtter/hofter under bakken på skrivebordet, slik at alle positurer vises riktig.</li>
+<li>Lagt til positurbytte uavhengig av hodehøyde.</li>
+<li>Lagt til modus uten ikongenerering for Quest-opplasting.</li>
+<li>Lagt til advarsler om avatarproblemer.</li>
+<li>Løst låsekonflikter med AFK og andre verktøys armlås.</li>
+<li>Lagt til automatisk nakkelås i ryggleie.</li>
+<li>Endret ExpressionsMenu: positurvalg i egen mappe og låser øverst.</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Rettet</h3>
+<ul>
+<li>VPM-pakke for VCC-støtte.</li>
+<li>Rettet 8bit-versjon som brukte 17bit.</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet feil og funksjonsproblemer.</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet feil med VRCFury.</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Lagt til samordning med «ごろ寝システムEX».</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet ubrukelig verktøy i enkelte ExMenu-tilstander.</li>
+<li>Speiling lagt til i innstillinger.</li>
+<li>Rettet kattepositur.</li>
+<li>Lagt til 5 sideliggende positurer.</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet forvrengte positurer ved høyt hode.</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Lagt til ståfunksjon med 15 positurer.</li>
+<li>Rettet føtter som beveget seg selv på enkelte avatarer og i enkelte miljøer.</li>
+<li>Lagt til ExpressionParameters8bit-versjon.</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet føtter som beveget seg selv på enkelte avatarer.</li>
+<li>Ensartede WriteDefaults.</li>
+<li>Lagt til 7 huk- og 8 sittepositurer.</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet opplastingsfeil med ModularAvatar1.9.0 eller nyere.</li>
+<li>ModualrAvatar1.9.0 eller nyere kreves nå.</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Lagt til endring av hodehøydeterskler per positur.</li>
+<li>Rettet gale positurer/føtter ved blant annet hopp på enkelte avatarer.</li>
+<li>ExpressionParameter-forbruk redusert fra 54 til 16bit.</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet manglende sittepositur i VR.</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Sittepositur er mulig mens C holdes nede på skrivebordet.</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet 添い寝-samordning som krevde 三点だいしゅき-samordning.</li>
+<li>Rettet fastlåste føtter ved hopp.</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet unormalt mange VRCContactSender/Receiver.</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet byggfeil ved opplasting.</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Rettet</h3>
+<ul>
+<li>Rettet gale standardverdier med flere Prefabs.</li>
+<li>Rettet innstillinger for 可愛い座り-samordning.</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Utgivelse</h3></main>
+</body></html>

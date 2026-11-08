@@ -12,3 +12,10 @@ guides. Run the shared offline coverage audit and relevant Unity checks. Preserv
 IDs, paths, parameters, asset references and custom names. Pose names are translated
 as a complete set per language. Never count fallback as translation or silently
 send text to external translation services. Public publication needs new approval.
+
+Full README, historical CHANGELOG and offline guides are required in all 30
+languages. Read `../PosingSystem/Tools/Documentation/README.md` and use its shared
+source/translation workflow. Preserve existing UI terms, operating limits, release
+dates and legal references. Run this repo's `Tools/Documentation/check_documents.py`
+and the shared generator's `--check` after every documentation-affecting feature.
+Upcoming versions stay unreleased until actual publication.

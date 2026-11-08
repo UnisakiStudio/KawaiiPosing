@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Português (Brasil) · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Histórico de alterações</a><a href="UserGuide.html">Kawaii Posing — Manual em português do Brasil</a></nav>
+<main><h1>Kawaii Posing</h1>
+<p>Ferramenta de poses VRChat para poses sentadas e deitadas adoráveis, com rastreamento de 3 pontos ou desktop. Inclui 85 poses: 15 em pé, 20 agachadas, 17 sentadas, 16 de bruços e 17 de costas.</p>
+<p>Este README refere-se a v3.2.0 em desenvolvimento. A data oficial não está definida. A versão instalada aparece no topo do Inspector.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">Página na BOOTH</a></li>
+<li><a href="CHANGELOG.html">Histórico</a></li>
+</ul>
+<h2>Idioma de apresentação e documentos offline</h2>
+<p>Escolha o idioma em «Language / 言語», no topo do Inspector. Uma única escolha aplica-se ao Inspector e aos menus VRChat gerados. Envie novamente o avatar para mudar o idioma dentro do jogo.</p>
+<p>Sem escolha explícita, é usado o idioma do computador; idiomas não suportados utilizam inglês. São suportados Windows, macOS e Linux. A última escolha é salva em EditorPrefs e reutilizada em outros projetos do mesmo usuário do sistema neste computador. Uma escolha explícita já salva no avatar é mantida. Não existe sincronização com outros computadores. O armazenamento da licença não é alterado.</p>
+<p>Escolha o idioma do README, histórico e manual na <a href="../index.html">lista de idiomas</a> incluída. Os atalhos do Inspector para manual e alterações seguem a seleção. Os termos originais e as traduções de referência continuam disponíveis em separado.</p>
+<h2>Principais funções</h2>
+<ul>
+<li>Modo foto: avance até 3m e mude direção. 0 bit local, 16 bit para mostrar posição/direção aos outros.</li>
+<li>Cabeça visível em fotos: impede ocultar a cabeça própria próxima apenas durante Modo foto.</li>
+<li>Altura chão: move corpo e cabeça 3m acima/abaixo. 50% original/inicial, 0% 3m abaixo, 100% 3m acima. Separado de Altura pés com cabeça fixa.</li>
+<li>Virar: inclinação da cabeça vira para os lados em poses compatíveis.</li>
+<li>Respiração: anima peito e outras partes; Nenhum, Fraco, Médio, Forte, Rápido ou Personalizado por categoria.</li>
+<li>Desativar balanço em repouso do VRChat: reduz balanço padrão mantendo respiração e movimentos próprios.</li>
+<li>Reduzir deformação por rotação da cabeça: limita deformação ao liberar pescoço em uma direção diferente da original.</li>
+<li>Seleção de funções: acrescente só menus desejados e consulte ExpressionParameters.</li>
+<li>Pesquisa, importação múltipla e ordem: pesquisa transversal, vários clips e destino na lista.</li>
+<li>Prévia na Scene: veja a pose diretamente na lista.</li>
+</ul>
+<ul>
+<li>Ajuste automático dos membros (IK): adapta posições às proporções nas poses compatíveis, com ativação por pose e integração em animação de ajuste.</li>
+</ul>
+<h3>Virar com poses incluídas</h3>
+<p>Pernas esticadas, Relaxado e Um joelho levantado, de costas, já têm movimentos laterais. Para virar, baseiam-se respectivamente em «横向き寝» (de lado), Cochilo e Cochilo de gato.</p>
+<p>Ative «Funções &gt; Funções do menu &gt; Virar», envie e escolha pose compatível e Virar no VRChat. Desbloqueie o pescoço.</p>
+<p>Para configurar, ative «Poses &gt; Detalhes &gt; Ativar Virar» e atribua Pose lateral para virar. MotionTime normal deixa de estar disponível nessa pose.</p>
+<h3>Ajuste às proporções</h3>
+<p>Pode utilizar a automação incluída, mas nem todas as poses precisam de IK. Ativar ajuste automático dos membros controla tudo; Ativar IK para esta pose controla individualmente.</p>
+<p>Incorporar IK aos ajustes escreve o resultado atual em uma nova animação e desativa IK na pose. Depois pode aperfeiçoar manualmente. Exige ajuste global e da pose ativos e regras aplicáveis.</p>
+<p>Configuração do avatar também tem Impedir flexão inversa dos joelhos e o detalhe Flexão mínima do joelho (graus).</p>
+<h2>Instalação</h2>
+<ol>
+<li>Baixe os arquivos da página do produto na loja de compra.</li>
+<li>Importe «可愛いポーズツール.unitypackage» no Unity e registre licença e origem dos pacotes.</li>
+<li>Em VCC ou ALCOM adicione Kawaii Posing e Modular Avatar ao projeto. Unisaki Posing System e NDMF são dependências.</li>
+<li>Clique com o botão direito no avatar da Hierarchy e escolha Unisaki Studio &gt; Adicionar Kawaii Posing.</li>
+<li>Selecione Kawaii Posing no avatar e configure funções e poses no Inspector.</li>
+<li>Envie normalmente.</li>
+</ol>
+<p>Requisitos: Unity 2022.3, VRChat Avatars SDK 3.10.4 ou posterior, Modular Avatar 1.x desde 1.15.1 e NDMF 1.x desde 1.14.0. Atualize os pacotes necessários em conjunto com VCC ou ALCOM.</p>
+<h2>Atualizar versões anteriores</h2>
+<p>Atualize produto e Unisaki Posing System juntos. Configurações existentes são mantidas. Reveja funções e ExpressionParameters; se usava pré-cálculo, atualize-o antes de enviar novamente.</p>
+<p>Desde v3.1.0, novas instalações usam o Prefab normal 「可愛いポーズ」. Sem funções desnecessárias, a seleção mínima utiliza 8 bit; muitas poses podem precisar de bits adicionais.</p>
+<p>Prefabs 8bit antigos ficam em Editor/Legacy para preservar avatares e predefinições. Não é necessário eliminar ou substituir. O menu de adição já não mostra 8bit.</p>
+<h2>Onde configurar</h2>
+<div class="table-scroll"><table><thead><tr><th>Separador</th><th>Utilização</th></tr></thead><tbody>
+<tr><td>Funções</td><td>Menus, funções práticas, respiração, ícones e ExpressionParameters</td></tr>
+<tr><td>Poses</td><td>Seleção, detalhes, pesquisa, importação múltipla, ordem, prévia e ajuste</td></tr>
+<tr><td>Configuração do avatar</td><td>Correções próprias e de joelhos, movimentos originais/próprios e predefinições</td></tr>
+</tbody></table></div>
+<p>Abra as configurações para mostrar detalhes sob a opção. Respiração fica em Funções &gt; Funções práticas &gt; Animar respiração.</p>
+<p>Usar poses originais em pé, agachado e de bruços importa automaticamente as posturas do avatar. Para movimentos próprios, abra importação separada e atribua por tipo: em pé, agachado (Crouching), de bruços (Prone), etc.</p>
+<p>Predefinições estão no fim de Configuração do avatar. Aplicar esta predefinição substitui poses atuais; salve os ajustes primeiro.</p>
+<h3>Consumo por função</h3>
+<ul>
+<li>Respiração sozinha 0 bit; menu para parar/reiniciar usa 1 bit sincronizado.</li>
+<li>Modo foto local 0 bit; Funções práticas &gt; Sincronizar Modo foto usa 16 bit; cabeça visível 0 bit.</li>
+<li>Altura pés e Altura chão usam 8 bit cada. Afastar o chão do centro move verticalmente; voltar perto de 50% termina.</li>
+<li>Virar usa 10 bit, partilhando 1 bit com a correção da cabeça; ambas continuam com 10 bit.</li>
+<li>Espelhar e Sem gestos usam 1 bit cada.</li>
+</ul>
+<p>O total do Inspector refere-se às ferramentas de poses, sem roupa ou outros sistemas. Funções comuns de várias ferramentas não se repetem no consumo.</p>
+<h3>Prévia e edição</h3>
+<p>Prévia mostra a pose na Scene. Para corrigir detalhes abra Ajuste de animação, edite vendo o resultado e salve.</p>
+<p>A visualização simples não executa MA/NDMF. Verifique também o resultado da compilação antes de enviar, incluindo roupa e correção do chão.</p>
+<p>A lupa pesquisa nomes. Ordene em Detalhes &gt; Ordem ou nos botões cima/baixo. Importe vários clips arrastando ou com Importar clips selecionados em Project.</p>
+<p>Atualizar miniaturas das poses gera imagens após confirmar. Gerar ícones das poses facilita a seleção mas demora mais na compilação. Reduzir tamanho dos ícones poupa espaço. Android não gera ícones.</p>
+<h2>Controles básicos no jogo</h2>
+<ul>
+<li>Selecione poses por categoria em Expressions. Em VR a altura da cabeça alterna em pé, agachado, sentado e deitado.</li>
+<li>Direção do rosto decide costas/bruços. Com ambas escolhidas, pode saltar para alternar. Desative em Funções → Funções práticas → Trocar poses deitadas pulando, inicialmente ativo. Limiares do menu regulam as alturas.</li>
+<li>No desktop use C e Z; se Z não deitar, aumente o limiar de altura para deitar.</li>
+<li>Sem gestos utiliza mãos da pose em vez dos gestos dos controladores.</li>
+<li>Altura pés mantém a cabeça; Altura chão move o corpo todo. Aparecem nessa ordem.</li>
+<li>Distância no Modo foto avança e vira o avatar para você; Direção gira. Fixar pés é opcional no momento escolhido. Sair da foto restaura distância/direção e libera pés.</li>
+<li>Respiração exige movimento ativo; intensidade no Unity e ativação no jogo.</li>
+</ul>
+<h2>Pré-cálculo e avisos</h2>
+<p>Atualizar pré-cálculo reutiliza dados para acelerar compilação. Sem ele, a compilação normal gera o necessário.</p>
+<p>Verificar configurações e símbolos Hierarchy avisam atualizações após alterações. Configurações de exibição dos avisos estão no mesmo painel. Ocultar não corrige nem regenera.</p>
+<h2>Notas de utilização</h2>
+<ul>
+<li>Fixação com rastreamento de corpo inteiro não suportada.</li>
+<li>Proporções, roupa e alterações podem requerer ajustes.</li>
+<li>Base especial ou outros sistemas podem falhar na integração. Verifique Configuração do avatar &gt; Integrar bloqueios de rastreamento com outras ferramentas.</li>
+<li>Movimento/rotação do Modo foto e altura do chão também corrigem movimentos padrão/próprios sem pose. Verifique vista e substituições no cliente VRChat.</li>
+<li>Supressão do balanço padrão só afeta repouso normal, não todas as causas.</li>
+</ul>
+<h2>Manual e assistência</h2>
+<p>Ajuda / Alterações no topo abre manual, assistência e histórico. Funções comuns também estão em Packages &gt; Unisaki Posing System &gt; README no Project.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Manual oficial</a></li>
+<li><a href="https://help.unisakistudio.jp/">Assistência</a></li>
+</ul>
+<p>Comunique versões do produto, sistema comum, Unity, VRChat SDK, Modular Avatar e NDMF, avatar utilizado, passos de reprodução e erros da Console.</p>
+<h2>Distribuir predefinições</h2>
+<p>Informação sobre dados criados pelo ajuste de animação.</p>
+<p>Pode distribuir e vender livremente arquivos de animação de ajuste criados com esta função
+e predefinições criadas com esses arquivos atribuídos, sem autorização do Unisaki Studio.
+Compartilhe-os, por exemplo, com avatares próprios ou para avatares não incluídos na ferramenta.</p>
+<h2>Produtos com integração incluída</h2>
+<p>As configurações de integração foram criadas unilateralmente pela nossa loja. Não solicitamos autorização aos autores, por considerarmos desnecessária.
+Solicite distribuição ou interrupção por mensagem à loja.
+A integração exige compra e download do produto correspondente.
+Problemas nestas configurações devem ser dirigidos à nossa loja, não aos autores dos outros produtos.</p>
+<p>«可愛い座りツール»
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>«添い寝ツール»
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>«少女モーション集vol.1», de ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>«VRC想定移動モーション（無料配布）», de カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>«ごろ寝システムEX», de minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Termos de uso</h2>
+<p>Só pode utilizar esta ferramenta quem aceitar os termos seguintes, criados com a licença VN3.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Termos de uso (japonês)</a></p>
+<p>O código-fonte e recursos não são de código aberto. Exigem compra legítima e aceitação dos termos.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Termos de uso (inglês)</a></p></main>
+</body></html>

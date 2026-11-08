@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="fi" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Suomi · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Muutosloki</a><a href="UserGuide.html">Kawaii Posing Tool — suomenkielinen käyttöohje</a></nav>
+<main><h1>Kawaii Posing Tool</h1>
+<p>VRChatin asentojen lukitustyökalu, jolla voit käyttää söpöjä istuma- ja makuuasentoja myös 3 pisteen seurannassa ja työpöytätilassa. Mukana on yhteensä 85 asentoa: 15 seisoma-asentoa, 20 kyykkyasentoa, 17 istuma-asentoa, 16 vatsamakuuasentoa ja 17 selinmakuuasentoa.</p>
+<p>Tämä README koskee kehitteillä olevaa versiota v3.2.0. Virallista julkaisupäivää ei ole päätetty. Asennetun version näet Inspectorin yläosasta.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">BOOTH-tuotesivu</a></li>
+<li><a href="CHANGELOG.html">Muutosloki</a></li>
+</ul>
+<h2>Näyttökieli ja offline-ohjeet</h2>
+<p>Valitse näyttökieli Inspectorin yläosasta kohdasta ”Language / 言語”. Sama valinta koskee Inspectoria ja luotavaa VRChat-valikkoa. Lataa avatar uudelleen palveluun, jotta pelissä näkyvä kieli vaihtuu.</p>
+<p>Jos kieltä ei ole valittu, käytetään tietokoneen kieltä tai englantia, jos kieltä ei tueta. Windows, macOS ja Linux ovat tuettuja. Viimeksi valittu kieli tallennetaan EditorPrefsiin, ja sitä käytetään myös tämän tietokoneen saman käyttöjärjestelmäkäyttäjän muissa projekteissa. Avatariin erikseen tallennettu kielivalinta säilyy. Valintaa ei synkronoida muihin tietokoneisiin. Lisenssin tallennustapa ei muutu.</p>
+<p>README-tiedoston, muutoslokin ja käyttöohjeen voit valita mukana toimitetusta <a href="../index.html">kieliluettelosta</a>. Myös Inspectorin käyttöohje ja muutosloki noudattavat valittua kieltä. Alkuperäiset käyttöehdot ja viitteelliset käännökset toimitetaan edelleen erikseen.</p>
+<h2>Tärkeimmät toiminnot</h2>
+<ul>
+<li>Kuvatila: siirrä avataria enintään 3m eteenpäin ja säädä sen suuntaa. Vain omalla näytöllä käyttö kuluttaa 0 bit. Sijainnin ja suunnan näyttäminen muille kuluttaa 16 bit.</li>
+<li>Pään näyttäminen kuvauksessa: estä lähellä olevan oman avatarisi pään piilottaminen vain Kuvatilan ajaksi.</li>
+<li>Lattian kork.: siirrä koko kehoa pää mukaan lukien 3m ylös tai alas. 50% on alkuperäinen korkeus ja oletusarvo, 0% on 3m alempana ja 100% on 3m ylempänä. Tämä täydentää Jalkojen kork. -toimintoa, joka liikuttaa jalkojen puolta pään pysyessä paikallaan.</li>
+<li>Käänny: käänny tuetuissa makuuasennoissa vasemmalle ja oikealle pään kallistuksen mukaan.</li>
+<li>Hengitys: lisää hengitysliikettä esimerkiksi rintaan. Valitse asentoluokittain Ei mitään, Heikko, Keskivahva, Vahva, Nopea tai Oma.</li>
+<li>Poista VRChatin oletushuojunta: vähennä oletusarvoista joutokäyntihuojuntaa säilyttäen työkalun hengityksen ja muut omat liikkeet.</li>
+<li>Vähennä pään kierrosta aiheutuvaa asennon vääristymää: vähennä alkuperäisestä asennosta poikkeavan pään suunnan aiheuttamaa vääristymää pään lukituksen vapautuessa.</li>
+<li>Toimintojen valinta: lisää vain tarvittavat pelivalikot ja tarkista ExpressionParameters-kulutus Inspectorista.</li>
+<li>Asentoluettelon haku, joukkolisäys ja järjestäminen: hae kaikista luokista, tuo useita leikkeitä ja määritä järjestyksen siirtokohta.</li>
+<li>Kevyt esikatselu Scenessä: tarkista asento suoraan asentoluettelon Esikatselu-toiminnolla.</li>
+</ul>
+<ul>
+<li>Raajojen automaattinen säätö (IK): mukauta tuettujen asentojen raajojen sijainti avatarin mittasuhteisiin. Voit kytkeä toiminnon asentokohtaisesti ja tallentaa tuloksen säätöanimaatioon.</li>
+</ul>
+<h3>Kääntyminen mukana toimitetuissa asennoissa</h3>
+<p>Selinmakuuasennoille ”Jalat ojossa”, ”Rentona” ja ”Yksi polvi ylös” on määritetty kääntymisen sivuasennot. Ne perustuvat vastaavasti asentoihin ”Kyljellään”, ”Torkut” ja ”Kissantorkut”.</p>
+<p>Ota ”Toiminnot &gt; Valikkotoiminnot &gt; Käänny” käyttöön ja lataa avatar palveluun. Valitse VRChatissa tuettu asento ja Käänny-toiminto. Vapauta pään lukitus ennen käyttöä.</p>
+<p>Jos määrität tuen itse, ota ”Asennot &gt; Lisätiedot &gt; Ota Käänny käyttöön” käyttöön ja lisää animaatio kohtaan ”Käänny-toiminnon sivuasento”. Tavallinen MotionTime-asetus ei ole käytettävissä Käänny-toimintoa käyttävissä asennoissa.</p>
+<h3>Sovittaminen avatarin mittasuhteisiin</h3>
+<p>Mukana tulevaa raajojen automaattisäätöä voi käyttää, mutta kaikki asennot eivät tarvitse IK:ta. Animaatiosäätöikkunan ”Ota raajojen automaattinen säätö käyttöön” kytkee toiminnon yleisesti ja ”Ota IK käyttöön tälle asennolle” kytkee sen asentokohtaisesti.</p>
+<p>”Tallenna IK säätöihin” kirjoittaa senhetkisen automaattisäätötuloksen uuteen säätöanimaatioon ja poistaa kyseisen asennon IK:n käytöstä. Voit viimeistellä tuloksen tämän jälkeen käsin. Toiminto on käytettävissä, kun yleinen ja asentokohtainen automaattisäätö ovat käytössä ja sopivat IK-asetukset löytyvät.</p>
+<p>Avatarin asetuksissa ovat myös ”Estä polvien taittuminen taakse” ja sen lisätietojen ”Polven vähimmäistaivutus (asteina)”.</p>
+<h2>Asennus</h2>
+<ol>
+<li>Lataa tiedostot ostamasi kaupan tuotesivulta.</li>
+<li>Tuo mukana oleva ”可愛いポーズツール.unitypackage” Unityyn ja rekisteröi lisenssi sekä pakettien jakelulähde.</li>
+<li>Lisää Kawaii Posing Tool ja Modular Avatar Unity-projektiin VCC:llä tai ALCOMilla. Yhteinen Unisaki Posing System ja NDMF asennetaan riippuvuuksina.</li>
+<li>Napsauta kohdeavataria Hierarchyssa hiiren oikealla painikkeella ja valitse ”Unisaki Studio &gt; Lisää Kawaii Posing”.</li>
+<li>Valitse avatariin lisätty ”可愛いポーズ (Kawaii Posing)” ja määritä haluamasi toiminnot ja asennot Inspectorissa.</li>
+<li>Lataa avatar palveluun tavalliseen tapaan.</li>
+</ol>
+<p>Vaatimukset ovat Unity 2022.3, VRChat Avatars SDK 3.10.4 tai uudempi, Modular Avatar 1.x vähintään 1.15.1 ja NDMF 1.x vähintään 1.14.0. Päivitä tarvittavat paketit yhdessä VCC:llä tai ALCOMilla.</p>
+<h2>Päivittäminen vanhemmasta versiosta</h2>
+<p>Päivitä tämä tuote ja Unisaki Posing System yhdessä. Kohtaukseen sijoitettujen työkalujen asetukset säilyvät. Tarkista käytössä olevat toiminnot ja ExpressionParameters-kulutus Inspectorista. Jos käytit esikoontia, paina ”Päivitä esikoonti” ennen uudelleenlatausta.</p>
+<p>Versiosta v3.1.0 lähtien uusi asennus käyttää aina tavallista 可愛いポーズ (Kawaii Posing) -Prefabia. Poista tarpeettomat toiminnot käytöstä Toiminnot-välilehdessä, jolloin pelkän asennonvalinnan vähimmäiskulutus on 8 bit. Suuri asentomäärä voi vaatia lisää bittejä asennon valintaan.</p>
+<p>Vanha 8bit-Prefab säilytetään Editor/Legacy-kansiossa olemassa olevien avatarien ja esiasetusten viittausten säilyttämiseksi. Nykyisiä Prefabeja ei tarvitse poistaa tai korvata. 8bit-versiota ei näytetä Unityn uuden asennuksen valikossa.</p>
+<h2>Asetusten sijainti</h2>
+<div class="table-scroll"><table><thead><tr><th>Välilehti</th><th>Toiminnot</th></tr></thead><tbody>
+<tr><td>Toiminnot</td><td>Pelivalikoiden lisääminen, lisätoiminnot, hengitysasetukset sekä kuvakkeiden ja ExpressionParameters-kulutuksen tarkistus</td></tr>
+<tr><td>Asennot</td><td>Käytettävien asentojen valinta, lisätiedot, haku, joukkolisäys, järjestäminen, esikatselu ja animaatiosäätö</td></tr>
+<tr><td>Avatarin asetukset</td><td>Avatarikohtainen korjaus, polvikorjaus, alkuperäisten asentojen ja omien liikkeiden tuonti sekä esiasetusten vaihto</td></tr>
+</tbody></table></div>
+<p>Avaa asetukset näyttää tarkat asetukset kyseisen kohdan alapuolella. Hengitystä säädetään kohdasta ”Toiminnot &gt; Lisätoiminnot &gt; Animoi hengitys”.</p>
+<p>”Käytä alkuperäisiä seisoma-, kyykky- ja vatsa-asentoja” tuo avatarin olemassa olevat asennot automaattisesti. Jos käytät omia liikkeitä, avaa erilliset tuontiasetukset ja määritä ne tyypeittäin, esimerkiksi seisominen, kyykky (Crouching) ja vatsamakuu (Prone).</p>
+<p>Esiasetukset löytyvät Avatarin asetukset -välilehden lopusta. ”Käytä tätä esiasetusta” korvaa nykyiset asentoasetukset, joten tallenna tekemäsi säädöt ennen vaihtamista.</p>
+<h3>Toimintokohtainen muistinkulutus</h3>
+<ul>
+<li>Hengitysliike kuluttaa 0 bit. Vain jos käytät pelin pysäytys- ja jatkokytkintä ”Valikkotoiminnot &gt; Hengitys”, kytkimen synkronointi kuluttaa 1 bit.</li>
+<li>Kuvatila kuluttaa 0 bit vain omalla näytöllä. ”Lisätoiminnot &gt; Synkronoi Kuvatila” kuluttaa 16 bit. ”Pidä pää näkyvissä Kuvatilassa” kuluttaa 0 bit.</li>
+<li>”Jalkojen kork.” ja ”Lattian kork.” kuluttavat kumpikin 8 bit. Lattian korkeuden siirtäminen keskeltä liikuttaa kehoa ylös tai alas. Paluu lähelle 50% lopettaa korjauksen.</li>
+<li>”Käänny” kuluttaa yksin 10 bit. Se jakaa 1 bit pään kierrosta aiheutuvan asennon vääristymän vähentämisen kanssa, joten molempien yhteiskulutus on 10 bit.</li>
+<li>”Peilaa” ja ”Eleet pois” kuluttavat kumpikin 1 bit.</li>
+</ul>
+<p>Inspectorin yhteismäärä koskee avatariin asennettuja asentotyökaluja. Asujen tai muiden toimintojen kulutus ei sisälly siihen. Usean asentotyökalun yhteisiä asetuksia ei lasketa kahdesti.</p>
+<h3>Esikatselu ja asentojen muokkaus</h3>
+<p>Voit näyttää asennon Scenessä Asennot-välilehden asentokohtaisella Esikatselu-toiminnolla. Jos haluat muokata sitä tarkemmin, avaa Animaatiosäätö, tarkista ja säädä asentoa sekä tallenna.</p>
+<p>Kevyt esikatselu ei suorita MA:n tai NDMF:n koontikäsittelyä. Tarkista myös koontitulos ennen latausta, sillä asu ja lattian sijainnin korjaus voivat tulla mukaan vasta koonnissa.</p>
+<p>Vasemman reunan suurennuslasivälilehdessä voit hakea asentoa nimellä. Voit järjestää asentoja Lisätiedot-kohdan Järjestys-valikolla tai ylös- ja alas-painikkeilla. Lisää useita animaatioita vetämällä ne lisäyskenttään tai tuomalla Projectissa valitut leikkeet.</p>
+<p>”Päivitä asentojen pikkukuvat” luo kuvat vahvistusikkunan jälkeen. ”Luo asentokuvakkeet” helpottaa asentojen tunnistamista pelivalikossa, mutta kuvien luonti pidentää koontiaikaa. Valitse ”Pienennä kuvakkeita” vähentääksesi kokoa. Androidille asentokuvakkeita ei luoda.</p>
+<h2>Pelin perusohjaimet</h2>
+<ul>
+<li>Valitse asento kullekin luokalle Expressions-valikosta. VR:ssä seisoma-, kyykky-, istuma- ja makuuasentojen välillä vaihdetaan pään korkeuden mukaan.</li>
+<li>Makuuasennossa kasvojen suunta vaihtaa selin- ja vatsamakuun välillä. Jos molemmille on valittu asento, myös paikallaan hyppääminen vaihtaa niiden välillä. Hypyllä vaihtamisen voi poistaa Unityssa kohdasta ”Toiminnot → Lisätoiminnot → Vaihda makuuasentoa hyppäämällä” (oletuksena käytössä). Luokkien vaihtumiskorkeutta säädetään asetusvalikon raja-arvoilla.</li>
+<li>Työpöytätilassa vaihda asentoa C- ja Z-näppäimillä. Jos Z ei vaihda makuuasentoon, nosta makuuasennon korkeusrajaa asetusvalikossa.</li>
+<li>”Eleet pois” käyttää asennon määrittämää kädenmuotoa ohjaimen sormieleen sijaan.</li>
+<li>”Jalkojen kork.” säätää jalkojen puolta pitäen pään paikallaan. ”Lattian kork.” siirtää koko kehoa pää mukaan lukien pystysuunnassa. Ne ovat tässä järjestyksessä asetusvalikossa.</li>
+<li>Kun siirryt Kuvatilan Etäisyys-säätimellä eteenpäin, avatar kääntyy sinua kohti. Kierrä Suunta-säätimellä ja ota ”Lukitse jalat” käyttöön sopivalla hetkellä. ”Lopeta kuvaus” palauttaa etäisyyden ja suunnan sekä vapauttaa jalkojen lukituksen.</li>
+<li>Hengitys on käytettävissä, kun hengitysliike on käytössä. Voimakkuus asetetaan Unityssa. Pelissä vaihdetaan toiminnon kytkintä.</li>
+</ul>
+<h2>Esikoonti ja varoitukset</h2>
+<p>”Päivitä esikoonti” nopeuttaa avatarin koontia käyttämällä luotua dataa uudelleen. Myös ilman esikoontia tavallinen koonti luo tarvittavan datan.</p>
+<p>Asetusmuutosten jälkeen Inspectorin yläosan ”Tarkista asetukset” ja Hierarchyn merkki ilmoittavat päivitystarpeesta. ”Varoitusten näyttöasetukset” on Tarkista asetukset -kehyksessä. Näytön piilottaminen ei ratkaise asetusongelmia eikä päivitä luotua dataa.</p>
+<h2>Huomioita käytöstä</h2>
+<ul>
+<li>Asennon lukitusta kokovartaloseurannassa ei tueta.</li>
+<li>Mittasuhteet, asu ja avatarin muutokset voivat edellyttää lisäsäätöjä.</li>
+<li>Erityiset Base-tasot tai muut asentoa muuttavat toiminnot eivät välttämättä yhdisty odotetusti. Jos lukitus ei toimi, tarkista myös ”Avatarin asetukset &gt; Yhdistä seurantalukitukset muihin työkaluihin”.</li>
+<li>Kuvatilan liike, kierto ja lattian korkeus korjaavat myös oletus- ja omia liikkeitä silloin, kun asentoa ei ole valittu. Tarkista näkymän sekä oletusliikkeiden korvaamisen jälkeinen toiminta käytännössä VRChatissa.</li>
+<li>”Poista VRChatin oletushuojunta” koskee oletusarvoista joutokäyntiliikettä. Se ei pysäytä kaikista muista syistä syntyvää huojuntaa.</li>
+</ul>
+<h2>Käyttöohjeet ja tuki</h2>
+<p>Inspectorin yläosan ohje- ja muutoslokkipaneelista voit avata käyttöohjeet, tuen ja muutoslokin. Yhteisten toimintojen tarkemmat ohjeet ovat myös Unityn Project-näkymässä kohdassa ”Packages &gt; Unisaki Posing System &gt; README”.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Virallinen käyttöohje</a></li>
+<li><a href="https://help.unisakistudio.jp/">Ota yhteyttä</a></li>
+</ul>
+<p>Liitä virheilmoitukseen tämän tuotteen ja Unisaki Posing Systemin versiot, Unityn, VRChat SDK:n, Modular Avatarin ja NDMF:n versiot, käytetty avatar, toistamisohjeet sekä Consolen virheteksti.</p>
+<h2>Esiasetusten jakaminen</h2>
+<p>Seuraava koskee animaatiosäätötoiminnolla luotua dataa.</p>
+<p>Tällä toiminnolla luotuja säätöanimaatiotiedostoja sekä niitä käyttäviä esiasetuksia voi jakaa ja myydä vapaasti pyytämättä lupaa Unisaki Studiolta. Voit esimerkiksi jakaa niitä omien avatariesi mukana tai tehdä esiasetuksia avatareille, joita ei toimiteta työkalun mukana.</p>
+<h2>Tuotteet, joiden yhteensopivuusasetukset sisältyvät</h2>
+<p>Huomaa: kauppamme on tehnyt yhteensopivuusasetukset omasta aloitteestaan. Emme ole pyytäneet tuotteiden tekijöiden lupaa, koska katsomme, ettei sitä tarvita. Jos haluat asetuksia jaettavaksi tai niiden jakelun lopetettavaksi, ota yhteyttä kaupan viesteillä. Yhteensopivuusasetusten käyttö edellyttää kyseisten tuotteiden ostamista tai lataamista. Asetusten ongelmista tulee ottaa yhteyttä kauppaamme, ei kyseisten tuotteiden tekijöihin.</p>
+<p>”可愛い座りツール”
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>”添い寝ツール”
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>”少女モーション集vol.1”, tekijä ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>”VRC想定移動モーション（無料配布）”, tekijä カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>”ごろ寝システムEX”, tekijä minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Käyttöehdot</h2>
+<p>Työkalua voivat käyttää vain seuraavat VN3-lisenssillä laaditut käyttöehdot hyväksyvät henkilöt.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Käyttöehdot (japaniksi)</a></p>
+<p>Tämän repositorion lähdekoodi ja resurssit eivät ole avointa lähdekoodia. Tuotteen laillinen ostaminen ja käyttöehtojen hyväksyminen ovat välttämättömiä.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Käyttöehdot (englanniksi)</a></p></main>
+</body></html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="de" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing — Deutsche Bedienungsanleitung</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Deutsch · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Änderungsverlauf</a><a href="UserGuide.html">Kawaii Posing — Deutsche Bedienungsanleitung</a></nav>
+<main><h1>Kawaii Posing — Deutsche Bedienungsanleitung</h1>
+<p>Kawaii Posing bietet 85 Posen für Desktop und Dreipunkt-VR: 15 Steh-, 20 Hock-/Stuhl-, 17 Bodensitz-, 17 Rücken- und 16 Bauchlagen.</p>
+<p>Diese Anleitung beschreibt Installation, Avatareinrichtung, VRChat-Steuerung, Posenbearbeitung, Updates und Fehlerbehebung. Im gekauften ZIP führt <code dir="ltr">START_HERE.html</code> am schnellsten zur Installation.</p>
+<h2>Vor dem Start</h2>
+<ul>
+<li>Verwende ein Unity 2022.3 VRChat-<strong>Avatarprojekt</strong>, erstellt oder verwaltet mit VRChat Creator Companion (VCC) oder ALCOM.</li>
+<li>Erforderlich: VRChat Avatars SDK ab 3.10.4, Modular Avatar 1.x ab 1.15.1 und NDMF 1.x ab 1.14.0.</li>
+<li>Für Humanoid-Avatare im Desktop und Dreipunkt-VR (Headset und zwei Controller). Posenfixierung bei aktivem Ganzkörper-Tracking wird nicht unterstützt.</li>
+<li>Sichere vorhandene Projekte vor Installation oder Aktualisierung. Behebe zuerst Unity-Kompilierfehler.</li>
+<li>Der Installer lädt Produkt und Abhängigkeiten aus Paketquellen; Internetzugang ist erforderlich. Avatarmodelle, VRChat SDK, Modular Avatar und NDMF liegen diesem ZIP nicht bei.</li>
+</ul>
+<h2>1. Lizenz und Produkt installieren</h2>
+<ol>
+<li>Entpacke das ganze ZIP in einen normalen Ordner außerhalb deines Unity-Projekts.</li>
+<li>Öffne das gewünschte Avatarprojekt in Unity. Importiere <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> über <strong>Assets &gt; Import Package &gt; Custom Package</strong> oder öffne die Datei mit Unity.</li>
+<li>Lies Import- und Installationshinweise. Die Lizenzbestätigung nennt die zu installierenden Lizenzen. Über <strong>Sprache…</strong> oder <strong>言語...</strong> im Dialog änderst du die Installersprache.</li>
+<li>Bestätige die Lizenzinstallation. Sie umfasst auch das gemeinsame Unisaki Posing System. Danach kann der Installer das Entfernen seiner eigenen Einrichtungsdateien anbieten; das löscht nicht die installierte Lizenz.</li>
+<li>Prüfe die Bestätigung der automatischen Paketinstallation: Pakete, Quellen und vorgeschlagene alte Dateien/Ordner zum Entfernen sind aufgelistet. Fahre fort, wenn dies beabsichtigt ist.</li>
+<li>Warte auf Import und Kompilierung. Erfolgt die Installation nicht automatisch, öffne das Projekt in VCC oder ALCOM und füge <strong>Kawaii Posing</strong> und <strong>Modular Avatar</strong> hinzu. <strong>Unisaki Posing System</strong> und <strong>NDMF</strong> sind Abhängigkeiten. <code dir="ltr">Optional-VCC-Links</code> enthält die ursprünglichen Quellenverknüpfungen für Windows-VCC-Nutzer.</li>
+<li>Nach abgebrochener Bestätigung importiere den Installer erneut, sobald du bereit bist. Solange der Aktivator vorhanden ist, kannst du dessen Lizenzbefehl unter <strong>Tools &gt; Unisaki Studio</strong> verwenden. In älteren Builds heißt das Untermenü <strong>ゆにさきスタジオ</strong>.</li>
+</ol>
+<h3>Was dieser Download installiert</h3>
+<p><strong>Kawaii Posing 3.2.0 mit Unisaki Posing System 3.2.0.</strong> Diese Version ist in Entwicklung und noch nicht veröffentlicht. Sie ergänzt Installationsdialoge, Unity-Inspector und -Menüs, Standardposennamen, Spielmenüs und Offline-Dokumentation in dreißig Sprachen. Ein Termin steht noch nicht fest. Die Sprache wird oben im Inspector gewählt. Nach Veröffentlichung lädt der Installer diese Versionen und passende Abhängigkeiten aus VPM-Quellen. Lokale Release-Vorbereitung veröffentlicht keine Pakete.</p>
+<p>Kawaii Posing enthält Posenbibliothek, Einstellungswerkzeuge und Avataranpassungsvoreinstellungen. Der Installer aktiviert die bestehende lokale Produktlizenz; es gibt kein neues Feld für Gumroad-Lizenzschlüssel. Veröffentliche niemals Installerdateien oder Lizenzdaten in öffentlichen Supportanfragen.</p>
+<p>Sprachpräferenzen werden für den aktuellen Betriebssystembenutzer in Unity EditorPrefs gespeichert und zwischen Projekten dieses Computers geteilt. Ohne Auswahl folgt der Installer der Systemsprache; nicht unterstützte Sprachen verwenden Englisch. Produktlizenzen behalten ihre Speicherung im benutzerbezogenen Registry-Schlüssel <code dir="ltr">Software/UnisakiStudio</code> unter Windows beziehungsweise in Lizenzdateien unter macOS/Linux. Ein Sprachwechsel löscht keine Lizenz.</p>
+<h2>2. Werkzeug einem Avatar hinzufügen</h2>
+<ol>
+<li>Wähle in der <strong>Hierarchy</strong> den Avatar mit <strong>VRC Avatar Descriptor</strong> oder ein Kindobjekt. Verwende einen Szenenavatar, nicht das Prefabasset im Project-Fenster oder den Prefab-Modus.</li>
+<li>Rechtsklicke den Avatar und wähle <strong>Unisaki Studio &gt; Kawaii Posing hinzufügen</strong>. Bei japanischen Menüs heißt dies <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>.</li>
+<li>Das Werkzeug wird im Avatar eingefügt. Der gespeicherte Objektname kann <strong>可愛いポーズ</strong> bleiben, obwohl die Anzeige übersetzt ist.</li>
+<li>Wende bei Angebot eine passende Avatarvoreinstellung an. Sonst öffne <strong>Avatareinrichtung</strong> und wähle eine Voreinstellung oder passe selbst an.</li>
+<li>Eine angebotene Vorberechnung ist optional; normale Builds erzeugen ebenfalls die Daten. Wiederverwendung verkürzt spätere Builds.</li>
+<li>Wähle das Werkzeugobjekt, Posen und Funktionen und lade den Avatar normal über VRChat SDK hoch.</li>
+</ol>
+<h3>Sprachauswahl und bekannte Beschriftungen</h3>
+<p>Diese Version bietet <strong>Language / 言語</strong> oben im Inspector. Die eine Auswahl steuert Inspector und erzeugtes Spielmenü. Der Avatar speichert sie; der letzte Wert gilt auch für andere Werkzeuge/Projekte dieses Computers. Für eine andere Sprache in VRChat lade den Avatar erneut hoch.</p>
+<p>Die folgende Tabelle hilft bei älteren japanischen Anleitungen. Diese Version bietet Sprachauswahl, lokalisierten Inspector, übersetzte Standardposennamen und Spielmenüs in allen 30 Sprachen.</p>
+<div class="table-scroll"><table><thead><tr><th>Deutsch</th><th>Japanische Beschriftung älterer Builds</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Funktionen</td><td>機能</td></tr>
+<tr><td>Posen</td><td>ポーズ一覧</td></tr>
+<tr><td>Avatareinrichtung</td><td>アバター調整</td></tr>
+<tr><td>Einstellungen öffnen</td><td>設定を開く</td></tr>
+<tr><td>Vorberechnung aktualisieren</td><td>プレビルドを更新</td></tr>
+<tr><td>Einstellungen prüfen</td><td>設定の確認</td></tr>
+<tr><td>Vorschau</td><td>プレビュー</td></tr>
+<tr><td>Animationsanpassung</td><td>アニメーション調整</td></tr>
+<tr><td>Neu laden</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Inspector, Bearbeitungs-/Installationsdialoge, Standardposennamen und erzeugte Menüs sind für alle 30 Sprachen übersetzt. README, Änderungsverlauf und Offline-Anleitung stehen je Sprache bereit. Avatarnamen, gespeicherte Objektnamen, eigene Posennamen, Assetdateinamen und interne Parameterkennungen dürfen ihre ursprüngliche Schreibweise behalten.</p>
+<p>Die <a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">Kurzreferenzen in 30 Sprachen</a> erklären Funktionen und enthalten Standardposentabellen. Sie sind kompakte Nachschlagewerke; vollständige Dokumentation findest du über die Sprachübersicht.</p>
+<h2>3. Posen und Funktionen wählen</h2>
+<p>Der Inspector hat drei Hauptregister:</p>
+<div class="table-scroll"><table><thead><tr><th>Register</th><th>Zweck</th></tr></thead><tbody>
+<tr><td><strong>Funktionen</strong></td><td>Spielmenüs, optionale Abläufe, Atmung, Icons und Expression-Parameterverbrauch.</td></tr>
+<tr><td><strong>Posen</strong></td><td>Aktive Posen, Kategorien/Suche, Reihenfolge, Animationsimport, Vorschau, Details und Animationsanpassung.</td></tr>
+<tr><td><strong>Avatareinrichtung</strong></td><td>Avatar-/Kniekorrekturen, ursprüngliche/eigene Bewegungsübernahme und Voreinstellungen.</td></tr>
+</tbody></table></div>
+<p>Aktiviere nur benötigte Menüfunktionen. <strong>Spiegeln</strong> als Menüeintrag macht den Effekt in VRChat schaltbar; es zwingt nicht alle Posen dauerhaft in die gespiegelte Darstellung.</p>
+<p>Kawaii Posing enthält Avatarvoreinstellungen und IK für unterstützte Posen. Drei Standardrückenlagen besitzen bereits Seitenbewegungen: <strong>Beine ausgestreckt (足伸ばし)</strong>, <strong>Entspannt (リラックス)</strong> und <strong>Ein Knie hoch (膝立て)</strong>. Verwende die passende Voreinstellung und prüfe die Einstellung für Umdrehen jeder bearbeiteten oder ersetzten Pose.</p>
+<h3>Voreinstellungen und Anpassung</h3>
+<p>Voreinstellungen stehen unten unter <strong>Avatareinrichtung</strong>. Suche nach Avatarnamen und wende eine an, um aktuelle Poseneinstellungen zu ersetzen. Speichere oder sichere Anpassungen vorher. Voreinstellungen sind ein Ausgangspunkt; Proportionen, Kleidung und Änderungen können weitere Handkorrekturen erfordern.</p>
+<p>Mit <strong>Animationsanpassung</strong> kannst du Körper und Gliedmaßen einer Pose ansehen und verändern. Speichere am Ende die Anpassungsanimation im Fenster. Unterstützte automatische Hand-/Fußanpassung (IK) ist global und je Pose schaltbar. Übernimmst du das aktuelle IK-Ergebnis, entsteht eine Anpassungsanimation und die IK der Pose wird zur manuellen Verfeinerung deaktiviert. Der Quellclip bleibt erhalten.</p>
+<p><strong>Rückwärtsknicken der Knie verhindern</strong> bietet weitere Optionen wie die minimale Kniebeugung. Avatarspezifische Korrekturen benötigen passende Daten; manche lassen sich nicht mit Posen-IK kombinieren.</p>
+<h3>Ursprüngliche und eigene Bewegungen</h3>
+<p><strong>Ursprüngliche Steh-, Hock- und Bauchlage verwenden</strong> erkennt beim Erzeugen Bewegungen aus Base. <strong>Eigene Bewegungen verwenden</strong> öffnet getrennte Importoptionen je Art. Wähle eine Bewegung je Art; manuelle Zuweisungen haben gegenüber der Automatik Vorrang.</p>
+<p>Die Automatik arbeitet auf der Build-Kopie. Sie schreibt keine erkannten Animationen in manuelle Szeneneinstellungen und verändert keine Originalcontroller. Hebe eine manuelle Zuweisung auf, um diese Art wieder automatisch erkennen zu lassen. Eigene Base-Layer und andere Fortbewegungssysteme können individuelle Anpassungen brauchen.</p>
+<h2>4. In VRChat verwenden</h2>
+<p>Öffne <strong>Expressions</strong> deines Avatars und dann <strong>Kawaii Posing</strong>. Wähle eine Pose je gewünschter Haltungskategorie. Posen- und Funktionsauswahl sind getrennte Vorgänge.</p>
+<ul>
+<li><strong>Dreipunkt-VR:</strong> senke oder hebe den Kopf für Stehen, Hocken/Stuhlsitzen, Bodensitzen und Liegen. Bei zu frühem/spätem Wechsel passe die Höhenschwellen im Menü an.</li>
+<li><strong>Desktop:</strong> <strong>C</strong> zum Hocken und <strong>Z</strong> zum Liegen. Bleibst du mit Z sitzen, erhöhe die Liegehöhenschwelle.</li>
+<li><strong>Rücken-/Bauchlage:</strong> Die Gesichtsrichtung bestimmt die Lage. Bei beiden gewählten Lagen kann Springen auf der Stelle wechseln. Deaktiviere dies bei Bedarf unter <strong>Funktionen &gt; Komfortfunktionen</strong> in Unity; zusätzliche synchronisierte Bits benötigt es nicht.</li>
+<li><strong>Fixierungen:</strong> Kopf, Arme und Füße nach Bedarf fixieren. Gesten deaktivieren verwendet die Posenhandform statt Controllereingabe.</li>
+<li><strong>Spiegeln:</strong> Kehre eine Pose um, um einem Freund gegenüberzustehen oder die Bildkomposition anzupassen.</li>
+</ul>
+<h3>Fußhöhe und Bodenhöhe</h3>
+<p><strong>Fußhöhe</strong> passt die Füße bei gleichbleibender Kopfposition an. Verwende sie bei schwebenden oder eingesunkenen Füßen, wenn der Kopf bereits richtig liegt.</p>
+<p><strong>Bodenhöhe</strong> bewegt den ganzen Körper einschließlich Kopf. Nutze sie für Sofa, Bett oder erhöhte Flächen, auch ohne Collider. Beim aktuellen zentrierten Regler gilt <strong>50% als ursprüngliche Höhe</strong>, 0% liegt 3 m darunter und 100% 3 m darüber. Kehre nahe 50% zurück, um den Versatz zu beenden. Ältere Versionen können anders arbeiten; prüfe die installierte Version und aktualisiere gemeinsames System und Produkt zusammen.</p>
+<h3>Fotomodus</h3>
+<p>Aktiviere das Menü <strong>Fotomodus</strong> in Unity vor dem Upload. Wähle in VRChat eine Pose, bewege mit <strong>Abstand</strong> bis 3 m vorwärts und drehe mit <strong>Richtung</strong>. Die Fußfixierung ist beim Einrichten optional. <strong>Foto beenden</strong> setzt Abstand/Drehung zurück und löst die Füße.</p>
+<p>Fotomodus ist anfangs nur lokal. Damit andere Position und Drehung sehen, aktiviere vor dem Upload <strong>Fotomodus synchronisieren</strong>; das benötigt 16 synchronisierte Bits. <strong>Kopf im Fotomodus sichtbar halten</strong> betrifft nur deine Ansicht und kostet keine synchronisierten Bits.</p>
+<h3>Atmung und Umdrehen</h3>
+<p>Atmung ist je Kategorie unter <strong>Funktionen &gt; Komfortfunktionen &gt; Atmung animieren</strong> einstellbar: Keine, Schwach, Mittel, Stark, Schnell oder eigene Animation. Die Bewegung kostet keine synchronisierten Bits; ein Menüschalter benötigt 1 bit.</p>
+<p>Umdrehen benötigt eine unterstützte Liegepose und den Menüeintrag <strong>Umdrehen</strong>. Aktiviere es für die Pose und weise bei Bedarf eine Seitenanimation zu. Wähle sie in VRChat, aktiviere Umdrehen und löse Kopf-/Halsfixierung. Seitliche Kopfneigung steuert die Bewegung. Normales MotionTime ist für diese Pose währenddessen nicht verfügbar.</p>
+<p>Die drei genannten Standardrückenlagen enthalten Seitenbewegungen. Andere Posen benötigen passende Animationen und Einstellungen. Importierte oder eigene Voreinstellungen können abweichende Zuweisungen besitzen.</p>
+<h2>5. Posen bearbeiten, hinzufügen und ansehen</h2>
+<p>Wähle unter <strong>Posen</strong> eine Kategorie oder das Suchregister. Suche erkennt ursprüngliche japanische Namen und vorhandene Übersetzungen. Unter <strong>Details</strong> änderst du Animation, Icon, Reihenfolge und Zeitoptionen.</p>
+<p>Ziehe mehrere Clips in den Hinzufügebereich oder wähle sie in Project und nutze den Importbefehl für ausgewählte Clips. Doppelte Verweise auf denselben Clip werden entfernt. Ändere die Zielreihenfolge in Details oder mit den Auf-/Ab-Schaltern.</p>
+<p><strong>Vorschau</strong> zeigt die Pose in der Scene ohne vollständiges Anpassungsfenster. Sie führt weder Modular Avatar noch NDMF aus; prüfe deshalb endgültige Kleidung, Bodenkorrektur und andere Build-Funktionen nach dem Avatar-Build.</p>
+<p>Aus dem Avatar erzeugte Posen-Icons helfen beim Erkennen, kosten aber Zeit und möglicherweise Speicher. Senke die Auflösung zum Sparen. Android-Builds erzeugen keine Posen-Icons. Erzeuge sie bei Bedarf nach Avatar-/Kleidungsänderungen neu.</p>
+<h2>6. Parameterspeicher</h2>
+<p>Der Inspector zeigt nur den Anteil der Posenwerkzeuge, nicht den Gesamtverbrauch des Avatars. Kleidung und andere Systeme können mehr Speicher brauchen. Gemeinsame Optionen mehrerer Werkzeuge zählen nicht doppelt. Viele zusätzliche eigene Posen können weitere Auswahlbits benötigen.</p>
+<div class="table-scroll"><table><thead><tr><th>Funktion</th><th>Zusätzliche synchronisierte Bits</th></tr></thead><tbody>
+<tr><td>Posenauswahl, minimale Standardkonfiguration</td><td>8</td></tr>
+<tr><td>Spiegeln</td><td>1</td></tr>
+<tr><td>Gesten aus</td><td>1</td></tr>
+<tr><td>Atembewegung</td><td>0</td></tr>
+<tr><td>Atmungsmenüschalter</td><td>1</td></tr>
+<tr><td>Fußhöhe</td><td>8</td></tr>
+<tr><td>Bodenhöhe</td><td>8</td></tr>
+<tr><td>Fotomodus nur lokal</td><td>0</td></tr>
+<tr><td>Fotomodus synchronisieren</td><td>16</td></tr>
+<tr><td>Kopf im Fotomodus sichtbar halten</td><td>0</td></tr>
+<tr><td>VRChat-Schwanken im Stand deaktivieren</td><td>0</td></tr>
+<tr><td>Umdrehen</td><td>10</td></tr>
+</tbody></table></div>
+<p>Umdrehen teilt 1 bit mit der Korrektur halsrichtungsbedingter Verformungen. Beide zusammen benötigen daher weiterhin 10 bit. Der Verbrauch deiner installierten Version ist der praktische Bezug für die gewählte Konfiguration.</p>
+<h2>7. Aktualisierung und Vorberechnung</h2>
+<ol>
+<li>Sichere das Projekt und speichere die Arbeitsszene.</li>
+<li>Aktualisiere <strong>Kawaii Posing</strong> und <strong>Unisaki Posing System</strong> gemeinsam in VCC oder ALCOM. Achte auch auf passende SDK-, Modular Avatar- und NDMF-Versionen.</li>
+<li>Warte auf die Kompilierung, wähle das installierte Werkzeug und prüfe Posen, Einstellungen und Verbrauch.</li>
+<li>Bei verwendeter Vorberechnung wähle <strong>Vorberechnung aktualisieren</strong> und lade erneut hoch.</li>
+</ol>
+<p>Bestehende Werkzeugeinstellungen bleiben erhalten. Alte 8-bit-Prefabs bleiben kompatibel; vorhandene Referenzen erfordern kein Löschen oder Ersetzen. Neue Installationen verwenden das normale Prefab; nicht benötigte Funktionen lassen sich zum Sparen von Parametern abschalten.</p>
+<p>Eine Warnung zu veralteter Vorberechnung bedeutet geänderte Einstellungen seit Erzeugung der Cache-Daten. Aktualisieren erzeugt diese Daten neu. Ausblenden erneuert nichts und behebt die Ursache nicht. Normale Builds können nötige Daten auch ohne jedes Mal manuell ausgeführte Vorberechnung erzeugen.</p>
+<h2>8. Fehlerbehebung</h2>
+<div class="table-scroll"><table><thead><tr><th>Symptom</th><th>Prüfen</th></tr></thead><tbody>
+<tr><td>Kein Hinzufügemenü</td><td>Produkt <strong>und</strong> Unisaki Posing System müssen installiert und Unity-Kompilierfehler behoben sein. Der Lizenzinstaller allein ist nicht die Posenbibliothek.</td></tr>
+<tr><td>Installer abgebrochen/Dateien entfernt</td><td>Importiere den gekauften Installer erneut, sobald du bereit bist, und lies die Bestätigungen.</td></tr>
+<tr><td>Lizenz fehlt scheinbar in anderem Projekt</td><td>Importiere mit demselben Betriebssystemkonto. Bei neuem PC/Konto installiere dort ebenfalls die Lizenz. Sprachpräferenzen wechseln nicht automatisch zwischen PCs.</td></tr>
+<tr><td>Keine Posen in VRChat</td><td>Werkzeug unter dem richtigen Szenenavatar hinzufügen, Posen aktivieren, Warnungen prüfen und diesen Avatar hochladen. SDK und andere Fortbewegungswerkzeuge prüfen.</td></tr>
+<tr><td>Z erreicht keine Liegehaltung</td><td>Liegehöhenschwelle im Spiel erhöhen.</td></tr>
+<tr><td>Hände/Knie passen nicht</td><td>Passende Voreinstellung testen, dann unterstützte IK und/oder Animationsanpassung. Kleidung im endgültigen Build prüfen.</td></tr>
+<tr><td>Umdrehen funktioniert nicht</td><td>Unterstützte Liegepose wählen, Posenoption und Menü aktivieren, Kopf/Hals lösen. Zunächst eine der drei unterstützten Standardposen testen.</td></tr>
+<tr><td>Freunde sehen Fotobewegung nicht</td><td><strong>Fotomodus synchronisieren</strong> in Unity aktivieren, Verbrauch prüfen und erneut hochladen.</td></tr>
+<tr><td>Sprache nur in Unity geändert</td><td>Avatar erneut hochladen und in mehrsprachigen Builds den einzigen Sprachwähler oben prüfen.</td></tr>
+<tr><td>Build-/Vorberechnungsfehler</td><td><strong>Ersten</strong> relevanten Console-Fehler lesen. Szene sichern, Produkt und System mit VCC/ALCOM aktualisieren oder erneut beziehen und bei Fortbestehen Support kontaktieren. Angepasste Objekte und GeneratedResources behalten, außer Support nennt einen konkreten Wiederherstellungsschritt.</td></tr>
+</tbody></table></div>
+<p>Für Support nenne Produkt-/Systemversion, Unity/SDK/Modular Avatar/NDMF, Avatarname, genaue Schritte und den relevanten Console-Fehler. Entferne private Dateien, Installerinhalte, Lizenzwerte und Kontodaten aus öffentlichen Beiträgen.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Support</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Bebilderte Online-Anleitung (Japanisch)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Gumroad-Produktseite</a></li>
+</ul>
+<h2>Lizenzen und Danksagungen</h2>
+<p>Eine <a href="../../Terms.en.html">englische Referenzübersetzung der Produktbedingungen</a> liegt neben dem japanischen Original bei.</p>
+<p>Lies Originalbedingungen von Produkt und gemeinsamem System neben der Paket-README oder im Ordner <code dir="ltr">Licenses</code> des gekauften ZIPs. Die englischen Unisaki Posing System-Bedingungen sind eine bestehende Referenzübersetzung dieses Systems; japanische Produktbedingungen liegen separat bei. Diese Anleitung ändert keine Vereinbarungen und erteilt keine zusätzlichen Rechte. Fragen zu Nutzung oder Weitergabe von Produktdaten bitte an Support richten.</p>
+<p>Der Installer enthält ein angepasstes <strong>VPMPackageAutoInstaller</strong> von <strong>anatawa12</strong>, mit <strong>SimpleJson</strong> und <strong>semver.net</strong>. Copyrightvermerke und MIT-Lizenztexte stehen in <code dir="ltr">ThirdPartyNotices.txt</code> im gekauften ZIP. Posenbibliothek und andere Produktressourcen haben eigene Produktlizenzen.</p></main>
+</body></html>

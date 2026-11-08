@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="vi" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lịch sử thay đổi</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Tiếng Việt · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Lịch sử thay đổi</a><a href="UserGuide.html">Kawaii Posing Tool — Hướng dẫn người dùng tiếng Việt</a></nav>
+<main><h1>Lịch sử thay đổi</h1>
+<h2>[3.2.0] - Chưa phát hành</h2>
+<h3>Đã thêm</h3>
+<ul>
+<li>Inspector, thao tác chỉnh sửa, hộp thoại cài đặt, tên tư thế chuẩn và menu VRChat được tạo nay hiển thị bằng 30 ngôn ngữ.</li>
+<li>Thống nhất lựa chọn ngôn ngữ cho Inspector và menu trò chơi. Ban đầu dùng ngôn ngữ máy tính; lựa chọn gần nhất cũng dùng trong các dự án khác của cùng người dùng hệ điều hành.</li>
+<li>Có thể mở README, lịch sử thay đổi và hướng dẫn ngoại tuyến bằng ngôn ngữ đã chọn.</li>
+<li>Cung cấp tên hiển thị của 128 tư thế chuẩn và mô tả từng tính năng theo thuật ngữ hiện có.</li>
+</ul>
+<h3>Tương thích</h3>
+<ul>
+<li>Giữ thiết lập avatar hiện có, tên tùy chỉnh, tham chiếu tài nguyên, mã định danh tham số và phương thức lưu giấy phép.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Có thể bật/tắt khóa đầu qua “Thiết lập → Tự khóa đầu khi nằm ngửa” trong menu EX dù “Độ cao chân” tắt. Mục bị mất ở bản trước trở lại sau cập nhật và dựng.</li>
+<li>Hỗ trợ Unisaki Posing System 3.1.2. Sửa mặt vẫn hướng lên sau khi đứng dậy từ nằm sấp khi dùng “Giảm méo tư thế do xoay đầu”.</li>
+</ul>
+<p>Cập nhật Kawaii Posing Tool lên 3.1.2 qua ALCOM / VCC. Cũng cần Unisaki Posing System 3.1.2. Nếu từng dùng tạo trước, nhấn “Cập nhật dữ liệu tạo trước”, lưu Scene, dựng và tải avatar lên lại.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>“Độ cao sàn” và “Lật người” đã bật nay xuất hiện trong “Thiết lập” của menu EX VRChat ngay cả khi “Lật đối xứng” tắt.</li>
+<li>Dù đã đổi thứ tự, xóa hoặc đổi tên tư thế ở bản cũ, chuyển động lật người đúng vẫn được kế thừa cho “Duỗi chân”, “Thư thái” và “Co một gối”. Cũng kế thừa sau Unpack hoàn toàn nếu nhận diện được tư thế gốc. Giữ tư thế tự tạo, Lật người bạn tự tắt và chuyển động nghiêng thay thế.</li>
+<li>Sửa lỗi avatar thoáng nằm sấp khi được chọn trong VRChat. Cũng sửa lỗi thoáng nằm ngửa khi nhảy mà chỉ chọn nằm sấp. Có thể tắt đổi bằng nhảy qua “Tính năng → Tiện ích → Nhảy để đổi tư thế nằm”. Mặc định bật.</li>
+<li>Nếu tham chiếu Animator Controller tư thế chung bị mất sau cập nhật và có thể khôi phục, hiển thị cảnh báo rồi tạo lại từ thiết lập. Giữ cả tham chiếu Controller dùng chung bởi nhiều avatar.</li>
+<li>Có thể đặt Prefab chính thức từ menu thêm công cụ dù bạn có lưu Prefab riêng cùng tên “可愛いポーズ” (Kawaii Posing).</li>
+<li>Khi chọn “Thêm 添い寝ツール” nhưng không tìm thấy 添い寝ツール cần tích hợp, công cụ hướng dẫn sản phẩm cần cài trước.</li>
+</ul>
+<p>Cập nhật cả Kawaii Posing Tool và Unisaki Posing System lên 3.1.1 bằng ALCOM / VCC. Nếu từng dùng tạo trước, nhấn “Cập nhật dữ liệu tạo trước” trên “可愛いポーズ” (Kawaii Posing) trong Scene rồi lưu Scene. Để áp dụng trong VRChat, dựng và tải avatar lên lại.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>Trong 85 tư thế đi kèm, 53 tư thế tự chỉnh chi bằng IK theo vóc dáng avatar.</li>
+<li>Tư thế nằm ngửa “Duỗi chân”, “Thư thái” và “Co một gối” hỗ trợ Lật người theo nghiêng đầu.</li>
+<li>Điều chỉnh vị trí và hướng avatar bằng Chế độ chụp. Có thể chọn đồng bộ vị trí/hướng và hiển thị đầu mình khi chụp.</li>
+<li>“Độ cao sàn” di chuyển toàn thân lên xuống tối đa 3m, dùng riêng với “Độ cao chân”.</li>
+<li>Thêm hoạt ảnh thở, thiết lập ngừng đung đưa mặc định khi chờ và giảm méo tư thế do hướng cổ.</li>
+<li>Kiểm tra tính năng dùng và mức tham số trong Inspector. Hỗ trợ tìm tư thế, thêm hàng loạt, sắp xếp và xem trước đơn giản trong Scene.</li>
+<li>Tăng tốc chuyển đứng, khom và ngồi trong chế độ máy tính.</li>
+<li>Cải thiện cảnh báo tạo trước sau đổi thiết lập, tải khi cuộn Inspector và dừng lâu lúc dọn kết quả được tạo.</li>
+<li>Hỗ trợ Unisaki Posing System 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Beta mở (2026-11-05)</h2>
+<ul>
+<li>Bắt đầu phát hành beta mở qua GitHub Releases và VPM. Trong 85 tư thế, 53 tự chỉnh chi bằng IK theo vóc dáng.</li>
+<li>Hỗ trợ gói chung 3.1.0-beta.2. Cải thiện hiển thị thay đổi sau tạo trước, tải khi cuộn Inspector và dừng lúc dọn kết quả.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Beta mở (2026-11-04)</h2>
+<ul>
+<li>Hỗ trợ Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Đổi chuyển tư thế thường trong chế độ máy tính sang một lần đánh giá. Có hiệu lực cho dựng thường và tạo trước; VR và điều kiện đặc biệt giữ đường xử lý cũ.</li>
+<li>Nhận diện dữ liệu tạo trước từ alpha.3 trở về trước là cần cập nhật.</li>
+<li>Giữ góc nhìn khi đổi Độ cao sàn lúc chụp, rồi trở về Độ cao sàn mới nhất khi kết thúc chụp.</li>
+<li>Áp dụng cải tiến đến alpha.3 về nhập tự động, hiệu chỉnh chuyển động nhập và quản lý Controller được tạo.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Bản thử kín (2026-10-26)</h2>
+<h3>Sửa và thay đổi</h3>
+<ul>
+<li>Cập nhật hệ thống tư thế chung lên 3.1.0-alpha.2 và áp dụng sửa debug.</li>
+<li>Mở rộng Độ cao sàn lên xuống 3m. 50% là độ cao gốc và ban đầu.</li>
+<li>Thêm tư thế mặc định/tùy chỉnh khi chưa chọn vào hiệu chỉnh chụp và Độ cao sàn.</li>
+<li>Sửa các vấn đề hiệu chỉnh thủ công, tư thế trùng tên, tư thế ban đầu và Lật người của thiết lập sẵn cũ.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Trước công bố</h2>
+<h3>Đã thêm</h3>
+<ul>
+<li>Thêm hiệu chỉnh chi tự động (IK) theo vóc dáng.</li>
+<li>Thêm ON/OFF IK toàn bộ/từng tư thế và ghi vào hoạt ảnh hiệu chỉnh.</li>
+<li>Tư thế nằm ngửa “Duỗi chân”, “Thư thái” và “Co một gối” hỗ trợ Lật người theo nghiêng đầu.</li>
+<li>Thêm thiết lập Lật người từng tư thế và chỉ định hoạt ảnh nghiêng.</li>
+<li>Thêm Chế độ chụp điều chỉnh tiến về trước và xoay.</li>
+<li>Thêm đồng bộ Chế độ chụp. Chỉ cục bộ 0 bit, đồng bộ 16 bit.</li>
+<li>Thêm giữ đầu avatar mình hiển thị trong Chế độ chụp.</li>
+<li>Thêm “Độ cao sàn” nâng toàn thân gồm đầu.</li>
+<li>Thêm hoạt ảnh thở, cường độ và menu ON/OFF trong trò chơi.</li>
+<li>Thêm Tắt đung đưa khi đứng yên của VRChat.</li>
+<li>Thêm Giảm méo tư thế do xoay đầu.</li>
+<li>Thêm ngăn đầu gối gập ngược và góc gập tối thiểu.</li>
+<li>Thêm ON/OFF từng tính năng và hiển thị mức dùng ExpressionParameters.</li>
+<li>Thêm xem trước đơn giản trong Scene, tìm tư thế, thêm hàng loạt và chỉ định vị trí đích.</li>
+<li>Thêm lịch sử thay đổi trong Inspector.</li>
+</ul>
+<h3>Đã thay đổi</h3>
+<ul>
+<li>Sắp Inspector thành 3 thẻ “Tính năng”, “Tư thế” và “Thiết lập avatar”.</li>
+<li>Sắp vị trí chi tiết thở, nhập chuyển động riêng và thiết lập sẵn.</li>
+<li>Giảm lặp hoạt ảnh tạo cho Độ cao chân.</li>
+<li>Thêm xác nhận khi cập nhật ảnh tư thế và gom cảnh báo vào “Kiểm tra thiết lập”.</li>
+<li>Bỏ menu thêm mới bản 8bit, thống nhất chọn tính năng trên Prefab thường. Giữ tham chiếu cũ.</li>
+<li>Hỗ trợ Unisaki Posing System 3.1.0-alpha.1. Đổi phiên bản VRChat Avatars SDK tối thiểu thành 3.10.4.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa nhập tên bị chuyển sang tư thế khác và chi tiết đóng khi sắp xếp.</li>
+<li>Sửa xem trước chồng, lệch vị trí đặt và lỗi ở một số avatar.</li>
+<li>Sửa cập nhật cảnh báo/trạng thái tạo trước sau đổi thiết lập và một số lỗi dựng.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>Cập nhật PosingSystem lên 3.0.17, sửa lệch vị trí ngang tư thế do đổi tỷ lệ đều toàn avatar.</li>
+<li>Thêm bỏ qua riêng lẻ hoặc tất cả cảnh báo tự bước tại chỗ, chưa tạo trước và đổi thiết lập.</li>
+<li>Sửa nhập hoạt ảnh một lần không phù hợp khi nhập thủ công chuyển động di chuyển.</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (ルリエ).</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (メルヴィ, ミダリス).</li>
+<li>Sửa thay chuyển động của thiết lập sẵn うらら.</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>Cập nhật PosingSystem lên 3.0.11 để sửa tạo trước thất bại trên NDMF mới nhất và ngoại lệ lúc hiển thị lỗi.</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>Cập nhật PosingSystem lên 3.0.10 để giảm tải nạp thiết lập sẵn và đánh giá biểu tượng Hierarchy.</li>
+<li>Sửa lỗi tạo trước khi cùng avatar có nhiều hệ thống tư thế.</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>Cập nhật PosingSystem lên 3.0.9 để sửa Avatar xem trước không hợp lệ sau xử lý NDMF, gây <code dir="ltr">Avatar is null</code> khi Play.</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>Cập nhật PosingSystem lên 3.0.8 để sửa khả năng dữ liệu tư thế sai khi hiệu chỉnh lại độ cao.</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ).</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール).</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing).</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Cải thiện chức năng cài/xóa giấy phép.</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Sửa xử lý giấy phép bản Mac và Linux.</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Thêm thiết lập sẵn avatar (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ).</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Thêm tạo trước.</li>
+<li>Thêm Hiệu chỉnh hoạt ảnh.</li>
+<li>Thêm thiết lập sẵn.</li>
+<li>Cho phép thêm vào dự án bằng unitypackage.</li>
+<li>Thêm thiết lập sẵn avatar (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ).</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Giải quyết tương thích với một số công cụ.</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Sửa tư thế không đổi ở một số avatar và phiên bản ModularAvatar.</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Sửa chuyển động bất thường ở một số avatar, như nhảy của 森羅.</li>
+<li>Sửa giá trị ban đầu Tắt cử chỉ đôi khi sai.</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Sửa lỗi ở một số môi trường.</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Sửa Unity bị sập.</li>
+<li>Thêm phiên bản vào tên công cụ hiển thị trong NDMF Console.</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Thêm tắt cử chỉ và dùng hình bàn tay hoạt ảnh.</li>
+<li>Thêm dữ liệu hình bàn tay cho mọi tư thế.</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Sửa tư thế hỏng khi dùng cùng một số công cụ.</li>
+<li>Sửa lỗi do một số thiết lập.</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Giải quyết xung đột với một số công cụ.</li>
+<li>Thêm nút xóa bản Unitypackage.</li>
+<li>Xóa Prefabs tích hợp 三点だいしゅきツール vì đã có bản VCC.</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Sửa lỗi ở một số avatar.</li>
+<li>Sửa không dùng được Khóa chân do xung đột công cụ/avatar.</li>
+<li>Sửa tư thế avatar trở lại mặc định VRC trong chế độ máy tính.</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Sửa không đổi được tư thế khi dùng với avatar/công cụ sử dụng sai kiểu VRMode.</li>
+<li>Thêm hiển thị NDMF-Console khi công cụ xung đột do khác kiểu tham số.</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Thêm giải thích trong NDMF-Console vì lỗi công cụ khác gây lỗi Unisaki Posing System khi dựng avatar.</li>
+<li>Sửa lỗi dựng ở một số avatar.</li>
+<li>Cải thiện hành vi ngay sau nạp avatar.</li>
+<li>Bỏ xử lý di chuyển gốc avatar vì có thể khiến không hoạt động trên một số avatar.</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Sửa không dựng được.</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Giải quyết chân/hông chìm xuống đất trong chế độ máy tính để mọi tư thế hiển thị đẹp.</li>
+<li>Thêm đổi tư thế bỏ qua độ cao đầu.</li>
+<li>Thêm chế độ không tạo biểu tượng để tải avatar Quest lên.</li>
+<li>Thêm một số cảnh báo khi avatar có vấn đề.</li>
+<li>Giải quyết xung đột khóa với AFK hoặc công cụ khóa tay khác.</li>
+<li>Thêm tự khóa cổ khi nằm ngửa.</li>
+<li>Đổi ExpressionsMenu: tách chọn tư thế vào thư mục và đưa nhóm khóa lên đầu.</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Chuyển thành gói VPM để hỗ trợ VCC.</li>
+<li>Sửa bản 8bit dùng 17bit.</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa lỗi và trục trặc.</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa vấn đề khi dùng VRCFury.</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Thêm thiết lập tích hợp với “ごろ寝システムEX”.</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa không dùng được công cụ ở một số trạng thái ExMenu.</li>
+<li>Thêm lật đối xứng vào thiết lập.</li>
+<li>Sửa tư thế mèo.</li>
+<li>Thêm ５ tư thế nằm nghiêng.</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa tư thế bất thường khi đầu cao.</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Thêm chức năng tư thế đứng với 15 tư thế.</li>
+<li>Sửa chân tự động chuyển động ở một số avatar/môi trường.</li>
+<li>Thêm bản ExpressionParameters8bit.</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa chân tự động chuyển động ở một số avatar.</li>
+<li>Thống nhất WriteDefaults.</li>
+<li>Thêm ７ tư thế khom và ８ tư thế ngồi.</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa tải lên thất bại khi dùng ModularAvatar1.9.0 trở lên.</li>
+<li>Nay yêu cầu ModualrAvatar1.9.0 trở lên.</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Thêm đổi ngưỡng cao đầu từng loại tư thế.</li>
+<li>Sửa tư thế/chân bất thường, như khi nhảy, ở một số avatar.</li>
+<li>Giảm bit ExpressionParameter dùng từ 54 xuống 16bit.</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa không chuyển được sang ngồi trong chế độ VR.</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Trong chế độ máy tính, có thể dùng tư thế ngồi ngay cả khi giữ phím C.</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa không dùng được tích hợp 添い寝 nếu không dùng tích hợp 三点だいしゅき.</li>
+<li>Sửa chân bị khóa khi nhảy.</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa số lượng VRCContactSender/Receiver được đặt bất thường.</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa lỗi dựng khi tải lên.</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Đã sửa</h3>
+<ul>
+<li>Sửa mặc định bất thường khi dùng nhiều Prefabs.</li>
+<li>Sửa thiết lập tích hợp 可愛い座り bị sai.</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Phát hành</h3></main>
+</body></html>

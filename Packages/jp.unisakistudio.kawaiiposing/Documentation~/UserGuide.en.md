@@ -24,7 +24,7 @@ This guide covers installation, avatar setup, VRChat controls, pose editing, upd
 
 ### What this download installs
 
-**Kawaii Posing Tool 3.2.0 with Unisaki Posing System 3.2.0.** This stable release includes English setup dialogs, Unity Inspector and menus, standard pose names, in-game menus, and this offline guide. Use the top-of-Inspector language selector to change the tool language. The installer downloads these release versions and their compatible dependencies from VPM repositories.
+**Kawaii Posing Tool 3.2.0 with Unisaki Posing System 3.2.0.** This version is in development and has not been released. It adds thirty-language setup dialogs, Unity Inspector and menus, standard pose names, in-game menus, and offline documentation. The release date has not been set. Use the top-of-Inspector language selector to change the tool language. After publication, the installer will download these versions and their compatible dependencies from VPM repositories. Local release preparation does not publish those packages.
 
 Kawaii Posing Tool includes the pose library, configuration tools, and avatar adjustment presets. The installer activates the product's existing local license; it does not require a new Gumroad license key field. Never post the installer files or license data in a public support request.
 
@@ -41,9 +41,9 @@ Language preferences are stored through Unity EditorPrefs for the current OS use
 
 ### Language selection and familiar labels
 
-This release offers **Language / 言語** at the top of the tool Inspector. That single selection controls the Inspector and generated in-game menu. The avatar stores its selected language, and the last choice is remembered for other tools/projects on this computer. Re-upload the avatar to change the language seen in VRChat.
+This version offers **Language / 言語** at the top of the tool Inspector. That single selection controls the Inspector and generated in-game menu. The avatar stores its selected language, and the last choice is remembered for other tools/projects on this computer. Re-upload the avatar to change the language seen in VRChat.
 
-Use the label table below when following older Japanese tutorials. This release includes the language selector, English Inspector, translated standard pose names, and English in-game menus.
+Use the label table below when following older Japanese tutorials. This version includes the language selector, localized Inspector, translated standard pose names, and in-game menus for all 30 languages.
 
 | English | Japanese label in older builds |
 | --- | --- |
@@ -58,9 +58,9 @@ Use the label table below when following older Japanese tutorials. This release 
 | Animation Adjustment | アニメーション調整 |
 | Reload | 再読込 |
 
-The bundled Inspector, editor/setup dialogs, standard pose names and generated menus have translations for all 30 selectable languages. The offline manual is provided in English. Avatar names, saved object names, custom pose names, asset filenames, and internal parameter identifiers may keep their original spelling.
+The bundled Inspector, editor/setup dialogs, standard pose names and generated menus have translations for all 30 selectable languages. The README, changelog and offline manual are provided in each selectable language. Avatar names, saved object names, custom pose names, asset filenames, and internal parameter identifiers may keep their original spelling.
 
-[30-language quick references](../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html) cover the feature explanations and standard pose-name tables. These are concise references; this full manual is in English.
+[30-language quick references](../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html) cover the feature explanations and standard pose-name tables. These are concise references; use the language index for the full documentation.
 
 ## 3. Choose your poses and features
 

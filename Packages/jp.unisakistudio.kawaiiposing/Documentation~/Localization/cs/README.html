@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="cs" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Čeština · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Historie změn</a><a href="UserGuide.html">Kawaii Posing Tool — česká uživatelská příručka</a></nav>
+<main><h1>Kawaii Posing Tool</h1>
+<p>Nástroj pro zamykání póz ve VRChat, který umožňuje roztomilé sedící a ležící pózy i se sledováním 3 bodů a v režimu plochy. Obsahuje celkem 85 póz: 15 ve stoje, 20 v podřepu, 17 vsedě, 16 na břiše a 17 na zádech.</p>
+<p>Tento README je určen pro vyvíjenou verzi v3.2.0. Datum oficiálního vydání zatím nebylo stanoveno. Nainstalovaná verze se zobrazuje nahoře v Inspectoru.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">Stránka produktu na BOOTH</a></li>
+<li><a href="CHANGELOG.html">Historie změn</a></li>
+</ul>
+<h2>Jazyk rozhraní a offline dokumentace</h2>
+<p>Vyberte jazyk v poli „Language / 言語“ nahoře v Inspectoru. Jedna volba řídí Inspector i vytvářenou nabídku VRChat. Pro změnu jazyka ve hře avatara znovu nahrajte.</p>
+<p>Pokud jazyk není vybrán, použije se jazyk počítače; nepodporované jazyky přejdou na angličtinu. Podporovány jsou Windows, macOS a Linux. Poslední volba se ukládá do EditorPrefs a používá se i v dalších projektech stejného uživatele OS na tomto počítači. Výslovná volba uložená v avatarovi zůstává zachována. Mezi počítači se nesynchronizuje. Způsob ukládání licencí se nemění.</p>
+<p>README, historii změn a návod lze vybrat v přiloženém <a href="../index.html">seznamu jazyků</a>. Návod a historie změn v Inspectoru také používají vybraný jazyk. Původní podmínky použití a referenční překlady jsou nadále dodávány samostatně.</p>
+<h2>Hlavní funkce</h2>
+<ul>
+<li>Režim focení: posune avatara až 3m dopředu a upraví směr. Jen na vlastní obrazovce spotřebuje 0 bit, zobrazení polohy a směru ostatním 16 bit.</li>
+<li>Zobrazení hlavy při focení: zabrání skrytí hlavy vlastního avatara zblízka pouze během režimu focení.</li>
+<li>Výška podlahy: posune celé tělo včetně hlavy o 3m nahoru či dolů. 50% je původní výška a počáteční hodnota, 0% o 3m níže a 100% o 3m výše. Doplňuje Výšku chodidel, která upravuje stranu nohou při zachování polohy hlavy.</li>
+<li>Přetočit se: v podporovaných ležících pózách přetáčí tělo doleva a doprava podle náklonu hlavy.</li>
+<li>Dýchání: přidává pohyb například hrudníku. Pro jednotlivé kategorie lze vybrat Žádné, Slabé, Střední, Silné, Rychlé nebo Vlastní.</li>
+<li>Vypnout pohupování VRChat v klidu: omezuje výchozí pohupování a zachovává dýchání nástroje i další vlastní pohyby.</li>
+<li>Omezit deformaci pózy při otočení hlavy: omezuje deformaci po odemknutí hlavy, pokud její směr neodpovídá původní póze.</li>
+<li>Volba funkcí: přidává jen potřebné herní nabídky a ukazuje spotřebu ExpressionParameters v Inspectoru.</li>
+<li>Hledání, hromadné přidání a řazení póz: hledání napříč kategoriemi, načtení více klipů a určení cílového pořadí.</li>
+<li>Lehký náhled v Scene: kontrola pózy přímo ze seznamu pomocí Náhledu.</li>
+</ul>
+<ul>
+<li>Automatická korekce končetin (IK): přizpůsobuje polohu rukou a nohou podporovaných póz proporcím avatara. Lze ji přepínat pro jednotlivé pózy a výsledek uložit do korekční animace.</li>
+</ul>
+<h3>Přetáčení přiložených póz</h3>
+<p>Pózy na zádech Nohy vpřed, Uvolnění a Jedno koleno vzhůru mají přiřazené boční pózy pro přetočení. Základem jsou postupně pózy „Spánek na boku“, „Dřímání“ a „Kočičí spánek“.</p>
+<p>Zapněte „Funkce &gt; Funkce nabídky &gt; Přetočit se“, nahrajte avatara a ve VRChat vyberte podporovanou pózu a Přetočit se. Hlavu před použitím odemkněte.</p>
+<p>Pro vlastní nastavení zapněte „Pózy &gt; Podrobnosti &gt; Zapnout přetočení“ a přiřaďte animaci do Boční pózy přetočení. U póz s přetočením není běžné nastavení MotionTime dostupné.</p>
+<h3>Přizpůsobení proporcím</h3>
+<p>Přiloženou automatickou korekci končetin lze použít, ale ne všechny pózy potřebují IK. Zapnout automatickou korekci končetin v okně Úprava animace přepíná celou funkci, Zapnout IK této pózy jednotlivou pózu.</p>
+<p>Zapéct IK do korekcí zapíše aktuální automatický výsledek do nové korekční animace a vypne IK cílové pózy. Poté lze výsledek dokončit ručně. Funkce je dostupná při zapnuté celkové i individuální korekci a použitelném nastavení IK.</p>
+<p>V Nastavení avatara jsou také Zabránit ohybu kolen dozadu a Minimální ohyb kolena (stupně) v podrobnostech.</p>
+<h2>Instalace</h2>
+<ol>
+<li>Stáhněte soubory ze stránky produktu v obchodě, kde jste nakoupili.</li>
+<li>Importujte přiložený „可愛いポーズツール.unitypackage“ do Unity a zaregistrujte licenci i zdroj balíčků.</li>
+<li>Přes VCC nebo ALCOM přidejte Kawaii Posing Tool a Modular Avatar do požadovaného projektu Unity. Společný Unisaki Posing System a NDMF se nainstalují jako závislosti.</li>
+<li>Klikněte pravým tlačítkem na cílového avatara v Hierarchy a zvolte „Unisaki Studio &gt; Přidat Kawaii Posing“.</li>
+<li>Vyberte 可愛いポーズ (Kawaii Posing) přidaný do avatara a nastavte v Inspectoru požadované funkce a pózy.</li>
+<li>Nahrajte avatara běžným způsobem.</li>
+</ol>
+<p>Požadováno je Unity 2022.3, VRChat Avatars SDK 3.10.4 nebo novější, Modular Avatar 1.x od 1.15.1 a NDMF 1.x od 1.14.0. Aktualizujte potřebné balíčky společně přes VCC nebo ALCOM.</p>
+<h2>Aktualizace ze starší verze</h2>
+<p>Aktualizujte tento produkt a Unisaki Posing System společně. Nastavení již umístěných nástrojů se zachová. Zkontrolujte funkce a spotřebu ExpressionParameters v Inspectoru. Pokud jste používali předgenerování, před novým nahráním stiskněte Aktualizovat předgenerování.</p>
+<p>Od v3.1.0 používají nová přidání běžný Prefab 可愛いポーズ (Kawaii Posing). Vypnutím nepotřebných funkcí získáte minimální konfiguraci jen s výběrem póz za 8 bit. Velký počet póz může vyžadovat další bity pro výběr.</p>
+<p>Starý 8bit Prefab zůstává v Editor/Legacy pro zachování odkazů existujících avatarů a předvoleb. Není nutné jej mazat ani nahrazovat. V nabídce nového přidání Unity se 8bit verze nezobrazuje.</p>
+<h2>Umístění nastavení</h2>
+<div class="table-scroll"><table><thead><tr><th>Karta</th><th>Možnosti</th></tr></thead><tbody>
+<tr><td>Funkce</td><td>Přidání herních nabídek, usnadnění, dýchání a kontrola ikon i spotřeby ExpressionParameters</td></tr>
+<tr><td>Pózy</td><td>Výběr používaných póz, podrobnosti, hledání, hromadné přidání, pořadí, náhled a úprava animace</td></tr>
+<tr><td>Nastavení avatara</td><td>Korekce avatara a kolen, import původních póz a vlastních pohybů, změna předvoleb</td></tr>
+</tbody></table></div>
+<p>Otevřít nastavení rozbalí podrobné možnosti pod příslušnou položkou. Dýchání se nastavuje přes „Funkce &gt; Usnadnění &gt; Animovat dýchání“.</p>
+<p>Použít původní pózy ve stoje, v přikrčení a na břiše automaticky importuje existující pózy avatara. Vlastní pohyby se přiřazují samostatně přes nastavení importu pro každý typ, například stoj, přikrčení (Crouching) a leh na břiše (Prone).</p>
+<p>Předvolby jsou dole v Nastavení avatara. Použít tuto předvolbu nahrazuje aktuální nastavení póz, proto před změnou uložte hotové úpravy.</p>
+<h3>Spotřeba jednotlivých funkcí</h3>
+<ul>
+<li>Pohyb dýchání používá 0 bit. Jen herní přepínač zastavení a spuštění „Funkce nabídky &gt; Dýchání“ používá 1 bit pro synchronizaci.</li>
+<li>Režim focení pouze na vlastní obrazovce používá 0 bit. „Usnadnění &gt; Synchronizovat režim focení“ používá 16 bit. Ponechat hlavu viditelnou v režimu focení používá 0 bit.</li>
+<li>Výška chodidel i Výška podlahy používají každá 8 bit. Odchýlení výšky podlahy od středu posune tělo nahoru či dolů a návrat přibližně k 50% ukončí korekci.</li>
+<li>Přetočení samostatně používá 10 bit. Sdílí 1 bit s omezením deformace při otočení hlavy, proto obě funkce dohromady používají 10 bit.</li>
+<li>Zrcadlit a Gesta vyp. používají každá 1 bit.</li>
+</ul>
+<p>Součet v Inspectoru se týká nástrojů pro pózy instalovaných na avatarovi. Nezahrnuje oblečení ani jiné funkce. Společná nastavení více nástrojů se nepočítají opakovaně.</p>
+<h3>Náhled a úprava póz</h3>
+<p>Náhled u každé pózy na kartě Pózy ji zobrazí v Scene. Pro jemné změny otevřete Úpravu animace, upravte pózu s náhledem a uložte.</p>
+<p>Lehký náhled neprovádí sestavení MA ani NDMF. Oblečení a korekci polohy podlahy přidávané během sestavení ověřte i v sestaveném výsledku před nahráním.</p>
+<p>Karta s lupou vlevo hledá názvy póz. Cílové místo vyberete v „Podrobnosti &gt; Pořadí“ nebo tlačítky nahoru a dolů. Více animací přidáte přetažením do přidávací oblasti nebo příkazem pro import klipů vybraných v Project.</p>
+<p>Aktualizovat obrázky póz generuje obrázky po potvrzení. Generovat ikony póz usnadňuje rozlišení v herní nabídce, ale vytváření obrázků prodlužuje sestavení. Pro snížení velikosti zvolte Zmenšit velikost ikon. Pro Android se ikony póz negenerují.</p>
+<h2>Základní ovládání ve hře</h2>
+<ul>
+<li>V nabídce Expressions vyberte pózy jednotlivých kategorií. Ve VR se stoj, podřep, sed a leh přepínají podle výšky hlavy.</li>
+<li>Vleže směr obličeje přepíná záda a břicho. Pokud jsou vybrány obě pózy, lze je přepínat i skokem na místě. To vypnete v Unity přes „Funkce → Usnadnění → Měnit ležící pózy skokem“ (ve výchozím stavu zapnuté). Výšku přepínání kategorií upravují prahy v nastavení.</li>
+<li>V režimu plochy přepínejte klávesami C a Z. Pokud Z nepřepne do lehu, zvyšte práh výšky pro leh v nastavení.</li>
+<li>Gesta vyp. používá tvar rukou z pózy místo gest prstů ovladače.</li>
+<li>Výška chodidel upravuje stranu nohou při zachování hlavy. Výška podlahy posouvá celé tělo včetně hlavy svisle. V nastavení jsou v tomto pořadí.</li>
+<li>Posun dopředu pomocí Vzdálenosti v režimu focení obrátí avatara k vám. Směr jej otáčí a Zamknout nohy zapněte ve vhodnou chvíli. Ukončit focení obnoví vzdálenost i směr a odemkne nohy.</li>
+<li>Dýchání je dostupné, pokud je pohyb dýchání zapnutý. Intenzita se nastavuje v Unity a ve hře se přepíná zapnutí.</li>
+</ul>
+<h2>Předgenerování a varování</h2>
+<p>Aktualizovat předgenerování urychluje sestavení avatara znovupoužitím vytvořených dat. Bez předgenerování potřebná data vzniknou při běžném sestavení.</p>
+<p>Po změně nastavení upozorňují na aktualizaci Kontrola nastavení nahoře v Inspectoru a značka Hierarchy. Zobrazení varování je uvnitř rámečku Kontrola nastavení. Skrytí zobrazení neřeší problém konfigurace ani neobnovuje vytvořená data.</p>
+<h2>Poznámky k používání</h2>
+<ul>
+<li>Zamykání póz při celotělovém sledování není podporováno.</li>
+<li>Proporce, oblečení a úpravy avatara mohou vyžadovat další doladění.</li>
+<li>Zvláštní vrstvy Base a jiné systémy změny póz se nemusejí spojit podle očekávání. Pokud zámky nefungují, ověřte „Nastavení avatara &gt; Propojit zámky sledování s dalšími nástroji“.</li>
+<li>Pohyb a otáčení režimu focení i výška podlahy korigují také výchozí a vlastní pohyby bez vybrané pózy. Ověřte pohled a chování po nahrazení výchozích pohybů přímo ve VRChat.</li>
+<li>Vypnout pohupování VRChat v klidu se týká výchozího klidového pohybu. Nezastavuje veškeré pohupování z jiných příčin.</li>
+</ul>
+<h2>Návod a podpora</h2>
+<p>Horní panel nápovědy a historie změn v Inspectoru otevírá návod, kontakt a historii změn. Podrobné vysvětlení společných funkcí najdete také v Project Unity pod „Packages &gt; Unisaki Posing System &gt; README“.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Oficiální návod</a></li>
+<li><a href="https://help.unisakistudio.jp/">Kontaktovat podporu</a></li>
+</ul>
+<p>Při hlášení chyby uveďte verze tohoto produktu a Unisaki Posing System, Unity, VRChat SDK, Modular Avatar a NDMF, použitého avatara, kroky k reprodukci a text chyby Console.</p>
+<h2>Sdílení předvoleb</h2>
+<p>Následující informace se týkají dat vytvořených funkcí úpravy animace.</p>
+<p>Korekční animační soubory vytvořené touto funkcí a předvolby nastavené s nimi můžete volně šířit a prodávat bez povolení Unisaki Studio. Sdílejte je například s vlastními avatary nebo jako předvolby avatarů, které nejsou přiložené k nástroji.</p>
+<h2>Produkty s přiloženým nastavením propojení</h2>
+<p>Poznámka: nastavení propojení vytváří náš obchod z vlastní iniciativy. Povolení autorů příslušných produktů nepovažujeme za potřebné a nevyžádali jsme je. Žádosti o distribuci nebo ukončení distribuce těchto nastavení posílejte zprávami obchodu. Použití propojení vyžaduje zakoupení nebo stažení příslušného produktu. Při problému s nastavením kontaktujte náš obchod, nikoli autory těchto produktů.</p>
+<p>„可愛い座りツール“
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>„添い寝ツール“
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>„少女モーション集vol.1“, autor ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>„VRC想定移動モーション（無料配布）“, autor カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>„ごろ寝システムEX“, autor minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Podmínky použití</h2>
+<p>Nástroj mohou používat pouze osoby, které souhlasí s následujícími podmínkami vytvořenými podle licence VN3.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Podmínky použití (japonsky)</a></p>
+<p>Zdrojový kód a prostředky tohoto repozitáře nejsou open source. Vyžaduje se řádné zakoupení produktu a souhlas s podmínkami použití.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Podmínky použití (anglicky)</a></p></main>
+</body></html>

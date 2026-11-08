@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="cs" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool — česká uživatelská příručka</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Čeština · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Historie změn</a><a href="UserGuide.html">Kawaii Posing Tool — česká uživatelská příručka</a></nav>
+<main><h1>Kawaii Posing Tool — česká uživatelská příručka</h1>
+<p>Kawaii Posing obsahuje 85 póz pro režim plochy a tříbodové VR: 15 ve stoje, 20 v přikrčení/na židli, 17 vsedě na podlaze, 17 na zádech a 16 na břiše.</p>
+<p>Tato příručka popisuje instalaci, nastavení avatara, ovládání VRChat, úpravy póz, aktualizace a řešení problémů. <code dir="ltr">START_HERE.html</code> v zakoupeném ZIP nabízí nejrychlejší cestu k instalaci.</p>
+<h2>Než začnete</h2>
+<ul>
+<li>Použijte projekt <strong>avatara</strong> VRChat v Unity 2022.3 vytvořený nebo spravovaný přes VRChat Creator Companion (VCC) či ALCOM.</li>
+<li>Požadované balíčky: VRChat Avatars SDK 3.10.4 nebo novější; Modular Avatar 1.x od verze 1.15.1; NDMF 1.x od verze 1.14.0.</li>
+<li>Nástroj je určen pro avatary Humanoid v režimu plochy a tříbodovém VR (headset a dva ovladače). Zamykání póz při aktivním celotělovém sledování není podporováno.</li>
+<li>Před instalací nebo aktualizací zálohujte existující projekt. Nejprve vyřešte chyby kompilace Unity.</li>
+<li>Instalátor stahuje produkt a závislosti z jejich repozitářů balíčků. Je nutné připojení k internetu. Modely avatarů, VRChat SDK, Modular Avatar ani NDMF nejsou v tomto ZIP obsaženy.</li>
+</ul>
+<h2>1. Instalace licence a produktu</h2>
+<ol>
+<li>Rozbalte celý ZIP do běžné složky mimo projekt Unity.</li>
+<li>Otevřete cílový projekt avatara v Unity. Importujte <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> přes <strong>Assets &gt; Import Package &gt; Custom Package</strong> nebo soubor otevřete v Unity.</li>
+<li>Přečtěte si výzvy importu a instalace. Potvrzení licence uvádí, které licence produktů se nainstalují. Jazyk instalátoru změníte přes <strong>Jazyk…</strong> (nebo <strong>言語...</strong>) v potvrzovacím dialogu.</li>
+<li>Potvrďte instalaci licence. Licence zahrnuje i společný Unisaki Posing System používaný produktem. Instalátor pak může nabídnout odstranění vlastních instalačních souborů. Tento úklid neodstraní nainstalovanou licenci.</li>
+<li>Zkontrolujte potvrzení automatického instalátoru balíčků. Uvádí přidávané balíčky a repozitáře i staré soubory či složky navržené k odstranění. Pokračujte, pokud jde o zamýšlené položky.</li>
+<li>Počkejte na dokončení importu a kompilace Unity. Pokud se balíčky nenainstalují automaticky, otevřete projekt ve VCC nebo ALCOM a přidejte <strong>Kawaii Posing Tool</strong> a <strong>Modular Avatar</strong>. Společný <strong>Unisaki Posing System</strong> a <strong>NDMF</strong> jsou závislosti. <code dir="ltr">Optional-VCC-Links</code> obsahuje původní zástupce repozitářů produktu pro uživatele VCC ve Windows.</li>
+<li>Pokud jste potvrzení zrušili, importujte instalátor znovu, až budete připraveni. Dokud je aktivátor přítomen, lze použít i jeho příkaz instalace licence v <strong>Tools &gt; Unisaki Studio</strong>. Ve starších sestaveních se toto podmenu jmenuje <strong>ゆにさきスタジオ</strong>.</li>
+</ol>
+<h3>Co tento soubor instaluje</h3>
+<p><strong>Kawaii Posing Tool 3.2.0 s Unisaki Posing System 3.2.0.</strong> Tato verze se vyvíjí a dosud nebyla vydána. Přidává instalační dialogy, Inspector a nabídky Unity, standardní názvy póz, herní nabídky a offline dokumentaci ve 30 jazycích. Datum vydání nebylo stanoveno. Jazyk nástroje změníte volbou nahoře v Inspectoru. Po zveřejnění instalátor stáhne tyto verze a kompatibilní závislosti z repozitářů VPM. Místní příprava vydání balíčky nezveřejňuje.</p>
+<p>Kawaii Posing Tool zahrnuje knihovnu póz, nástroje nastavení a předvolby přizpůsobení avatarů. Instalátor aktivuje dosavadní místní licenci produktu; nevyžaduje nové pole pro licenční klíč Gumroad. Nikdy nezveřejňujte instalační soubory ani licenční data ve veřejném požadavku na podporu.</p>
+<p>Jazykové preference se ukládají přes Unity EditorPrefs pro aktuálního uživatele OS a sdílejí se mezi projekty Unity na tomto počítači. Bez uložené preference instalátor následuje jazyk OS, nepodporované jazyky používají angličtinu. Licence si zachovávají dosavadní ukládání: klíč registru aktuálního uživatele <code dir="ltr">Software/UnisakiStudio</code> ve Windows a uživatelské licenční soubory v macOS/Linux. Změna jazyka licenci neodstraní.</p>
+<h2>2. Přidání nástroje k avatarovi</h2>
+<ol>
+<li>V <strong>Hierarchy</strong> vyberte avatara s <strong>VRC Avatar Descriptor</strong> nebo jeho potomka. Použijte avatara umístěného ve scéně, nikoli prostředek Prefab v Project nebo Prefab Mode.</li>
+<li>Klikněte na avatara pravým tlačítkem a zvolte <strong>Unisaki Studio &gt; Přidat Kawaii Posing</strong>. Pokud instalovaná verze používá japonské nabídky, zvolte <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>.</li>
+<li>Nástroj se přidá dovnitř avatara. Uložený název objektu může zůstat <strong>可愛いポーズ</strong>, i když se zobrazované popisky překládají.</li>
+<li>Pokud je nabídnuta odpovídající předvolba avatara, použijte ji jako počáteční přizpůsobení. Jinak otevřete <strong>Nastavení avatara</strong> a vyberte předvolbu nebo pózy upravte sami.</li>
+<li>Instalátor může nabídnout předgenerování. Je volitelné; potřebná data vzniknou i při běžném sestavení. Opakované použití předgenerování zkracuje další sestavení.</li>
+<li>Vyberte objekt nástroje, požadované pózy a funkce a nahrajte avatara běžně přes VRChat SDK.</li>
+</ol>
+<h3>Výběr jazyka a známé popisky</h3>
+<p>Tato verze má <strong>Language / 言語</strong> nahoře v Inspectoru nástroje. Jedna volba řídí Inspector i generovanou herní nabídku. Avatar si ukládá vybraný jazyk a poslední volba se pamatuje pro další nástroje a projekty tohoto počítače. Pro změnu jazyka ve VRChat avatara znovu nahrajte.</p>
+<p>Při práci podle starších japonských návodů použijte níže uvedenou tabulku popisků. Tato verze obsahuje volbu jazyka, lokalizovaný Inspector, přeložené standardní názvy póz a herní nabídky pro všech 30 jazyků.</p>
+<div class="table-scroll"><table><thead><tr><th>Český popisek</th><th>Japonský popisek ve starších verzích</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Funkce</td><td>機能</td></tr>
+<tr><td>Pózy</td><td>ポーズ一覧</td></tr>
+<tr><td>Nastavení avatara</td><td>アバター調整</td></tr>
+<tr><td>Otevřít nastavení</td><td>設定を開く</td></tr>
+<tr><td>Aktualizovat předgenerování</td><td>プレビルドを更新</td></tr>
+<tr><td>Kontrola nastavení</td><td>設定の確認</td></tr>
+<tr><td>Náhled</td><td>プレビュー</td></tr>
+<tr><td>Úprava animace</td><td>アニメーション調整</td></tr>
+<tr><td>Obnovit</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Přiložený Inspector, dialogy úprav a instalace, standardní názvy póz i vytvářené nabídky jsou přeložené do všech 30 volitelných jazyků. README, historie změn a offline návod jsou poskytovány v každém volitelném jazyce. Jména avatarů, uložené názvy objektů, vlastní názvy póz, názvy souborů prostředků a vnitřní identifikátory parametrů mohou zachovat původní zápis.</p>
+<p><a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">Stručné příručky ve 30 jazycích</a> obsahují popisy funkcí a tabulky názvů standardních póz. Jde o krátké referenční materiály; úplnou dokumentaci otevřete přes seznam jazyků.</p>
+<h2>3. Výběr póz a funkcí</h2>
+<p>Inspector má tři hlavní karty:</p>
+<div class="table-scroll"><table><thead><tr><th>Karta</th><th>Použití</th></tr></thead><tbody>
+<tr><td><strong>Funkce</strong></td><td>Ovladače herní nabídky, volitelné chování, dýchání, ikony a spotřeba expression parametrů.</td></tr>
+<tr><td><strong>Pózy</strong></td><td>Zapnuté pózy, kategorie a hledání, pořadí, přidání animací, náhled, podrobnosti a úprava animace.</td></tr>
+<tr><td><strong>Nastavení avatara</strong></td><td>Korekce avatara a kolen, import původních/vlastních pohybů a předvolby.</td></tr>
+</tbody></table></div>
+<p>Zapínejte jen ovladače nabídky, které chcete používat. Například přidání <strong>Zrcadlit</strong> umožní přepínat zrcadlení ve VRChat, ale nenutí všechny pózy zůstat zrcadlené.</p>
+<p>Kawaii Posing obsahuje předvolby avatarů a IK podporovaných póz. Tři standardní pózy na zádech mají již přiřazené boční pohyby: <strong>Nohy vpřed (足伸ばし)</strong>, <strong>Uvolnění (リラックス)</strong> a <strong>Jedno koleno vzhůru (膝立て)</strong>. Použijte odpovídající předvolbu a zkontrolujte přetočení jednotlivých póz, pokud jste položky upravili nebo nahradili.</p>
+<h3>Předvolby a přizpůsobení</h3>
+<p>Předvolby jsou blízko konce <strong>Nastavení avatara</strong>. Vyhledejte podle jména avatara a použijte předvolbu k nahrazení aktuálních nastavení póz. Před změnou uložte nebo zálohujte úpravy. Předvolba je výchozí bod: proporce, oblečení a úpravy avatara mohou stále vyžadovat ruční korekce.</p>
+<p>Použijte <strong>Úpravu animace</strong> u pózy pro náhled a úpravu polohy těla a končetin. Po dokončení uložte korekční animaci z tohoto okna. U podporovaných póz lze automatickou korekci rukou a nohou (IK) zapnout celkově i samostatně. Zapečení aktuálního výsledku vytvoří korekční animaci a vypne IK této pózy pro ruční doladění. Původní zdrojový klip zůstává.</p>
+<p><strong>Zabránit ohybu kolen dozadu</strong> má další nastavení, například minimální úhel ohybu. Korekce konkrétního avatara jsou dostupné jen s odpovídajícími daty a některé nelze kombinovat s IK pózy.</p>
+<h3>Původní a vlastní pohyby</h3>
+<p><strong>Použít původní pózy ve stoje, v přikrčení a na břiše</strong> zjišťuje pohyby z vrstvy Base avatara během generování. <strong>Vlastní pohyby</strong> otevře samostatné nastavení importu pro každý typ. Vyberte jeden pohyb na typ. Ruční přiřazení má přednost před automatickým importem tohoto typu.</p>
+<p>Automatický import se používá na kopii pro sestavení. Nezapisuje nalezené animace zpět do ručního seznamu ve scéně ani neupravuje původní Controllery. Vymažte ruční přepsání typu, pokud chcete znovu použít automatické zjištění. Vlastní vrstvy Base a jiné systémy pohybu mohou vyžadovat individuální úpravy.</p>
+<h2>4. Používání ve VRChat</h2>
+<p>Otevřete nabídku <strong>Expressions</strong> avatara a vstupte do <strong>Kawaii Posing</strong>. Vyberte pózu pro každou požadovanou kategorii. Výběr pózy a zapnutí funkce jsou samostatné činnosti.</p>
+<ul>
+<li><strong>Tříbodové VR:</strong> zvedejte a snižujte hlavu pro přepnutí mezi stojem, přikrčením/židlí, sedem na podlaze a lehem. Pokud se póza mění příliš brzy nebo pozdě, upravte výškové prahy v nastavení nástroje.</li>
+<li><strong>Režim plochy:</strong> <strong>C</strong> pro přikrčení a <strong>Z</strong> pro leh. Pokud vás Z nechá sedět, zvyšte práh výšky pro leh v nastavení.</li>
+<li><strong>Záda/břicho:</strong> směr obličeje vybírá leh na břiše nebo zádech. Pokud jsou vybrány oba, lze přepínat skokem na místě. Podle potřeby to vypněte v Unity přes <strong>Funkce &gt; Usnadnění</strong>. Nezvyšuje to spotřebu synchronizovaných parametrů.</li>
+<li><strong>Zámky:</strong> podle potřeby zamykejte hlavu, paže a nohy. Vypněte gesta, chcete-li tvar rukou z pózy místo vstupu ovladače.</li>
+<li><strong>Zrcadlit:</strong> zrcadlete vybranou pózu pro natočení k příteli nebo vhodnou kompozici.</li>
+</ul>
+<h3>Výška chodidel a výška podlahy</h3>
+<p><strong>Výška chodidel</strong> upravuje chodidla při zachování polohy hlavy. Použijte ji, pokud nohy levitují nebo se zabořují, ale hlava je již ve správné výšce.</p>
+<p><strong>Výška podlahy</strong> posouvá celé tělo včetně hlavy. Použijte ji pro pohovku, postel nebo vyvýšený povrch, i u nábytku bez collideru. V aktuálním centrovaném ovladači společného systému je <strong>50% původní výška</strong>, 0% o 3 m níže a 100% o 3 m výše. Návrat přibližně k 50% ukončí posun. Starší verze mohou fungovat jinak. Ověřte nainstalovanou verzi a aktualizujte společný systém spolu s produktem.</p>
+<h3>Režim focení</h3>
+<p>Před nahráním zapněte položku nabídky <strong>Režim focení</strong> v Unity. Ve VRChat vyberte pózu, pomocí <strong>Vzdálenosti</strong> posuňte avatara až 3 m vpřed a pomocí <strong>Směru</strong> jej otočte. Zamknutí nohou při přípravě záběru je volitelné. <strong>Ukončit focení</strong> obnoví vzdálenost i otočení a odemkne nohy.</p>
+<p>Režim focení je ve výchozím stavu místní. Chcete-li polohu a otočení ukázat ostatním, zapněte v Unity před nahráním <strong>Synchronizovat režim focení</strong>; spotřebuje to 16 synchronizovaných bitů. <strong>Ponechat hlavu viditelnou v režimu focení</strong> ovlivňuje váš pohled a nepoužívá synchronizované bity.</p>
+<h3>Dýchání a přetočení</h3>
+<p>Dýchání lze nastavit pro každou kategorii v <strong>Funkce &gt; Usnadnění &gt; Animovat dýchání</strong>. Zvolte Žádné, Slabé, Střední, Silné, Rychlé nebo vlastní animaci. Samotný pohyb nespotřebovává synchronizované bity. Přepínač dýchání v nabídce používá 1 bit.</p>
+<p>Přetočení vyžaduje podporovanou ležící pózu a položku nabídky <strong>Přetočit se</strong>. Zapněte přetočení pro pózu a podle potřeby přiřaďte boční animaci. Ve VRChat vyberte tuto pózu, zapněte přetočení a odemkněte hlavu/krk. Náklon hlavy do stran pak řídí přetočení. Běžné ovládání MotionTime není pro tuto pózu během přetočení dostupné.</p>
+<p>Tři standardní pózy na zádech uvedené výše obsahují boční pohyby. Ostatní pózy potřebují vhodný pohyb a nastavení. Importované nebo vlastní předvolby mohou mít odlišná přiřazení.</p>
+<h2>5. Úpravy, přidávání a náhled póz</h2>
+<p>Na kartě <strong>Pózy</strong> vyberte kategorii nebo hledání. Hledání přijímá původní japonské názvy i dostupné překlady. Otevřete <strong>Podrobnosti</strong> pózy pro úpravu animace, ikony, pořadí a časování.</p>
+<p>Více animací přidáte přetažením klipů do přidávací oblasti nebo jejich výběrem v Project a příkazem pro import vybraných klipů. Duplicitní odkazy na stejný klip se odstraní. Cílové pořadí změňte v Podrobnostech nebo ovladači nahoru/dolů.</p>
+<p><strong>Náhled</strong> zobrazí pózu v Scene bez otevření celého okna úprav. Tento lehký náhled nespouští Modular Avatar ani NDMF, proto oblečení, korekci podlahy a další funkce při sestavení ověřte v konečném sestavení avatara.</p>
+<p>Ikony generované z vašeho avatara pomáhají rozpoznat pózy, ale jejich tvorba trvá a může zvětšit data avatara. Snižte rozlišení ikon pro úsporu místa. Sestavení Android ikony póz nevytvářejí. Po změně avatara či oblečení je podle potřeby vytvořte znovu.</p>
+<h2>6. Paměť parametrů</h2>
+<p>Inspector ukazuje příspěvek nástrojů pro pózy, nikoli součet celého avatara. Oblečení a další systémy mohou využívat další paměť parametrů. Společná nastavení sdílená nástroji se nepočítají dvakrát. Vlastní konfigurace s mnoha dodatečnými pózami mohou potřebovat více bitů pro výběr.</p>
+<div class="table-scroll"><table><thead><tr><th>Funkce</th><th>Dodatečné synchronizované bity</th></tr></thead><tbody>
+<tr><td>Výběr póz, minimální standardní konfigurace</td><td>8</td></tr>
+<tr><td>Zrcadlit</td><td>1</td></tr>
+<tr><td>Gesta vyp.</td><td>1</td></tr>
+<tr><td>Pohyb dýchání</td><td>0</td></tr>
+<tr><td>Přepínač dýchání v nabídce</td><td>1</td></tr>
+<tr><td>Výška chodidel</td><td>8</td></tr>
+<tr><td>Výška podlahy</td><td>8</td></tr>
+<tr><td>Režim focení, pouze místní</td><td>0</td></tr>
+<tr><td>Synchronizovat režim focení</td><td>16</td></tr>
+<tr><td>Ponechat hlavu viditelnou při focení</td><td>0</td></tr>
+<tr><td>Vypnout výchozí pohupování VRChat</td><td>0</td></tr>
+<tr><td>Přetočit se</td><td>10</td></tr>
+</tbody></table></div>
+<p>Přetočení sdílí 1 bit s korekcí pózy podle směru krku. Zapnutí obou tedy stále používá celkem 10 bitů pro tyto dvě funkce. Zobrazená spotřeba ve vaší verzi je praktickým vodítkem pro zvolenou konfiguraci.</p>
+<h2>7. Aktualizace a předgenerování</h2>
+<ol>
+<li>Zálohujte projekt a uložte pracovní scénu.</li>
+<li>Ve VCC nebo ALCOM aktualizujte <strong>Kawaii Posing Tool</strong> a společný <strong>Unisaki Posing System</strong> společně. Zachovejte také kompatibilní verze SDK, Modular Avatar a NDMF.</li>
+<li>Počkejte na dokončení kompilace. Vyberte již instalovaný nástroj a zkontrolujte jeho pózy, nastavení a spotřebu parametrů.</li>
+<li>Pokud používáte předgenerování, zvolte <strong>Aktualizovat předgenerování</strong> a avatara znovu nahrajte.</li>
+</ol>
+<p>Existující nastavení nástroje se zachovává. Staré 8-bit prefaby zůstávají kvůli kompatibilitě; existující odkazy nevyžadují odstranění ani náhradu nástroje. Nové instalace používají běžný prefab a nepoužívané funkce lze vypnout pro snížení spotřeby parametrů.</p>
+<p>Varování zastaralého předgenerování znamená, že se nastavení změnilo od vytvoření uložených dat. Aktualizace předgenerování data vytvoří znovu. Skrytí varování předgenerování neobnoví ani nevyřeší jeho příčinu. Běžné sestavení avatara může vytvořit potřebná data i bez ručního předgenerování pokaždé.</p>
+<h2>8. Řešení problémů</h2>
+<div class="table-scroll"><table><thead><tr><th>Příznak</th><th>Co zkontrolovat</th></tr></thead><tbody>
+<tr><td>Chybí nabídka přidání nástroje</td><td>Ověřte instalaci produktu <strong>i</strong> Unisaki Posing System a vyřešte chyby kompilace Unity Console. Samotný instalátor licence není knihovna póz.</td></tr>
+<tr><td>Instalace zrušena nebo soubory odstraněny</td><td>Až budete připraveni, znovu importujte zakoupený instalátor a přečtěte potvrzení.</td></tr>
+<tr><td>Licence chybí v jiném projektu</td><td>Importujte zakoupený instalátor pod stejným účtem OS. Po změně počítače či účtu nainstalujte licenci i tam. Jazykové preference se mezi počítači nepřenášejí automaticky.</td></tr>
+<tr><td>Ve VRChat nejsou pózy</td><td>Přidejte nástroj pod správného avatara ve scéně, zapněte požadované pózy, zkontrolujte varování Inspectoru a nahrajte tohoto avatara. Ověřte SDK a další pohybové nástroje.</td></tr>
+<tr><td>Z nepřepne do lehu</td><td>Zvyšte práh výšky pro leh v herním nastavení nástroje.</td></tr>
+<tr><td>Ruce nebo kolena nesedí</td><td>Vyzkoušejte odpovídající předvolbu avatara a pak podporované IK nebo Úpravu animace. Ověřte deformaci oblečení v konečném sestavení.</td></tr>
+<tr><td>Přetočení nefunguje</td><td>Použijte podporovanou ležící pózu, zapněte její přetočení i položku nabídky a odemkněte hlavu/krk. Nejdřív vyzkoušejte jednu ze tří podporovaných standardních póz.</td></tr>
+<tr><td>Přátelé nevidí pohyb při focení</td><td>Zapněte <strong>Synchronizovat režim focení</strong> v Unity, zkontrolujte spotřebu parametrů a znovu nahrajte avatara.</td></tr>
+<tr><td>Jazyk se mění v Unity, ale ne ve VRChat</td><td>Nahrajte avatara znovu. Ověřte jedinou volbu jazyka nahoře v Inspectoru verze s lokalizací.</td></tr>
+<tr><td>Chyby sestavení nebo předgenerování</td><td>Přečtěte <strong>první</strong> související chybu Console. Zálohujte scénu, aktualizujte nebo znovu stáhněte produkt a společný systém přes VCC/ALCOM a kontaktujte podporu, pokud problém trvá. Zachovejte upravené objekty a GeneratedResources, pokud podpora nedá konkrétní pokyn k obnově.</td></tr>
+</tbody></table></div>
+<p>Pro podporu uveďte verze produktu a společného systému, Unity/SDK/Modular Avatar/NDMF, jméno avatara, přesné kroky k reprodukci a příslušnou chybu Console. Z veřejných příspěvků odstraňte soukromé soubory, obsah instalátoru, licenční hodnoty a údaje účtu.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Podpora</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Ilustrovaný online návod (japonsky)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Stránka produktu Gumroad</a></li>
+</ul>
+<h2>Licence a autoři</h2>
+<p><a href="../../Terms.en.html">Anglický referenční překlad smlouvy produktu</a> je dodáván spolu s původní japonskou smlouvou.</p>
+<p>Přečtěte původní smlouvu produktu a smlouvu společného systému vedle README balíčku nebo ve složce <code dir="ltr">Licenses</code> zakoupeného ZIP. Dodaná anglická smlouva Unisaki Posing System je existující referenční překlad pro tento systém; japonská smlouva produktu je nadále přiložena zvlášť. Návod smlouvy nemění ani neuděluje další práva. S dotazy na používání nebo další šíření dat produktu kontaktujte podporu.</p>
+<p>Instalátor obsahuje upravený <strong>VPMPackageAutoInstaller</strong> od <strong>anatawa12</strong> spolu se <strong>SimpleJson</strong> a <strong>semver.net</strong>. Jejich copyrightová oznámení a texty licencí MIT jsou v <code dir="ltr">ThirdPartyNotices.txt</code> zakoupeného ZIP. Knihovna póz a další prostředky mají vlastní produktové licence.</p></main>
+</body></html>

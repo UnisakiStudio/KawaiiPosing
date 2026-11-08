@@ -1,17 +1,17 @@
 # 変更履歴
 
-## [3.2.0] - 2026-11-08
+## [3.2.0] - 未リリース
 
-### Added
+### 追加
 
-- English Inspector, editor actions, setup dialogs, standard pose names, and generated VRChat menu labels.
-- One language selector for the editor and in-game menu, with a shared per-user preference and OS-language default.
-- English offline manual, available from the Inspector.
-- Thirty selectable languages with complete bundled display catalogs and all 128 standard pose names.
+- Inspector、編集操作、導入ダイアログ、標準姿勢名、生成するVRChatメニューを30言語で表示できるようにしました。
+- Inspectorとゲーム内メニューの言語選択を統一しました。初期値はパソコンの言語を使い、最後の選択を同じOSユーザーの別プロジェクトでも使用します。
+- README・変更履歴・オフラインの使い方を選択言語で開けるようにしました。
+- 標準姿勢128件の表示名と各機能の説明を、既存の用語に合わせて用意しました。
 
-### Compatibility
+### 互換性
 
-- Existing avatar settings, custom names, asset references, parameter identifiers, and license storage are preserved.
+- アバターの既存設定、独自の名前、アセット参照、パラメーター識別子、ライセンスの保存方法を維持します。
 
 ## [3.1.2] - 2026-11-09
 
@@ -286,3 +286,8 @@ ALCOM / VCCで「可愛いポーズツール」と「ゆにさきポーズシス
 
 ## [1.0.0] - 2024-02-14
 ### リリース
+<!-- localization-navigation:start -->
+
+🌐 [日本語 · English · Français · Italiano · 简体中文 · 繁體中文 · 한국어 · ไทย · Deutsch · Español · Português · Português (Brasil) · Русский · Українська · Polski · Nederlands · Svenska · Dansk · Suomi · Norsk · Čeština · Türkçe · Bahasa Indonesia · Tiếng Việt · हिन्दी · বাংলা · தமிழ் · తెలుగు · العربية · עברית](Documentation~/Localization/index.md)
+
+<!-- localization-navigation:end -->

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可愛いポーズツール — 使い方</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">日本語 · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">変更履歴</a><a href="UserGuide.html">可愛いポーズツール — 使い方</a></nav>
+<main><h1>可愛いポーズツール — 使い方</h1>
+<p>可愛いポーズツールは、デスクトップと3点VR向けに85姿勢を収録しています。内訳は立ち15、中腰・椅子20、床座り17、仰向け寝17、うつ伏せ寝16です。</p>
+<p>このガイドでは、導入、アバター設定、VRChat内の操作、ポーズ編集、更新、トラブルへの対処を説明します。購入したZIPの <code dir="ltr">START_HERE.html</code> から導入手順をすぐに開けます。</p>
+<h2>はじめに</h2>
+<ul>
+<li>VRChat Creator Companion（VCC）またはALCOMで作成・管理した、Unity 2022.3のVRChat <strong>アバター</strong> 用プロジェクトを使用してください。</li>
+<li>必要パッケージは、VRChat Avatars SDK 3.10.4以上、Modular Avatar 1.xの1.15.1以上、NDMF 1.xの1.14.0以上です。</li>
+<li>Humanoidアバターのデスクトップモードと3点VR（ヘッドセットとコントローラー2個）向けです。フルボディトラッキング中の姿勢固定には対応していません。</li>
+<li>導入・更新前に既存プロジェクトをバックアップし、Unityのコンパイルエラーを先に解消してください。</li>
+<li>インストーラーは商品と依存パッケージを各配布元からダウンロードするため、インターネット接続が必要です。アバターモデル、VRChat SDK、Modular Avatar、NDMFはこのZIPに含みません。</li>
+</ul>
+<h2>1. ライセンスと商品の導入</h2>
+<ol>
+<li>ZIP全体を、Unityプロジェクトの外にある通常のフォルダーへ展開します。</li>
+<li>対象のアバタープロジェクトをUnityで開き、<strong>Assets &gt; Import Package &gt; Custom Package</strong> から <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> をインポートするか、ファイルをUnityで開きます。</li>
+<li>インポートと導入の案内を読みます。ライセンスの確認画面には、登録する商品のライセンスが表示されます。確認画面の <strong>言語…</strong>（英語表示では <strong>Language...</strong>） でインストーラーの言語を変更できます。</li>
+<li>ライセンス登録を確認します。商品が使う共通のゆにさきポーズシステムも対象です。その後インストーラー自身のファイルの削除を案内する場合がありますが、この整理で登録済みの商品ライセンスは削除されません。</li>
+<li>パッケージ自動追加の確認を読みます。追加するパッケージ・配布元と、削除する旧ファイルやフォルダーが表示されます。目的の内容であれば続行してください。</li>
+<li>Unityのインポートとコンパイルが終わるまで待ちます。自動追加が完了しない場合はVCCまたはALCOMでこのプロジェクトを開き、<strong>可愛いポーズツール</strong> と <strong>Modular Avatar</strong> を追加します。共通の <strong>ゆにさきポーズシステム</strong> と <strong>NDMF</strong> は依存パッケージです。<code dir="ltr">Optional-VCC-Links</code> にはWindowsのVCC利用者向けに商品の元の配布元ショートカットを同梱しています。</li>
+<li>確認を取り消した場合は、準備ができたらインストーラーを再インポートしてください。Activatorが残っている間は、<strong>Tools &gt; Unisaki Studio</strong> のライセンス登録コマンドも使用できます。旧版ではこのサブメニューは <strong>ゆにさきスタジオ</strong> と表示されます。</li>
+</ol>
+<h3>このダウンロードで導入するもの</h3>
+<p><strong>可愛いポーズツール 3.2.0と、ゆにさきポーズシステム 3.2.0です。</strong> 現在開発中で、まだリリースしていません。導入ダイアログ、UnityのInspectorとメニュー、標準姿勢名、ゲーム内メニュー、オフライン文書を30言語に対応させます。リリース日は未定です。ツールの表示言語はInspector最上部で選びます。公開後は、インストーラーがこれらの版と対応する依存パッケージをVPM配布元から取得します。ローカルでのリリース準備ではパッケージを公開しません。</p>
+<p>可愛いポーズツールには、姿勢データ、設定ツール、アバター調整用プリセットが含まれます。インストーラーは商品の既存のローカルライセンスを登録し、新しいGumroadライセンスキーの入力は必要ありません。公開の問い合わせに、インストーラーのファイルやライセンスデータを添付しないでください。</p>
+<p>表示言語は現在のOSユーザーのUnity EditorPrefsに保存し、このパソコンの別Unityプロジェクトでも共有します。保存済みの選択がなければOSの言語を使用し、非対応の言語では英語を使います。商品ライセンスの保存方法は従来どおりで、Windowsでは現在のユーザーの <code dir="ltr">Software/UnisakiStudio</code> レジストリキー、macOS／Linuxではユーザー別のライセンスファイルを使用します。言語を変えてもライセンスは削除されません。</p>
+<h2>2. アバターへツールを追加する</h2>
+<ol>
+<li><strong>Hierarchy</strong> で <strong>VRC Avatar Descriptor</strong> のあるアバター、またはその子を選びます。Project内のPrefabアセットやPrefab Modeではなく、シーンに配置したアバターを使います。</li>
+<li>アバターを右クリックし、<strong>Unisaki Studio &gt; Add Kawaii Posing</strong> を選びます。日本語メニューの版では <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong> を選択します。</li>
+<li>アバター内にツールが追加されます。表示文言が翻訳されていても、保存されたオブジェクト名は <strong>可愛いポーズ</strong> のままの場合があります。</li>
+<li>対応するアバタープリセットが案内されたら、初期調整として適用します。それ以外は <strong>アバター調整</strong> でプリセットを選ぶか、ポーズを手動調整してください。</li>
+<li>プレビルドを案内する場合があります。プレビルドは任意で、通常のアバタービルドでも必要なデータを生成します。繰り返すビルドを短縮したいときに利用してください。</li>
+<li>ツールのオブジェクトを選んで姿勢と機能を設定し、VRChat SDKから通常どおりアップロードします。</li>
+</ol>
+<h3>言語の選択と従来の表示名</h3>
+<p>この版では、Inspector最上部に <strong>Language / 言語</strong> があります。一つの選択がInspectorと生成するゲーム内メニューに適用されます。アバターに選択言語を保存し、最後の選択はこのパソコンの他のツール・プロジェクトでも使用します。VRChat内の表示言語を変えるには、アバターを再アップロードしてください。</p>
+<p>以前の日本語解説を見る際には、次の対照表を参照してください。この版には言語の選択、各言語のInspector、標準姿勢名、全30言語のゲーム内メニューを用意しています。</p>
+<div class="table-scroll"><table><thead><tr><th>英語</th><th>旧版の日本語表示</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Features</td><td>機能</td></tr>
+<tr><td>Poses</td><td>ポーズ一覧</td></tr>
+<tr><td>Avatar Setup</td><td>アバター調整</td></tr>
+<tr><td>Open settings</td><td>設定を開く</td></tr>
+<tr><td>Update prebuild</td><td>プレビルドを更新</td></tr>
+<tr><td>Check settings</td><td>設定の確認</td></tr>
+<tr><td>Preview</td><td>プレビュー</td></tr>
+<tr><td>Animation Adjustment</td><td>アニメーション調整</td></tr>
+<tr><td>Reload</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Inspector、編集・導入ダイアログ、標準姿勢名、生成メニューには、選択できる全30言語の翻訳を同梱しています。README・変更履歴・オフラインの使い方も各言語で用意しています。アバター名、保存済みオブジェクト名、独自の姿勢名、アセットのファイル名、内部パラメーター識別子などは元の表記を維持します。</p>
+<p><a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">30言語の簡易リファレンス</a>には、機能の説明と標準姿勢名の対照表があります。簡潔な参照用の文書です。全文書は言語一覧から開いてください。</p>
+<h2>3. 姿勢と機能を選ぶ</h2>
+<p>Inspectorには主に次の3タブがあります。</p>
+<div class="table-scroll"><table><thead><tr><th>タブ</th><th>主な用途</th></tr></thead><tbody>
+<tr><td><strong>機能</strong></td><td>ゲーム内メニューの項目、便利機能、呼吸、アイコン設定、ExpressionParametersの使用量</td></tr>
+<tr><td><strong>ポーズ一覧</strong></td><td>使用する姿勢、分類・検索、順番、一括追加、プレビュー、詳細、アニメーション調整</td></tr>
+<tr><td><strong>アバター調整</strong></td><td>アバター固有補正・膝補正、元の姿勢や自作モーションの取り込み、プリセット</td></tr>
+</tbody></table></div>
+<p>使う予定のメニュー項目だけを有効にしてください。たとえば <strong>左右反転</strong> をメニューに追加すると、VRChat内で反転を切り替えられます。すべての姿勢を常に反転させる設定ではありません。</p>
+<p>可愛いポーズツールにはアバタープリセットと対応姿勢のIKがあります。仰向け寝の標準姿勢 <strong>Legs Out（足伸ばし）</strong>・<strong>Relaxed（リラックス）</strong>・<strong>One Knee Up（膝立て）</strong> の3つには、横向きの寝返りモーションを設定済みです。対応するプリセットを使い、これらの項目を編集・置き換えた場合は各姿勢の寝返り設定を確認してください。</p>
+<h3>プリセットと体格の調整</h3>
+<p>プリセットは <strong>アバター調整</strong> の下部にあります。アバター名で検索し、プリセットを適用して現在のポーズ設定を置き換えます。切り替え前に調整内容を保存・バックアップしてください。プリセットは初期調整です。体格、衣装、アバターの改変内容によって手動調整が必要な場合があります。</p>
+<p>姿勢の <strong>アニメーション調整</strong> を開くと、プレビューしながら身体と手足の位置を編集できます。終了時にそのウィンドウから調整アニメーションを保存してください。対応姿勢では、手足の自動調整（IK）を全体・姿勢ごとに切り替えられます。IKの現在の結果を調整に反映すると、調整アニメーションを作成して対象姿勢のIKをオフにし、手作業で仕上げられます。元のクリップは保持します。</p>
+<p><strong>膝が逆向きに曲がるのを防ぐ</strong> には、最低膝曲げ角度などの詳細設定があります。アバター固有補正は対応する補正データがある場合に使用でき、姿勢IKと併用できない補正もあります。</p>
+<h3>元の姿勢と自作モーション</h3>
+<p><strong>アバターの元の立ち・しゃがみ・伏せ姿勢を使う</strong> は、生成時にアバターのBaseレイヤーからモーションを検出します。<strong>自分で用意したモーションを使う</strong> は別の取り込み設定を開き、モーションの種類ごとに指定します。一つの種類に一つのモーションを選択してください。同じ種類の手動指定がある場合は、自動取り込みより優先します。</p>
+<p>自動取り込みはビルド用のコピーに反映します。検出したアニメーションをシーン上の手動指定一覧へ書き戻したり、元のControllerを変更したりしません。自動検出へ戻したい種類は手動指定を解除してください。特殊なBaseレイヤーや他の移動システムとの併用では、個別の調整が必要な場合があります。</p>
+<h2>4. VRChatで使う</h2>
+<p>アバターの <strong>Expressions</strong> メニューから <strong>可愛いポーズ</strong> を開き、使いたい分類ごとに姿勢を選びます。姿勢の選択と機能の選択は別の操作です。</p>
+<ul>
+<li><strong>3点VR：</strong> 頭を上げ下げして、立ち・中腰／椅子・床座り・寝姿勢を切り替えます。切り替えが早すぎる／遅すぎる場合は、ツールの設定メニューで高さの閾値を調整してください。</li>
+<li><strong>デスクトップ：</strong> <strong>C</strong> でしゃがみ、<strong>Z</strong> で寝姿勢へ切り替えます。Zで座り止まりになる場合は、設定メニューの寝の高さ閾値を上げてください。</li>
+<li><strong>うつ伏せ・仰向け：</strong> 顔の向きで切り替えます。両方を選択していると、その場でジャンプしても切り替えられます。Unityの <strong>機能 &gt; 便利機能</strong> でジャンプ切り替えをオフにできます。同期パラメーターの追加消費はありません。</li>
+<li><strong>固定：</strong> 必要に応じて首・腕・足を固定します。コントローラーのジェスチャーではなく、姿勢に設定された手の形を使いたい場合はジェスチャー無効をオンにします。</li>
+<li><strong>左右反転：</strong> 選択した姿勢を反転し、相手や構図に合わせられます。</li>
+</ul>
+<h3>足の高さと床の高さ</h3>
+<p><strong>足の高さ</strong> は頭の位置を保ちながら足側を調整します。頭が適切な高さでも、足が浮く／埋まる場合に使用してください。</p>
+<p><strong>床の高さ</strong> は頭を含む身体全体を動かします。ソファ、ベッド、高い場所など、コライダーのない家具でも利用できます。共通システムの現在の中央基準の操作では、<strong>50%が元の高さ</strong>、0%が3 m下、100%が3 m上です。50%付近へ戻すと補正が終了します。旧版では動作が異なる場合があるため、導入済みの版を確認し、商品と共通システムを併せて更新してください。</p>
+<h3>撮影モード</h3>
+<p>Unityで <strong>撮影モード</strong> のメニュー項目を有効にしてからアップロードします。VRChatで姿勢を選び、<strong>距離</strong> で前方へ最大3 m移動、<strong>向き</strong> で回転します。撮影位置を決める間の足固定は任意です。<strong>撮影モードを終了</strong> すると距離・向きを戻し、足固定を解除します。</p>
+<p>撮影モードの初期設定は自分の画面のみです。位置と向きを他の人にも見せる場合は、アップロード前にUnityで <strong>撮影モードを同期する</strong> を有効にしてください。同期に16 bitを使います。<strong>撮影モード中は頭を非表示にしない</strong> は自分の画面だけに適用し、同期パラメーターを使いません。</p>
+<h3>呼吸と寝返り</h3>
+<p>呼吸は <strong>機能 &gt; 便利機能 &gt; 呼吸の動きをつける</strong> で、姿勢の分類ごとに設定できます。なし・弱・中・強・急、または自分で用意した呼吸アニメーションを選びます。動きだけなら同期パラメーターは不要です。呼吸のメニュー切り替えには1 bitを使います。</p>
+<p>寝返りには、対応する寝姿勢と <strong>寝返り</strong> メニューが必要です。姿勢の寝返りを有効にし、必要に応じて横向きのアニメーションを指定します。VRChatで対象の姿勢と寝返りを選び、首固定を解除してください。頭を左右に傾けると寝返りします。その姿勢で寝返りを使用している間は、通常のMotionTime操作を使えません。</p>
+<p>前述の仰向け寝の標準3姿勢には、横向きモーションを設定済みです。他の姿勢には対応するモーションと姿勢設定が必要です。取り込んだプリセットや自作プリセットでは割り当てが異なる場合があります。</p>
+<h2>5. ポーズの編集・追加・プレビュー</h2>
+<p><strong>ポーズ一覧</strong> で分類を選ぶか検索タブを使います。元の日本語名と、用意されている翻訳名で検索できます。各姿勢の <strong>詳細</strong> から、アニメーション、アイコン、順番、再生位置などを編集します。</p>
+<p>複数のアニメーションは、クリップを追加欄へドラッグするか、Projectで選択して選択中クリップの読み込みコマンドから一括追加できます。同じクリップの参照は重複させません。詳細で移動先の順番を選ぶか、上下のボタンで並べ替えます。</p>
+<p><strong>プレビュー</strong> は調整ウィンドウを開かずにSceneで姿勢を表示します。この簡易プレビューではModular AvatarやNDMFを実行しないため、衣装、床の補正、その他のビルド時の機能は、最終的なアバタービルドでも確認してください。</p>
+<p>アバターから生成した姿勢アイコンは姿勢を見分けやすくしますが、生成時間とアバターのデータ量が増える場合があります。容量を抑えるにはアイコンの解像度を下げてください。Androidでは姿勢アイコンを生成しません。アバターや衣装を変更した場合は、必要に応じてアイコンを作り直してください。</p>
+<h2>6. パラメーター使用量</h2>
+<p>Inspectorには、アバター全体ではなくポーズツールの使用量を表示します。衣装など他のシステムも別にパラメーターを使う場合があります。複数ツールで共用する設定は重複して数えません。多くの姿勢を追加した独自構成では、姿勢選択に追加のbitが必要になることがあります。</p>
+<div class="table-scroll"><table><thead><tr><th>機能</th><th>同期パラメーターの追加bit数</th></tr></thead><tbody>
+<tr><td>姿勢選択（標準の最小構成）</td><td>8</td></tr>
+<tr><td>左右反転</td><td>1</td></tr>
+<tr><td>ジェスチャー無効</td><td>1</td></tr>
+<tr><td>呼吸の動き</td><td>0</td></tr>
+<tr><td>呼吸のメニュー切り替え</td><td>1</td></tr>
+<tr><td>足の高さ</td><td>8</td></tr>
+<tr><td>床の高さ</td><td>8</td></tr>
+<tr><td>撮影モード（自分の画面のみ）</td><td>0</td></tr>
+<tr><td>撮影モードを同期する</td><td>16</td></tr>
+<tr><td>撮影モード中は頭を非表示にしない</td><td>0</td></tr>
+<tr><td>VRChat標準の揺れを止める</td><td>0</td></tr>
+<tr><td>寝返り</td><td>10</td></tr>
+</tbody></table></div>
+<p>寝返りは首の向きによる姿勢崩れ抑制と1 bitを共用し、両方を有効にしても、この2機能の合計は10 bitです。選択した構成の実際の使用量は、導入済みの版の表示を確認してください。</p>
+<h2>7. 更新とプレビルド</h2>
+<ol>
+<li>プロジェクトをバックアップし、作業中のシーンを保存します。</li>
+<li>VCCまたはALCOMで <strong>可愛いポーズツール</strong> と共通の <strong>ゆにさきポーズシステム</strong> を併せて更新します。SDK・Modular Avatar・NDMFも対応する版に揃えます。</li>
+<li>コンパイルの完了後、既存のツールを選び、姿勢・設定・パラメーター使用量を確認します。</li>
+<li>プレビルドを使う場合は <strong>プレビルドを更新</strong> を押してから、アバターを再アップロードします。</li>
+</ol>
+<p>既存のツール設定は維持します。旧8-bit Prefabは互換性のため保持し、既存の参照を削除・置き換えする必要はありません。新規追加は通常のPrefabを使い、不要な機能をオフにすることでパラメーター使用量を抑えられます。</p>
+<p>プレビルドの更新警告は、キャッシュした生成データの作成後に設定が変わったことを示します。プレビルドを更新するとデータを再生成します。警告を非表示にしても、プレビルドの更新や原因の解消は行いません。毎回手動でプレビルドしなくても、通常のアバタービルドで必要なデータを生成します。</p>
+<h2>8. 困ったときは</h2>
+<div class="table-scroll"><table><thead><tr><th>症状</th><th>確認すること</th></tr></thead><tbody>
+<tr><td>ツール追加のメニューがない</td><td>商品 <strong>と</strong> ゆにさきポーズシステムの両方を導入し、Unity Consoleのコンパイルエラーを解消してください。ライセンスのインストーラーだけでは姿勢データは入りません。</td></tr>
+<tr><td>インストーラーを取り消した／ファイルを削除した</td><td>準備ができたら購入したインストーラーを再インポートし、確認をもう一度読んでください。</td></tr>
+<tr><td>別プロジェクトでライセンスが見つからない</td><td>同じOSアカウントで購入したインストーラーをインポートしてください。パソコンやアカウントを変えた場合は、そちらにもライセンスを登録します。言語設定は別のパソコンへ自動転送しません。</td></tr>
+<tr><td>VRChatに姿勢がない</td><td>対象のシーン上のアバター内にツールを追加し、必要な姿勢を有効にします。Inspectorの警告を確認し、そのアバターをアップロードしてください。SDKと他の移動系ツールも確認します。</td></tr>
+<tr><td>Zで寝姿勢にならない</td><td>ゲーム内設定の寝の高さ閾値を上げてください。</td></tr>
+<tr><td>手や膝の位置が合わない</td><td>対応アバタープリセットを試し、対応するIKやアニメーション調整を使ってください。最終ビルドで衣装の変形も確認します。</td></tr>
+<tr><td>寝返りが動かない</td><td>対応する寝姿勢を使い、姿勢側の寝返り設定とメニュー項目の両方を有効にし、首固定を解除します。まず対応する標準3姿勢のいずれかで確認してください。</td></tr>
+<tr><td>撮影時の移動が他の人に見えない</td><td>Unityで <strong>撮影モードを同期する</strong> を有効にし、パラメーター使用量を確認して再アップロードします。</td></tr>
+<tr><td>Unityの言語だけ変わり、VRChatでは変わらない</td><td>アバターを再アップロードしてください。多言語対応版では、Inspector最上部の一つの言語選択を確認します。</td></tr>
+<tr><td>ビルド／プレビルドのエラー</td><td>Consoleの関連する <strong>最初</strong> のエラーを読みます。シーンをバックアップし、VCC／ALCOMで商品と共通システムを更新・再取得し、続く場合はお問い合わせください。調整済みオブジェクトやGeneratedResourcesは、サポートから具体的な復旧手順を案内されるまでは保持してください。</td></tr>
+</tbody></table></div>
+<p>お問い合わせには、商品・共通システムの版、Unity／SDK／Modular Avatar／NDMFの版、アバター名、具体的な再現手順、関連するConsoleエラーを添えてください。公開投稿からは、非公開ファイル、インストーラーの内容、ライセンス値、アカウント情報を除いてください。</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">お問い合わせ</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">図解オンラインマニュアル（日本語）</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Gumroad商品ページ</a></li>
+</ul>
+<h2>ライセンスとクレジット</h2>
+<p>商品の元の日本語規約とともに、<a href="../../Terms.en.html">商品規約の英語参照訳</a>を用意しています。</p>
+<p>パッケージのREADMEと同じ場所、または購入したZIPの <code dir="ltr">Licenses</code> フォルダーにある商品の元の規約と共通システムの規約をお読みください。同梱のゆにさきポーズシステムの英語規約は、この共通システムの既存の参照訳です。各商品の日本語規約も別に含まれています。このガイドは規約を変更したり、追加の権利を与えたりするものではありません。商品データの利用・再配布について不明な点があればお問い合わせください。</p>
+<p>インストーラーには、<strong>anatawa12</strong> 氏による <strong>VPMPackageAutoInstaller</strong> の改変版と、<strong>SimpleJson</strong>・<strong>semver.net</strong> を使用しています。著作権表示とMITライセンス本文は、購入したZIPの <code dir="ltr">ThirdPartyNotices.txt</code> に記載しています。姿勢データなどの商品リソースには、それぞれの商品ライセンスが適用されます。</p></main>
+</body></html>

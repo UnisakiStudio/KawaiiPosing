@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="nl" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Nederlands · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Wijzigingsgeschiedenis</a><a href="UserGuide.html">Kawaii Posing — Nederlandse handleiding</a></nav>
+<main><h1>Kawaii Posing</h1>
+<p>VRChat-posetool voor schattige zit-/ligposes met 3-puntstracking of desktop. 85 poses: 15 staand, 20 hurkend, 17 zittend, 16 op de buik en 17 op de rug.</p>
+<p>Deze README is voor v3.2.0 in ontwikkeling; de officiële datum staat niet vast. De geïnstalleerde versie staat boven in de Inspector.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">BOOTH-productpagina</a></li>
+<li><a href="CHANGELOG.html">Wijzigingsgeschiedenis</a></li>
+</ul>
+<h2>Weergavetaal en offline documentatie</h2>
+<p>Kies de taal bij Language / 言語 boven in de Inspector. Eén keuze geldt voor de Inspector en de gegenereerde VRChat-menu’s. Upload de avatar opnieuw om de taal in het spel te veranderen.</p>
+<p>Zonder expliciete keuze wordt de computertaal gebruikt; niet-ondersteunde talen gebruiken Engels. Windows, macOS en Linux worden ondersteund. De laatste keuze wordt in EditorPrefs bewaard voor andere projecten van dezelfde systeemgebruiker op deze computer. Een expliciete keuze in een bestaande avatar blijft behouden. Er is geen synchronisatie met andere computers. Licenties blijven op dezelfde manier opgeslagen.</p>
+<p>Kies de taal van README, wijzigingen en handleiding in de meegeleverde <a href="../index.html">talenlijst</a>. De handleiding en wijzigingen in de Inspector volgen die keuze. Originele voorwaarden en referentievertalingen blijven afzonderlijk beschikbaar.</p>
+<h2>Belangrijkste functies</h2>
+<ul>
+<li>Fotomodus: tot 3m vooruit en draaien; 0 bit lokaal, 16 bit voor anderen zichtbaar.</li>
+<li>Hoofd zichtbaar tijdens foto’s: voorkomt alleen in Fotomodus een onzichtbaar nabij hoofd.</li>
+<li>Vloerhoogte: heel lichaam/hoofd 3m omhoog/omlaag, 50% oorspronkelijk/begin, 0% 3m lager, 100% 3m hoger. Los van Voethoogte met vast hoofd.</li>
+<li>Omdraaien door hoofdhelling in ondersteunde ligposes.</li>
+<li>Ademhaling: borst e.d. met Geen/Zwak/Gemiddeld/Sterk/Snel/Aangepast per categorie.</li>
+<li>Standaardwiegen uitschakelen met behoud van toolademhaling/eigen beweging.</li>
+<li>Vervorming door hoofdrotatie verminderen na nekontgrendeling.</li>
+<li>Alleen gewenste menu’s, verbruik zichtbaar in Inspector.</li>
+<li>Zoeken, meerdere clips en doelvolgorde.</li>
+<li>Scene-voorbeeld direct vanuit de lijst.</li>
+</ul>
+<ul>
+<li>Automatische ledemaat-IK past ondersteunde poses aan de bouw aan, per pose schakelbaar en vast te leggen als aanpassingsanimatie.</li>
+</ul>
+<h3>Omdraaien met meegeleverde poses</h3>
+<p>Benen gestrekt, Ontspannen en Eén knie omhoog hebben zijbewegingen op basis van respectievelijk 横向き寝 (zijligging), Dutje en Kattendutje voor Omdraaien.</p>
+<p>Activeer Functies &gt; Menufuncties &gt; Omdraaien, upload en kies pose/functie in VRChat. Ontgrendel de nek.</p>
+<p>Zelf instellen: Poses &gt; Details &gt; Omdraaien inschakelen en Zijpose voor omdraaien toewijzen. Gewone MotionTime vervalt voor die pose.</p>
+<h3>Aanpassen aan lichaamsbouw</h3>
+<p>Automatische aanpassing is meegeleverd, maar niet elke pose heeft IK nodig. Globaal schakel je Automatische ledemaataanpassing inschakelen, individueel IK voor deze pose inschakelen.</p>
+<p>IK in aanpassingen vastleggen maakt een nieuwe animatie van het resultaat en zet IK uit voor handmatige afwerking. Globale en pose-aanpassing moeten actief zijn met toepasbare regels.</p>
+<p>Avatarinstellingen bevat ook Achterwaartse kniebuiging voorkomen en de details Minimale kniebuiging (graden).</p>
+<h2>Installatie</h2>
+<ol>
+<li>Download de bestanden uit je winkel.</li>
+<li>Importeer 可愛いポーズツール.unitypackage en registreer licentie/pakketbron.</li>
+<li>Voeg Kawaii Posing en Modular Avatar toe met VCC/ALCOM; Unisaki Posing System en NDMF zijn afhankelijkheden.</li>
+<li>Rechtsklik de avatar in Hierarchy: Unisaki Studio &gt; Kawaii Posing toevoegen.</li>
+<li>Selecteer Kawaii Posing in de avatar en stel functies/poses in.</li>
+<li>Upload normaal.</li>
+</ol>
+<p>Vereist: Unity 2022.3, VRChat Avatars SDK 3.10.4+, Modular Avatar 1.x vanaf 1.15.1 en NDMF 1.x vanaf 1.14.0. Werk benodigde pakketten samen bij met VCC/ALCOM.</p>
+<h2>Bijwerken vanaf oudere versies</h2>
+<p>Werk product en Unisaki Posing System samen bij. Bestaande opties blijven behouden. Controleer functies/ExpressionParameters en vernieuw gebruikte voorberekening voor opnieuw uploaden.</p>
+<p>Vanaf v3.1.0 gebruiken nieuwe tools de normale 「可愛いポーズ」-Prefab. Zonder onnodige functies kost minimumselectie 8 bit; veel poses kunnen meer selectiebits vragen.</p>
+<p>Oude 8bit-Prefabs blijven in Editor/Legacy voor bestaande avatar-/voorinstellingsverwijzingen. Niet verwijderen of vervangen. Nieuwe toevoeging toont geen 8bit.</p>
+<h2>Waar instellen</h2>
+<div class="table-scroll"><table><thead><tr><th>Tabblad</th><th>Gebruik</th></tr></thead><tbody>
+<tr><td>Functies</td><td>Menu’s, gemak, ademhaling, pictogrammen en parameters</td></tr>
+<tr><td>Poses</td><td>Selectie, details, zoeken, meer clips, volgorde, voorbeeld en animatieaanpassing</td></tr>
+<tr><td>Avatarinstellingen</td><td>Avatar-/kniecorrectie, originele/eigen beweging en voorinstellingen</td></tr>
+</tbody></table></div>
+<p>Open de instellingen voor details onder de optie. Ademhaling staat bij Functies &gt; Gemaksfuncties &gt; Ademhaling animeren.</p>
+<p>Oorspronkelijke staande, hurkende en buikposes gebruiken importeert automatisch. Eigen bewegingen wijs je apart per type toe, zoals staan, hurken (Crouching), buikligging (Prone).</p>
+<p>Voorinstellingen staan onderaan Avatarinstellingen. Deze voorinstelling toepassen vervangt de huidige poses; sla aanpassingen eerst op.</p>
+<h3>Verbruik per functie</h3>
+<ul>
+<li>Ademhaling alleen 0 bit; schakelmenu 1 bit.</li>
+<li>Fotomodus lokaal 0 bit, synchroniseren 16 bit, eigen hoofd zichtbaar 0 bit.</li>
+<li>Voet-/Vloerhoogte ieder 8 bit. Buiten midden beweegt de vloerhoogte, nabij 50% eindigt het.</li>
+<li>Omdraaien 10 bit met 1 bit gedeeld met hoofdcorrectie; samen nog 10 bit.</li>
+<li>Spiegelen/Gebaren uit ieder 1 bit.</li>
+</ul>
+<p>Inspector-totaal is voor posetools, zonder kleding/andere systemen. Gemeenschappelijke opties tellen niet dubbel.</p>
+<h3>Voorbeeld en bewerking</h3>
+<p>Voorbeeld toont de pose in Scene. Open Animatieaanpassing voor nauwkeurige bewerking met zicht op het resultaat en sla op.</p>
+<p>Het lichte voorbeeld voert MA/NDMF niet uit. Bekijk ook de uiteindelijke build voor kleding en grondcorrectie voor upload.</p>
+<p>De loep zoekt namen. Orden in Details &gt; Volgorde of omhoog/omlaag. Sleep meerdere clips of importeer geselecteerde uit Project.</p>
+<p>Poseminiaturen bijwerken vraagt bevestiging. Posepictogrammen helpen kiezen, maar kosten buildtijd. Verlaag pictogramformaat om ruimte te besparen. Geen pictogrammen op Android.</p>
+<h2>Basisbediening in het spel</h2>
+<ul>
+<li>Kies categorieposes in Expressions. Hoofdhoogte wisselt staan/hurken/zitten/liggen in VR.</li>
+<li>Gezichtsrichting kiest rug/buik; beide gekozen maakt sprongwissel mogelijk. Uit onder Functies → Gemaksfuncties → Liggende poses wisselen door springen (standaard aan). Drempels regelen wisselhoogtes.</li>
+<li>Desktop C/Z; verhoog ligdrempel als Z niet laat liggen.</li>
+<li>Gebaren uit gebruikt posehanden in plaats van controllers.</li>
+<li>Voethoogte houdt hoofd vast; Vloerhoogte beweegt alles. In die volgorde in het menu.</li>
+<li>Afstand in Fotomodus beweegt en richt naar je; Richting draait. Zet Voeten vast indien nodig; Foto afsluiten herstelt en ontgrendelt.</li>
+<li>Ademhaling vereist actieve beweging, sterkte in Unity en schakelaar in het spel.</li>
+</ul>
+<h2>Voorberekening en waarschuwingen</h2>
+<p>Voorberekening bijwerken hergebruikt data voor snellere builds. Normale builds maken het nodige ook zonder voorberekening.</p>
+<p>Instellingen controleren en Hierarchy-markeringen melden vernieuwing na wijzigingen. Waarschuwingsweergave zit in hetzelfde vak. Verbergen repareert of vernieuwt niet.</p>
+<h2>Gebruiksnotities</h2>
+<ul>
+<li>Geen vergrendeling met volledige lichaamstracking.</li>
+<li>Bouw, kleding en wijzigingen kunnen meer aanpassing vragen.</li>
+<li>Speciale Base en andere systemen kunnen conflicteren; controleer Avatarinstellingen &gt; Trackingvergrendelingen met andere gereedschappen integreren.</li>
+<li>Fotomodus/vloer corrigeren ook normale/eigen beweging zonder pose. Controleer blik en vervangingen in VRChat.</li>
+<li>Standaardwiegen uitschakelen betreft alleen standaardrust, niet iedere oorzaak.</li>
+</ul>
+<h2>Handleiding en ondersteuning</h2>
+<p>Hulp / Wijzigingen bovenaan opent handleiding, hulp en geschiedenis. Gedeelde functies staan ook in Packages &gt; Unisaki Posing System &gt; README in Project.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Officiële handleiding</a></li>
+<li><a href="https://help.unisakistudio.jp/">Ondersteuning</a></li>
+</ul>
+<p>Geef product/systeem, Unity, SDK, Modular Avatar, NDMF, avatar, stappen en Console-fout bij meldingen.</p>
+<h2>Voorinstellingen verspreiden</h2>
+<p>Informatie over data uit animatieaanpassing.</p>
+<p>Je mag gemaakte aanpassingsanimatiebestanden en daarmee ingestelde voorinstellingen
+vrij verspreiden en verkopen zonder toestemming van Unisaki Studio.
+Deel ze bijvoorbeeld bij eigen avatars of voor avatars buiten het pakket.</p>
+<h2>Producten met integratie-instellingen</h2>
+<p>Onze winkel maakte deze instellingen zelfstandig. We vroegen geen toestemming, omdat we die niet nodig achtten.
+Vraag verspreiding of stopzetting via winkelberichten.
+De integratie vereist aankoop/download van het betreffende product.
+Neem bij problemen contact op met onze winkel, niet de andere auteurs.</p>
+<p>“可愛い座りツール”
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>“添い寝ツール”
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>“少女モーション集vol.1” van ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>“VRC想定移動モーション（無料配布）” van カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>“ごろ寝システムEX” van minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Gebruiksvoorwaarden</h2>
+<p>Alleen wie de volgende met VN3 opgestelde voorwaarden accepteert mag dit gebruiken.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Voorwaarden (Japans)</a></p>
+<p>Broncode en bronnen zijn niet open source. Rechtmatige aankoop en acceptatie zijn nodig.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Voorwaarden (Engels)</a></p></main>
+</body></html>

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="cs" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Historie změn</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Čeština · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Historie změn</a><a href="UserGuide.html">Kawaii Posing Tool — česká uživatelská příručka</a></nav>
+<main><h1>Historie změn</h1>
+<h2>[3.2.0] - Nevydáno</h2>
+<h3>Přidáno</h3>
+<ul>
+<li>Zobrazení Inspectoru, úprav, instalačních dialogů, standardních názvů póz a generované nabídky VRChat ve 30 jazycích.</li>
+<li>Sjednocen výběr jazyka Inspectoru a herní nabídky. Výchozí je jazyk počítače a poslední volba platí i pro další projekty stejného uživatele OS.</li>
+<li>README, historie změn a offline návod se otevírají ve vybraném jazyce.</li>
+<li>Připraveny názvy všech 128 standardních póz a popisy funkcí podle stávající terminologie.</li>
+</ul>
+<h3>Kompatibilita</h3>
+<ul>
+<li>Zachovávají se existující nastavení avatara, vlastní názvy, odkazy na prostředky, identifikátory parametrů a způsob ukládání licencí.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Zamykání hlavy lze přepínat v „Nastavení → Automaticky zamknout hlavu na zádech“ nabídky EX i při vypnuté výšce chodidel. Položka zmizelá ve starších verzích se vrátí po sestavení aktualizovaného avatara.</li>
+<li>Přidána podpora Unisaki Posing System 3.1.2. Opraveno přetrvávající natočení obličeje vzhůru po zvednutí z břicha při omezení deformace pózy podle otočení hlavy.</li>
+</ul>
+<p>Aktualizujte Kawaii Posing Tool na 3.1.2 v ALCOM / VCC. Vyžaduje se také Unisaki Posing System 3.1.2. Pokud jste používali předgenerování, stiskněte Aktualizovat předgenerování, uložte scénu a avatara znovu sestavte a nahrajte.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>Zapnuté Výška podlahy a Přetočit se jsou nyní v Nastavení nabídky EX ve VRChat viditelné i při vypnutém zrcadlení.</li>
+<li>Po seřazení, odstranění či přejmenování póz ve staré verzi se zachovávají správná přetočení pro Nohy vpřed, Uvolnění a Jedno koleno vzhůru. Platí to i po úplném Unpack, pokud lze původní pózu rozpoznat. Vlastní pózy, ručně vypnutá přetočení a nahrazené boční pohyby zůstávají.</li>
+<li>Opravena krátká póza na břiše při výběru avatara ve VRChat. Opraven i krátký leh na zádech při skoku, pokud je vybrán pouze leh na břiše. Přepínání skokem lze vypnout v „Funkce → Usnadnění → Měnit ležící pózy skokem“. Ve výchozím stavu je zapnuté.</li>
+<li>Pokud se po aktualizaci ztratí odkaz společného Animator Controlleru póz a lze jej obnovit, zobrazí se varování a Controller se vytvoří z nastavení. Zachovávají se i odkazy Controlleru sdíleného více avatary.</li>
+<li>Nabídka přidání nástroje nyní umístí oficiální Prefab i tehdy, když máte vlastní uložený Prefab 可愛いポーズ (Kawaii Posing) stejného názvu.</li>
+<li>Pokud při přidávání Sleep-together tool chybí potřebný produkt propojení, zobrazí se produkt, který je nutné nainstalovat nejprve.</li>
+</ul>
+<p>Aktualizujte Kawaii Posing Tool a Unisaki Posing System na 3.1.1 v ALCOM / VCC. Pokud jste používali předgenerování, vyberte 可愛いポーズ (Kawaii Posing) ve scéně, stiskněte Aktualizovat předgenerování a uložte scénu. Pro promítnutí do VRChat avatara znovu sestavte a nahrajte.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>U 53 z 85 přiložených póz se končetiny automaticky přizpůsobují proporcím avatara pomocí IK.</li>
+<li>Pózy na zádech Nohy vpřed, Uvolnění a Jedno koleno vzhůru podporují přetočení náklonem hlavy.</li>
+<li>Režim focení umožňuje upravit polohu a směr avatara. Lze zvolit synchronizaci polohy a směru i zobrazení vlastní hlavy při focení.</li>
+<li>Výška podlahy posouvá celé tělo až 3m nahoru či dolů a doplňuje výšku chodidel.</li>
+<li>Přidáno dýchání, vypnutí výchozího pohupování v klidu a omezení deformace pózy podle směru hlavy.</li>
+<li>Používané funkce a spotřeba parametrů jsou viditelné v Inspectoru. Přidáno hledání póz, hromadné přidání, řazení a lehký náhled v Scene.</li>
+<li>Zrychleno přepínání stoje, podřepu a sedu v režimu plochy.</li>
+<li>Zlepšena varování předgenerování po změně nastavení, zátěž posouvání Inspectoru a dlouhá zastavení při úklidu prostředků.</li>
+<li>Přidána podpora Unisaki Posing System 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Otevřená beta (2026-11-05)</h2>
+<ul>
+<li>Zahájeno šíření otevřené bety přes GitHub Releases a VPM. U 53 z 85 přiložených póz se končetiny přizpůsobují proporcím pomocí IK.</li>
+<li>Přidána podpora společného balíčku 3.1.0-beta.2. Zlepšeno zobrazení změn po předgenerování, zátěž posouvání Inspectoru a zastavení při úklidu prostředků.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Otevřená beta (2026-11-04)</h2>
+<ul>
+<li>Přidána podpora Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Běžné přepínání póz v režimu plochy převedeno na jedno vyhodnocení. Funguje při běžném sestavení i předgenerování, VR a zvláštní podmínky zachovávají dosavadní cestu.</li>
+<li>Předgenerování z alpha.3 a starších verzí se rozpoznává jako vyžadující aktualizaci.</li>
+<li>Při změně výšky podlahy během focení se zachovává pohled a po ukončení se obnoví poslední výška podlahy.</li>
+<li>Zahrnuta zlepšení automatického importu, úprav importovaných pohybů a správy vytvořených Controllerů až do alpha.3.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Uzavřená testovací verze (2026-10-26)</h2>
+<h3>Opravy a změny</h3>
+<ul>
+<li>Společný systém póz aktualizován na 3.1.0-alpha.2 včetně oprav ladění.</li>
+<li>Výška podlahy rozšířena na 3m nahoru a dolů. 50% je původní výška a počáteční hodnota.</li>
+<li>Výchozí a vlastní pohyby bez vybrané pózy zahrnuty do korekce focení a výšky podlahy.</li>
+<li>Opraveny problémy ruční korekce, stejnojmenných póz, počáteční pózy a přetočení starých předvoleb a další.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Před zveřejněním</h2>
+<h3>Přidáno</h3>
+<ul>
+<li>Přidána automatická korekce končetin (IK) podle tělesných proporcí.</li>
+<li>Přidán celkový i individuální přepínač IK a zápis výsledku do korekční animace.</li>
+<li>Pózy na zádech Nohy vpřed, Uvolnění a Jedno koleno vzhůru podporují přetočení náklonem hlavy.</li>
+<li>Přidáno nastavení přetočení jednotlivých póz a přiřazení boční animace.</li>
+<li>Přidán režim focení pro posun vpřed a otáčení.</li>
+<li>Přidána synchronizace režimu focení: pouze lokálně 0 bit, se synchronizací 16 bit.</li>
+<li>Přidáno ponechání vlastní hlavy viditelné v režimu focení.</li>
+<li>Přidána Výška podlahy, která zvedá celé tělo včetně hlavy.</li>
+<li>Přidán pohyb a intenzita dýchání i herní přepínač.</li>
+<li>Přidáno vypnutí výchozího pohupování VRChat.</li>
+<li>Přidáno omezení deformace pózy podle směru hlavy.</li>
+<li>Přidáno zabránění ohybu kolen dozadu a minimální úhel ohybu.</li>
+<li>Přidány přepínače funkcí a zobrazení spotřeby ExpressionParameters.</li>
+<li>Přidán lehký náhled v Scene, hledání póz, hromadné přidávání a volba cílového pořadí.</li>
+<li>Přidána historie změn v Inspectoru.</li>
+</ul>
+<h3>Změněno</h3>
+<ul>
+<li>Inspector rozdělen na 3 karty: Funkce, Pózy a Nastavení avatara.</li>
+<li>Uspořádáno umístění podrobností dýchání, importu vlastních pohybů a předvoleb.</li>
+<li>Omezeno opakování animací vytvářených pro výšku chodidel.</li>
+<li>Přidán potvrzovací dialog obnovy obrázků póz a nastavení varování soustředěno do Kontroly nastavení.</li>
+<li>Odstraněna nabídka nového přidání 8bit verze, nahrazena volbou funkcí běžného Prefabu. Existující odkazy zůstávají.</li>
+<li>Přidána podpora Unisaki Posing System 3.1.0-alpha.1. Minimální verze VRChat Avatars SDK změněna na 3.10.4.</li>
+</ul>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraven přesun zadávaného názvu na jinou pózu a zavírání podrobností při řazení.</li>
+<li>Opraveno překrývání náhledů, odchylka umístění a chyby některých avatarů.</li>
+<li>Opraveno obnovování varování a stavu předgenerování po změně nastavení i některé chyby sestavení.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>Aktualizováno na PosingSystem 3.0.17 a opraven vodorovný posun póz po rovnoměrné změně měřítka celého avatara</li>
+<li>Přidána nastavení ignorování varování automatického přešlapování, chybějícího předgenerování a změn nastavení jednotlivě či společně</li>
+<li>Opraven import nevhodných jednorázových animací při ručním importu pohybových animací</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Přidána předvolba avatara (ルリエ)</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Přidány předvolby avatarů (メルヴィ, ミダリス)</li>
+<li>Opraveno nahrazování pohybů předvolby うらら</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>Aktualizováno na PosingSystem 3.0.11 a opraveno selhání předgenerování s nejnovějším NDMF i výjimka při zobrazení chyb</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>Aktualizováno na PosingSystem 3.0.10 a snížena zátěž načítání předvoleb i vyhodnocování ikon Hierarchy</li>
+<li>Opravena chyba předgenerování více systémů póz na stejném avatarovi</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>Aktualizováno na PosingSystem 3.0.9 a opraven neplatný Avatar náhledu po NDMF způsobující chybu <code dir="ltr">Avatar is null</code> v Play</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>Aktualizováno na PosingSystem 3.0.8 a opraveno možné poškození dat póz při opakované korekci výšky</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Přidány předvolby avatarů (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ)</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Přidány předvolby avatarů (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール)</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Přidány předvolby avatarů (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing)</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Zlepšeny funkce instalace a odstranění licencí</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Opravena práce s licencemi ve verzích Mac a Linux</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Přidány předvolby avatarů (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ)</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Přidáno předgenerování</li>
+<li>Přidána úprava animace</li>
+<li>Přidány předvolby</li>
+<li>Produkt lze nyní přidat do projektu pomocí unitypackage</li>
+<li>Přidány předvolby avatarů (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ)</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Vyřešeny problémy kompatibility s některými funkcemi avatara</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Opraveno nepřepínání póz u některých avatarů a verzí ModularAvatar</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Opraveny nesprávné pohyby některých avatarů, například skok 森羅</li>
+<li>Opravena občasná nesprávná počáteční hodnota Gesta vyp.</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Opravena chyba v některých prostředích</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Opraven pád Unity</li>
+<li>K názvu nástroje v NDMF Console přidána verze</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Přidána volba vypnout gesta a používat tvar rukou z animace</li>
+<li>Ke všem pózám přidána data tvaru rukou</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Opraveno poškození póz s některými nástroji</li>
+<li>Opraveny chyby závislé na nastavení</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Vyřešeny konflikty s některými funkcemi avatara</li>
+<li>Přidáno tlačítko pro odstranění verze Unitypackage</li>
+<li>Vydána verze VCC 三点だいしゅきツール, proto byly odstraněny integrační Prefaby</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Opravena chyba závislá na avatarovi</li>
+<li>Opraveno nefunkční zamykání nohou kvůli konfliktům s funkcemi nebo avatarem</li>
+<li>Opraven návrat pózy avatara na výchozí VRC v režimu plochy</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Opraveno nepřepínání póz s avatary nebo funkcemi používajícími nesprávný typ VRMode</li>
+<li>Přidáno zobrazení konfliktů různých typů parametrů mezi funkcemi v NDMF-Console</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Do NDMF-Console přidáno vysvětlení chyby Unisaki Posing System při sestavení avatara s chybou jiného nástroje</li>
+<li>Opravena chyba sestavení některých avatarů</li>
+<li>Zlepšeno chování hned po načtení avatara</li>
+<li>Původní zpracování pohybu avatara se nyní odstraňuje, protože některým avatarům bránilo ve fungování</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Opravena nemožnost sestavení</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Vyřešeno zabořování nohou a boků do země v režimu plochy pro správné zobrazení všech póz</li>
+<li>Přidána změna pózy nezávislá na výšce hlavy</li>
+<li>Přidán režim bez generování ikon pro nahrávání avatarů Quest</li>
+<li>Přidána varování na některé problémy avatara</li>
+<li>Vyřešeny konflikty zámků s AFK, zamykáním paží jiných nástrojů a podobnými funkcemi</li>
+<li>Přidáno automatické zamykání hlavy na zádech</li>
+<li>Změněno ExpressionsMenu: výběr póz oddělen do složky a zámky přesunuty nahoru</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Převedeno na balíček VPM pro podporu VCC</li>
+<li>Opravena spotřeba 17bit u 8bit verze</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraveny chyby a problémy</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraven problém s VRCFury</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Přidáno nastavení propojení s ごろ寝システムEX</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opravena nedostupnost nástroje v některých stavech ExMenu</li>
+<li>Do nastavení přidáno zrcadlení</li>
+<li>Opravena kočičí póza</li>
+<li>Přidáno ５ póz vleže na boku</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opravena nesprávná póza při vysoké poloze hlavy</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Přidána funkce póz ve stoje a 15 póz</li>
+<li>Opraven samovolný pohyb nohou u některých avatarů a prostředí</li>
+<li>Přidána verze ExpressionParameters8bit</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraven samovolný pohyb nohou u některých avatarů</li>
+<li>Sjednoceno WriteDefaults</li>
+<li>Přidáno ７ póz v podřepu a ８ vsedě</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraveno selhání nahrávání s ModularAvatar1.9.0 a novějším</li>
+<li>Nyní je vyžadován ModualrAvatar1.9.0 nebo novější</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Přidána změna prahu výšky hlavy každé pózy</li>
+<li>Opraveny nesprávné pózy a nohy některých avatarů například při skoku</li>
+<li>Spotřeba ExpressionParameter snížena z 54 na 16bit</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opravena nemožnost přejít do sedu ve VR</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>V režimu plochy lze nyní sedět i při stisknutém C</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opravena nedostupnost propojení 添い寝 bez propojení 三点だいしゅき</li>
+<li>Opraveno zatuhnutí nohou při skoku</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraven abnormálně velký počet VRCContactSender/Receiver</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opravena chyba sestavení při nahrávání</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Opraveno</h3>
+<ul>
+<li>Opraveny nesprávné výchozí hodnoty při použití více Prefabs</li>
+<li>Opraveno chybné nastavení propojení 可愛い座り</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Vydání</h3></main>
+</body></html>

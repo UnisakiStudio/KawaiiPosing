@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="nl" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing — Nederlandse handleiding</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Nederlands · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Wijzigingsgeschiedenis</a><a href="UserGuide.html">Kawaii Posing — Nederlandse handleiding</a></nav>
+<main><h1>Kawaii Posing — Nederlandse handleiding</h1>
+<p>Kawaii Posing biedt 85 poses voor desktop en driepunt-VR: 15 staand, 20 hurkend/op stoel, 17 zittend op de grond, 17 op de rug en 16 op de buik.</p>
+<p>Deze gids beschrijft installeren, avatarinstellingen, VRChat-bediening, bewerken, updates en problemen. <code dir="ltr">START_HERE.html</code> in het gekochte ZIP leidt het snelst naar installatie.</p>
+<h2>Voor je begint</h2>
+<ul>
+<li>Gebruik een Unity 2022.3 VRChat-<strong>avatarproject</strong> via VRChat Creator Companion (VCC) of ALCOM.</li>
+<li>Nodig: VRChat Avatars SDK 3.10.4+, Modular Avatar 1.x vanaf 1.15.1 en NDMF 1.x vanaf 1.14.0.</li>
+<li>Voor Humanoid op desktop en VR met headset/twee controllers. Posevergrendeling met volledige lichaamstracking niet ondersteund.</li>
+<li>Maak een reservekopie voor installatie/updates en los eerst compilatiefouten op.</li>
+<li>De installer downloadt product/afhankelijkheden uit repositories, met internet. Avatarmodellen, VRChat SDK, Modular Avatar en NDMF zitten niet in het ZIP.</li>
+</ul>
+<h2>1. Licentie en product installeren</h2>
+<ol>
+<li>Pak het hele ZIP uit buiten je Unity-project.</li>
+<li>Open het juiste project en importeer <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> via <strong>Assets &gt; Import Package &gt; Custom Package</strong>, of open met Unity.</li>
+<li>Lees import-/installatiebevestigingen. De licentiebevestiging noemt welke licenties komen. Gebruik <strong>Taal…</strong> of <strong>言語...</strong> om taal te wijzigen.</li>
+<li>Bevestig de licentie, ook voor Unisaki Posing System. Opruimen van installerbestanden achteraf verwijdert de licentie niet.</li>
+<li>Controleer automatische pakketinstallatie: pakketten/bronnen en voorgestelde oude bestanden/mappen. Ga door als dit klopt.</li>
+<li>Wacht op import/compilatie. Voeg bij mislukte automatische installatie <strong>Kawaii Posing</strong> en <strong>Modular Avatar</strong> via VCC/ALCOM toe. <strong>Unisaki Posing System</strong> en <strong>NDMF</strong> zijn afhankelijkheden. <code dir="ltr">Optional-VCC-Links</code> bevat oorspronkelijke repositorysnelkoppelingen voor VCC op Windows.</li>
+<li>Na annuleren importeer opnieuw wanneer je klaar bent. Met aanwezige activator kan ook de licentieopdracht onder <strong>Tools &gt; Unisaki Studio</strong>; oudere builds noemen dat <strong>ゆにさきスタジオ</strong>.</li>
+</ol>
+<h3>Wat deze download installeert</h3>
+<p><strong>Kawaii Posing 3.2.0 met Unisaki Posing System 3.2.0.</strong> In ontwikkeling en niet uitgebracht. Dertig talen voor installatie, Unity-Inspector/menu’s, standaardnamen, spelmenu’s en offline documenten. Datum nog onbekend. Kies boven in de Inspector. Na publicatie downloadt de installer deze versies en passende afhankelijkheden uit VPM. Lokale voorbereiding publiceert niets.</p>
+<p>Kawaii Posing bevat poses, instellingstools en avatarvoorinstellingen. De installer activeert de bestaande lokale licentie, zonder nieuw Gumroad-sleutelveld. Plaats nooit installer- of licentiedata openbaar in hulpvragen.</p>
+<p>Taal staat in Unity EditorPrefs voor de systeemgebruiker, gedeeld tussen projecten op deze computer. Zonder voorkeur systeemtaal/Engels. Licenties blijven in <code dir="ltr">Software/UnisakiStudio</code> voor Windows of gebruikersbestanden op macOS/Linux. Taal wijzigen verwijdert niets.</p>
+<h2>2. Toevoegen aan een avatar</h2>
+<ol>
+<li>Kies avatar met <strong>VRC Avatar Descriptor</strong> of kind in <strong>Hierarchy</strong>. Een scèneobject, niet Project-Prefab of Prefab Mode.</li>
+<li>Rechtsklik: <strong>Unisaki Studio &gt; Kawaii Posing toevoegen</strong>. Bij Japanse menu’s: <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>.</li>
+<li>Opgeslagen naam kan <strong>可愛いポーズ</strong> blijven ondanks vertaalde labels.</li>
+<li>Pas aangeboden passende voorinstelling toe of kies/werk zelf onder <strong>Avatarinstellingen</strong>.</li>
+<li>Voorberekening is optioneel: normale build genereert ook data. Hergebruik versnelt latere builds.</li>
+<li>Selecteer tool, poses en functies en upload met VRChat SDK.</li>
+</ol>
+<h3>Taalkeuze en bekende labels</h3>
+<p><strong>Language / 言語</strong> staat bovenaan. Eén keuze stuurt Inspector/menu en wordt in de avatar bewaard, met laatste keuze voor andere tools/projecten op deze computer. Upload opnieuw voor een andere taal in VRChat.</p>
+<p>Gebruik de tabel bij oude Japanse tutorials. Deze versie heeft selector, Inspector, standaardnamen en spelmenu’s in alle 30 talen.</p>
+<div class="table-scroll"><table><thead><tr><th>Nederlands</th><th>Japans label in oudere builds</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Functies</td><td>機能</td></tr>
+<tr><td>Poses</td><td>ポーズ一覧</td></tr>
+<tr><td>Avatarinstellingen</td><td>アバター調整</td></tr>
+<tr><td>Instellingen openen</td><td>設定を開く</td></tr>
+<tr><td>Voorberekening bijwerken</td><td>プレビルドを更新</td></tr>
+<tr><td>Instellingen controleren</td><td>設定の確認</td></tr>
+<tr><td>Voorbeeld</td><td>プレビュー</td></tr>
+<tr><td>Animatieaanpassing</td><td>アニメーション調整</td></tr>
+<tr><td>Opnieuw laden</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Inspector, bewerkings-/installatiedialogen, standaardnamen en menu’s zijn in 30 talen. README, geschiedenis en offline gids in elke taal. Avatarnamen, opgeslagen objecten, eigen poses, bestanden en interne ID’s kunnen origineel blijven.</p>
+<p>De <a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">korte referenties in 30 talen</a> bevatten functies en standaardnamen. Gebruik de talenindex voor volledige documentatie.</p>
+<h2>3. Poses en functies kiezen</h2>
+<p>De Inspector heeft drie hoofdtabbladen:</p>
+<div class="table-scroll"><table><thead><tr><th>Tabblad</th><th>Doel</th></tr></thead><tbody>
+<tr><td><strong>Functies</strong></td><td>Spelmenu’s, opties, ademhaling, pictogrammen en parameters.</td></tr>
+<tr><td><strong>Poses</strong></td><td>Actieve poses, categorie/zoeken, volgorde, toevoegen, voorbeeld, details en animatieaanpassing.</td></tr>
+<tr><td><strong>Avatarinstellingen</strong></td><td>Avatar-/kniecorrectie, oorspronkelijke/eigen import en voorinstellingen.</td></tr>
+</tbody></table></div>
+<p>Activeer alleen gewenste menu’s. <strong>Spiegelen</strong> toevoegen maakt het effect schakelbaar, niet permanent voor alle poses.</p>
+<p>Kawaii Posing heeft voorinstellingen en ondersteunde IK. <strong>Benen gestrekt (足伸ばし)</strong>, <strong>Ontspannen (リラックス)</strong> en <strong>Eén knie omhoog (膝立て)</strong> hebben zijbewegingen. Gebruik een passende voorinstelling en controleer Omdraaien na bewerken/vervangen.</p>
+<h3>Voorinstellingen en pasvorm</h3>
+<p>Voorinstellingen staan onderaan <strong>Avatarinstellingen</strong>. Zoek op avatarnaam en vervang de huidige poses met een voorinstelling. Sla aanpassingen eerst op. Het is een uitgangspunt; proporties, kleding en wijzigingen kunnen handcorrecties vragen.</p>
+<p><strong>Animatieaanpassing</strong> toont en bewerkt lichaam/ledematen. Sla vanuit het venster op na afloop. Ondersteunde IK is globaal en per pose schakelbaar. Vastleggen maakt een aanpassingsanimatie en zet pose-IK uit voor handmatig vervolg; de originele clip blijft.</p>
+<p><strong>Achterwaartse kniebuiging voorkomen</strong> heeft extra opties zoals minimumhoek. Avatarcorrecties vereisen passende data en sommige combineren niet met IK.</p>
+<h3>Oorspronkelijke en eigen bewegingen</h3>
+<p><strong>Oorspronkelijke staande, hurkende en buikposes gebruiken</strong> detecteert Base bij generatie. <strong>Eigen bewegingen gebruiken</strong> opent aparte import per type. Eén per type; handmatige toewijzing gaat voor.</p>
+<p>Automatische import werkt op de buildkopie, zonder handmatige scènelijst of broncontrollers te wijzigen. Wis een handmatige override voor opnieuw detecteren. Eigen Base en andere locomotie kunnen speciale afstemming vragen.</p>
+<h2>4. Gebruiken in VRChat</h2>
+<p>Open <strong>Expressions</strong> en <strong>Kawaii Posing</strong>. Kies een pose per gewenste categorie. Posen en functies selecteren zijn aparte acties.</p>
+<ul>
+<li><strong>Driepunt-VR:</strong> hoofd omhoog/omlaag voor staan, hurken/stoel, vloerzitten en liggen. Pas drempels aan bij te vroeg/laat wisselen.</li>
+<li><strong>Desktop:</strong> <strong>C</strong> hurken, <strong>Z</strong> liggen; verhoog ligdrempel als je blijft zitten.</li>
+<li><strong>Rug/buik:</strong> gezichtsrichting kiest, beide maakt sprongwissel mogelijk. Uit onder <strong>Functies &gt; Gemaksfuncties</strong>, zonder extra gesynchroniseerde kosten.</li>
+<li><strong>Vergrendelen:</strong> hoofd, armen, voeten naar behoefte. Gebaren uit gebruikt posehanden.</li>
+<li><strong>Spiegelen:</strong> draai de pose om voor vrienden of compositie.</li>
+</ul>
+<h3>Voethoogte en Vloerhoogte</h3>
+<p><strong>Voethoogte</strong> past voeten aan met vast hoofd. Gebruik bij zwevende/ingezakte voeten terwijl de hoofdhoogte klopt.</p>
+<p><strong>Vloerhoogte</strong> beweegt alles, ook hoofd. Voor bank, bed of verhoging zonder collider. Gecentreerd is <strong>50% oorspronkelijk</strong>, 0% 3 m lager en 100% 3 m hoger. Terug nabij 50% stopt. Oude versies kunnen verschillen; werk kern en product samen bij.</p>
+<h3>Fotomodus</h3>
+<p>Activeer <strong>Fotomodus</strong> in Unity voor upload. Kies in VRChat pose, <strong>Afstand</strong> tot 3 m vooruit en <strong>Richting</strong> voor draaien. Voetvergrendeling is optioneel tijdens positioneren. <strong>Foto afsluiten</strong> herstelt en ontgrendelt.</p>
+<p>Fotomodus standaard lokaal. <strong>Fotomodus synchroniseren</strong> voor upload maakt positie/draai zichtbaar voor anderen, voor 16 bits. <strong>Hoofd zichtbaar houden in Fotomodus</strong> alleen eigen zicht zonder bits.</p>
+<h3>Ademhaling en Omdraaien</h3>
+<p>Stel ademhaling per categorie in onder <strong>Functies &gt; Gemaksfuncties &gt; Ademhaling animeren</strong>. Geen, Zwak, Gemiddeld, Sterk, Snel of eigen animatie. Alleen beweging 0 bits; schakelmenu 1 bit.</p>
+<p>Omdraaien vereist ondersteunde ligpose en <strong>Omdraaien</strong> in het menu. Activeer de poseoptie en wijs zijanimatie toe. Kies in VRChat de pose, zet Omdraaien aan en ontgrendel hoofd/nek. Zijwaartse hoofdhelling stuurt; normale MotionTime niet beschikbaar.</p>
+<p>De drie genoemde rugposes bevatten zijbewegingen. Andere vereisen juiste animatie en opties. Eigen/geïmporteerde voorinstellingen kunnen andere toewijzingen hebben.</p>
+<h2>5. Poses bewerken, toevoegen en bekijken</h2>
+<p>Kies in <strong>Poses</strong> categorie/zoeken. Oorspronkelijke Japanse namen en vertalingen werken. Open <strong>Details</strong> voor animatie, pictogram, volgorde en tijd.</p>
+<p>Sleep meerdere clips of selecteer in Project en importeer geselecteerde. Dubbele verwijzingen verdwijnen. Kies doelvolgorde in Details of gebruik omhoog/omlaag.</p>
+<p><strong>Voorbeeld</strong> toont in Scene zonder heel venster. Geen MA/NDMF; controleer kleding, grond en andere buildfuncties in de uiteindelijke avatar.</p>
+<p>Avatarpictogrammen herkennen poses maar kosten tijd/data. Verlaag resolutie voor ruimte. Geen Android-pictogrammen. Vernieuw na avatar-/kledingwijzigingen.</p>
+<h2>6. Parametergeheugen</h2>
+<p>Inspector toont alleen posetools, niet de hele avatar. Kleding en andere systemen gebruiken meer. Gedeelde opties tellen niet dubbel. Veel extra poses kunnen meer selectiebits kosten.</p>
+<div class="table-scroll"><table><thead><tr><th>Functie</th><th>Extra gesynchroniseerde bits</th></tr></thead><tbody>
+<tr><td>Minimale standaardposeselectie</td><td>8</td></tr>
+<tr><td>Spiegelen</td><td>1</td></tr>
+<tr><td>Gebaren uit</td><td>1</td></tr>
+<tr><td>Ademhaling bewegen</td><td>0</td></tr>
+<tr><td>Ademhalingmenu</td><td>1</td></tr>
+<tr><td>Voethoogte</td><td>8</td></tr>
+<tr><td>Vloerhoogte</td><td>8</td></tr>
+<tr><td>Fotomodus lokaal</td><td>0</td></tr>
+<tr><td>Fotomodus synchroniseren</td><td>16</td></tr>
+<tr><td>Hoofd zichtbaar houden in Fotomodus</td><td>0</td></tr>
+<tr><td>Standaardwiegen van VRChat uitschakelen</td><td>0</td></tr>
+<tr><td>Omdraaien</td><td>10</td></tr>
+</tbody></table></div>
+<p>Omdraaien deelt 1 bit met de nekrichtingscorrectie: samen nog 10 bits. De weergave van jouw versie is de praktische referentie.</p>
+<h2>7. Bijwerken en voorberekenen</h2>
+<ol>
+<li>Maak een reservekopie en sla de scène op.</li>
+<li>Werk <strong>Kawaii Posing</strong> en <strong>Unisaki Posing System</strong> samen bij met VCC/ALCOM, met passend SDK/Modular Avatar/NDMF.</li>
+<li>Wacht op compilatie en controleer poses, opties en verbruik.</li>
+<li>Gebruik <strong>Voorberekening bijwerken</strong> indien gebruikt en upload opnieuw.</li>
+</ol>
+<p>Bestaande opties blijven. Oude 8-bit-Prefabs voor compatibiliteit zonder verwijderen/vervangen. Nieuwe normale Prefab kan overbodige functies uitschakelen voor minder parameters.</p>
+<p>Een verouderde voorberekening meldt gewijzigde opties sinds cachegeneratie. Bijwerken vernieuwt. Verbergen doet dat niet en repareert de oorzaak niet. Normale builds maken data zonder iedere keer handmatig voorberekenen.</p>
+<h2>8. Problemen oplossen</h2>
+<div class="table-scroll"><table><thead><tr><th>Probleem</th><th>Controle</th></tr></thead><tbody>
+<tr><td>Toevoegmenu ontbreekt</td><td>Product <strong>en</strong> Unisaki Posing System installeren en Console-compilatiefouten oplossen. Licentieinstaller alleen is geen bibliotheek.</td></tr>
+<tr><td>Installer geannuleerd/bestanden weg</td><td>Importeer opnieuw en lees bevestigingen.</td></tr>
+<tr><td>Licentie ontbreekt in ander project</td><td>Importeer met hetzelfde systeemaccount; op andere pc/account ook installeren. Taal verhuist niet automatisch.</td></tr>
+<tr><td>Geen poses in VRChat</td><td>Onder juiste scèneavatar plaatsen, poses aan, meldingen controleren, die avatar uploaden. SDK/locomotie controleren.</td></tr>
+<tr><td>Z laat niet liggen</td><td>Ligdrempel verhogen.</td></tr>
+<tr><td>Handen/knieën passen niet</td><td>Voorinstelling, ondersteunde IK en/of Animatieaanpassing; kleding in eindbuild controleren.</td></tr>
+<tr><td>Omdraaien werkt niet</td><td>Ondersteunde pose, poseoptie/menu aan, hoofd/nek los. Probeer eerst een van de drie standaardposes.</td></tr>
+<tr><td>Vrienden zien fotobeweging niet</td><td><strong>Fotomodus synchroniseren</strong>, verbruik controleren, opnieuw uploaden.</td></tr>
+<tr><td>Taal alleen in Unity anders</td><td>Opnieuw uploaden; enige selector bovenaan controleren.</td></tr>
+<tr><td>Build-/voorberekeningsfouten</td><td><strong>Eerste</strong> relevante Console-fout lezen. Scène veiligstellen, product/kern met VCC/ALCOM vernieuwen en hulp vragen als het blijft. Aangepaste objecten en GeneratedResources bewaren tenzij expliciet hersteladvies.</td></tr>
+</tbody></table></div>
+<p>Geef de product-/systeemversies, Unity/SDK/Modular Avatar/NDMF-versies, avatarnaam, exacte stappen en de relevante Console-fout. Verwijder privébestanden, installerinhoud, licenties en accountdetails uit openbare hulpvragen.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Ondersteuning</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Geïllustreerde online handleiding (Japans)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Gumroad-productpagina</a></li>
+</ul>
+<h2>Licenties en credits</h2>
+<p>Een <a href="../../Terms.en.html">Engelse referentievertaling van de productvoorwaarden</a> zit bij het Japanse origineel.</p>
+<p>Lees product- en kernvoorwaarden naast README of in <code dir="ltr">Licenses</code> van het ZIP. De Engelse kernvoorwaarden zijn een bestaande referentievertaling; Japanse productvoorwaarden blijven apart. Deze handleiding wijzigt de overeenkomsten niet en verleent geen extra rechten. Vraag ondersteuning bij gebruik/verspreiding van productdata.</p>
+<p>Installer bevat aangepaste <strong>VPMPackageAutoInstaller</strong> van <strong>anatawa12</strong>, met <strong>SimpleJson</strong> en <strong>semver.net</strong>. Copyrightvermeldingen en MIT-licentieteksten staan in <code dir="ltr">ThirdPartyNotices.txt</code> in het gekochte ZIP. Bibliotheek en bronnen hebben eigen productlicenties.</p></main>
+</body></html>

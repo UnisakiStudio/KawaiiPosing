@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="tr" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool — Türkçe kullanım kılavuzu</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Türkçe · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Değişiklik geçmişi</a><a href="UserGuide.html">Kawaii Posing Tool — Türkçe kullanım kılavuzu</a></nav>
+<main><h1>Kawaii Posing Tool — Türkçe kullanım kılavuzu</h1>
+<p>Kawaii Posing, masaüstü ve üç noktalı VR için 85 poz sunar: 15 ayakta, 20 çömelme/sandalye, 17 yerde oturma, 17 sırtüstü ve 16 yüzüstü.</p>
+<p>Bu kılavuz kurulum, avatar ayarı, VRChat kontrolleri, poz düzenleme, güncelleme ve sorun gidermeyi kapsar. Satın aldığınız ZIP’te en hızlı kurulum yolu için <code dir="ltr">START_HERE.html</code> bulunur.</p>
+<h2>Başlamadan önce</h2>
+<ul>
+<li>VRChat Creator Companion (VCC) veya ALCOM ile oluşturulan ya da yönetilen Unity 2022.3 VRChat <strong>avatar</strong> projesi kullanın.</li>
+<li>Gereken paketler: VRChat Avatars SDK 3.10.4 veya sonrası; Modular Avatar 1.x, 1.15.1 veya sonrası; NDMF 1.x, 1.14.0 veya sonrası.</li>
+<li>Araç masaüstünde ve üç noktalı VR’de (başlık ve iki kontrolör) Humanoid avatarlar içindir. Tam vücut takibi etkin olduğunda poz kilitleme desteklenmez.</li>
+<li>Kurmadan veya güncellemeden önce mevcut projeyi yedekleyin. Önce Unity’deki mevcut derleme hatalarını giderin.</li>
+<li>Kurucu ürünü ve bağımlılıkları paket depolarından indirir. İnternet gerekir. Avatar modelleri, VRChat SDK, Modular Avatar ve NDMF bu ZIP’te bulunmaz.</li>
+</ul>
+<h2>1. Lisansı ve ürünü kurun</h2>
+<ol>
+<li>ZIP’in tamamını Unity projenizin dışındaki normal bir klasöre çıkarın.</li>
+<li>Hedef avatar projesini Unity’de açın. <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> dosyasını <strong>Assets &gt; Import Package &gt; Custom Package</strong> ile aktarın veya Unity’de açın.</li>
+<li>İçe aktarma ve kurulum istemlerini okuyun. Lisans onayı hangi ürün lisanslarının kurulacağını açıklar. Kurulum dilini değiştirmek için onay penceresindeki <strong>Dil…</strong> (veya <strong>言語...</strong>) düğmesini kullanın.</li>
+<li>Lisans kurulumunu onaylayın. Lisans bu ürünün kullandığı ortak Unisaki Posing System’i de kapsar. Kurucu daha sonra kendi kurulum dosyalarını kaldırmayı önerebilir; bu temizlik kurulu ürün lisansını silmez.</li>
+<li>Otomatik paket kurulumunun onayını inceleyin. Eklenecek paket ve depoları, kaldırılması önerilen eski dosya veya klasörleri listeler. Bunlar istediğiniz öğelerse devam edin.</li>
+<li>Unity’nin içe aktarma ve derlemeyi bitirmesini bekleyin. Paket kurulumu otomatik bitmezse projeyi VCC veya ALCOM’da açıp <strong>Kawaii Posing Tool</strong> ve <strong>Modular Avatar</strong> ekleyin. Ortak <strong>Unisaki Posing System</strong> ve <strong>NDMF</strong> bağımlılıklardır. <code dir="ltr">Optional-VCC-Links</code>, Windows VCC kullanıcıları için ürünle gelen özgün depo kısayollarını içerir.</li>
+<li>Bir onay iptal edildiyse hazır olduğunuzda kurucuyu yeniden içe aktarın. Etkinleştirici hâlâ varsa <strong>Tools &gt; Unisaki Studio</strong> içindeki lisans kurulum komutu da kullanılabilir. Eski sürümlerde bu alt menü <strong>ゆにさきスタジオ</strong> adını taşır.</li>
+</ol>
+<h3>Bu indirme neleri kurar?</h3>
+<p><strong>Kawaii Posing Tool 3.2.0 ve Unisaki Posing System 3.2.0.</strong> Bu sürüm geliştirme aşamasındadır ve yayınlanmamıştır. Otuz dilde kurulum iletişimleri, Unity Inspector ve menüleri, standart poz adları, oyun menüleri ve çevrimdışı belgeler ekler. Yayın tarihi belirlenmemiştir. Aracın dilini Inspector’ın üstündeki seçiciden değiştirin. Yayınlandıktan sonra kurucu bu sürümleri ve uyumlu bağımlılıklarını VPM depolarından indirecektir. Yerel yayın hazırlığı paketleri yayınlamaz.</p>
+<p>Kawaii Posing Tool; poz kitaplığı, ayar araçları ve avatar düzeltme ön ayarlarını içerir. Kurucu ürünün mevcut yerel lisansını etkinleştirir; yeni bir Gumroad lisans anahtarı alanı gerektirmez. Kurulum dosyalarını veya lisans verilerini hiçbir zaman herkese açık destek iletilerine koymayın.</p>
+<p>Dil tercihleri geçerli işletim sistemi kullanıcısı için Unity EditorPrefs’te saklanır ve bu bilgisayardaki Unity projeleri arasında paylaşılır. Kayıtlı tercih yoksa kurucu işletim sisteminin dilini izler; desteklenmeyen dillerde İngilizce kullanılır. Ürün lisansları mevcut depolamayı korur: Windows’ta geçerli kullanıcının <code dir="ltr">Software/UnisakiStudio</code> kayıt defteri anahtarı, macOS/Linux’ta kullanıcıya özel lisans dosyaları. Dil değiştirmek lisansı silmez.</p>
+<h2>2. Aracı avatara ekleyin</h2>
+<ol>
+<li><strong>Hierarchy</strong> içinde <strong>VRC Avatar Descriptor</strong> olan avatarı veya alt nesnelerinden birini seçin. Project’teki Prefab varlığı veya Prefab Mode yerine sahneye yerleştirilmiş avatar kullanın.</li>
+<li>Avatara sağ tıklayıp <strong>Unisaki Studio &gt; Kawaii Posing Ekle</strong>yi seçin. Kurulu sürüm Japonca menü kullanıyorsa <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>yı seçin.</li>
+<li>Araç avatarın içine eklenir. Görüntülenen etiketler çevrilse de kaydedilmiş nesne adı <strong>可愛いポーズ</strong> kalabilir.</li>
+<li>Uyumlu ön ayar sunulursa başlangıç uyumu için uygulayın. Yoksa <strong>Avatar Kurulumu</strong>nu açıp bir ön ayar seçin veya pozları kendiniz düzeltin.</li>
+<li>Kurucu ön oluşturma önerebilir. İsteğe bağlıdır; normal avatar derlemesi de gerekli veriyi üretir. Sonraki derlemeleri hızlandırmak için ön oluşturmayı yeniden kullanın.</li>
+<li>Araç nesnesini seçin, poz ve özellikleri ayarlayın, ardından avatarı VRChat SDK üzerinden normal şekilde yükleyin.</li>
+</ol>
+<h3>Dil seçimi ve tanıdık etiketler</h3>
+<p>Bu sürümde Inspector’ın üstünde <strong>Language / 言語</strong> vardır. Tek seçim Inspector’ı ve oluşturulan oyun menüsünü yönetir. Avatar seçilen dili saklar ve son seçim bu bilgisayardaki diğer araç/projelerde hatırlanır. VRChat’te görülen dili değiştirmek için avatarı yeniden yükleyin.</p>
+<p>Eski Japonca öğreticileri izlerken aşağıdaki etiket tablosunu kullanın. Bu sürümde 30 dilin tümü için dil seçici, çevrilmiş Inspector, standart poz adları ve oyun menüleri bulunur.</p>
+<div class="table-scroll"><table><thead><tr><th>Türkçe etiket</th><th>Eski sürümlerdeki Japonca etiket</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Özellikler</td><td>機能</td></tr>
+<tr><td>Pozlar</td><td>ポーズ一覧</td></tr>
+<tr><td>Avatar Kurulumu</td><td>アバター調整</td></tr>
+<tr><td>Ayarları aç</td><td>設定を開く</td></tr>
+<tr><td>Ön oluşturmayı güncelle</td><td>プレビルドを更新</td></tr>
+<tr><td>Ayarları kontrol et</td><td>設定の確認</td></tr>
+<tr><td>Önizleme</td><td>プレビュー</td></tr>
+<tr><td>Animasyon Düzeltmesi</td><td>アニメーション調整</td></tr>
+<tr><td>Yenile</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Inspector, düzenleyici/kurulum iletişimleri, standart poz adları ve oluşturulan menüler seçilebilir 30 dilin tümüne çevrilmiştir. README, değişiklik geçmişi ve çevrimdışı kılavuz her seçilebilir dilde sağlanır. Avatar adları, kaydedilmiş nesne adları, özel poz adları, varlık dosya adları ve iç parametre kimlikleri özgün yazımlarını koruyabilir.</p>
+<p><a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">30 dilde hızlı başvuru</a>, özellik açıklamalarını ve standart poz adı tablolarını içerir. Bunlar kısa başvuru metinleridir; tam belgeler için dil dizinini kullanın.</p>
+<h2>3. Pozları ve özellikleri seçin</h2>
+<p>Inspector’ın üç ana sekmesi vardır:</p>
+<div class="table-scroll"><table><thead><tr><th>Sekme</th><th>Kullanımı</th></tr></thead><tbody>
+<tr><td><strong>Özellikler</strong></td><td>Oyun menüsü kontrolleri, isteğe bağlı davranışlar, nefes, simgeler ve expression parametre kullanımı.</td></tr>
+<tr><td><strong>Pozlar</strong></td><td>Etkin pozlar, kategori/arama, sıralama, animasyon ekleme, önizleme, ayrıntılar ve Animasyon Düzeltmesi.</td></tr>
+<tr><td><strong>Avatar Kurulumu</strong></td><td>Avatar ve diz düzeltmeleri, özgün/özel hareket içe aktarma ve ön ayarlar.</td></tr>
+</tbody></table></div>
+<p>Yalnız kullanacağınız menü kontrollerini açın. Örneğin <strong>Aynala</strong>yı eklemek VRChat’te aynalamayı değiştirmeyi sağlar; her pozu sürekli aynalı tutmaz.</p>
+<p>Kawaii Posing avatar ön ayarları ve desteklenen pozlar için IK içerir. Üç standart sırtüstü poza yan yatış hareketleri atanmıştır: <strong>Bacaklar Uzun (足伸ばし)</strong>, <strong>Rahat (リラックス)</strong> ve <strong>Bir Diz Yukarı (膝立て)</strong>. Uyumlu ön ayarı kullanın; bu öğeleri düzenlediyseniz veya değiştirdiyseniz her birinin dönüş ayarını inceleyin.</p>
+<h3>Ön ayarlar ve uyarlama</h3>
+<p>Ön ayarlar <strong>Avatar Kurulumu</strong>nun altındadır. Avatar adıyla arayıp mevcut poz ayarlarını değiştirmek için ön ayarı uygulayın. Ön ayar değiştirmeden önce düzeltmeleri kaydedin veya yedekleyin. Ön ayar başlangıç noktasıdır; vücut oranları, kıyafetler ve avatar değişiklikleri yine elle düzeltme gerektirebilir.</p>
+<p>Vücut/uzuv yerleşimini önizleyip düzenlemek için pozun <strong>Animasyon Düzeltmesi</strong>ni kullanın. Bitirince bu pencereden düzeltme animasyonunu kaydedin. Desteklenen yerlerde otomatik el/ayak düzeltmesi (IK) genel ve poz başına açılabilir. Geçerli IK sonucunu düzeltmeye işlemek bir animasyon oluşturur ve elle tamamlamanız için o pozun IK’sini kapatır; özgün kaynak klip korunur.</p>
+<p><strong>Dizin ters bükülmesini önle</strong>, en küçük diz bükülme açısı gibi ek ayarlara sahiptir. Avatar düzeltmeleri yalnızca karşılık gelen veri varsa kullanılabilir; bazı düzeltmeler poz IK’siyle birlikte çalışamaz.</p>
+<h3>Özgün ve özel hareketler</h3>
+<p><strong>Özgün ayakta, çömelme ve yüzüstü pozları kullan</strong>, üretim sırasında avatarın Base katmanından hareket algılar. <strong>Kendi hareketlerinizi kullanın</strong>, tür başına ayrı içe aktarma ayarı açar. Her türe tek hareket seçin. Elle atama o türün otomatik içe aktarmasına göre önceliklidir.</p>
+<p>Otomatik içe aktarma derleme kopyasına uygulanır. Algılanan animasyonları sahnenin elle atama listesine yazmaz veya özgün Controller’ları değiştirmez. Bir türü yeniden otomatik algılatmak için elle geçersiz kılmayı temizleyin. Özel Base katmanları ve diğer hareket sistemleri ayrı ayar gerektirebilir.</p>
+<h2>4. Aracı VRChat’te kullanın</h2>
+<p>Avatarınızın <strong>Expressions</strong> menüsünü açıp <strong>Kawaii Posing</strong> içine girin. Kullanacağınız her poz kategorisi için bir poz seçin. Poz seçmek ve özellik seçmek ayrı işlemlerdir.</p>
+<ul>
+<li><strong>Üç noktalı VR:</strong> başınızı kaldırıp indirerek ayakta, çömelme/sandalye, yerde oturma ve yatış arasında geçin. Geçişler erken veya geçse aracın ayarlar menüsündeki yükseklik eşiklerini ayarlayın.</li>
+<li><strong>Masaüstü:</strong> <strong>C</strong> ile çömelin, <strong>Z</strong> ile yatın. Z sizi oturur bırakıyorsa ayarlardaki yatış yüksekliği eşiğini artırın.</li>
+<li><strong>Yüzüstü/sırtüstü:</strong> araç yüz yönüyle yatış tarafını seçer. İkisi de seçiliyken yerinde zıplamak aralarında geçebilir. İsterseniz Unity’de <strong>Özellikler &gt; Kolaylıklar</strong> üzerinden zıplamayla geçişi kapatın; ek eşitlenen parametre maliyeti yoktur.</li>
+<li><strong>Kilitler:</strong> gerektiğinde baş, kol ve ayak kilitlerini kullanın. Kontrolör jesti yerine pozun el şeklini istiyorsanız jestleri kapatın.</li>
+<li><strong>Aynala:</strong> arkadaşınıza dönmek veya kompozisyona uymak için seçili pozu aynalayın.</li>
+</ul>
+<h3>Ayak yüksekliği ve zemin yüksekliği</h3>
+<p><strong>Ayak yüksekliği</strong>, başı yerinde tutarak ayakları ayarlar. Baş doğru yükseklikteyken ayaklar havada kalıyor veya zemine gömülüyorsa kullanın.</p>
+<p><strong>Zemin yüksekliği</strong>, baş dâhil tüm vücudu taşır. Koltuk, yatak veya yüksek yüzeylerde, collider’ı olmayan mobilyalarda da kullanın. Ortak sistemin mevcut merkezli kontrolünde <strong>50% özgün yüksekliktir</strong>, 0% 3 m aşağısı, 100% 3 m yukarısıdır. Ofseti bitirmek için yaklaşık 50%’ye dönün. Eski sürümlerde davranış farklı olabilir; kurulu sürümü kontrol edip ortak sistemi ürünle birlikte güncelleyin.</p>
+<h3>Fotoğraf modu</h3>
+<p>Yüklemeden önce Unity’de <strong>Fotoğraf modu</strong> menü öğesini açın. VRChat’te poz seçin, <strong>Mesafe</strong> ile en fazla 3 m öne taşıyın ve <strong>Yön</strong> ile döndürün. Kadrajı hazırlarken ayak kilidi isteğe bağlıdır. <strong>Fotoğraftan çık</strong> mesafeyi/dönüşü sıfırlayıp ayak kilidini açar.</p>
+<p>Fotoğraf modu varsayılan olarak yereldir. Konum ve dönüşü diğer kişilere göstermek için yüklemeden önce Unity’de <strong>Fotoğraf modunu eşitle</strong>yi açın; bu 16 eşitlenen bit kullanır. <strong>Fotoğraf modunda başı görünür tut</strong> kendi görünümünüzü etkiler ve eşitlenen bit kullanmaz.</p>
+<h3>Nefes ve dönüş</h3>
+<p>Nefes, poz kategorisi başına <strong>Özellikler &gt; Kolaylıklar &gt; Nefes animasyonu ekle</strong> altında ayarlanabilir. Yok, Hafif, Orta, Güçlü, Hızlı veya özel bir nefes animasyonu seçin. Hareketin kendisi eşitlenen bit kullanmaz. Nefes menü anahtarı 1 bit kullanır.</p>
+<p>Dönüş için desteklenen yatış pozu ve <strong>Dön</strong> menü öğesi gerekir. Pozun dönüşünü açın ve gerektiğinde yan yatış animasyonunu atayın. VRChat’te pozu seçin, dönüşü açın ve baş/boyun kilidini kapatın. Başın yan eğimi dönüşü yönetir. Dönüş kullanılırken bu pozda normal MotionTime kontrolü kullanılamaz.</p>
+<p>Yukarıda listelenen üç standart sırtüstü pozun yan yatış hareketleri vardır. Diğer pozlar uygun hareket ve poz ayarı gerektirir. İçe aktarılan veya özel ön ayarlar farklı atamalar kullanabilir.</p>
+<h2>5. Poz düzenleme, ekleme ve önizleme</h2>
+<p><strong>Pozlar</strong> içinde kategori veya arama sekmesini seçin. Arama, özgün Japonca adları ve mevcut çevirileri kabul eder. Animasyon, simge, sıra ve zamanlamayı değiştirmek için pozun <strong>Ayrıntılar</strong>ını açın.</p>
+<p>Birden fazla animasyon eklemek için klipleri ekleme alanına sürükleyin veya Project’te seçip seçili klipleri içe aktarma komutunu kullanın. Aynı klibe yinelenen başvurular çıkarılır. Ayrıntılar’dan hedef sırayı veya yukarı/aşağı kontrollerini kullanın.</p>
+<p><strong>Önizleme</strong>, tam düzeltme penceresini açmadan pozu Scene’de gösterir. Hafif önizleme Modular Avatar veya NDMF çalıştırmaz; kıyafet, zemin düzeltmesi ve diğer derleme zamanı özelliklerini son avatar derlemesinde kontrol edin.</p>
+<p>Avatarınızdan oluşturulan poz simgeleri pozları tanımayı kolaylaştırır; ancak üretim zaman alır ve veri boyutunu artırabilir. Yer kazanmak için simge çözünürlüğünü azaltın. Android derlemeleri poz simgesi üretmez. Avatar veya kıyafet değişince gerekirse simgeleri yeniden üretin.</p>
+<h2>6. Parametre belleği</h2>
+<p>Inspector, tüm avatarın toplamı yerine poz araçlarının katkısını gösterir. Kıyafetler ve diğer sistemler ek parametre belleği kullanabilir. Birden fazla aracın paylaştığı ortak ayarlar iki kez sayılmaz. Çok ek poz içeren özel yapılar daha fazla poz seçim biti gerektirebilir.</p>
+<div class="table-scroll"><table><thead><tr><th>Özellik</th><th>Ek eşitlenen bit</th></tr></thead><tbody>
+<tr><td>Poz seçimi, en küçük standart yapı</td><td>8</td></tr>
+<tr><td>Aynala</td><td>1</td></tr>
+<tr><td>Jestleri kapat</td><td>1</td></tr>
+<tr><td>Nefes hareketi</td><td>0</td></tr>
+<tr><td>Nefes menü anahtarı</td><td>1</td></tr>
+<tr><td>Ayak yüksekliği</td><td>8</td></tr>
+<tr><td>Zemin yüksekliği</td><td>8</td></tr>
+<tr><td>Fotoğraf modu, yalnızca yerel</td><td>0</td></tr>
+<tr><td>Fotoğraf modunu eşitle</td><td>16</td></tr>
+<tr><td>Fotoğraf modunda başı görünür tut</td><td>0</td></tr>
+<tr><td>VRChat’in varsayılan bekleme sallanmasını kapat</td><td>0</td></tr>
+<tr><td>Dön</td><td>10</td></tr>
+</tbody></table></div>
+<p>Dönüş, boyun yönü poz düzeltmesiyle 1 bit paylaşır; ikisi birlikte açık olsa da bu iki özellik toplam 10 bit kullanır. Kurulu sürümünüzün gösterdiği kullanım, seçili yapınız için pratik ölçüttür.</p>
+<h2>7. Güncelleme ve ön oluşturma</h2>
+<ol>
+<li>Projeyi yedekleyin ve çalışma sahnesini kaydedin.</li>
+<li>VCC veya ALCOM’da <strong>Kawaii Posing Tool</strong> ve ortak <strong>Unisaki Posing System</strong>i birlikte güncelleyin. SDK, Modular Avatar ve NDMF sürümlerini de uyumlu tutun.</li>
+<li>Derlemenin bitmesini bekleyin. Kurulu aracı seçip poz, ayar ve parametre kullanımını inceleyin.</li>
+<li>Ön oluşturma kullanıyorsanız <strong>Ön oluşturmayı güncelle</strong>yi seçip avatarı yeniden yükleyin.</li>
+</ol>
+<p>Mevcut araç ayarları korunur. Eski 8-bit Prefab’lar uyumluluk için tutulur; mevcut başvurular aracı silmenizi veya değiştirmenizi gerektirmez. Yeni kurulumlar normal Prefab kullanır; gereksiz özellikler kapatılarak parametre kullanımı azaltılabilir.</p>
+<p>Eski ön oluşturma uyarısı, önbellekteki derleme verileri üretildiğinden beri ayarların değiştiğini belirtir. Ön oluşturmayı güncellemek bu veriyi yeniden üretir. Uyarıyı gizlemek ön oluşturmayı güncellemez ve alttaki sorunu çözmez. Her seferinde elle ön oluşturma yapmasanız da normal avatar derlemesi gereken veriyi üretebilir.</p>
+<h2>8. Sorun giderme</h2>
+<div class="table-scroll"><table><thead><tr><th>Belirti</th><th>Kontrol edilecekler</th></tr></thead><tbody>
+<tr><td>Araç ekleme menüsü yok</td><td>Ürünün <strong>ve</strong> Unisaki Posing System’in kurulu olduğunu doğrulayın; Unity Console derleme hatalarını çözün. Yalnız lisans kurucusu poz kitaplığı değildir.</td></tr>
+<tr><td>Kurulum iptal edildi veya dosyalar silindi</td><td>Hazır olduğunuzda satın aldığınız kurucuyu yeniden aktarın; onayları tekrar okuyun.</td></tr>
+<tr><td>Başka projede lisans yok görünüyor</td><td>Satın aldığınız kurucuyu aynı işletim sistemi hesabında aktarın. Bilgisayar/hesap değiştiyse oraya da lisansı kurun. Dil tercihleri bilgisayarlar arasında otomatik taşınmaz.</td></tr>
+<tr><td>VRChat’te pozlar yok</td><td>Aracı doğru sahne avatarının altına ekleyin, pozları açın, Inspector uyarılarını inceleyin ve o avatarı yükleyin. SDK ve diğer hareket araçlarını kontrol edin.</td></tr>
+<tr><td>Z yatışa geçmiyor</td><td>Aracın oyun ayarlarında yatış yüksekliği eşiğini artırın.</td></tr>
+<tr><td>Eller veya dizler hizalanmıyor</td><td>Uyumlu avatar ön ayarını, ardından desteklenen IK ve/veya Animasyon Düzeltmesi’ni deneyin. Son derlemede kıyafet deformasyonunu kontrol edin.</td></tr>
+<tr><td>Dönüş çalışmıyor</td><td>Desteklenen yatış pozu kullanın, pozun dönüş ayarı ve menü öğesini açın, baş/boyun kilidini kapatın. Önce desteklenen üç standart pozdan birini deneyin.</td></tr>
+<tr><td>Arkadaşlar fotoğraf hareketini görmüyor</td><td>Unity’de <strong>Fotoğraf modunu eşitle</strong>yi açın, parametre kullanımını kontrol edip yeniden yükleyin.</td></tr>
+<tr><td>Dil Unity’de değişiyor ama VRChat’te değişmiyor</td><td>Avatarı yeniden yükleyin. Çok dilli sürümde Inspector’ın üstündeki tek dil seçimini kontrol edin.</td></tr>
+<tr><td>Derleme/ön oluşturma hataları</td><td>İlgili <strong>ilk</strong> Console hatasını okuyun. Sahneyi yedekleyin, ürün ve ortak sistemi VCC/ALCOM ile güncelleyin veya yeniden alın; sorun sürerse destekle görüşün. Destek özel bir kurtarma adımı vermedikçe düzeltilmiş nesneleri ve GeneratedResources’ı koruyun.</td></tr>
+</tbody></table></div>
+<p>Destek için ürün/ortak sistem sürümlerini, Unity/SDK/Modular Avatar/NDMF sürümlerini, avatar adını, tam tekrarlama adımlarını ve ilgili Console hatasını ekleyin. Herkese açık gönderilerden özel dosyaları, kurulum içeriğini, lisans değerlerini ve hesap bilgilerini çıkarın.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Destek</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Resimli çevrimiçi kılavuz (Japonca)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Gumroad ürün sayfası</a></li>
+</ul>
+<h2>Lisanslar ve katkıda bulunanlar</h2>
+<p><a href="../../Terms.en.html">Ürün sözleşmesinin İngilizce başvuru çevirisi</a>, özgün Japonca sözleşmeyle birlikte sağlanır.</p>
+<p>Özgün ürün sözleşmesini ve ortak sistem sözleşmesini paket README’sinin yanından veya satın aldığınız ZIP’in <code dir="ltr">Licenses</code> klasöründen okuyun. Ekli İngilizce Unisaki Posing System sözleşmesi bu sistemin mevcut başvuru çevirisidir; ürünün Japonca sözleşmesi ayrıca bulunur. Kılavuz sözleşmeleri değiştirmez veya ek hak vermez. Ürün verilerini kullanma ya da yeniden dağıtma soruları için desteğe başvurun.</p>
+<p>Kurucu, <strong>anatawa12</strong> tarafından yapılan değiştirilmiş <strong>VPMPackageAutoInstaller</strong> ile <strong>SimpleJson</strong> ve <strong>semver.net</strong> içerir. Telif bildirimleri ve MIT lisansları satın aldığınız ZIP’in <code dir="ltr">ThirdPartyNotices.txt</code> dosyasındadır. Poz kitaplığı ve diğer ürün kaynakları kendi ürün lisanslarına sahiptir.</p></main>
+</body></html>

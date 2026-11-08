@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="pt" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Histórico de alterações</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Português · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Histórico de alterações</a><a href="UserGuide.html">Kawaii Posing — Manual em português</a></nav>
+<main><h1>Histórico de alterações</h1>
+<h2>[3.2.0] - Não lançado</h2>
+<h3>Adicionado</h3>
+<ul>
+<li>Inspector, comandos de edição, diálogos de instalação, nomes de poses padrão e menus VRChat gerados em 30 idiomas.</li>
+<li>Idioma unificado entre Inspector e menu no jogo. Inicialmente utiliza o idioma do computador e partilha a última escolha com outros projetos do mesmo utilizador.</li>
+<li>README, histórico e manual offline abertos no idioma escolhido.</li>
+<li>Nomes das 128 poses padrão e descrições de todas as funções alinhados com a terminologia existente.</li>
+</ul>
+<h3>Compatibilidade</h3>
+<ul>
+<li>Mantidas definições existentes, nomes próprios, referências a recursos, identificadores de parâmetros e armazenamento da licença.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Fixação da cabeça em Definições → Fixação automática da cabeça de costas disponível mesmo sem Altura pés. Entradas perdidas regressam após atualização/compilação.</li>
+<li>Compatível com Unisaki Posing System 3.1.2; rosto para cima após levantar de bruços com correção da cabeça ativa corrigido.</li>
+</ul>
+<p>Atualize Kawaii Posing para 3.1.2 com ALCOM / VCC; exige sistema comum 3.1.2. Se usava pré-cálculo, atualize-o, guarde e compile/envie novamente.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>Altura chão e Virar aparecem nas Definições EX mesmo sem Espelhar.</li>
+<li>Virar correto em Pernas esticadas, Relaxado e Um joelho levantado após ordenação/eliminação/renomeação antiga, mesmo Unpack completo se identificável. Mantidas poses próprias, desativação intencional e laterais substituídas.</li>
+<li>Corrigidas breve posição de bruços na seleção e breve posição de costas ao saltar só com bruços escolhidos. Salto desativável em Funções → Funções práticas → Trocar poses deitadas pulando, inicialmente ativo.</li>
+<li>Referência recuperável do Animator Controller comum gera aviso e reconstrução; referências partilhadas conservadas.</li>
+<li>Prefab oficial adicionado mesmo existindo outro 「可愛いポーズ」 com o mesmo nome.</li>
+<li>Ao adicionar 添い寝ツール sem o produto necessário, indica o que instalar primeiro.</li>
+</ul>
+<p>Em ALCOM / VCC, atualize Kawaii Posing e Unisaki Posing System ambos para 3.1.1. Se usava pré-cálculo, prima Atualizar pré-cálculo no 「可愛いポーズ」 da cena e guarde-a. Compile e envie novamente o avatar para refletir as alterações em VRChat.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>IK automática em 53 das 85 poses conforme proporções.</li>
+<li>Pernas esticadas, Relaxado e Um joelho levantado compatíveis com Virar pela cabeça.</li>
+<li>Modo foto com posição/direção, sincronização e cabeça visível opcionais.</li>
+<li>Altura chão move corpo 3m acima/abaixo, separada dos pés.</li>
+<li>Respiração, supressão do balanço e correção do pescoço.</li>
+<li>Consumo/funções no Inspector, pesquisa, vários clips, ordem e pré-visualização na Scene.</li>
+<li>Mudança desktop em pé/agachado/sentado acelerada.</li>
+<li>Avisos de pré-cálculo, deslocação e limpeza melhorados.</li>
+<li>Compatível com sistema comum 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Beta aberto (2026-11-05)</h2>
+<ul>
+<li>Beta aberto em GitHub Releases/VPM. IK adapta 53 das 85 poses às proporções.</li>
+<li>Pacote comum 3.1.0-beta.2 suportado; mudanças após pré-cálculo, deslocação no Inspector e pausas de limpeza melhoradas.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Beta aberto (2026-11-04)</h2>
+<ul>
+<li>Compatível com Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Mudança desktop normal com uma avaliação na compilação/pré-cálculo; VR e exceções mantêm percurso anterior.</li>
+<li>Pré-cálculos alpha.3 ou anteriores reconhecidos como por atualizar.</li>
+<li>Vista conservada ao mudar chão no Modo foto e restaurada à última altura.</li>
+<li>Melhorias até alpha.3 em importação automática, ajustes importados e Controllers refletidas.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Teste fechado (2026-10-26)</h2>
+<h3>Correções e alterações</h3>
+<ul>
+<li>Sistema comum atualizado a 3.1.0-alpha.2 com correções de depuração.</li>
+<li>Chão ampliado a 3m acima/abaixo; 50% original/inicial.</li>
+<li>Modo foto e chão também corrigem movimentos padrão/próprios sem seleção.</li>
+<li>Ajustes manuais, poses homónimas/iniciais e Virar em predefinições antigas corrigidos.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Antes de publicar</h2>
+<h3>Adicionado</h3>
+<ul>
+<li>IK automática conforme proporções adicionada.</li>
+<li>Ativação global/por pose e integração IK em ajustes.</li>
+<li>Pernas esticadas, Relaxado e Um joelho levantado com Virar pela cabeça.</li>
+<li>Opções de Virar e animação lateral por pose.</li>
+<li>Modo foto com avanço/rotação.</li>
+<li>Sincronização: 0 bit local, 16 bit sincronizados.</li>
+<li>Cabeça própria visível opcional no Modo foto.</li>
+<li>Altura chão eleva corpo e cabeça.</li>
+<li>Movimento/intensidade e menu de respiração.</li>
+<li>Supressão do balanço VRChat.</li>
+<li>Redução de deformação por pescoço.</li>
+<li>Prevenção de flexão inversa e mínimo de joelho.</li>
+<li>Ativação por função e consumo ExpressionParameters.</li>
+<li>Pré-visualização Scene, pesquisa, vários clips e ordem de destino.</li>
+<li>Histórico no Inspector.</li>
+</ul>
+<h3>Alterações</h3>
+<ul>
+<li>Inspector em 3 separadores: Funções, Poses, Configuração do avatar.</li>
+<li>Respiração, movimentos próprios e predefinições reorganizados.</li>
+<li>Menos animações duplicadas de Altura pés.</li>
+<li>Atualização de imagens com confirmação e avisos em Verificar configurações.</li>
+<li>Novas instalações 8bit retiradas em favor do Prefab normal, referências mantidas.</li>
+<li>Compatível com Unisaki Posing System 3.1.0-alpha.1; VRChat Avatars SDK mínimo 3.10.4.</li>
+</ul>
+<h3>Correções</h3>
+<ul>
+<li>Nomes a passarem para outra pose e detalhes a fecharem ao ordenar corrigidos.</li>
+<li>Pré-visualizações sobrepostas, posição errada e erros em certos avatares corrigidos.</li>
+<li>Atualização de avisos/pré-cálculo após alterações e erros de compilação corrigidos.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>PosingSystem 3.0.17 corrige desvio horizontal por escala uniforme do avatar.</li>
+<li>Avisos de passos automáticos, pré-cálculo ausente e alterações ignoráveis separadamente ou juntos.</li>
+<li>Animações simples inadequadas excluídas da importação manual de locomoção.</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Predefinição adicionada (ルリエ).</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Predefinições adicionadas (メルヴィ, ミダリス).</li>
+<li>Substituição de movimentos de うらら corrigida.</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>PosingSystem 3.0.11 corrige pré-cálculo com NDMF recente e exceções da indicação de erros.</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>PosingSystem 3.0.10 alivia carregamento de predefinições e ícones Hierarchy.</li>
+<li>Pré-cálculo com vários sistemas no mesmo avatar corrigido.</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>PosingSystem 3.0.9 corrige Avatar de pré-visualização inválido após NDMF e <code dir="ltr">Avatar is null</code> em Play.</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>PosingSystem 3.0.8 corrige possível corrupção de poses na nova correção de altura.</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Predefinições adicionadas (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ).</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Predefinições adicionadas (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール).</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Predefinições adicionadas (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing).</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Instalação/remoção de licença melhoradas.</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Corrigido o processamento da licença nas versões Mac e Linux.</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Predefinições adicionadas (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ).</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Pré-cálculo adicionado.</li>
+<li>Ajuste de animação adicionado.</li>
+<li>Predefinições adicionadas.</li>
+<li>Adição ao projeto por unitypackage.</li>
+<li>Predefinições adicionadas (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ).</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Compatibilidade com certos sistemas corrigida.</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Poses que não mudavam com certos avatares e ModularAvatar corrigidas.</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Movimentos estranhos de avatares, como salto de 森羅, corrigidos.</li>
+<li>Valor inicial de Sem gestos incorreto em certos casos corrigido.</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Erros em certos ambientes corrigidos.</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Falha do Unity corrigida.</li>
+<li>Versão no nome da ferramenta em NDMF Console adicionada.</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Adicionada opção Sem gestos para usar a forma das mãos da animação.</li>
+<li>Adicionados dados da forma das mãos a todas as poses.</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Poses deformadas com certas ferramentas corrigidas.</li>
+<li>Erros dependentes das opções corrigidos.</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Conflitos com certos sistemas resolvidos.</li>
+<li>Remoção de Unitypackage por botão.</li>
+<li>Prefabs de integração de 三点だいしゅきツール removidos após versão VCC.</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Erros em certos avatares corrigidos.</li>
+<li>Fixação dos pés inutilizável por conflitos corrigida.</li>
+<li>Posturas a regressar ao padrão VRC no desktop corrigidas.</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Mudança impossível com VRMode de tipo errado em avatares/sistemas corrigida.</li>
+<li>Conflitos de tipos de parâmetros mostrados em NDMF-Console.</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Explicação em NDMF-Console quando erros externos causam erro no sistema durante compilação.</li>
+<li>Falhas de compilação em certos avatares corrigidas.</li>
+<li>Comportamento após carregar avatar melhorado.</li>
+<li>Processamento original de locomoção removido por impedir funcionamento em certos avatares.</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Falha que impedia compilar corrigida.</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Corrigidos pés e anca enterrados no desktop, permitindo todas as poses corretamente.</li>
+<li>Adicionada mudança de postura independente da altura da cabeça.</li>
+<li>Adicionado modo sem gerar ícones para enviar avatares Quest.</li>
+<li>Adicionados vários avisos de problemas no avatar.</li>
+<li>Resolvidos conflitos das fixações com AFK e bloqueios de braços de outras ferramentas.</li>
+<li>Adicionada fixação automática do pescoço de costas.</li>
+<li>ExpressionsMenu reorganizado: seleção de poses em pasta separada e fixações no nível principal.</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Correções</h3>
+<ul>
+<li>Pacote VPM para VCC.</li>
+<li>Versão 8bit a consumir 17bit corrigida.</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Correções</h3>
+<ul>
+<li>Erros e problemas corrigidos.</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Correções</h3>
+<ul>
+<li>Problemas com VRCFury corrigidos.</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Correções</h3>
+<ul>
+<li>Integração ごろ寝システムEX adicionada.</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Correções</h3>
+<ul>
+<li>Corrigida impossibilidade de usar a ferramenta conforme o estado de ExMenu.</li>
+<li>Adicionada função Espelhar às definições.</li>
+<li>Corrigida pose de gato.</li>
+<li>Adicionadas ５ poses deitadas de lado.</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Correções</h3>
+<ul>
+<li>Poses erradas com cabeça alta corrigidas.</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Correções</h3>
+<ul>
+<li>Poses em pé com 15 variantes.</li>
+<li>Pés a mexerem sozinhos em certos avatares/ambientes corrigidos.</li>
+<li>Versão ExpressionParameters8bit adicionada.</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Correções</h3>
+<ul>
+<li>Corrigidos pés a moverem-se involuntariamente em certos avatares.</li>
+<li>WriteDefaults uniformizados.</li>
+<li>Adicionadas ７ poses agachadas e ８ sentadas.</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Correções</h3>
+<ul>
+<li>Falha no envio com ModularAvatar1.9.0 ou posterior corrigida.</li>
+<li>ModualrAvatar1.9.0 ou posterior passa a ser obrigatório.</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Correções</h3>
+<ul>
+<li>Alteração dos limiares da altura da cabeça para cada postura adicionada.</li>
+<li>Poses/pés anormais ao saltar em certos avatares corrigidos.</li>
+<li>ExpressionParameter reduzido de 54 a 16bit.</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Correções</h3>
+<ul>
+<li>Impossibilidade de adotar poses sentadas em VR corrigida.</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Correções</h3>
+<ul>
+<li>Poses sentadas no desktop disponíveis mesmo mantendo C premido.</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Correções</h3>
+<ul>
+<li>Integração 添い寝 sem a integração 三点だいしゅき corrigida.</li>
+<li>Pés bloqueados ao saltar corrigidos.</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Correções</h3>
+<ul>
+<li>Quantidade anormal de VRCContactSender/Receiver configurados corrigida.</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Correções</h3>
+<ul>
+<li>Erro de compilação ao enviar corrigido.</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Correções</h3>
+<ul>
+<li>Valores padrão errados com vários Prefabs corrigidos.</li>
+<li>Configuração da integração 可愛い座り corrigida.</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Lançamento</h3></main>
+</body></html>

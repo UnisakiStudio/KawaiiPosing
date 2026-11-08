@@ -2,10 +2,19 @@
 
 3点トラッキングやデスクトップでも、可愛い座り姿勢や寝姿勢を使えるVRChat向けポーズ固定ツールです。立ち15・中腰20・座り17・うつ伏せ寝16・仰向け寝17の、合計85姿勢を収録しています。
 
-このREADMEはv3.1.2向けです。導入済みのバージョンはInspector上部で確認できます。
+このREADMEは開発中のv3.2.0向けです。正式リリース日は未定です。導入済みのバージョンはInspector上部で確認できます。
 
 - [BOOTH商品ページ](https://yunisaki.booth.pm/items/5479202)
 - [変更履歴](CHANGELOG.md)
+
+## 表示言語とオフライン文書
+
+Inspector最上部の「Language / 言語」で表示言語を選びます。一つの選択がInspectorと生成するVRChatメニューの両方に適用されます。ゲーム内の表示を変更するにはアバターを再アップロードしてください。
+
+未選択の場合はパソコンの言語を使い、対応していない言語では英語を使います。Windows・macOS・Linuxに対応します。最後に選んだ言語はEditorPrefsに保存し、このパソコンの同じOSユーザーの別プロジェクトでも使用します。アバターに保存済みの明示的な選択は維持します。他のパソコンには同期しません。ライセンスの保存方法は変更しません。
+
+README・変更履歴・使い方は同梱の[言語一覧](Documentation~/Localization/index.html)から選べます。Inspectorの「使い方」と「変更履歴」も選択言語に従います。元の利用規約と参照翻訳は従来どおり別に用意しています。
+
 
 ## 主な機能
 
@@ -40,7 +49,7 @@
 
 ## 導入方法
 
-1. BOOTHの購入ページからファイルをダウンロードします。
+1. 購入したストアの商品ページからファイルをダウンロードします。
 2. 同梱の「可愛いポーズツール.unitypackage」をUnityへインポートし、ライセンスとパッケージ配布元の登録を行います。
 3. VCCまたはALCOMで、使用するUnityプロジェクトに「可愛いポーズツール」とModular Avatarを追加します。共通の「ゆにさきポーズシステム」とNDMFも依存パッケージとして導入されます。
 4. Hierarchyで対象のアバターを右クリックし、「ゆにさきスタジオ > 可愛いポーズツール追加」を選びます。
@@ -163,10 +172,11 @@ https://minminmart.booth.pm/items/4233545
 
 [利用規約（日本語）](https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing)
 
-本リポジトリのソースコード、リソースはオープンソースではありません。BOOTHでの購入と利用規約への同意が必要です。
-
-## For English speakers
-
-Please use machine translation for this guide. Read the terms of use before purchasing or using this tool and its assets.
+本リポジトリのソースコード、リソースはオープンソースではありません。商品の正規購入と利用規約への同意が必要です。
 
 [Terms of use (English)](https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing)
+<!-- localization-navigation:start -->
+
+🌐 [日本語 · English · Français · Italiano · 简体中文 · 繁體中文 · 한국어 · ไทย · Deutsch · Español · Português · Português (Brasil) · Русский · Українська · Polski · Nederlands · Svenska · Dansk · Suomi · Norsk · Čeština · Türkçe · Bahasa Indonesia · Tiếng Việt · हिन्दी · বাংলা · தமிழ் · తెలుగు · العربية · עברית](Documentation~/Localization/index.md)
+
+<!-- localization-navigation:end -->

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="sv" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Svenska · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Ändringshistorik</a><a href="UserGuide.html">Kawaii Posing Tool — Svensk användarhandbok</a></nav>
+<main><h1>Kawaii Posing</h1>
+<p>Ett poslåsverktyg för VRChat som ger söta sittande och liggande poser även med 3-punktsspårning eller i skrivbordsläge. Innehåller totalt 85 poser: 15 stående, 20 hukande, 17 sittande, 16 liggande på mage och 17 liggande på rygg.</p>
+<p>Denna README gäller v3.2.0 under utveckling. Datum för slutlig utgivning är inte bestämt. Installerad version visas högst upp i Inspector.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">Produktsida på BOOTH</a></li>
+<li><a href="CHANGELOG.html">Ändringshistorik</a></li>
+</ul>
+<h2>Visningsspråk och offlinedokumentation</h2>
+<p>Välj språk under Language / 言語 överst i Inspector. Samma val styr Inspector och genererade VRChat-menyer. Ladda upp avataren igen för att ändra språk i spelet.</p>
+<p>Utan uttryckligt val används datorns språk, annars engelska om språket saknas. Windows, macOS och Linux stöds. Senaste val sparas i EditorPrefs för andra projekt med samma systemanvändare på denna dator. Ett uttryckligt val i avataren behålls. Ingen synkronisering till andra datorer. Licenslagring ändras inte.</p>
+<p>Välj språk för README, historik och handbok i medföljande <a href="../index.html">språklista</a>. Inspectors handbok och ändringar följer också valet. Originalvillkor och referensöversättningar finns fortsatt separat.</p>
+<h2>Huvudfunktioner</h2>
+<ul>
+<li>Fotoläge: flytta avataren upp till 3m framåt och justera riktningen. Endast lokalt använder 0 bit; att visa position och riktning för andra använder 16 bit.</li>
+<li>Visa huvudet under fotografering: förhindrar att ditt eget avatarhuvud nära kameran döljs under Fotoläge.</li>
+<li>Golvhöjd: flyttar hela kroppen inklusive huvudet 3m uppåt/nedåt. 50% är ursprungshöjd och standardvärde, 0% är 3m ned och 100% är 3m upp. Använd separat från Fothöjd, som flyttar fötternas sida med bibehållen huvudposition.</li>
+<li>Vänd dig: vänd åt båda håll genom huvudlutning i stödda liggande poser.</li>
+<li>Andning: ger bland annat bröstkorgen andningsrörelser. Välj Ingen, Svag, Medel, Stark, Snabb eller Egen per posekategori.</li>
+<li>Stäng av VRChats stillastående svajning: dämpar standardsvajningen och behåller poseverktygets andning och andra egna rörelser.</li>
+<li>Minska förvrängning från huvudrotation: minskar förvrängning när nacken låses upp och huvudriktningen skiljer sig från ursprungsposens.</li>
+<li>Funktionsval: lägg endast till önskade spelmenyer och se ExpressionParameters-användning i Inspector.</li>
+<li>Sökning, massimport och omordning: sök över kategorier, importera flera klipp och ange målordning.</li>
+<li>Enkel förhandsvisning i Scene: se posen direkt via ”Förhandsvisning” i poslistan.</li>
+</ul>
+<ul>
+<li>Automatisk justering av lemmar (IK): anpassar lemmarnas positioner till avatarens kroppsbyggnad i stödda poser. Kan slås på/av per pose, och resultatet kan bakas in i en justeringsanimation.</li>
+</ul>
+<h3>Vänd dig med medföljande poser</h3>
+<p>Ryggposerna ”Ben utsträckta”, ”Avslappnad” och ”Ett knä upp” har sidoposer för vändning. De bygger på ”横向き寝” (liggande på sidan), ”Tupplur” respektive ”Kattlur”.</p>
+<p>Aktivera ”Funktioner &gt; Menyfunktioner &gt; Vänd dig” och ladda upp. Välj sedan en pose som stöds och ”Vänd dig” i VRChat. Använd med upplåst nacke.</p>
+<p>För att lägga till stöd själv aktiverar du ”Poser &gt; Detaljer &gt; Aktivera Vänd dig” och anger en animation i ”Sidopose för vändning”. Vanlig MotionTime kan inte användas för poser med Vänd dig.</p>
+<h3>Anpassning efter kroppsbyggnad</h3>
+<p>Medföljande automatisk lemanpassning kan användas, men alla poser behöver inte IK. ”Aktivera automatisk justering av lemmar” i animationsjusteringen styr helheten och ”Aktivera IK för den här posen” enskilda poser.</p>
+<p>”Baka in IK i justeringar” skriver det aktuella automatiska resultatet till en ny justeringsanimation och stänger av IK för posen, så att du kan fortsätta manuellt. Kräver att automatisk justering är aktiv övergripande och för posen samt att tillämpliga IK-inställningar finns.</p>
+<p>Under ”Avatarinställningar” finns även ”Förhindra bakåtböjda knän” och detaljinställningen ”Minsta knäböjning (grader)”.</p>
+<h2>Installation</h2>
+<ol>
+<li>Hämta filerna från produktsidan i butiken där du köpte verktyget.</li>
+<li>Importera medföljande ”可愛いポーズツール.unitypackage” i Unity och registrera licensen och paketkällan.</li>
+<li>Lägg till Kawaii Posing och Modular Avatar i Unity-projektet med VCC eller ALCOM. Gemensamma Unisaki Posing System och NDMF installeras också som beroenden.</li>
+<li>Högerklicka på avataren i Hierarchy och välj ”Unisaki Studio &gt; Lägg till Kawaii Posing”.</li>
+<li>Välj tillagda ”可愛いポーズ” i avataren och ange önskade funktioner och poser i Inspector.</li>
+<li>Ladda upp avataren som vanligt.</li>
+</ol>
+<p>Kräver Unity 2022.3, VRChat Avatars SDK 3.10.4 eller senare, Modular Avatar 1.x från 1.15.1 och NDMF 1.x från 1.14.0. Uppdatera nödvändiga paket tillsammans i VCC eller ALCOM.</p>
+<h2>Uppdatering från tidigare versioner</h2>
+<p>Uppdatera produkten och Unisaki Posing System tillsammans. Inställningar i redan placerade verktyg bevaras. Kontrollera aktiva funktioner och ExpressionParameters-användning i Inspector. Om du använde förberäkning trycker du på ”Uppdatera förberäkning” före ny uppladdning.</p>
+<p>Sedan v3.1.0 använder alla nya tillägg vanliga Prefab ”可愛いポーズ”. Stäng av onödiga alternativ under ”Funktioner” för en minsta konfiguration med enbart poseval på 8 bit. Många poser kan kräva ytterligare valbitar.</p>
+<p>Äldre 8bit-Prefab finns kvar under ”Editor/Legacy” för befintliga avatar- och förinställningsreferenser. Befintliga Prefab behöver inte raderas eller ersättas. 8bit-versionen visas inte i Unitys meny för nya tillägg.</p>
+<h2>Var inställningarna finns</h2>
+<div class="table-scroll"><table><thead><tr><th>Flik</th><th>Funktioner</th></tr></thead><tbody>
+<tr><td>Funktioner</td><td>Spelmenyer, praktiska funktioner, andningsinställningar, ikoner och ExpressionParameters-användning</td></tr>
+<tr><td>Poser</td><td>Poseval, detaljer, sökning, massimport, ordning, förhandsvisning och animationsjustering</td></tr>
+<tr><td>Avatarinställningar</td><td>Avatarspecifik korrigering, knäkorrigering, import av ursprungliga/egna rörelser och byte av förinställning</td></tr>
+</tbody></table></div>
+<p>”Öppna inställningar” öppnar detaljer under det aktuella alternativet. Andning ställs in via ”Funktioner &gt; Praktiska funktioner &gt; Animera andning”.</p>
+<p>”Använd ursprungliga stående, hukande och magposer” importerar avatarens ursprungliga poser automatiskt. Egna rörelser anges separat via importinställningarna för varje typ, såsom stående, hukande (Crouching) och magläge (Prone).</p>
+<p>Förinställningarna finns längst ned i ”Avatarinställningar”. ”Tillämpa den här förinställningen” ersätter aktuella poseinställningar, så spara egna justeringar innan du byter.</p>
+<h3>Användning per funktion</h3>
+<ul>
+<li>Andningsrörelse använder 0 bit. Endast ”Menyfunktioner &gt; Andning”, som pausar/återupptar i spelet, använder 1 bit för på/av-synkronisering.</li>
+<li>Fotoläge använder 0 bit om det bara syns lokalt. ”Praktiska funktioner &gt; Synkronisera Fotoläge” använder 16 bit. ”Håll huvudet synligt i Fotoläge” använder 0 bit.</li>
+<li>Fothöjd och Golvhöjd använder 8 bit vardera. Golvhöjd flyttar uppåt/nedåt från mitten, och korrigeringen avslutas nära 50%.</li>
+<li>Vänd dig använder 10 bit ensamt. Det delar 1 bit med ”Minska förvrängning från huvudrotation”, så båda tillsammans använder också 10 bit.</li>
+<li>Spegla och Gester av använder 1 bit vardera.</li>
+</ul>
+<p>Summan i Inspector omfattar de installerade poseverktygen på avataren, inte kläder eller andra verktyg. Gemensamma inställningar dubbelräknas inte när flera poseverktyg används.</p>
+<h3>Förhandsvisning och posredigering</h3>
+<p>”Förhandsvisning” på varje pose under ”Poser” visar posen i Scene. För finjustering öppnar du ”Animationsjustering”, granskar posen och sparar ändringarna.</p>
+<p>Enkel förhandsvisning kör inte MA:s eller NDMF:s byggprocess. Kontrollera även kläder och golvkorrigeringar som läggs till vid bygge i byggresultatet före uppladdning.</p>
+<p>Sök posnamn med förstoringsglasfliken till vänster. Välj målposition under ”Detaljer &gt; Ordning” eller använd uppåt-/nedåtknappar. Lägg till flera animationer genom att dra dem till tilläggsfältet eller använda ”Importera klipp valda i Project”.</p>
+<p>”Uppdatera poseminiatyrer” genererar bilder efter en bekräftelsedialog. ”Generera poseikoner” gör poser lättare att känna igen i spelmenyn men förlänger byggtiden. Välj ”Minska ikonstorlek” för att minska storleken. Poseikoner genereras inte för Android.</p>
+<h2>Grundkontroller i spelet</h2>
+<ul>
+<li>Välj poser i varje kategori från Expressions-menyn. I VR växlar stående, hukande, sittande och liggande efter huvudhöjden.</li>
+<li>I liggande läge växlar rygg/mage efter ansiktsriktning. Om poser för båda lägen är valda kan du även växla genom att hoppa på stället. Detta kan stängas av i Unity under ”Funktioner → Praktiska funktioner → Växla liggande poser genom att hoppa” (på som standard). Kategoriernas höjdgränser justeras i inställningsmenyn.</li>
+<li>På skrivbordet växlar C och Z pose. Höj tröskeln för liggande i inställningsmenyn om Z inte ger liggande läge.</li>
+<li>”Gester av” använder posens handform i stället för fingrarnas kontrollerstyrda form.</li>
+<li>”Fothöjd” justerar fötternas sida med bibehållen huvudposition. ”Golvhöjd” flyttar hela kroppen inklusive huvudet uppåt/nedåt. De står i den ordningen i inställningsmenyn.</li>
+<li>När ”Avstånd” i ”Fotoläge” flyttar avataren framåt vänder den sig mot dig. Rotera med ”Riktning” och aktivera ”Lås fötter” när det behövs. ”Avsluta foto” återställer avstånd/riktning och låser upp fötterna.</li>
+<li>”Andning” är tillgängligt när andningsrörelsen är aktiverad. Styrkan anges i Unity; i spelet växlar du på/av.</li>
+</ul>
+<h2>Förberäkning och varningar</h2>
+<p>”Uppdatera förberäkning” återanvänder genererade data för snabbare avatarbyggen. Även utan förberäkning genereras nödvändiga data under ett vanligt bygge.</p>
+<p>Efter ändringar visas uppdateringsbehov under ”Kontrollera inställningar” högst upp i Inspector och med markeringar i Hierarchy. ”Inställningar för varningsvisning” finns i samma ruta. Att dölja varningar löser inte inställningsproblem och uppdaterar inte genererade data.</p>
+<h2>Att tänka på vid användning</h2>
+<ul>
+<li>Poslåsning med helkroppsspårning stöds inte.</li>
+<li>Kroppsform, kläder och avatarändringar kan kräva extra justering.</li>
+<li>Särskilda Base-lager och andra poseverktyg kan ge oväntad integration. Kontrollera även ”Avatarinställningar &gt; Integrera spårningslås med andra verktyg” om låsningen inte fungerar.</li>
+<li>Förflyttning/rotation i Fotoläge och Golvhöjd korrigerar även standardrörelser och egna rörelser när ingen pose är vald. Kontrollera synvinkel och ersatta standardrörelser i den faktiska VRChat-klienten.</li>
+<li>”Stäng av VRChats stillastående svajning” påverkar standardsvajningen; den stoppar inte all svajning från andra orsaker.</li>
+</ul>
+<h2>Anvisningar och support</h2>
+<p>Via ”Hjälp / Ändringar” högst upp i Inspector öppnar du anvisningar, support och ändringshistorik. Detaljer om gemensamma funktioner finns även under ”Packages &gt; Unisaki Posing System &gt; README” i Unitys Project.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Officiell handbok</a></li>
+<li><a href="https://help.unisakistudio.jp/">Kontakta oss</a></li>
+</ul>
+<p>Vid felrapportering: ange produktens och Unisaki Posing Systems versioner, versionerna av Unity, VRChat SDK, Modular Avatar och NDMF, använd avatar, steg för att återskapa felet och Console-fel.</p>
+<h2>Distribution av förinställningar</h2>
+<p>Detta gäller data som skapas med animationsjusteringsfunktionen.</p>
+<p>Justeringsanimationsfiler som skapas med funktionen och förinställningar skapade med dessa tilldelade får distribueras och säljas fritt utan tillstånd från Unisaki Studio. Dela gärna exempelvis med egna avatarer eller förinställningar för avatarer som inte ingår i verktyget.</p>
+<h2>Produkter med medföljande integration</h2>
+<p>※ Integrationsinställningarna har skapats självständigt av vår butik. Vi har inte begärt författarnas tillstånd eftersom vi bedömer att det inte behövs. Kontakta butiken via meddelande för önskemål om distribution eller upphörande av distribution av integrationsinställningar. Du måste köpa/ladda ned den integrerade produkten. Vid problem med inställningarna, kontakta vår butik och inte den andra produktens författare.</p>
+<p>”可愛い座りツール”
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>”添い寝ツール”
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>”少女モーション集vol.1” av ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>”VRC想定移動モーション（無料配布）” av カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>”ごろ寝システムEX” av minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Användarvillkor</h2>
+<p>Verktyget får endast användas om du godkänner följande användarvillkor skapade med VN3-licensen.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Användarvillkor (japanska)</a></p>
+<p>Källkoden och resurserna i detta repository är inte öppen källkod. Ett giltigt köp och godkännande av användarvillkoren krävs.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Användarvillkor (engelska)</a></p></main>
+</body></html>

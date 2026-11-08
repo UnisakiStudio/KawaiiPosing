@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing Tool</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">简体中文 · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">更新记录</a><a href="UserGuide.html">Kawaii Posing Tool — 简体中文用户指南</a></nav>
+<main><h1>Kawaii Posing Tool</h1>
+<p>这是一款面向VRChat的姿势固定工具，即使使用3点跟踪或桌面模式，也能使用可爱的坐姿和躺姿。共收录85种姿势：站立15种、半蹲20种、坐姿17种、俯卧16种、仰卧17种。</p>
+<p>本README面向开发中的v3.2.0。正式发布日期尚未确定。已安装的版本可在Inspector顶部查看。</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">BOOTH商品页面</a></li>
+<li><a href="CHANGELOG.html">更新记录</a></li>
+</ul>
+<h2>显示语言与离线文档</h2>
+<p>在Inspector最上方的“Language / 言語”中选择显示语言。同一项选择会同时应用于Inspector和生成的VRChat菜单。要更改游戏内的显示语言，请重新上传虚拟形象。</p>
+<p>未选择语言时，使用计算机的语言；不支持该语言时使用英语。支持Windows、macOS和Linux。最后选择的语言保存在EditorPrefs中，同一台计算机上同一个OS用户的其他项目也会使用此设置。已明确保存在虚拟形象中的语言选择会予以保留。语言设置不会同步到其他计算机。许可证的保存方式不变。</p>
+<p>可通过随附的<a href="../index.html">语言列表</a>选择README、更新记录和使用说明。Inspector中的“使用说明”和“更新记录”也会遵循所选语言。原始使用条款和参考译文仍按原有方式另行提供。</p>
+<h2>主要功能</h2>
+<ul>
+<li>拍照模式：可将虚拟形象向前移动，最远达3m，并调整朝向。仅自己的画面使用时为0 bit；向其他人同步位置和朝向时为16 bit。</li>
+<li>拍照时的头部显示：可仅在拍照模式中，防止靠近自己的虚拟形象头部被隐藏。</li>
+<li>地面高度：可将包含头部的整个身体上下移动3m。50%为原始高度及初始值，0%为向下3m，100%为向上3m。可与保持头部位置、移动脚部一侧的“脚部高度”分别使用。</li>
+<li>翻身：在支持的躺姿中，根据头部倾斜向左右翻身。</li>
+<li>呼吸：可为胸部等添加呼吸动作。各姿势分类可选择“无、弱、中、强、急、自定义”。</li>
+<li>关闭VRChat默认站立摇摆：抑制默认待机摇摆，同时保留姿势工具的呼吸和其他自定义动作。</li>
+<li>减轻头部旋转造成的姿势变形：解除颈部固定时，减轻头部朝向与原始姿势不同导致的姿势变形。</li>
+<li>功能选择：仅添加所需游戏内菜单，并在Inspector中查看ExpressionParameters用量。</li>
+<li>姿势搜索、批量添加与排序：支持跨分类搜索、导入多个片段和指定目标顺序。</li>
+<li>Scene简易预览：通过姿势列表的“预览”即可原地查看姿势。</li>
+</ul>
+<ul>
+<li>手脚自动调整（IK）：在支持的姿势中，根据虚拟形象体型调整手脚位置。可按姿势切换开关，也可将结果烘焙到调整动画中。</li>
+</ul>
+<h3>使用附带姿势翻身</h3>
+<p>仰卧姿势“伸腿坐”“放松”“支起单膝”已设置用于翻身的侧躺姿势，分别以“横向き寝”（侧卧）、“午睡”“猫咪小憩”为基础生成翻身。</p>
+<p>启用“功能 &gt; 菜单功能 &gt; 翻身”后上传，在VRChat中选择对应姿势和“翻身”。使用时请解除颈部固定。</p>
+<p>自行设置支持翻身的姿势时，请启用“姿势 &gt; 详情 &gt; 启用翻身”，并在“翻身侧向姿势”中指定动画。启用翻身的姿势无法再使用普通MotionTime设置。</p>
+<h3>根据体型调整</h3>
+<p>可使用附带的手脚自动调整，但并非所有姿势都需要IK。可在动画调整界面通过“启用手脚自动调整”切换整体设置，通过“对此姿势启用IK”切换单个姿势。</p>
+<p>“将IK烘焙到调整中”会将当时的自动调整结果写入新的调整动画，并关闭目标姿势的IK，之后可继续手动完成。只有整体和目标姿势的自动调整已启用，且存在可应用的IK设置时才可使用。</p>
+<p>“头像设置”中也提供“防止膝盖反折”，以及详情中的“最小膝盖弯曲角度（度）”。</p>
+<h2>安装方法</h2>
+<ol>
+<li>从购买商品的商店页面下载文件。</li>
+<li>将随附的“可愛いポーズツール.unitypackage”导入Unity，注册许可证和软件包来源。</li>
+<li>在VCC或ALCOM中，向所用Unity项目添加Kawaii Posing Tool和Modular Avatar。共用的Unisaki Posing System和NDMF也会作为依赖软件包安装。</li>
+<li>在Hierarchy中右键点击目标虚拟形象，选择“Unisaki Studio &gt; 添加Kawaii Posing”。</li>
+<li>选中添加到虚拟形象内的“可愛いポーズ”，在Inspector中设置所需功能和姿势。</li>
+<li>按普通流程上传虚拟形象。</li>
+</ol>
+<p>所需环境为Unity 2022.3、VRChat Avatars SDK 3.10.4或更高版本、Modular Avatar 1.15.1或更高版本的1.x系列，以及NDMF 1.14.0或更高版本的1.x系列。请通过VCC或ALCOM一同更新所需软件包。</p>
+<h2>从旧版本更新</h2>
+<p>请将本商品和Unisaki Posing System一同更新。已放置工具的设置会继承。请在Inspector确认启用功能和ExpressionParameters用量；如果使用过预构建，重新上传前请点击“更新预构建”。</p>
+<p>从v3.1.0起，新添加对象统一使用普通“可愛いポーズ”Prefab。在“功能”中关闭不需要的项目后，仅使用姿势选择的最小配置为8 bit。姿势数量较多时，姿势选择可能需要额外的bit。</p>
+<p>为保留现有虚拟形象和预设的引用，旧8bit版Prefab仍保存在“Editor/Legacy”中。无需删除或替换现有Prefab。Unity新建菜单不会显示8bit版本。</p>
+<h2>设置位置</h2>
+<div class="table-scroll"><table><thead><tr><th>选项卡</th><th>可进行的操作</th></tr></thead><tbody>
+<tr><td>功能</td><td>添加游戏内菜单、便捷功能、呼吸设置、图标图片和ExpressionParameters用量确认</td></tr>
+<tr><td>姿势</td><td>选择使用的姿势、详细设置、搜索、批量添加、顺序调整、预览、动画调整</td></tr>
+<tr><td>头像设置</td><td>头像专属修正、膝部修正、导入原始姿势或自定义动作、更改预设</td></tr>
+</tbody></table></div>
+<p>点击“打开设置”，即可在该项目下方展开详细设置。呼吸通过“功能 &gt; 便捷功能 &gt; 启用呼吸动画”设置。</p>
+<p>“使用头像原有的站立、蹲下和俯卧姿势”是自动导入虚拟形象原始姿势的功能。如需使用自己准备的动作，请通过单独的“打开导入设置”，为站立、蹲下（Crouching）、俯卧（Prone）等各类型分别指定。</p>
+<p>预设位于“头像设置”的最下方。“应用此预设”会替换当前姿势设置，因此切换前请保存已有调整。</p>
+<h3>各功能用量</h3>
+<ul>
+<li>呼吸动作使用0 bit。只有使用可在游戏内暂停和恢复的“菜单功能 &gt; 呼吸”时，开关同步才使用1 bit。</li>
+<li>拍照模式仅在自己画面中显示时为0 bit。选择“便捷功能 &gt; 同步拍照模式”时使用16 bit。“拍照模式中保持头部可见”为0 bit。</li>
+<li>“脚部高度”“地面高度”各使用8 bit。地面高度离开中央时会上下移动，恢复至50%附近时结束修正。</li>
+<li>“翻身”单独使用为10 bit。由于与“减轻头部旋转造成的姿势变形”共用1 bit，两者同时使用时合计仍为10 bit。</li>
+<li>“左右镜像”“禁用手势”各使用1 bit。</li>
+</ul>
+<p>Inspector的合计值仅涵盖安装在虚拟形象中的姿势工具，不包括服装等其他功能组件。即使并用多个姿势工具，共用设置也不会重复计数。</p>
+<h3>预览与姿势编辑</h3>
+<p>通过“姿势”中各姿势的“预览”，可在Scene显示姿势。需要细调时，打开“动画调整”，一边确认姿势一边调整并保存。</p>
+<p>简易预览不会执行MA或NDMF的构建处理。构建时整合的服装、地面位置修正等，也请在上传前的构建结果中确认。</p>
+<p>左侧的放大镜选项卡可搜索姿势名。可在“详情”的“顺序”中选择目标位置，也可通过上下按钮排序。多个动画可拖放到添加区域，或通过“导入Project中选择的片段”批量添加。</p>
+<p>“更新姿势缩略图”会在确认对话框后生成图片。“生成姿势图标”可让游戏内菜单中的姿势更容易辨认，但生成图片会增加构建时间。如需降低容量，请选择“减小图标容量”。面向Android时不会生成姿势图标。</p>
+<h2>游戏内基本操作</h2>
+<ul>
+<li>在Expressions菜单中选择各分类的姿势。VR模式会根据头部高度切换站立、半蹲、坐姿和躺姿。</li>
+<li>躺姿会根据面部朝向切换仰卧与俯卧；两者都已选择时，也可原地跳跃切换。可在Unity的“功能 → 便捷功能 → 跳跃切换躺姿”中关闭跳跃切换（默认启用）。分类切换的高度可通过设置菜单中的阈值调整。</li>
+<li>桌面模式使用C键、Z键切换姿势。如果按Z键未进入躺姿，请在设置菜单中提高“躺姿高度阈值”。</li>
+<li>启用“禁用手势”后，会使用姿势中设置的手型，代替控制器输入的手指形状。</li>
+<li>“脚部高度”保持头部位置、调整脚部一侧。“地面高度”上下移动包含头部的整个身体。它们在设置菜单中按此顺序排列。</li>
+<li>在“拍照模式”中使用“距离”向前移动后，虚拟形象会朝向自己。通过“朝向”旋转，并在需要时启用“固定双脚”。“结束拍照”会恢复距离和朝向，并解除双脚固定。</li>
+<li>“呼吸”仅在已启用呼吸动作时可用。强度在Unity中设置，游戏内仅切换开关。</li>
+</ul>
+<h2>预构建与警告</h2>
+<p>“更新预构建”通过复用生成数据，加快虚拟形象构建。即使不使用预构建，普通构建时也会生成所需数据。</p>
+<p>更改设置后，会通过Inspector顶部的“检查设置”和Hierarchy标记提示更新。“警告显示设置”位于“检查设置”区域内。隐藏提示并不意味着设置问题已解决，或生成数据已更新。</p>
+<h2>使用注意事项</h2>
+<ul>
+<li>不支持全身跟踪期间的姿势固定。</li>
+<li>根据体型、服装和虚拟形象修改内容，可能需要额外调整。</li>
+<li>可能无法与特殊Base层或其他姿势切换组件按预期整合。固定功能不正常时，也请检查“头像设置 &gt; 与其他工具整合跟踪锁定”。</li>
+<li>拍照模式的移动、旋转及地面高度，也会修正未选择工具姿势时的默认和自定义动作。VRChat中的视点及默认动作替换后的表现，请在实际客户端中确认。</li>
+<li>“关闭VRChat默认站立摇摆”针对默认待机动作，并非停止一切原因引起的摇摆。</li>
+</ul>
+<h2>使用说明与支持</h2>
+<p>可通过Inspector顶部的“帮助 / 更新记录”打开使用说明、咨询页面和更新记录。共用功能的详细说明，也可在Unity的Project中查看“Packages &gt; Unisaki Posing System &gt; README”。</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">官方手册</a></li>
+<li><a href="https://help.unisakistudio.jp/">咨询与支持</a></li>
+</ul>
+<p>报告问题时，请提供本商品与Unisaki Posing System的版本、Unity、VRChat SDK、Modular Avatar、NDMF各自的版本、所用虚拟形象、复现步骤，以及Console中的错误内容。</p>
+<h2>预设分发</h2>
+<p>以下说明适用于使用动画调整功能创建的数据。</p>
+<p>使用此功能创建的调整动画文件，以及在指定这些文件的状态下创建的预设，
+均可自由分发和销售，无需取得Unisaki Studio许可。
+欢迎分享为自制虚拟形象准备的预设，或工具未附带适配的虚拟形象预设等。</p>
+<h2>附带联动设置的商品</h2>
+<p>※联动设置由本店单方面制作；我们认为无需取得相关商品作者的许可，因此未另行申请。
+如希望我们提供联动设置，或要求停止分发，请通过商店私信联系。
+使用联动设置需购买或下载所联动的商品。
+如设置出现问题，请联系本店，而非各商品作者。</p>
+<p>『可愛い座りツール』
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>『添い寝ツール』
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>『少女モーション集vol.1』 作者：ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>『VRC想定移動モーション（無料配布）』 作者：カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>『ごろ寝システムEX』 作者：minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>使用条款</h2>
+<p>仅限同意以下使用VN3许可证模板制定的使用条款的用户使用本工具。</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">使用条款（日语）</a></p>
+<p>本仓库的源代码和资源并非开源。使用前必须正规购买商品，并同意使用条款。</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">使用条款（英语）</a></p></main>
+</body></html>

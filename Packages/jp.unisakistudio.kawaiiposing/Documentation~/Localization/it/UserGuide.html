@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing — Guida utente in italiano</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Italiano · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Cronologia delle modifiche</a><a href="UserGuide.html">Kawaii Posing — Guida utente in italiano</a></nav>
+<main><h1>Kawaii Posing — Guida utente in italiano</h1>
+<p>Kawaii Posing offre 85 pose per desktop e VR a tre punti: 15 in piedi, 20 accovacciate o su sedia, 17 sedute a terra, 17 supine e 16 prone.</p>
+<p>Questa guida descrive installazione, configurazione avatar, comandi VRChat, modifica delle pose, aggiornamenti e risoluzione dei problemi. Il ZIP acquistato contiene <code dir="ltr">START_HERE.html</code> per arrivare più rapidamente all’installazione.</p>
+<h2>Prima di iniziare</h2>
+<ul>
+<li>Usa un progetto <strong>avatar</strong> VRChat con Unity 2022.3, creato o gestito con VRChat Creator Companion (VCC) o ALCOM.</li>
+<li>Pacchetti richiesti: VRChat Avatars SDK 3.10.4 o successivo; Modular Avatar 1.x dalla versione 1.15.1; NDMF 1.x dalla versione 1.14.0.</li>
+<li>Lo strumento è per avatar Humanoid in desktop e VR a tre punti (visore e due controller). Il blocco delle pose con tracciamento completo del corpo attivo non è supportato.</li>
+<li>Fai un backup dei progetti esistenti prima di installare o aggiornare. Risolvi prima gli errori di compilazione Unity.</li>
+<li>L’installatore scarica prodotto e dipendenze dai repository. Serve una connessione Internet. Modelli avatar, VRChat SDK, Modular Avatar e NDMF non sono inclusi nel ZIP.</li>
+</ul>
+<h2>1. Installare licenza e prodotto</h2>
+<ol>
+<li>Estrai l’intero ZIP in una cartella normale fuori dal progetto Unity.</li>
+<li>Apri il progetto avatar desiderato in Unity. Importa <code dir="ltr">Installer/KawaiiPosing_Installer.unitypackage</code> con <strong>Assets &gt; Import Package &gt; Custom Package</strong>, oppure apri il file con Unity.</li>
+<li>Leggi le richieste d’importazione e installazione. La conferma della licenza spiega quali licenze verranno installate. Usa <strong>Lingua…</strong> (o <strong>言語...</strong>) in una conferma per cambiare lingua all’installatore.</li>
+<li>Conferma l’installazione della licenza. Copre anche Unisaki Posing System usato da questo prodotto. L’installatore può poi proporre di rimuovere i propri file: la pulizia non rimuove la licenza installata.</li>
+<li>Controlla la conferma dell’installatore automatico dei pacchetti. Elenca pacchetti e repository da aggiungere ed eventuali vecchi file o cartelle da eliminare. Continua se corrispondono alle operazioni volute.</li>
+<li>Attendi la fine dell’importazione e compilazione. Se i pacchetti non vengono installati automaticamente, apri il progetto in VCC o ALCOM e aggiungi <strong>Kawaii Posing</strong> e <strong>Modular Avatar</strong>. <strong>Unisaki Posing System</strong> e <strong>NDMF</strong> sono dipendenze. <code dir="ltr">Optional-VCC-Links</code> contiene i collegamenti originali dei repository per VCC su Windows.</li>
+<li>Se hai annullato una conferma, importa di nuovo l’installatore quando sei pronto. Finché l’attivatore è presente, puoi usare anche il comando d’installazione licenza in <strong>Tools &gt; Unisaki Studio</strong>. Nelle vecchie build il sottomenu si chiama <strong>ゆにさきスタジオ</strong>.</li>
+</ol>
+<h3>Cosa installa questo download</h3>
+<p><strong>Kawaii Posing 3.2.0 con Unisaki Posing System 3.2.0.</strong> Questa versione è in sviluppo e non è stata pubblicata. Aggiunge dialoghi d’installazione, Inspector e menu Unity, nomi standard delle pose, menu nel gioco e documentazione offline in trenta lingue. La data di uscita non è stabilita. Cambia lingua con il selettore in alto nell’Inspector. Dopo la pubblicazione, l’installatore scaricherà queste versioni e le dipendenze compatibili dai repository VPM. La preparazione locale non pubblica i pacchetti.</p>
+<p>Kawaii Posing include libreria delle pose, strumenti di configurazione e preset di regolazione avatar. L’installatore attiva la licenza locale esistente del prodotto e non richiede un nuovo campo per la chiave Gumroad. Non pubblicare mai file dell’installatore o dati di licenza in richieste d’assistenza pubbliche.</p>
+<p>Le preferenze di lingua sono salvate in Unity EditorPrefs per l’utente attuale del sistema e condivise tra i progetti Unity di questo computer. Senza una preferenza salvata, l’installatore segue il sistema e usa l’inglese per lingue non supportate. Le licenze mantengono l’archiviazione esistente: chiave <code dir="ltr">Software/UnisakiStudio</code> dell’utente su Windows e file per utente su macOS/Linux. Cambiare lingua non rimuove licenze.</p>
+<h2>2. Aggiungere lo strumento a un avatar</h2>
+<ol>
+<li>Nella <strong>Hierarchy</strong>, seleziona l’avatar con <strong>VRC Avatar Descriptor</strong> o uno dei suoi figli. Usa un avatar nella scena, non l’asset Prefab nella finestra Project o la modalità Prefab.</li>
+<li>Fai clic destro sull’avatar e scegli <strong>Unisaki Studio &gt; Aggiungi Kawaii Posing</strong>. Se la build installata usa menu giapponesi, scegli <strong>ゆにさきスタジオ &gt; 可愛いポーズツール追加</strong>.</li>
+<li>Lo strumento viene aggiunto all’avatar. Il nome salvato dell’oggetto può restare <strong>可愛いポーズ</strong> anche con etichette tradotte.</li>
+<li>Applica il preset avatar compatibile, se proposto, come punto di partenza. Altrimenti apri <strong>Configurazione avatar</strong> e scegli un preset o regola personalmente le pose.</li>
+<li>L’installatore può proporre il precalcolo. È facoltativo: la normale build genera i dati necessari. Riutilizzalo per ridurre i tempi successivi.</li>
+<li>Seleziona l’oggetto dello strumento, scegli pose e funzioni, quindi carica l’avatar normalmente con VRChat SDK.</li>
+</ol>
+<h3>Scelta della lingua e corrispondenza delle etichette</h3>
+<p>Questa versione offre <strong>Language / 言語</strong> in cima all’Inspector. La scelta unica controlla Inspector e menu generato nel gioco. L’avatar salva la lingua e l’ultima scelta è ricordata per gli altri strumenti e progetti su questo computer. Ricarica l’avatar per cambiare la lingua vista in VRChat.</p>
+<p>Usa la tabella seguente per seguire i vecchi tutorial giapponesi. Questa versione include selettore di lingua, Inspector localizzato, nomi standard tradotti e menu nel gioco per tutte le 30 lingue.</p>
+<div class="table-scroll"><table><thead><tr><th>Italiano</th><th>Etichetta giapponese nelle vecchie build</th></tr></thead><tbody>
+<tr><td>Unisaki Studio</td><td>ゆにさきスタジオ</td></tr>
+<tr><td>Funzioni</td><td>機能</td></tr>
+<tr><td>Pose</td><td>ポーズ一覧</td></tr>
+<tr><td>Configurazione avatar</td><td>アバター調整</td></tr>
+<tr><td>Apri impostazioni</td><td>設定を開く</td></tr>
+<tr><td>Aggiorna precalcolo</td><td>プレビルドを更新</td></tr>
+<tr><td>Controlla impostazioni</td><td>設定の確認</td></tr>
+<tr><td>Anteprima</td><td>プレビュー</td></tr>
+<tr><td>Regolazione animazione</td><td>アニメーション調整</td></tr>
+<tr><td>Ricarica</td><td>再読込</td></tr>
+</tbody></table></div>
+<p>Inspector incluso, finestre d’editing e installazione, nomi standard e menu generati sono tradotti in tutte le 30 lingue selezionabili. README, cronologia e manuale offline sono forniti in ogni lingua. Nomi degli avatar, oggetti salvati, pose personalizzate, file degli asset e identificatori interni dei parametri possono mantenere la grafia originale.</p>
+<p>I <a href="../../../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html">riferimenti rapidi in 30 lingue</a> spiegano le funzioni e riportano le tabelle dei nomi standard. Sono riferimenti sintetici: usa l’indice delle lingue per la documentazione completa.</p>
+<h2>3. Scegliere pose e funzioni</h2>
+<p>L’Inspector ha tre schede principali:</p>
+<div class="table-scroll"><table><thead><tr><th>Scheda</th><th>Uso</th></tr></thead><tbody>
+<tr><td><strong>Funzioni</strong></td><td>Comandi nel gioco, comportamenti facoltativi, respiro, icone e consumo dei parametri di espressione.</td></tr>
+<tr><td><strong>Pose</strong></td><td>Pose attive, categorie e ricerca, ordine, aggiunta animazioni, anteprima, dettagli e regolazione animazione.</td></tr>
+<tr><td><strong>Configurazione avatar</strong></td><td>Correzioni specifiche e delle ginocchia, importazione di movimenti originali o personali e preset.</td></tr>
+</tbody></table></div>
+<p>Attiva soltanto i comandi che vuoi usare. Per esempio, aggiungere <strong>Specchio</strong> al menu consente di commutarlo in VRChat, senza obbligare tutte le pose a rimanere specchiate.</p>
+<p>Kawaii Posing include preset avatar e IK per le pose compatibili. Tre pose supine standard hanno già movimenti laterali assegnati: <strong>Gambe distese (足伸ばし)</strong>, <strong>Relax (リラックス)</strong> e <strong>Un ginocchio alzato (膝立て)</strong>. Usa il preset corrispondente e controlla le impostazioni di Girarsi per ogni posa se hai modificato o sostituito queste voci.</p>
+<h3>Preset e adattamento</h3>
+<p>I preset sono verso il fondo di <strong>Configurazione avatar</strong>. Cerca il nome dell’avatar e applica un preset per sostituire le impostazioni attuali. Salva o fai un backup delle regolazioni prima di cambiarlo. È un punto di partenza: proporzioni, abiti e modifiche possono ancora richiedere correzioni manuali.</p>
+<p>Usa <strong>Regolazione animazione</strong> su una posa per visualizzare e modificare la posizione del corpo e degli arti. Salva l’animazione dalla finestra quando hai finito. Dove supportato, la regolazione automatica di mani e piedi (IK) è attivabile globalmente e per posa. Integrare il risultato IK attuale crea un’animazione di regolazione e disattiva l’IK della posa per consentire la rifinitura manuale; il clip originale viene mantenuto.</p>
+<p><strong>Impedire la piegatura inversa delle ginocchia</strong> offre altre impostazioni, fra cui l’angolo minimo. Le correzioni specifiche dell’avatar richiedono dati corrispondenti e alcune non sono combinabili con l’IK della posa.</p>
+<h3>Movimenti originali e personali</h3>
+<p><strong>Usare le pose originali in piedi, accovacciate e prone</strong> rileva i movimenti dal livello Base durante la generazione. <strong>Usa i tuoi movimenti</strong> apre impostazioni d’importazione separate per tipo. Scegli un movimento per tipo. Le assegnazioni manuali hanno priorità sull’importazione automatica del tipo corrispondente.</p>
+<p>L’importazione automatica si applica alla copia della build. Non riscrive le animazioni rilevate nell’elenco manuale della scena né modifica i Controller originali. Cancella la sostituzione manuale di un tipo per riattivare il rilevamento automatico. Livelli Base personali e altri sistemi di locomozione possono richiedere regolazioni individuali.</p>
+<h2>4. Usare lo strumento in VRChat</h2>
+<p>Apri il menu <strong>Expressions</strong> dell’avatar ed entra in <strong>Kawaii Posing</strong>. Scegli una posa per ogni categoria desiderata. Selezionare una posa e selezionare una funzione sono operazioni separate.</p>
+<ul>
+<li><strong>VR a tre punti:</strong> abbassa o alza la testa per passare tra in piedi, accovacciato o su sedia, seduto a terra e sdraiato. Regola le soglie di altezza nel menu se i cambi avvengono troppo presto o tardi.</li>
+<li><strong>Desktop:</strong> usa <strong>C</strong> per accovacciarti e <strong>Z</strong> per sdraiarti. Se Z ti lascia seduto, aumenta la soglia per sdraiarsi nelle impostazioni.</li>
+<li><strong>Prono o supino:</strong> la direzione del viso sceglie il lato. Se entrambi sono selezionati, un salto sul posto può alternarli. Puoi disattivarlo in <strong>Funzioni &gt; Funzioni pratiche</strong> di Unity; non consuma parametri sincronizzati aggiuntivi.</li>
+<li><strong>Blocchi:</strong> usa i blocchi di testa, braccia e piedi quando necessario. Disattiva i gesti per usare le mani della posa invece degli input dei controller.</li>
+<li><strong>Specchio:</strong> inverti una posa per rivolgerti a un amico o adattare la composizione.</li>
+</ul>
+<h3>Altezza piedi e Altezza suolo</h3>
+<p><strong>Altezza piedi</strong> regola i piedi mantenendo ferma la testa. Usala quando i piedi fluttuano o affondano ma la testa è già all’altezza corretta.</p>
+<p><strong>Altezza suolo</strong> muove tutto il corpo, testa inclusa. Usala per divani, letti e superfici rialzate anche senza collider. Nel controllo centrato del sistema comune attuale, <strong>50% è l’altezza originale</strong>, 0% corrisponde a 3 m sotto e 100% a 3 m sopra. Torna vicino a 50% per terminare lo spostamento. Le vecchie versioni possono comportarsi diversamente: controlla la versione installata e aggiorna sistema comune e prodotto insieme.</p>
+<h3>Modalità foto</h3>
+<p>Attiva la voce <strong>Modalità foto</strong> in Unity prima di caricare. In VRChat scegli una posa, usa <strong>Distanza</strong> per avanzare fino a 3 m e <strong>Direzione</strong> per ruotare l’avatar. Il blocco piedi è facoltativo durante la composizione. <strong>Esci da foto</strong> ripristina distanza e rotazione e sblocca i piedi.</p>
+<p>La Modalità foto è locale inizialmente. Per mostrarne posizione e rotazione agli altri, attiva <strong>Sincronizzare la Modalità foto</strong> in Unity prima di caricare: costa 16 bit sincronizzati. <strong>Tenere visibile la testa in Modalità foto</strong> riguarda solo la tua vista e non richiede bit sincronizzati.</p>
+<h3>Respiro e Girarsi</h3>
+<p>Configura il respiro per categoria in <strong>Funzioni &gt; Funzioni pratiche &gt; Animare il respiro</strong>. Scegli Nessuno, Debole, Medio, Forte, Rapido o un’animazione personale. Il movimento non costa bit sincronizzati; l’interruttore nel menu richiede 1 bit.</p>
+<p>Girarsi richiede una posa sdraiata compatibile e la voce <strong>Girarsi</strong> nel menu. Attivalo per la posa e assegnale un’animazione laterale quando necessario. In VRChat scegli la posa, attiva Girarsi e sblocca testa o collo. L’inclinazione laterale della testa controlla la rotazione. Il normale MotionTime non è disponibile per quella posa mentre usi Girarsi.</p>
+<p>Le tre pose supine standard elencate sopra comprendono movimenti laterali. Le altre richiedono un movimento e impostazioni adatti. I preset importati o personali possono avere assegnazioni diverse.</p>
+<h2>5. Modificare, aggiungere e visualizzare le pose</h2>
+<p>In <strong>Pose</strong>, scegli una categoria o la ricerca. La ricerca accetta nomi giapponesi originali e traduzioni disponibili. Apri i <strong>Dettagli</strong> per modificare animazione, icona, ordine e opzioni temporali.</p>
+<p>Per aggiungere più animazioni, trascina i clip nella zona di aggiunta o selezionali in Project e usa il comando d’importazione dei clip selezionati. I riferimenti duplicati vengono rimossi. Cambia destinazione nei Dettagli o usa i pulsanti su e giù.</p>
+<p><strong>Anteprima</strong> mostra la posa nella Scene senza aprire la finestra completa. Non esegue Modular Avatar o NDMF: verifica la build finale per abiti, correzioni del pavimento e altre funzioni aggiunte in fase di build.</p>
+<p>Le icone generate dall’avatar aiutano a riconoscere le pose, ma richiedono tempo e possono aumentarne i dati. Abbassa la risoluzione per risparmiare spazio. Le build Android non generano icone. Rigenerale dopo modifiche ad avatar o abiti, quando necessario.</p>
+<h2>6. Memoria dei parametri</h2>
+<p>L’Inspector mostra il contributo degli strumenti per pose, non il totale dell’avatar. Abiti e altri sistemi possono usare altra memoria. Le impostazioni comuni condivise non sono contate due volte. Molte pose extra in configurazioni personali possono richiedere più bit di selezione.</p>
+<div class="table-scroll"><table><thead><tr><th>Funzione</th><th>Bit sincronizzati aggiuntivi</th></tr></thead><tbody>
+<tr><td>Selezione pose, configurazione standard minima</td><td>8</td></tr>
+<tr><td>Specchio</td><td>1</td></tr>
+<tr><td>Blocca gesti</td><td>1</td></tr>
+<tr><td>Movimento del respiro</td><td>0</td></tr>
+<tr><td>Interruttore respiro nel menu</td><td>1</td></tr>
+<tr><td>Altezza piedi</td><td>8</td></tr>
+<tr><td>Altezza suolo</td><td>8</td></tr>
+<tr><td>Modalità foto solo locale</td><td>0</td></tr>
+<tr><td>Sincronizzare la Modalità foto</td><td>16</td></tr>
+<tr><td>Tenere visibile la testa in Modalità foto</td><td>0</td></tr>
+<tr><td>Disattivare l&#x27;oscillazione da fermo di VRChat</td><td>0</td></tr>
+<tr><td>Girarsi</td><td>10</td></tr>
+</tbody></table></div>
+<p>Girarsi condivide 1 bit con la correzione della postura per la direzione del collo: entrambe insieme richiedono ancora 10 bit totali. Il consumo mostrato nella versione installata è il riferimento pratico della configurazione selezionata.</p>
+<h2>7. Aggiornamento e precalcolo</h2>
+<ol>
+<li>Fai un backup del progetto e salva la scena di lavoro.</li>
+<li>In VCC o ALCOM aggiorna insieme <strong>Kawaii Posing</strong> e <strong>Unisaki Posing System</strong>. Mantieni compatibili anche SDK, Modular Avatar e NDMF.</li>
+<li>Attendi la compilazione, seleziona lo strumento esistente e controlla pose, impostazioni e consumo dei parametri.</li>
+<li>Se usi il precalcolo, scegli <strong>Aggiorna precalcolo</strong> e ricarica l’avatar.</li>
+</ol>
+<p>Le impostazioni esistenti sono conservate. I vecchi Prefab 8-bit restano per compatibilità; i riferimenti esistenti non richiedono eliminazione o sostituzione. Le nuove installazioni usano il Prefab normale, con funzioni inutili disattivabili per ridurre il consumo.</p>
+<p>Un avviso di precalcolo superato indica che le impostazioni sono cambiate dopo la creazione dei dati in cache. Aggiornarlo rigenera i dati. Nascondere l’avviso non aggiorna il precalcolo né risolve il problema. Le build normali generano i dati necessari anche senza precalcolo manuale ogni volta.</p>
+<h2>8. Risoluzione dei problemi</h2>
+<div class="table-scroll"><table><thead><tr><th>Sintomo</th><th>Controlli</th></tr></thead><tbody>
+<tr><td>Menu di aggiunta assente</td><td>Verifica che siano installati prodotto <strong>e</strong> Unisaki Posing System e risolvi gli errori di compilazione nella Console. Il solo installatore licenza non è la libreria delle pose.</td></tr>
+<tr><td>Installatore annullato o file rimossi</td><td>Reimporta l’installatore acquistato quando sei pronto e rileggi le conferme.</td></tr>
+<tr><td>Licenza apparentemente assente in un altro progetto</td><td>Importa l’installatore con lo stesso account del sistema. Su un nuovo computer o account installa anche lì la licenza. La lingua non si trasferisce automaticamente tra computer.</td></tr>
+<tr><td>Nessuna posa in VRChat</td><td>Aggiungi lo strumento sotto l’avatar corretto nella scena, abilita le pose, controlla gli avvisi e carica quell’avatar. Verifica SDK e altri strumenti di locomozione.</td></tr>
+<tr><td>Z non raggiunge la posizione sdraiata</td><td>Aumenta la soglia di altezza per sdraiarsi nelle impostazioni nel gioco.</td></tr>
+<tr><td>Mani o ginocchia disallineate</td><td>Prova il preset adatto, poi IK supportata e/o Regolazione animazione. Verifica gli abiti nella build finale.</td></tr>
+<tr><td>Girarsi non funziona</td><td>Usa una posa sdraiata compatibile, attiva la funzione nei dettagli e nel menu e sblocca testa o collo. Prova prima una delle tre pose standard compatibili.</td></tr>
+<tr><td>Gli amici non vedono il movimento foto</td><td>Attiva <strong>Sincronizzare la Modalità foto</strong> in Unity, controlla i parametri e ricarica.</td></tr>
+<tr><td>Lingua cambiata in Unity ma non in VRChat</td><td>Ricarica l’avatar. Nelle build localizzate verifica il selettore unico in cima all’Inspector.</td></tr>
+<tr><td>Errori di build o precalcolo</td><td>Leggi il <strong>primo</strong> errore pertinente della Console. Salva un backup della scena, aggiorna o reinstalla prodotto e sistema comune con VCC/ALCOM e contatta l’assistenza se persiste. Conserva oggetti regolati e GeneratedResources salvo precise istruzioni di recupero dell’assistenza.</td></tr>
+</tbody></table></div>
+<p>Per l’assistenza indica versioni di prodotto e sistema comune, Unity/SDK/Modular Avatar/NDMF, nome avatar, passaggi esatti e l’errore pertinente della Console. Rimuovi dalle pubblicazioni file privati, contenuto dell’installatore, valori di licenza e dati dell’account.</p>
+<ul>
+<li><a href="https://help.unisakistudio.jp/">Assistenza</a></li>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Manuale illustrato online (giapponese)</a></li>
+<li><a href="https://unisakistudio.gumroad.com/l/kawaii-posing">Pagina del prodotto su Gumroad</a></li>
+</ul>
+<h2>Licenze e crediti</h2>
+<p>Una <a href="../../Terms.en.html">traduzione inglese di riferimento dell’accordo del prodotto</a> è fornita insieme all’originale giapponese.</p>
+<p>Leggi gli accordi originali del prodotto e del sistema comune accanto al README, oppure nella cartella <code dir="ltr">Licenses</code> del ZIP acquistato. L’accordo inglese di Unisaki Posing System è una traduzione di riferimento esistente per quel sistema; quello giapponese del prodotto resta incluso separatamente. La guida non modifica gli accordi né concede diritti aggiuntivi. Per domande sull’uso o la ridistribuzione dei dati contatta l’assistenza.</p>
+<p>L’installatore include una versione modificata di <strong>VPMPackageAutoInstaller</strong> di <strong>anatawa12</strong>, con <strong>SimpleJson</strong> e <strong>semver.net</strong>. Avvisi di copyright e licenze MIT sono in <code dir="ltr">ThirdPartyNotices.txt</code> nel ZIP acquistato. Libreria delle pose e altre risorse hanno le proprie licenze prodotto.</p></main>
+</body></html>

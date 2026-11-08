@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="fr" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kawaii Posing</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Français · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Historique des modifications</a><a href="UserGuide.html">Kawaii Posing — Guide d’utilisation en français</a></nav>
+<main><h1>Kawaii Posing</h1>
+<p>Outil de poses pour VRChat permettant d’utiliser de jolies poses assises ou allongées avec le suivi à 3 points ou en mode bureau. Il comprend 85 poses : 15 debout, 20 accroupies, 17 assises, 16 couchées sur le ventre et 17 sur le dos.</p>
+<p>Ce README concerne la version v3.2.0 en développement. La date de sortie officielle n’est pas encore fixée. La version installée apparaît en haut de l’Inspector.</p>
+<ul>
+<li><a href="https://yunisaki.booth.pm/items/5479202">Page du produit sur BOOTH</a></li>
+<li><a href="CHANGELOG.html">Historique des modifications</a></li>
+</ul>
+<h2>Langue d’affichage et documentation hors ligne</h2>
+<p>Choisissez la langue d’affichage dans « Language / 言語 », tout en haut de l’Inspector. Ce choix s’applique à la fois à l’Inspector et aux menus VRChat générés. Renvoyez l’avatar pour modifier l’affichage dans le jeu.</p>
+<p>Sans choix explicite, la langue de l’ordinateur est utilisée ; une langue non prise en charge est remplacée par l’anglais. Windows, macOS et Linux sont pris en charge. La dernière langue choisie est enregistrée dans EditorPrefs et réutilisée dans les autres projets du même utilisateur du système sur cet ordinateur. Un choix explicite déjà enregistré dans l’avatar est conservé. Ce réglage n’est pas synchronisé avec d’autres ordinateurs. Le stockage de la licence reste inchangé.</p>
+<p>Choisissez la langue du README, de l’historique et du guide dans la <a href="../index.html">liste des langues</a> fournie. Les liens du guide et de l’historique dans l’Inspector suivent également la langue sélectionnée. Les conditions d’utilisation originales et leurs traductions de référence restent disponibles séparément.</p>
+<h2>Fonctions principales</h2>
+<ul>
+<li>Mode photo : déplacez l’avatar jusqu’à 3m vers l’avant et réglez sa direction. 0 bit pour votre vue seulement, 16 bit pour montrer sa position et son orientation aux autres.</li>
+<li>Tête visible pendant les photos : empêche votre propre tête de disparaître à proximité, uniquement en Mode photo.</li>
+<li>Hauteur sol : déplace le corps entier, tête comprise, de 3m vers le haut ou le bas. 50% correspond à la hauteur initiale et d’origine, 0% à 3m plus bas et 100% à 3m plus haut. Ce réglage est distinct de « Hauteur pieds », qui déplace le côté des pieds sans changer la position de la tête.</li>
+<li>Se retourner : dans les poses allongées compatibles, roulez à gauche ou à droite en inclinant la tête.</li>
+<li>Respiration : anime la poitrine et d’autres parties du corps. Choisissez Aucun, Faible, Moyenne, Forte, Rapide ou Personnalisé pour chaque catégorie.</li>
+<li>Désactiver le balancement au repos de VRChat : réduit le balancement d’attente standard tout en conservant la respiration de l’outil et les autres mouvements personnalisés.</li>
+<li>Réduire les déformations liées à la rotation de la tête : limite les déformations après libération du cou lorsque son orientation diffère de la pose d’origine.</li>
+<li>Choix des fonctions : ajoutez uniquement les menus voulus et consultez la consommation des ExpressionParameters dans l’Inspector.</li>
+<li>Recherche, ajout groupé et réordonnancement des poses : recherche dans toutes les catégories, importation de plusieurs clips et choix de destination dans la liste.</li>
+<li>Aperçu simple dans la Scene : vérifiez immédiatement une pose avec « Aperçu » dans la liste.</li>
+</ul>
+<ul>
+<li>Ajustement automatique des membres (IK) : adapte leur position à la morphologie de l’avatar dans les poses compatibles. Vous pouvez l’activer par pose et intégrer son résultat dans une animation d’ajustement.</li>
+</ul>
+<h3>Se retourner avec les poses fournies</h3>
+<p>Les poses sur le dos « Jambes tendues », « Relax » et « Un genou levé » ont des poses latérales de retournement prédéfinies. Elles sont respectivement basées sur la pose « 横向き寝 » (couchée de profil), « Sieste » et « Sieste de chat ».</p>
+<p>Activez « Fonctions &gt; Fonctions du menu &gt; Se retourner », envoyez l’avatar, puis choisissez dans VRChat une pose compatible et « Se retourner ». Laissez le verrouillage du cou désactivé.</p>
+<p>Pour rendre une pose compatible vous-même, activez « Poses &gt; Détails &gt; Activer le retournement » et affectez une animation à « Pose latérale de retournement ». Les poses utilisant cette fonction ne peuvent plus utiliser le réglage MotionTime ordinaire.</p>
+<h3>Ajustement à la morphologie</h3>
+<p>L’ajustement automatique des membres fourni est disponible, mais toutes les poses n’ont pas besoin d’IK. Dans la fenêtre d’ajustement de l’animation, « Activer l&#x27;ajustement automatique des membres » agit globalement et « Activer l&#x27;IK pour cette pose » agit individuellement.</p>
+<p>« Intégrer l&#x27;IK aux ajustements » enregistre le résultat automatique actuel dans une nouvelle animation d’ajustement et désactive l’IK de la pose concernée. Vous pouvez ensuite terminer à la main. Ce bouton nécessite l’ajustement automatique global et de la pose actifs, avec des réglages IK applicables.</p>
+<p>« Configuration de l&#x27;avatar » propose aussi « Empêcher les genoux de se plier à l&#x27;envers » et le réglage détaillé « Flexion minimale du genou (degrés) ».</p>
+<h2>Installation</h2>
+<ol>
+<li>Téléchargez les fichiers depuis la page du produit dans la boutique où vous l’avez acheté.</li>
+<li>Importez le fichier fourni « 可愛いポーズツール.unitypackage » dans Unity et enregistrez la licence ainsi que le dépôt de packages.</li>
+<li>Dans VCC ou ALCOM, ajoutez Kawaii Posing et Modular Avatar au projet Unity utilisé. Unisaki Posing System et NDMF sont aussi installés comme dépendances.</li>
+<li>Dans la Hierarchy, faites un clic droit sur l’avatar cible et choisissez « Unisaki Studio &gt; Ajouter Kawaii Posing ».</li>
+<li>Sélectionnez l’objet Kawaii Posing ajouté dans l’avatar et réglez les fonctions et poses voulues dans l’Inspector.</li>
+<li>Envoyez l’avatar normalement.</li>
+</ol>
+<p>Environnement requis : Unity 2022.3, VRChat Avatars SDK 3.10.4 ou ultérieur, Modular Avatar 1.x à partir de 1.15.1 et NDMF 1.x à partir de 1.14.0. Mettez également à jour les dépendances nécessaires dans VCC ou ALCOM.</p>
+<h2>Mise à jour depuis une ancienne version</h2>
+<p>Mettez à jour ensemble ce produit et Unisaki Posing System. Les réglages des outils déjà placés sont conservés. Vérifiez les fonctions et la consommation des ExpressionParameters dans l’Inspector ; si vous utilisiez le précalcul, cliquez sur « Actualiser le précalcul » avant de renvoyer l’avatar.</p>
+<p>Depuis v3.1.0, les nouveaux ajouts utilisent tous le Prefab 「可愛いポーズ」 standard. En désactivant les options inutiles dans « Fonctions », une configuration minimale limitée au choix des poses utilise 8 bit. Un grand nombre de poses peut nécessiter des bits de sélection supplémentaires.</p>
+<p>Les anciens Prefabs 8bit restent dans « Editor/Legacy » pour conserver les références des avatars et préréglages existants. Ne supprimez ni ne remplacez vos Prefabs existants. Le menu d’ajout de Unity n’affiche plus de version 8bit.</p>
+<h2>Où trouver les réglages</h2>
+<div class="table-scroll"><table><thead><tr><th>Onglet</th><th>Possibilités</th></tr></thead><tbody>
+<tr><td>Fonctions</td><td>Ajouts au menu du jeu, fonctions pratiques, réglages de respiration, icônes et consommation des ExpressionParameters</td></tr>
+<tr><td>Poses</td><td>Choix des poses, détails, recherche, ajout groupé, réordonnancement, aperçu et ajustement de l’animation</td></tr>
+<tr><td>Configuration de l&#x27;avatar</td><td>Corrections propres à l’avatar, genoux, importation des poses d’origine ou mouvements personnels et changement de préréglage</td></tr>
+</tbody></table></div>
+<p>Le lien d’ouverture des réglages déploie les détails sous la fonction concernée. La respiration se règle dans « Fonctions &gt; Fonctions pratiques &gt; Animer la respiration ».</p>
+<p>« Utiliser les poses debout, accroupies et sur le ventre d&#x27;origine » importe automatiquement les poses déjà présentes dans l’avatar. Pour vos propres mouvements, ouvrez séparément les réglages d’importation et affectez chaque type, par exemple debout, accroupi (Crouching) ou couché sur le ventre (Prone).</p>
+<p>Les préréglages sont au bas de « Configuration de l&#x27;avatar ». « Appliquer ce préréglage » remplace la configuration actuelle des poses : enregistrez vos ajustements avant de changer de préréglage.</p>
+<h3>Consommation par fonction</h3>
+<ul>
+<li>L’animation de respiration utilise 0 bit. Seul « Fonctions du menu &gt; Respiration », qui permet de l’arrêter et de la relancer dans le jeu, utilise 1 bit pour synchroniser l’activation.</li>
+<li>Le Mode photo utilise 0 bit en vue locale uniquement. « Fonctions pratiques &gt; Synchroniser le Mode photo » utilise 16 bit. « Garder la tête visible en Mode photo » utilise 0 bit.</li>
+<li>« Hauteur pieds » et « Hauteur sol » utilisent chacun 8 bit. Éloigner la hauteur du sol du centre déplace l’avatar verticalement ; revenir près de 50% termine la correction.</li>
+<li>« Se retourner » seul utilise 10 bit. Il partage 1 bit avec « Réduire les déformations liées à la rotation de la tête » : les deux ensemble utilisent donc aussi 10 bit.</li>
+<li>« Miroir » et « Sans gestes » utilisent chacun 1 bit.</li>
+</ul>
+<p>Le total de l’Inspector concerne les outils de poses installés sur l’avatar. Il n’inclut pas les autres systèmes, comme les vêtements. Les réglages communs ne sont pas comptés plusieurs fois lorsque plusieurs outils de poses sont utilisés.</p>
+<h3>Aperçu et édition des poses</h3>
+<p>« Aperçu » sur chaque entrée de « Poses » affiche la posture dans la Scene. Pour la modifier précisément, ouvrez « Ajustement de l&#x27;animation », ajustez-la avec l’aperçu, puis enregistrez.</p>
+<p>L’aperçu simple n’exécute pas le build MA ou NDMF. Vérifiez aussi dans le résultat du build avant envoi les vêtements intégrés à ce moment et les corrections de contact avec le sol.</p>
+<p>La loupe à gauche permet de chercher les poses par nom. Réordonnez-les en choisissant la destination dans « Détails &gt; Ordre » ou avec les boutons haut et bas. Ajoutez plusieurs animations en les glissant dans la zone d’ajout ou avec « Importer les clips sélectionnés dans Project ».</p>
+<p>« Actualiser les vignettes des poses » génère les images après une confirmation. « Générer les icônes des poses » rend les poses plus faciles à reconnaître dans le menu du jeu, mais augmente le temps de build à cause de la génération des images. Choisissez « Réduire la taille des icônes » pour limiter leur taille. Les icônes de poses ne sont pas générées pour Android.</p>
+<h2>Commandes de base dans le jeu</h2>
+<ul>
+<li>Choisissez les poses de chaque catégorie dans le menu Expressions. En VR, la hauteur de votre tête détermine le passage entre debout, accroupi, assis et allongé.</li>
+<li>En position allongée, l’orientation du visage fait passer du dos au ventre. Si les deux orientations ont une pose sélectionnée, vous pouvez aussi sauter sur place pour changer. Désactivez ce changement dans « Fonctions → Fonctions pratiques → Changer de pose allongée en sautant » de Unity si nécessaire (activé par défaut). Les seuils du menu de réglages déterminent les hauteurs de changement de catégorie.</li>
+<li>En mode bureau, utilisez C et Z pour changer de posture. Si Z ne vous allonge pas, augmentez le seuil de hauteur allongée dans le menu de réglages.</li>
+<li>Activez « Sans gestes » pour utiliser les mains définies dans la pose à la place des gestes de vos contrôleurs.</li>
+<li>« Hauteur pieds » ajuste le côté des pieds en conservant la position de la tête. « Hauteur sol » déplace tout le corps verticalement, tête comprise. Ils apparaissent dans cet ordre dans le menu de réglages.</li>
+<li>Avancez avec « Mode photo &gt; Distance » pour que l’avatar vous fasse face. Faites-le pivoter avec « Direction », puis activez « Pieds fixes » au moment voulu. « Quitter photo » réinitialise distance et direction et déverrouille les pieds.</li>
+<li>« Respiration » est disponible si son animation est active. L’intensité se règle dans Unity ; le jeu permet de l’activer ou de la désactiver.</li>
+</ul>
+<h2>Précalcul et avertissements</h2>
+<p>« Actualiser le précalcul » réutilise les données générées pour accélérer le build de l’avatar. Sans précalcul, le build ordinaire génère lui-même les données nécessaires.</p>
+<p>Après une modification, « Vérifier les réglages » en haut de l’Inspector et les marques de la Hierarchy signalent les mises à jour nécessaires. « Réglages d&#x27;affichage des avertissements » se trouve dans « Vérifier les réglages ». Masquer ces messages ne corrige pas les problèmes et n’actualise pas les données générées.</p>
+<h2>Précautions d’utilisation</h2>
+<ul>
+<li>Le verrouillage de pose avec suivi du corps entier n’est pas pris en charge.</li>
+<li>La morphologie, les vêtements et les modifications de l’avatar peuvent nécessiter des ajustements supplémentaires.</li>
+<li>L’intégration peut être incorrecte avec des couches Base particulières ou d’autres systèmes de posture. Si les verrouillages fonctionnent mal, vérifiez aussi « Configuration de l&#x27;avatar &gt; Intégrer les verrouillages de suivi aux autres outils ».</li>
+<li>Les corrections de déplacement et rotation du Mode photo et de hauteur du sol s’appliquent aussi aux mouvements standards ou personnels sans pose sélectionnée. Vérifiez dans le client VRChat le point de vue et le comportement après remplacement des mouvements standards.</li>
+<li>« Désactiver le balancement au repos de VRChat » agit sur l’attente standard. Cette fonction n’arrête pas les mouvements provenant de toutes les autres sources.</li>
+</ul>
+<h2>Guide et assistance</h2>
+<p>Ouvrez le guide, l’assistance et l’historique dans « Aide / Historique » en haut de l’Inspector. Les fonctions communes sont aussi expliquées dans « Packages &gt; Unisaki Posing System &gt; README » de la fenêtre Project de Unity.</p>
+<ul>
+<li><a href="https://docs.unisakistudio.jp/kawaiiposing/manual/">Manuel officiel</a></li>
+<li><a href="https://help.unisakistudio.jp/">Assistance</a></li>
+</ul>
+<p>Pour signaler un problème, fournissez les versions de ce produit et de Unisaki Posing System, celles de Unity, VRChat SDK, Modular Avatar et NDMF, l’avatar utilisé, les étapes de reproduction et les erreurs de la Console.</p>
+<h2>Distribution des préréglages</h2>
+<p>Informations concernant les données créées avec l’ajustement de l’animation.</p>
+<p>Vous pouvez librement distribuer ou vendre les fichiers d’animation d’ajustement créés avec cette fonction,
+ainsi que les préréglages créés avec ces fichiers affectés, sans demander l’autorisation de Unisaki Studio.
+N’hésitez pas à les partager, notamment avec vos propres avatars ou sous forme de préréglages pour des avatars non fournis avec l’outil.</p>
+<h2>Produits avec réglages d’intégration fournis</h2>
+<p>Les réglages d’intégration sont créés à notre initiative. Nous n’avons pas demandé l’autorisation des auteurs des produits concernés, estimant qu’elle n’était pas nécessaire.
+Pour demander leur distribution ou l’arrêt de leur distribution, contactez-nous par message à la boutique.
+L’intégration nécessite l’achat et le téléchargement du produit correspondant.
+En cas de problème avec ces réglages, contactez notre boutique plutôt que les auteurs des autres produits.</p>
+<p>« 可愛い座りツール »
+<a href="https://yunisaki.booth.pm/items/3611536">https://yunisaki.booth.pm/items/3611536</a></p>
+<p>« 添い寝ツール »
+<a href="https://yunisaki.booth.pm/items/3670993">https://yunisaki.booth.pm/items/3670993</a></p>
+<p>« 少女モーション集vol.1 », par ゆにみのアトリエ
+<a href="https://unimirai.booth.pm/items/3512020">https://unimirai.booth.pm/items/3512020</a></p>
+<p>« VRC想定移動モーション（無料配布） », par カトのVRC道具屋
+<a href="https://booth.pm/ja/items/1285101">https://booth.pm/ja/items/1285101</a></p>
+<p>« ごろ寝システムEX », par minminmart
+<a href="https://minminmart.booth.pm/items/4233545">https://minminmart.booth.pm/items/4233545</a></p>
+<h2>Conditions d’utilisation</h2>
+<p>Cet outil est réservé aux personnes acceptant les conditions d’utilisation ci-dessous, rédigées avec la licence VN3.</p>
+<p><a href="https://drive.google.com/file/d/1LN2gW2eokOAUarazWuXySI4LFcoINX5S/view?usp=sharing">Conditions d’utilisation (japonais)</a></p>
+<p>Le code source et les ressources de ce dépôt ne sont pas open source. L’achat légitime du produit et l’acceptation des conditions d’utilisation sont nécessaires.</p>
+<p><a href="https://drive.google.com/file/d/1B0O7Eofp4d5vViMRJ1UYPG2UC110eVGi/view?usp=sharing">Conditions d’utilisation (anglais)</a></p></main>
+</body></html>

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="id" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Riwayat perubahan</title><style>:root { color-scheme: light dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.7; }
+body { margin: auto; max-width: 70rem; padding: 1.5rem; overflow-wrap: anywhere; }
+nav { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: 1rem; border-block-end: 1px solid #8887; }
+h1,h2,h3 { line-height: 1.4; } h2 { margin-block-start: 2.4rem; }
+table { border-collapse: collapse; width: 100%; } th,td { text-align: start; vertical-align: top; padding: .5rem; border: 1px solid #8887; }
+thead { background: #8882; } .table-scroll { overflow-x: auto; }
+code,pre { direction: ltr; unicode-bidi: isolate; } code { background: #8882; padding: .1em .25em; } pre { white-space: pre-wrap; }
+a { color: #2269b8; } a:visited { color: #7952ad; } li { margin-block: .35rem; }
+@media(prefers-color-scheme:dark) { a { color: #8ec5ff; } a:visited { color: #cfacff; } }
+@media print { nav { display: none; } body { max-width: none; padding: 0; } a { color: inherit; } }</style></head><body>
+<nav aria-label="Documentation"><a href="../index.html">Bahasa Indonesia · 🌐</a><a href="README.html">README</a><a href="CHANGELOG.html">Riwayat perubahan</a><a href="UserGuide.html">Kawaii Posing Tool — Panduan Pengguna Bahasa Indonesia</a></nav>
+<main><h1>Riwayat perubahan</h1>
+<h2>[3.2.0] - Belum dirilis</h2>
+<h3>Ditambahkan</h3>
+<ul>
+<li>Inspector, operasi penyuntingan, dialog pemasangan, nama pose standar, dan menu VRChat yang dihasilkan kini tersedia dalam 30 bahasa.</li>
+<li>Pemilihan bahasa Inspector dan menu dalam permainan telah disatukan. Bahasa komputer digunakan pada awalnya, dan pilihan terakhir juga digunakan di proyek lain milik pengguna OS yang sama.</li>
+<li>README, riwayat perubahan, dan panduan luring kini dapat dibuka dalam bahasa terpilih.</li>
+<li>Nama tampilan 128 pose standar dan deskripsi setiap fitur disediakan sesuai istilah yang sudah ada.</li>
+</ul>
+<h3>Kompatibilitas</h3>
+<ul>
+<li>Pengaturan avatar yang ada, nama khusus, referensi aset, pengenal parameter, dan metode penyimpanan lisensi tetap dipertahankan.</li>
+</ul>
+<h2>[3.1.2] - 2026-11-09</h2>
+<ul>
+<li>Kunci kepala kini dapat dialihkan melalui “Pengaturan → Kunci Kepala Otomatis Saat Telentang” pada menu EX meskipun “Tinggi kaki” nonaktif. Item yang hilang dari avatar pada versi sebelumnya kembali setelah pembaruan dan build.</li>
+<li>Mendukung Unisaki Posing System 3.1.2. Memperbaiki wajah yang tetap menghadap ke atas setelah bangkit dari tengkurap saat “Kurangi perubahan pose akibat rotasi kepala” digunakan.</li>
+</ul>
+<p>Perbarui Kawaii Posing Tool ke 3.1.2 melalui ALCOM / VCC. Unisaki Posing System 3.1.2 juga diperlukan. Jika sebelumnya menggunakan prabuild, tekan “Perbarui prabuild”, simpan Scene, lalu lakukan build dan unggah avatar kembali.</p>
+<h2>[3.1.1] - 2026-11-08</h2>
+<ul>
+<li>“Tinggi lantai” dan “Berguling” yang diaktifkan kini muncul di “Pengaturan” menu EX VRChat meskipun “Cerminkan” nonaktif.</li>
+<li>Meskipun pose diurutkan ulang, dihapus, atau diganti namanya di versi lama, gerakan berguling yang benar tetap diwariskan ke “Kaki Lurus”, “Rileks”, dan “Satu Lutut Naik”. Ini juga berlaku setelah Unpack sepenuhnya jika pose asli dapat dikenali. Pose buatan sendiri, berguling yang Anda nonaktifkan, dan gerakan menyamping pengganti tetap dipertahankan.</li>
+<li>Memperbaiki masalah ketika avatar sesaat tengkurap saat dipilih di VRChat. Memperbaiki juga masalah ketika avatar sesaat telentang saat melompat dengan hanya pose tengkurap dipilih. Peralihan dengan melompat dapat dinonaktifkan melalui “Fitur → Kemudahan → Beralih pose berbaring dengan melompat”. Secara bawaan fitur ini aktif.</li>
+<li>Jika referensi Animator Controller untuk pose bersama hilang setelah pembaruan dan dapat dipulihkan, peringatan ditampilkan dan Controller dibuat ulang dari pengaturan. Referensi Controller yang digunakan bersama beberapa avatar juga dipertahankan.</li>
+<li>Prefab resmi kini dapat ditambahkan melalui menu penambahan alat meskipun Anda menyimpan Prefab lain bernama “可愛いポーズ” (Kawaii Posing).</li>
+<li>Saat “Tambah 添い寝ツール” dipilih dan 添い寝ツール yang diperlukan untuk integrasi tidak ditemukan, alat menunjukkan produk yang harus dipasang terlebih dahulu.</li>
+</ul>
+<p>Perbarui Kawaii Posing Tool dan Unisaki Posing System ke 3.1.1 melalui ALCOM / VCC. Jika sebelumnya menggunakan prabuild, tekan “Perbarui prabuild” pada “可愛いポーズ” (Kawaii Posing) di Scene, lalu simpan Scene. Untuk menerapkannya di VRChat, lakukan build dan unggah avatar kembali.</p>
+<h2>[3.1.0] - 2026-11-07</h2>
+<ul>
+<li>Dari 85 pose bawaan, 53 menyesuaikan posisi anggota tubuh secara otomatis dengan IK sesuai proporsi avatar.</li>
+<li>Pose tidur telentang “Kaki Lurus”, “Rileks”, dan “Satu Lutut Naik” kini mendukung berguling mengikuti kemiringan kepala.</li>
+<li>Mode foto memungkinkan penyesuaian posisi dan arah avatar. Sinkronisasi posisi dan arah serta tampilan kepala sendiri selama pemotretan juga dapat dipilih.</li>
+<li>“Tinggi lantai” dapat menggerakkan seluruh tubuh hingga 3m ke atas dan ke bawah, terpisah dari “Tinggi kaki”.</li>
+<li>Menambahkan animasi napas, pengaturan untuk menghentikan goyangan diam bawaan, serta pengurangan perubahan pose akibat arah leher.</li>
+<li>Fitur yang digunakan dan penggunaan parameter dapat diperiksa di Inspector. Menambahkan pencarian pose, penambahan sekaligus, pengurutan, dan pratinjau sederhana di Scene.</li>
+<li>Mempercepat peralihan berdiri, setengah jongkok, dan duduk dalam mode desktop.</li>
+<li>Memperbaiki peringatan prabuild setelah perubahan pengaturan, beban pengguliran Inspector, dan jeda panjang saat membersihkan hasil yang dihasilkan.</li>
+<li>Mendukung Unisaki Posing System 3.1.0.</li>
+</ul>
+<h2>[3.1.0-beta.2] - Beta terbuka (2026-11-05)</h2>
+<ul>
+<li>Memulai distribusi beta terbuka melalui GitHub Releases dan VPM. Dari 85 pose bawaan, 53 menyesuaikan anggota tubuh dengan IK sesuai proporsi tubuh.</li>
+<li>Mendukung paket bersama 3.1.0-beta.2. Memperbaiki tampilan perubahan setelah prabuild, beban pengguliran Inspector, dan jeda saat pembersihan hasil.</li>
+</ul>
+<h2>[3.1.0-beta.1] - Beta terbuka (2026-11-04)</h2>
+<ul>
+<li>Mendukung Unisaki Posing System 3.1.0-beta.1.</li>
+<li>Mengubah peralihan pose normal dalam mode desktop menjadi satu evaluasi. Berlaku untuk build biasa dan prabuild; VR dan kondisi khusus tetap menggunakan jalur sebelumnya.</li>
+<li>Prabuild dari alpha.3 atau versi sebelumnya kini dikenali sebagai perlu diperbarui.</li>
+<li>Mempertahankan sudut pandang saat Tinggi lantai diubah selama pemotretan, lalu kembali ke Tinggi lantai terbaru setelah pemotretan selesai.</li>
+<li>Menyertakan perbaikan hingga alpha.3 untuk impor otomatis, penyesuaian gerakan impor, dan pengelolaan Controller hasil.</li>
+</ul>
+<h2>[3.1.0-alpha.2] - Uji tertutup (2026-10-26)</h2>
+<h3>Perbaikan dan perubahan</h3>
+<ul>
+<li>Memperbarui sistem pose bersama ke 3.1.0-alpha.2 dan menyertakan perbaikan debug.</li>
+<li>Memperluas Tinggi lantai menjadi 3m ke atas dan ke bawah. 50% adalah tinggi asli dan nilai awal.</li>
+<li>Menambahkan pose bawaan dan khusus saat tidak ada pilihan sebagai target koreksi Mode foto dan Tinggi lantai.</li>
+<li>Memperbaiki masalah koreksi manual, pose bernama sama, pose awal, dan pengaturan berguling prasetel lama.</li>
+</ul>
+<h2>[3.1.0-alpha.1] - Sebelum publikasi</h2>
+<h3>Ditambahkan</h3>
+<ul>
+<li>Menambahkan penyesuaian anggota tubuh otomatis (IK) sesuai proporsi tubuh.</li>
+<li>Menambahkan ON/OFF IK keseluruhan dan per pose serta perekaman hasil ke animasi penyesuaian.</li>
+<li>Pose tidur telentang “Kaki Lurus”, “Rileks”, dan “Satu Lutut Naik” mendukung berguling mengikuti kemiringan kepala.</li>
+<li>Menambahkan pengaturan berguling per pose dan pemilihan animasi menyamping.</li>
+<li>Menambahkan Mode foto untuk menyesuaikan perpindahan ke depan dan rotasi.</li>
+<li>Menambahkan pengaturan sinkronisasi Mode foto. Hanya lokal menggunakan 0 bit; sinkronisasi menggunakan 16 bit.</li>
+<li>Menambahkan pengaturan agar kepala avatar sendiri tetap terlihat selama Mode foto.</li>
+<li>Menambahkan “Tinggi lantai” untuk mengangkat seluruh tubuh termasuk kepala.</li>
+<li>Menambahkan animasi napas, pengaturan kekuatannya, dan menu ON/OFF dalam permainan.</li>
+<li>Menambahkan pengaturan Nonaktifkan goyangan diam VRChat.</li>
+<li>Menambahkan pengaturan Kurangi perubahan pose akibat rotasi kepala.</li>
+<li>Menambahkan pencegahan lutut menekuk terbalik dan pengaturan sudut tekukan minimum.</li>
+<li>Menambahkan ON/OFF per fitur dan tampilan penggunaan ExpressionParameters.</li>
+<li>Menambahkan pratinjau sederhana di Scene, pencarian pose, penambahan sekaligus, dan penentuan posisi tujuan.</li>
+<li>Menambahkan tampilan riwayat perubahan di Inspector.</li>
+</ul>
+<h3>Diubah</h3>
+<ul>
+<li>Menata Inspector dalam 3 tab: “Fitur”, “Pose”, dan “Pengaturan Avatar”.</li>
+<li>Menata lokasi rincian napas, impor gerakan sendiri, dan pengaturan prasetel.</li>
+<li>Mengurangi duplikasi animasi yang dihasilkan untuk penyesuaian Tinggi kaki.</li>
+<li>Menambahkan dialog konfirmasi pembaruan gambar pose dan mengumpulkan pengaturan peringatan dalam “Periksa pengaturan”.</li>
+<li>Menghapus menu penambahan baru versi 8bit dan menyatukannya dengan pilihan fitur pada Prefab biasa. Referensi yang ada dipertahankan.</li>
+<li>Mendukung Unisaki Posing System 3.1.0-alpha.1. Mengubah versi minimum VRChat Avatars SDK menjadi 3.10.4.</li>
+</ul>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki input nama pose yang berpindah ke pose lain dan rincian yang tertutup saat pengurutan ulang.</li>
+<li>Memperbaiki pratinjau tumpang tindih, posisi penempatan bergeser, dan kesalahan pada avatar tertentu.</li>
+<li>Memperbaiki pembaruan peringatan/status prabuild setelah perubahan pengaturan serta beberapa kesalahan build.</li>
+</ul>
+<h2>[3.0.13] - 2026-09-22</h2>
+<ul>
+<li>Memperbarui PosingSystem ke 3.0.17 dan memperbaiki pergeseran horizontal pose akibat perubahan skala seragam seluruh avatar.</li>
+<li>Menambahkan pengaturan untuk mengabaikan peringatan langkah otomatis, prabuild belum dijalankan, dan perubahan pengaturan secara terpisah atau sekaligus.</li>
+<li>Memperbaiki animasi sekali putar yang tidak sesuai ikut diimpor saat impor manual gerakan perpindahan.</li>
+</ul>
+<h2>[3.0.12] - 2026-09-15</h2>
+<ul>
+<li>Menambahkan prasetel avatar (ルリエ).</li>
+</ul>
+<h2>[3.0.11] - 2026-09-09</h2>
+<ul>
+<li>Menambahkan prasetel avatar (メルヴィ, ミダリス).</li>
+<li>Memperbaiki penggantian gerakan pada prasetel うらら.</li>
+</ul>
+<h2>[3.0.10] - 2026-08-31</h2>
+<ul>
+<li>Memperbarui PosingSystem ke 3.0.11 untuk memperbaiki kegagalan prabuild pada NDMF terbaru dan pengecualian saat menampilkan kesalahan.</li>
+</ul>
+<h2>[3.0.9] - 2026-08-29</h2>
+<ul>
+<li>Memperbarui PosingSystem ke 3.0.10 untuk mengurangi beban pemuatan prasetel dan penentuan ikon Hierarchy.</li>
+<li>Memperbaiki kesalahan prabuild ketika beberapa sistem pose berada pada avatar yang sama.</li>
+</ul>
+<h2>[3.0.8] - 2026-08-26</h2>
+<ul>
+<li>Memperbarui PosingSystem ke 3.0.9 untuk memperbaiki Avatar pratinjau yang menjadi tidak valid setelah pemrosesan NDMF dan menyebabkan kegagalan <code dir="ltr">Avatar is null</code> saat Play.</li>
+</ul>
+<h2>[3.0.7] - 2026-08-18</h2>
+<ul>
+<li>Memperbarui PosingSystem ke 3.0.8 untuk memperbaiki kemungkinan data pose tidak valid saat koreksi ulang tinggi.</li>
+</ul>
+<h2>[3.0.6] - 2026-08-12</h2>
+<ul>
+<li>Menambahkan prasetel avatar (うらら, ウェンディ, カザリス, カプリィナ, キリサメ, シウシウ, ハンカ, フィユエ, プラム, マヨ, ミサキ, ラシューシャ, ルルネ).</li>
+</ul>
+<h2>[3.0.5] - 2026-03-17</h2>
+<ul>
+<li>Menambahkan prasetel avatar (アズキ, あのめあ, イメリス, うささき, 京狐, ここあ, コロネ, サフィー, しずく, しらつめ, ソフィナ, ソラハ, デルタフレア, トラス, ナナセノワール, ナユ, ネメシス, フレア, プラチナ, 真央, 真冬, むんき, めいゆん, ヨル, ラスク, リーファ, りりか, 竜胆, ルゼブル, ヴェール).</li>
+</ul>
+<h2>[3.0.4] - 2026-01-31</h2>
+<ul>
+<li>Menambahkan prasetel avatar (クマリ, イチゴ, エルシオン, ラムネ, リルモワ, サバラム, Lapwing).</li>
+</ul>
+<h2>[3.0.3] - 2026-01-11</h2>
+<ul>
+<li>Memperbaiki fitur pemasangan dan penghapusan lisensi.</li>
+</ul>
+<h2>[3.0.2] - 2026-01-04</h2>
+<ul>
+<li>Memperbaiki pemrosesan lisensi pada versi Mac dan Linux.</li>
+</ul>
+<h2>[3.0.1] - 2025-12-28</h2>
+<ul>
+<li>Menambahkan prasetel avatar (セレスティア, まめひなた, しお, 愛莉, ライム, ショコラ, ミルフィ).</li>
+</ul>
+<h2>[3.0.0] - 2025-12-28</h2>
+<ul>
+<li>Menambahkan fitur prabuild.</li>
+<li>Menambahkan fitur Penyesuaian Animasi.</li>
+<li>Menambahkan fitur prasetel.</li>
+<li>Memungkinkan penambahan ke proyek melalui unitypackage.</li>
+<li>Menambahkan prasetel avatar (マヌカ, しなの, 桔梗, 萌, ミルティナ, キプフェル, シフォン, ルミナ, エク, みみのこ).</li>
+</ul>
+<h2>[2.2.5] - 2025-05-08</h2>
+<ul>
+<li>Menyelesaikan masalah kompatibilitas dengan beberapa alat.</li>
+</ul>
+<h2>[2.2.4] - 2025-04-04</h2>
+<ul>
+<li>Memperbaiki pose yang tidak dapat berubah pada kombinasi avatar dan versi ModularAvatar tertentu.</li>
+</ul>
+<h2>[2.2.3] - 2025-03-13</h2>
+<ul>
+<li>Memperbaiki gerakan yang tidak benar pada beberapa avatar, termasuk lompatan 森羅.</li>
+<li>Memperbaiki nilai awal Gestur mati yang terkadang tidak benar.</li>
+</ul>
+<h2>[2.2.2] - 2025-03-06</h2>
+<ul>
+<li>Memperbaiki kesalahan pada lingkungan tertentu.</li>
+</ul>
+<h2>[2.2.1] - 2025-02-05</h2>
+<ul>
+<li>Memperbaiki Unity yang mengalami crash.</li>
+<li>Menambahkan versi pada nama alat yang ditampilkan di NDMF Console.</li>
+</ul>
+<h2>[2.2.0] - 2025-02-02</h2>
+<ul>
+<li>Menambahkan pengaturan untuk menonaktifkan gestur dan menggunakan bentuk tangan animasi.</li>
+<li>Menambahkan data bentuk tangan ke semua pose.</li>
+</ul>
+<h2>[2.1.6] - 2025-02-02</h2>
+<ul>
+<li>Memperbaiki pose yang rusak saat digunakan bersama alat tertentu.</li>
+<li>Memperbaiki kesalahan akibat pengaturan tertentu.</li>
+</ul>
+<h2>[2.1.5] - 2024-12-10</h2>
+<ul>
+<li>Menyelesaikan konflik dengan beberapa alat.</li>
+<li>Menambahkan tombol penghapusan versi Unitypackage.</li>
+<li>Menghapus Prefabs integrasi 三点だいしゅきツール karena versi VCC-nya sudah dirilis.</li>
+</ul>
+<h2>[2.1.4] - 2024-12-08</h2>
+<ul>
+<li>Memperbaiki kesalahan pada avatar tertentu.</li>
+<li>Memperbaiki Kunci kaki yang tidak dapat digunakan akibat konflik dengan alat atau avatar.</li>
+<li>Memperbaiki pose avatar yang kembali ke pose bawaan VRC dalam mode desktop.</li>
+</ul>
+<h2>[2.1.3] - 2024-12-01</h2>
+<ul>
+<li>Memperbaiki pose yang tidak berubah jika digunakan bersama avatar atau alat yang menggunakan tipe VRMode yang salah.</li>
+<li>Menambahkan tampilan NDMF-Console untuk konflik antaralat akibat perbedaan tipe parameter.</li>
+</ul>
+<h2>[2.1.2] - 2024-12-01</h2>
+<ul>
+<li>Menambahkan penjelasan di NDMF-Console karena kesalahan alat lain menyebabkan kesalahan Unisaki Posing System saat build avatar.</li>
+<li>Memperbaiki kesalahan build pada beberapa avatar.</li>
+<li>Memperbaiki perilaku segera setelah avatar dimuat.</li>
+<li>Menghapus pemrosesan perpindahan asli avatar karena dapat mencegah alat bekerja pada avatar tertentu.</li>
+</ul>
+<h2>[2.1.1] - 2024-11-20</h2>
+<ul>
+<li>Memperbaiki masalah yang mencegah build.</li>
+</ul>
+<h2>[2.1.0] - 2024-11-20</h2>
+<ul>
+<li>Mengatasi kaki atau pinggul yang tenggelam ke lantai dalam mode desktop sehingga semua pose dapat ditampilkan dengan baik.</li>
+<li>Menambahkan fitur mengubah pose tanpa memperhitungkan tinggi kepala.</li>
+<li>Menambahkan mode tanpa pembuatan ikon untuk unggah avatar Quest.</li>
+<li>Menambahkan beberapa peringatan jika avatar bermasalah.</li>
+<li>Menyelesaikan konflik penguncian dengan AFK atau alat pengunci lengan lain.</li>
+<li>Menambahkan pengaturan kunci leher otomatis saat telentang.</li>
+<li>Mengubah ExpressionsMenu: memisahkan pemilihan pose ke folder dan memindahkan fungsi penguncian ke tingkat teratas.</li>
+</ul>
+<h2>[2.0.0] - 2024-11-14</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Mengubah menjadi paket VPM untuk mendukung VCC.</li>
+<li>Memperbaiki versi 8bit yang menggunakan 17bit.</li>
+</ul>
+<h2>[1.15.0] - 2024-11-04</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki kesalahan dan masalah.</li>
+</ul>
+<h2>[1.14.0] - 2024-07-05</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki masalah saat menggunakan VRCFury.</li>
+</ul>
+<h2>[1.13.0] - 2024-04-11</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Menambahkan pengaturan integrasi dengan “ごろ寝システムEX”.</li>
+</ul>
+<h2>[1.12.0] - 2024-03-31</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki alat yang tidak dapat digunakan pada status ExMenu tertentu.</li>
+<li>Menambahkan fitur pencerminan ke pengaturan.</li>
+<li>Memperbaiki pose kucing.</li>
+<li>Menambahkan ５ pose tidur menyamping.</li>
+</ul>
+<h2>[1.11.0] - 2024-03-12</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki pose yang menjadi tidak benar ketika posisi kepala tinggi.</li>
+</ul>
+<h2>[1.10.0] - 2024-03-10</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Menambahkan fitur pose berdiri dengan 15 jenis pose.</li>
+<li>Memperbaiki kaki yang bergerak sendiri pada avatar dan lingkungan tertentu.</li>
+<li>Menambahkan versi ExpressionParameters8bit.</li>
+</ul>
+<h2>[1.9.0] - 2024-03-05</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki kaki yang bergerak sendiri pada avatar tertentu.</li>
+<li>Menyeragamkan WriteDefaults.</li>
+<li>Menambahkan ７ pose setengah jongkok dan ８ pose duduk.</li>
+</ul>
+<h2>[1.8.0] - 2024-02-25</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki kegagalan unggah saat menggunakan ModularAvatar1.9.0 atau lebih baru.</li>
+<li>ModualrAvatar1.9.0 atau lebih baru kini diperlukan.</li>
+</ul>
+<h2>[1.7.0] - 2024-02-23</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Menambahkan fitur mengubah ambang tinggi kepala untuk setiap kategori pose.</li>
+<li>Memperbaiki pose atau kaki yang menjadi tidak benar, misalnya saat melompat, pada avatar tertentu.</li>
+<li>Mengurangi penggunaan bit ExpressionParameter dari 54 menjadi 16bit.</li>
+</ul>
+<h2>[1.6.0] - 2024-02-20</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki pose duduk yang tidak dapat diaktifkan dalam mode VR.</li>
+</ul>
+<h2>[1.5.0] - 2024-02-18</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Dalam mode desktop, pose duduk kini dapat digunakan sambil menahan tombol C.</li>
+</ul>
+<h2>[1.4.0] - 2024-02-17</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki integrasi 添い寝 yang tidak dapat digunakan tanpa integrasi 三点だいしゅき.</li>
+<li>Memperbaiki kaki yang terkunci saat melompat.</li>
+</ul>
+<h2>[1.3.0] - 2024-02-16</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki jumlah VRCContactSender/Receiver yang tidak wajar pada pengaturan.</li>
+</ul>
+<h2>[1.2.0] - 2024-02-16</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki kesalahan build saat unggah.</li>
+</ul>
+<h2>[1.1.0] - 2024-02-15</h2>
+<h3>Diperbaiki</h3>
+<ul>
+<li>Memperbaiki nilai bawaan yang tidak benar saat menggunakan beberapa Prefabs.</li>
+<li>Memperbaiki pengaturan integrasi 可愛い座り yang keliru.</li>
+</ul>
+<h2>[1.0.0] - 2024-02-14</h2>
+<h3>Rilis</h3></main>
+</body></html>
