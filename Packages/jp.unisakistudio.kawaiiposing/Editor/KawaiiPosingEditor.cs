@@ -22,6 +22,7 @@ namespace jp.unisakistudio.kawaiiposingeditor
         public override void OnInspectorGUI()
         {
             KawaiiPosing kawaiiPosing = target as KawaiiPosing;
+            using var language = UseInspectorLanguage(kawaiiPosing);
 
             /*
              * このコメント分を含むここから先の処理は可愛いポーズツールをゆにさきスタジオから購入した場合に変更することを許可します。
@@ -82,11 +83,12 @@ namespace jp.unisakistudio.kawaiiposingeditor
                 {
                     EditorGUILayout.LabelField(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール"), header1Label, GUILayout.Height(30));
 
-                    EditorGUILayout.HelpBox(posingsystemeditor.PosingSystemLocalization.Text("このコンピュータには可愛いポーズツールの使用が許諾されていません。Boothのショップから可愛いポーズツールを購入して、コンピュータにライセンスをインストールしてください。可愛いポーズツールを購入しているのにこのエラーが表示される場合は、Boothから最新版のZipファイルをダウンロードして、「KawaiiPosing.unitypackage」をインポートしてください。（この作業は１つのパソコンにつき一回行う必要があります）"), MessageType.Error);
-                    if (EditorGUILayout.LinkButton("可愛いポーズツール(Booth)"))
+                    EditorGUILayout.HelpBox(posingsystemeditor.PosingSystemLocalization.Text("このユーザーの可愛いポーズツールライセンスが見つかりません。正規の購入ページからダウンロードしたインストーラーを、このUnityプロジェクトへインポートしてください。ライセンスは、PCのユーザーごとに一度インストールします。別のPCやユーザーでは再度インストールしてください。"), MessageType.Error);
+                    if (EditorGUILayout.LinkButton(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Booth)")))
                     {
                         Application.OpenURL("https://yunisaki.booth.pm/items/5479202");
                     }
+                    if (EditorGUILayout.LinkButton(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Gumroad)"))) Application.OpenURL("https://unisakistudio.gumroad.com/l/kawaii-posing");
                     return;
                 }
             }

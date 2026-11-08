@@ -1,5 +1,18 @@
 # 変更履歴
 
+## [3.2.0] - 2026-11-08
+
+### Added
+
+- English Inspector, editor actions, setup dialogs, standard pose names, and generated VRChat menu labels.
+- One language selector for the editor and in-game menu, with a shared per-user preference and OS-language default.
+- English offline manual, available from the Inspector.
+- Thirty selectable languages; translation coverage varies by language.
+
+### Compatibility
+
+- Existing avatar settings, custom names, asset references, parameter identifiers, and license storage are preserved.
+
 ## [3.1.1] - 2026-11-08
 
 - 「左右反転」をオフにしても、有効にした「床の高さ」と「寝返り」がVRChatのEXメニューの「設定」に表示されるようになりました。
