@@ -32,14 +32,6 @@ PrefabInstance:
       propertyPath: Control.icon
       value: 
       objectReference: {fileID: 2800000, guid: a00918506d6b8eb42a164da162c19119, type: 3}
-    - target: {fileID: 2458723833979730020, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2458723833979730020, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
-      propertyPath: m_TagString
-      value: EditorOnly
-      objectReference: {fileID: 0}
     - target: {fileID: 2650168226536633657, guid: ecde0b1d67f9e854992715d64f778d8c, type: 3}
       propertyPath: m_IsActive
       value: 1
