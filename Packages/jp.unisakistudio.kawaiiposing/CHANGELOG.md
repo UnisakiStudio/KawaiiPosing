@@ -7,7 +7,7 @@
 - English Inspector, editor actions, setup dialogs, standard pose names, and generated VRChat menu labels.
 - One language selector for the editor and in-game menu, with a shared per-user preference and OS-language default.
 - English offline manual, available from the Inspector.
-- Thirty selectable languages; translation coverage varies by language.
+- Thirty selectable languages with complete bundled display catalogs and all 128 standard pose names.
 
 ### Compatibility
 

@@ -58,7 +58,9 @@ Use the label table below when following older Japanese tutorials. This release 
 | Animation Adjustment | アニメーション調整 |
 | Reload | 再読込 |
 
-Translations and their coverage vary by language. Avatar names, saved object names, custom pose names, asset filenames, and internal parameter identifiers may keep their original spelling.
+The bundled Inspector, editor/setup dialogs, standard pose names and generated menus have translations for all 30 selectable languages. The offline manual is provided in English. Avatar names, saved object names, custom pose names, asset filenames, and internal parameter identifiers may keep their original spelling.
+
+[30-language quick references](../../jp.unisakistudio.posingsystem/Documentation~/QuickReference/index.html) cover the feature explanations and standard pose-name tables. These are concise references; this full manual is in English.
 
 ## 3. Choose your poses and features
 
