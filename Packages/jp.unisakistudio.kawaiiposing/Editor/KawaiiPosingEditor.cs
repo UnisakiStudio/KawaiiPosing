@@ -81,14 +81,13 @@ namespace jp.unisakistudio.kawaiiposingeditor
                 }
                 else
                 {
-                    EditorGUILayout.LabelField(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール"), header1Label, GUILayout.Height(30));
-
-                    EditorGUILayout.HelpBox(posingsystemeditor.PosingSystemLocalization.Text("このユーザーの可愛いポーズツールライセンスが見つかりません。正規の購入ページからダウンロードしたインストーラーを、このUnityプロジェクトへインポートしてください。ライセンスは、PCのユーザーごとに一度インストールします。別のPCやユーザーでは再度インストールしてください。"), MessageType.Error);
-                    if (EditorGUILayout.LinkButton(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Booth)")))
-                    {
-                        Application.OpenURL("https://yunisaki.booth.pm/items/5479202");
-                    }
-                    if (EditorGUILayout.LinkButton(posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Gumroad)"))) Application.OpenURL("https://unisakistudio.gumroad.com/l/kawaii-posing");
+                    DrawLicenseNotice(
+                        posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール"),
+                        posingsystemeditor.PosingSystemLocalization.Text("このユーザーの可愛いポーズツールライセンスが見つかりません。正規の購入ページからダウンロードしたインストーラーを、このUnityプロジェクトへインポートしてください。ライセンスは、PCのユーザーごとに一度インストールします。別のPCやユーザーでは再度インストールしてください。"),
+                        posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Booth)"),
+                        "https://yunisaki.booth.pm/items/5479202",
+                        posingsystemeditor.PosingSystemLocalization.Text("可愛いポーズツール(Gumroad)"),
+                        "https://unisakistudio.gumroad.com/l/kawaii-posing");
                     return;
                 }
             }
