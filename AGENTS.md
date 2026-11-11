@@ -1,7 +1,7 @@
 # Kawaii Posing development
 
 The user requested multilingual work on `codex/v3.2.0-localization`, merging released
-`main` through 3.1.2. Use this primary checkout. Before any commit verify author and
+`main` through shared-system 3.1.4. Use this primary checkout. Before any commit verify author and
 committer are `UnisakiStudio <unisaki.studio@gmail.com>` and retain Git guards.
 
 Every feature/fix must include its display translations and terminology check, not
