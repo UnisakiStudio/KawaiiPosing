@@ -28,7 +28,7 @@ Tämä ohje kattaa asennuksen, avatarin asetukset, VRChat-ohjaimet, asentojen mu
 
 Kawaii Posing Tool sisältää asentokirjaston, asetustyökalut ja avatarin säätöesiasetukset. Asennusohjelma aktivoi tuotteen nykyisen paikallisen lisenssin. Uutta Gumroad-lisenssiavaimen kenttää ei tarvita. Älä koskaan julkaise asennustiedostoja tai lisenssitietoja julkisessa tukipyynnössä.
 
-Kieliasetukset tallennetaan Unity EditorPrefsiin nykyiselle käyttöjärjestelmäkäyttäjälle, ja ne ovat yhteisiä tämän tietokoneen Unity-projekteille. Ilman tallennettua valintaa asennusohjelma seuraa käyttöjärjestelmän kieltä. Jos kieltä ei tueta, käytetään englantia. Tuotelisenssien nykyinen tallennus säilyy: Windowsissa nykyisen käyttäjän `Software/UnisakiStudio`-rekisteriavain ja macOS/Linuxissa käyttäjäkohtaiset lisenssitiedostot. Kielen vaihtaminen ei poista lisenssiä.
+Kieliasetukset tallennetaan Unity EditorPrefsiin nykyiselle käyttöjärjestelmäkäyttäjälle, ja ne ovat yhteisiä tämän tietokoneen Unity-projekteille. Ilman tallennettua valintaa asennusohjelma seuraa käyttöjärjestelmän kieltä. Jos kieltä ei tueta, käytetään englantia. Tuotelisenssien nykyinen tallennus säilyy: Windowsissa nykyisen käyttäjän `Software/UnisakiStudio`-rekisteriavain ja macOS/Linuxissa käyttäjäkohtaiset lisenssitiedostot. Kielen vaihtaminen ei poista lisenssiä. Kaikki poseeraustyökalut ja avatarit käyttävät samaa kieltä. Kielen vaihtaminen minkä tahansa työkalun Inspectorissa päivittää yhteisen asetuksen; avatarikohtaisia kielivalintoja ei käytetä. Kielipainike näkyy vain ensimmäisessä asennusvahvistuksessa, jos kieltä ei ole tallennettu. Myöhemmät kielenvaihdot tehdään Inspectorissa.
 
 ## 2. Lisää työkalu avatariin
 

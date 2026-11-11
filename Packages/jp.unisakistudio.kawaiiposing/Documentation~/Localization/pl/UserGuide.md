@@ -28,7 +28,7 @@ Ta instrukcja opisuje instalację, konfigurację awatara, sterowanie VRChat, edy
 
 Kawaii Posing Tool zawiera bibliotekę poz, narzędzia konfiguracji i presety dopasowania awatarów. Instalator aktywuje dotychczasową lokalną licencję produktu i nie wymaga nowego pola klucza licencyjnego Gumroad. Nigdy nie publikuj plików instalatora ani danych licencji w otwartym zgłoszeniu wsparcia.
 
-Preferencje języka są zapisywane przez Unity EditorPrefs dla bieżącego użytkownika systemu i współdzielone między projektami Unity na tym komputerze. Bez zapisanej preferencji instalator używa języka systemu, a dla nieobsługiwanych języków angielskiego. Licencje zachowują dotychczasowe przechowywanie: klucz rejestru bieżącego użytkownika `Software/UnisakiStudio` w Windows oraz pliki licencji użytkownika w macOS/Linux. Zmiana języka nie usuwa licencji.
+Preferencje języka są zapisywane przez Unity EditorPrefs dla bieżącego użytkownika systemu i współdzielone między projektami Unity na tym komputerze. Bez zapisanej preferencji instalator używa języka systemu, a dla nieobsługiwanych języków angielskiego. Licencje zachowują dotychczasowe przechowywanie: klucz rejestru bieżącego użytkownika `Software/UnisakiStudio` w Windows oraz pliki licencji użytkownika w macOS/Linux. Zmiana języka nie usuwa licencji. Wszystkie narzędzia do pozowania i awatary używają tego samego języka. Zmiana w Inspectorze dowolnego narzędzia aktualizuje wspólne ustawienie; wybory języka poszczególnych awatarów są ignorowane. Przycisk języka pojawia się tylko przy pierwszym potwierdzeniu instalacji, gdy nie zapisano języka. Późniejszych zmian dokonuje się w Inspectorze.
 
 ## 2. Dodaj narzędzie do awatara
 

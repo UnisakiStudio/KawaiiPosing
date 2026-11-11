@@ -28,7 +28,7 @@ Esta guía cubre instalación, configuración del avatar, controles VRChat, edic
 
 Kawaii Posing incluye biblioteca de poses, configuración y preajustes de avatar. El instalador activa la licencia local existente; no necesita un nuevo campo de clave Gumroad. Nunca publiques archivos del instalador ni datos de licencia en solicitudes públicas de ayuda.
 
-El idioma se guarda en Unity EditorPrefs para el usuario del sistema actual y se comparte entre proyectos del ordenador. Sin preferencia usa el idioma del sistema, o inglés si no está soportado. Las licencias conservan su almacenamiento: registro `Software/UnisakiStudio` del usuario en Windows y archivos por usuario en macOS/Linux. Cambiar idioma no elimina licencias.
+El idioma se guarda en Unity EditorPrefs para el usuario del sistema actual y se comparte entre proyectos del ordenador. Sin preferencia usa el idioma del sistema, o inglés si no está soportado. Las licencias conservan su almacenamiento: registro `Software/UnisakiStudio` del usuario en Windows y archivos por usuario en macOS/Linux. Cambiar idioma no elimina licencias. Todas las herramientas de poses y los avatares usan el mismo idioma. Cambiarlo en el Inspector de cualquier herramienta actualiza la preferencia común; se ignoran las elecciones de idioma de cada avatar. El botón de idioma solo aparece en la confirmación inicial de instalación cuando no hay un idioma guardado. Los cambios posteriores se realizan en el Inspector.
 
 ## 2. Añadir la herramienta a un avatar
 

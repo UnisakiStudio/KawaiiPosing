@@ -11,7 +11,7 @@ README ini ditujukan untuk v3.2.0 yang sedang dikembangkan. Tanggal rilis resmi 
 
 Pilih bahasa melalui “Language / 言語” di bagian atas Inspector. Satu pilihan berlaku untuk Inspector dan menu VRChat yang dibuat. Unggah ulang avatar untuk mengubah bahasa di dalam gim.
 
-Jika belum dipilih, bahasa komputer digunakan; bahasa yang tidak didukung memakai bahasa Inggris. Windows, macOS, dan Linux didukung. Pilihan terakhir disimpan di EditorPrefs dan digunakan di proyek lain milik pengguna OS yang sama pada komputer ini. Pilihan eksplisit yang sudah tersimpan pada avatar dipertahankan. Pilihan tidak disinkronkan ke komputer lain. Cara penyimpanan lisensi tidak berubah.
+Jika belum dipilih, bahasa komputer digunakan; bahasa yang tidak didukung memakai bahasa Inggris. Windows, macOS, dan Linux didukung. Pilihan terakhir disimpan di EditorPrefs dan digunakan di proyek lain milik pengguna OS yang sama pada komputer ini. Semua alat pose dan avatar menggunakan bahasa yang sama. Mengubahnya di Inspector alat mana pun memperbarui preferensi bersama; pilihan bahasa per avatar diabaikan. Pilihan tidak disinkronkan ke komputer lain. Cara penyimpanan lisensi tidak berubah. Tombol bahasa hanya muncul pada konfirmasi pemasangan awal jika belum ada bahasa yang disimpan. Perubahan bahasa berikutnya dilakukan di Inspector.
 
 README, riwayat perubahan, dan panduan dapat dipilih melalui [daftar bahasa](../index.html) yang disertakan. Tombol panduan dan riwayat perubahan di Inspector juga mengikuti bahasa pilihan. Ketentuan asli dan terjemahan referensi tetap disediakan secara terpisah.
 

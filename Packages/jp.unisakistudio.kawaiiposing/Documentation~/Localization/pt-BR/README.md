@@ -11,7 +11,7 @@ Este README refere-se a v3.2.0 em desenvolvimento. A data oficial não está def
 
 Escolha o idioma em «Language / 言語», no topo do Inspector. Uma única escolha aplica-se ao Inspector e aos menus VRChat gerados. Envie novamente o avatar para mudar o idioma dentro do jogo.
 
-Sem escolha explícita, é usado o idioma do computador; idiomas não suportados utilizam inglês. São suportados Windows, macOS e Linux. A última escolha é salva em EditorPrefs e reutilizada em outros projetos do mesmo usuário do sistema neste computador. Uma escolha explícita já salva no avatar é mantida. Não existe sincronização com outros computadores. O armazenamento da licença não é alterado.
+Sem escolha explícita, é usado o idioma do computador; idiomas não suportados utilizam inglês. São suportados Windows, macOS e Linux. A última escolha é salva em EditorPrefs e reutilizada em outros projetos do mesmo usuário do sistema neste computador. Todas as ferramentas de poses e todos os avatares usam o mesmo idioma. Alterá-lo no Inspector de qualquer ferramenta atualiza a preferência compartilhada; as escolhas de idioma por avatar são ignoradas. Não existe sincronização com outros computadores. O armazenamento da licença não é alterado. O botão de idioma aparece apenas na confirmação inicial da instalação quando não há um idioma salvo. As alterações posteriores são feitas no Inspector.
 
 Escolha o idioma do README, histórico e manual na [lista de idiomas](../index.html) incluída. Os atalhos do Inspector para manual e alterações seguem a seleção. Os termos originais e as traduções de referência continuam disponíveis em separado.
 

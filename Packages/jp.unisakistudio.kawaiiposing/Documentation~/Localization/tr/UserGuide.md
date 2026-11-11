@@ -28,7 +28,7 @@ Bu kılavuz kurulum, avatar ayarı, VRChat kontrolleri, poz düzenleme, güncell
 
 Kawaii Posing Tool; poz kitaplığı, ayar araçları ve avatar düzeltme ön ayarlarını içerir. Kurucu ürünün mevcut yerel lisansını etkinleştirir; yeni bir Gumroad lisans anahtarı alanı gerektirmez. Kurulum dosyalarını veya lisans verilerini hiçbir zaman herkese açık destek iletilerine koymayın.
 
-Dil tercihleri geçerli işletim sistemi kullanıcısı için Unity EditorPrefs’te saklanır ve bu bilgisayardaki Unity projeleri arasında paylaşılır. Kayıtlı tercih yoksa kurucu işletim sisteminin dilini izler; desteklenmeyen dillerde İngilizce kullanılır. Ürün lisansları mevcut depolamayı korur: Windows’ta geçerli kullanıcının `Software/UnisakiStudio` kayıt defteri anahtarı, macOS/Linux’ta kullanıcıya özel lisans dosyaları. Dil değiştirmek lisansı silmez.
+Dil tercihleri geçerli işletim sistemi kullanıcısı için Unity EditorPrefs’te saklanır ve bu bilgisayardaki Unity projeleri arasında paylaşılır. Kayıtlı tercih yoksa kurucu işletim sisteminin dilini izler; desteklenmeyen dillerde İngilizce kullanılır. Ürün lisansları mevcut depolamayı korur: Windows’ta geçerli kullanıcının `Software/UnisakiStudio` kayıt defteri anahtarı, macOS/Linux’ta kullanıcıya özel lisans dosyaları. Dil değiştirmek lisansı silmez. Tüm poz araçları ve avatarlar aynı dili kullanır. Herhangi bir aracın Inspector’ında dili değiştirmek ortak tercihi günceller; avatara özel dil seçimleri dikkate alınmaz. Dil düğmesi, kayıtlı bir dil yoksa yalnızca ilk kurulum onayında görünür. Daha sonraki dil değişiklikleri Inspector’dan yapılır.
 
 ## 2. Aracı avatara ekleyin
 

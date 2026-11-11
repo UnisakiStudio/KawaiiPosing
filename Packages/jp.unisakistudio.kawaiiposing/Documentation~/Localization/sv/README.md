@@ -11,7 +11,7 @@ Denna README gäller v3.2.0 under utveckling. Datum för slutlig utgivning är i
 
 Välj språk under Language / 言語 överst i Inspector. Samma val styr Inspector och genererade VRChat-menyer. Ladda upp avataren igen för att ändra språk i spelet.
 
-Utan uttryckligt val används datorns språk, annars engelska om språket saknas. Windows, macOS och Linux stöds. Senaste val sparas i EditorPrefs för andra projekt med samma systemanvändare på denna dator. Ett uttryckligt val i avataren behålls. Ingen synkronisering till andra datorer. Licenslagring ändras inte.
+Utan uttryckligt val används datorns språk, annars engelska om språket saknas. Windows, macOS och Linux stöds. Senaste val sparas i EditorPrefs för andra projekt med samma systemanvändare på denna dator. Alla posverktyg och avatarer använder samma språk. En ändring i något verktygs Inspector uppdaterar den gemensamma inställningen; språkval för enskilda avatarer ignoreras. Ingen synkronisering till andra datorer. Licenslagring ändras inte. Språkknappen visas bara vid den första installationsbekräftelsen om inget språk har sparats. Senare språkändringar görs i Inspector.
 
 Välj språk för README, historik och handbok i medföljande [språklista](../index.html). Inspectors handbok och ändringar följer också valet. Originalvillkor och referensöversättningar finns fortsatt separat.
 

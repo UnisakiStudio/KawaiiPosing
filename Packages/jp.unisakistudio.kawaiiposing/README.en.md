@@ -11,7 +11,7 @@ This README covers v3.2.0, currently in development. A release date has not been
 
 Choose a display language with Language / 言語 at the top of the Inspector. One selection controls both the Inspector and generated VRChat menu. Re-upload the avatar to change its in-game language.
 
-Without a saved choice, the tool follows the computer's language and uses English for unsupported languages. This works on Windows, macOS and Linux. The last selection is saved in EditorPrefs and reused in other projects belonging to the same OS user on this computer. An explicit selection already saved on an avatar is preserved. Preferences do not sync to other computers. License storage is unchanged.
+Without a saved choice, the tool follows the computer's language and uses English for unsupported languages. This works on Windows, macOS and Linux. The last selection is saved in EditorPrefs and reused in other projects belonging to the same OS user on this computer. All posing tools and avatars use the same language. Changing it in any tool's Inspector updates the shared preference; per-avatar language choices are ignored. Preferences do not sync to other computers. License storage is unchanged. The language button appears only on the initial setup confirmation when no language is saved. Later language changes are made in the Inspector.
 
 Choose a README, changelog or manual from the bundled [language index](Documentation~/Localization/index.html). The Inspector's Manual and View changelog also follow the selected language. Original agreements and reference translations remain separately available.
 

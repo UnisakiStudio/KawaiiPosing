@@ -11,7 +11,7 @@ Tämä README koskee kehitteillä olevaa versiota v3.2.0. Virallista julkaisupä
 
 Valitse näyttökieli Inspectorin yläosasta kohdasta ”Language / 言語”. Sama valinta koskee Inspectoria ja luotavaa VRChat-valikkoa. Lataa avatar uudelleen palveluun, jotta pelissä näkyvä kieli vaihtuu.
 
-Jos kieltä ei ole valittu, käytetään tietokoneen kieltä tai englantia, jos kieltä ei tueta. Windows, macOS ja Linux ovat tuettuja. Viimeksi valittu kieli tallennetaan EditorPrefsiin, ja sitä käytetään myös tämän tietokoneen saman käyttöjärjestelmäkäyttäjän muissa projekteissa. Avatariin erikseen tallennettu kielivalinta säilyy. Valintaa ei synkronoida muihin tietokoneisiin. Lisenssin tallennustapa ei muutu.
+Jos kieltä ei ole valittu, käytetään tietokoneen kieltä tai englantia, jos kieltä ei tueta. Windows, macOS ja Linux ovat tuettuja. Viimeksi valittu kieli tallennetaan EditorPrefsiin, ja sitä käytetään myös tämän tietokoneen saman käyttöjärjestelmäkäyttäjän muissa projekteissa. Kaikki poseeraustyökalut ja avatarit käyttävät samaa kieltä. Kielen vaihtaminen minkä tahansa työkalun Inspectorissa päivittää yhteisen asetuksen; avatarikohtaisia kielivalintoja ei käytetä. Valintaa ei synkronoida muihin tietokoneisiin. Lisenssin tallennustapa ei muutu. Kielipainike näkyy vain ensimmäisessä asennusvahvistuksessa, jos kieltä ei ole tallennettu. Myöhemmät kielenvaihdot tehdään Inspectorissa.
 
 README-tiedoston, muutoslokin ja käyttöohjeen voit valita mukana toimitetusta [kieliluettelosta](../index.html). Myös Inspectorin käyttöohje ja muutosloki noudattavat valittua kieltä. Alkuperäiset käyttöehdot ja viitteelliset käännökset toimitetaan edelleen erikseen.
 

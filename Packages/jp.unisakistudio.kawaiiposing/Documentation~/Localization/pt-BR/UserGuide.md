@@ -28,7 +28,7 @@ Este manual cobre instalação, configuração do avatar, controles VRChat, edi�
 
 Kawaii Posing inclui biblioteca de poses, ferramentas de configuração e predefinições do avatar. O instalador ativa a licença local existente; não exige novo campo de chave Gumroad. Não publique arquivos do instalador ou dados de licença em pedidos públicos de suporte.
 
-O idioma é salvo em Unity EditorPrefs para o usuário atual e compartilhado entre projetos deste computador. Sem preferência segue o sistema, usando inglês se não suportado. Licenças mantêm registro `Software/UnisakiStudio` do usuário no Windows e arquivos por usuário no macOS/Linux. Mudar idioma não apaga licença.
+O idioma é salvo em Unity EditorPrefs para o usuário atual e compartilhado entre projetos deste computador. Sem preferência segue o sistema, usando inglês se não suportado. Licenças mantêm registro `Software/UnisakiStudio` do usuário no Windows e arquivos por usuário no macOS/Linux. Mudar idioma não apaga licença. Todas as ferramentas de poses e todos os avatares usam o mesmo idioma. Alterá-lo no Inspector de qualquer ferramenta atualiza a preferência compartilhada; as escolhas de idioma por avatar são ignoradas. O botão de idioma aparece apenas na confirmação inicial da instalação quando não há um idioma salvo. As alterações posteriores são feitas no Inspector.
 
 ## 2. Adicionar ao avatar
 

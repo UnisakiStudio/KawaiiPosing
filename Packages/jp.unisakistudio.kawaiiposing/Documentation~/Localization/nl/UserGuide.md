@@ -28,7 +28,7 @@ Deze gids beschrijft installeren, avatarinstellingen, VRChat-bediening, bewerken
 
 Kawaii Posing bevat poses, instellingstools en avatarvoorinstellingen. De installer activeert de bestaande lokale licentie, zonder nieuw Gumroad-sleutelveld. Plaats nooit installer- of licentiedata openbaar in hulpvragen.
 
-Taal staat in Unity EditorPrefs voor de systeemgebruiker, gedeeld tussen projecten op deze computer. Zonder voorkeur systeemtaal/Engels. Licenties blijven in `Software/UnisakiStudio` voor Windows of gebruikersbestanden op macOS/Linux. Taal wijzigen verwijdert niets.
+Taal staat in Unity EditorPrefs voor de systeemgebruiker, gedeeld tussen projecten op deze computer. Zonder voorkeur systeemtaal/Engels. Licenties blijven in `Software/UnisakiStudio` voor Windows of gebruikersbestanden op macOS/Linux. Taal wijzigen verwijdert niets. Alle posehulpmiddelen en avatars gebruiken dezelfde taal. Een wijziging in de Inspector van een hulpmiddel werkt de gedeelde voorkeur bij; taalkeuzes per avatar worden genegeerd. De taalknop verschijnt alleen bij de eerste installatiebevestiging als er nog geen taal is opgeslagen. Latere taalwijzigingen gebeuren in de Inspector.
 
 ## 2. Toevoegen aan een avatar
 

@@ -11,7 +11,7 @@ README này dành cho v3.2.0 đang phát triển. Chưa xác định ngày phát
 
 Chọn ngôn ngữ hiển thị bằng “Language / 言語” ở đầu Inspector. Một lựa chọn áp dụng cho cả Inspector và menu VRChat được tạo. Tải avatar lên lại để thay đổi ngôn ngữ trong trò chơi.
 
-Nếu chưa chọn, hệ thống dùng ngôn ngữ máy tính; ngôn ngữ không được hỗ trợ sẽ dùng tiếng Anh. Hỗ trợ Windows, macOS và Linux. Ngôn ngữ chọn gần nhất được lưu trong EditorPrefs và dùng cho các dự án khác của cùng người dùng hệ điều hành trên máy này. Lựa chọn rõ ràng đã lưu trên avatar được giữ nguyên. Không đồng bộ sang máy khác. Cách lưu giấy phép không thay đổi.
+Nếu chưa chọn, hệ thống dùng ngôn ngữ máy tính; ngôn ngữ không được hỗ trợ sẽ dùng tiếng Anh. Hỗ trợ Windows, macOS và Linux. Ngôn ngữ chọn gần nhất được lưu trong EditorPrefs và dùng cho các dự án khác của cùng người dùng hệ điều hành trên máy này. Tất cả công cụ tạo dáng và avatar dùng chung một ngôn ngữ. Thay đổi trong Inspector của bất kỳ công cụ nào sẽ cập nhật tùy chọn chung; lựa chọn ngôn ngữ riêng của từng avatar không được sử dụng. Không đồng bộ sang máy khác. Cách lưu giấy phép không thay đổi. Nút ngôn ngữ chỉ xuất hiện ở bước xác nhận cài đặt đầu tiên khi chưa lưu ngôn ngữ. Các lần đổi ngôn ngữ sau được thực hiện trong Inspector.
 
 Bạn có thể chọn README, lịch sử thay đổi và hướng dẫn từ [danh sách ngôn ngữ](../index.html) đi kèm. “Hướng dẫn” và “Lịch sử thay đổi” trong Inspector cũng theo ngôn ngữ đã chọn. Điều khoản gốc và bản dịch tham khảo vẫn được cung cấp riêng như trước.
 

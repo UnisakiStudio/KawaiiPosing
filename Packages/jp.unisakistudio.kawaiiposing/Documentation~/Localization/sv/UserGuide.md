@@ -28,7 +28,7 @@ Handboken omfattar installation, avatarinställningar, VRChat-kontroller, posred
 
 Kawaii Posing Tool innehåller posebibliotek, konfigurationsverktyg och förinställningar för avatarjustering. Installationsprogrammet aktiverar produktens befintliga lokala licens; inget nytt Gumroad-licensnyckelfält behövs. Lägg aldrig installationsfiler eller licensdata i en offentlig supportfråga.
 
-Språkval sparas i Unity EditorPrefs för aktuell OS-användare och delas mellan Unity-projekt på den här datorn. Utan sparat val följer installationen OS-språket; språk utan stöd använder engelska. Produktlicenser behåller befintlig lagring: aktuell användares registernyckel `Software/UnisakiStudio` i Windows och licensfiler per användare på macOS/Linux. Språkbyte tar inte bort en licens.
+Språkval sparas i Unity EditorPrefs för aktuell OS-användare och delas mellan Unity-projekt på den här datorn. Utan sparat val följer installationen OS-språket; språk utan stöd använder engelska. Produktlicenser behåller befintlig lagring: aktuell användares registernyckel `Software/UnisakiStudio` i Windows och licensfiler per användare på macOS/Linux. Språkbyte tar inte bort en licens. Alla posverktyg och avatarer använder samma språk. En ändring i något verktygs Inspector uppdaterar den gemensamma inställningen; språkval för enskilda avatarer ignoreras. Språkknappen visas bara vid den första installationsbekräftelsen om inget språk har sparats. Senare språkändringar görs i Inspector.
 
 ## 2. Lägg till verktyget i en avatar
 

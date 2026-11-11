@@ -28,7 +28,7 @@ Hướng dẫn này gồm cài đặt, thiết lập avatar, điều khiển VRC
 
 Kawaii Posing Tool gồm thư viện tư thế, công cụ cấu hình và thiết lập sẵn hiệu chỉnh avatar. Trình cài kích hoạt giấy phép cục bộ hiện có; không yêu cầu ô khóa giấy phép Gumroad mới. Không bao giờ đăng tệp trình cài hoặc dữ liệu giấy phép trong yêu cầu hỗ trợ công khai.
 
-Tùy chọn ngôn ngữ lưu qua Unity EditorPrefs cho người dùng hệ điều hành hiện tại và dùng chung giữa dự án Unity trên máy này. Nếu chưa lưu lựa chọn, trình cài theo ngôn ngữ hệ điều hành; ngôn ngữ không hỗ trợ dùng tiếng Anh. Giấy phép sản phẩm giữ nơi lưu hiện có: khóa registry `Software/UnisakiStudio` của người dùng hiện tại trên Windows và tệp giấy phép riêng người dùng trên macOS/Linux. Đổi ngôn ngữ không xóa giấy phép.
+Tùy chọn ngôn ngữ lưu qua Unity EditorPrefs cho người dùng hệ điều hành hiện tại và dùng chung giữa dự án Unity trên máy này. Nếu chưa lưu lựa chọn, trình cài theo ngôn ngữ hệ điều hành; ngôn ngữ không hỗ trợ dùng tiếng Anh. Giấy phép sản phẩm giữ nơi lưu hiện có: khóa registry `Software/UnisakiStudio` của người dùng hiện tại trên Windows và tệp giấy phép riêng người dùng trên macOS/Linux. Đổi ngôn ngữ không xóa giấy phép. Tất cả công cụ tạo dáng và avatar dùng chung một ngôn ngữ. Thay đổi trong Inspector của bất kỳ công cụ nào sẽ cập nhật tùy chọn chung; lựa chọn ngôn ngữ riêng của từng avatar không được sử dụng. Nút ngôn ngữ chỉ xuất hiện ở bước xác nhận cài đặt đầu tiên khi chưa lưu ngôn ngữ. Các lần đổi ngôn ngữ sau được thực hiện trong Inspector.
 
 ## 2. Thêm công cụ vào avatar
 

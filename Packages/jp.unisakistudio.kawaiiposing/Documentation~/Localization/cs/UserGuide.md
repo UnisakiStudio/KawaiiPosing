@@ -28,7 +28,7 @@ Tato příručka popisuje instalaci, nastavení avatara, ovládání VRChat, úp
 
 Kawaii Posing Tool zahrnuje knihovnu póz, nástroje nastavení a předvolby přizpůsobení avatarů. Instalátor aktivuje dosavadní místní licenci produktu; nevyžaduje nové pole pro licenční klíč Gumroad. Nikdy nezveřejňujte instalační soubory ani licenční data ve veřejném požadavku na podporu.
 
-Jazykové preference se ukládají přes Unity EditorPrefs pro aktuálního uživatele OS a sdílejí se mezi projekty Unity na tomto počítači. Bez uložené preference instalátor následuje jazyk OS, nepodporované jazyky používají angličtinu. Licence si zachovávají dosavadní ukládání: klíč registru aktuálního uživatele `Software/UnisakiStudio` ve Windows a uživatelské licenční soubory v macOS/Linux. Změna jazyka licenci neodstraní.
+Jazykové preference se ukládají přes Unity EditorPrefs pro aktuálního uživatele OS a sdílejí se mezi projekty Unity na tomto počítači. Bez uložené preference instalátor následuje jazyk OS, nepodporované jazyky používají angličtinu. Licence si zachovávají dosavadní ukládání: klíč registru aktuálního uživatele `Software/UnisakiStudio` ve Windows a uživatelské licenční soubory v macOS/Linux. Změna jazyka licenci neodstraní. Všechny nástroje pro pózování a avataři používají stejný jazyk. Změna v Inspectoru kteréhokoli nástroje aktualizuje společné nastavení; volby jazyka jednotlivých avatarů se ignorují. Tlačítko jazyka se zobrazí pouze při prvním potvrzení instalace, pokud ještě není uložen žádný jazyk. Pozdější změny jazyka se provádějí v Inspectoru.
 
 ## 2. Přidání nástroje k avatarovi
 

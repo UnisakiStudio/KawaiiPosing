@@ -11,7 +11,7 @@ Tento README je určen pro vyvíjenou verzi v3.2.0. Datum oficiálního vydání
 
 Vyberte jazyk v poli „Language / 言語“ nahoře v Inspectoru. Jedna volba řídí Inspector i vytvářenou nabídku VRChat. Pro změnu jazyka ve hře avatara znovu nahrajte.
 
-Pokud jazyk není vybrán, použije se jazyk počítače; nepodporované jazyky přejdou na angličtinu. Podporovány jsou Windows, macOS a Linux. Poslední volba se ukládá do EditorPrefs a používá se i v dalších projektech stejného uživatele OS na tomto počítači. Výslovná volba uložená v avatarovi zůstává zachována. Mezi počítači se nesynchronizuje. Způsob ukládání licencí se nemění.
+Pokud jazyk není vybrán, použije se jazyk počítače; nepodporované jazyky přejdou na angličtinu. Podporovány jsou Windows, macOS a Linux. Poslední volba se ukládá do EditorPrefs a používá se i v dalších projektech stejného uživatele OS na tomto počítači. Všechny nástroje pro pózování a avataři používají stejný jazyk. Změna v Inspectoru kteréhokoli nástroje aktualizuje společné nastavení; volby jazyka jednotlivých avatarů se ignorují. Mezi počítači se nesynchronizuje. Způsob ukládání licencí se nemění. Tlačítko jazyka se zobrazí pouze při prvním potvrzení instalace, pokud ještě není uložen žádný jazyk. Pozdější změny jazyka se provádějí v Inspectoru.
 
 README, historii změn a návod lze vybrat v přiloženém [seznamu jazyků](../index.html). Návod a historie změn v Inspectoru také používají vybraný jazyk. Původní podmínky použití a referenční překlady jsou nadále dodávány samostatně.
 

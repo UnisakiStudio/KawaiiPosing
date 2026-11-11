@@ -28,7 +28,7 @@ Panduan ini mencakup pemasangan, pengaturan avatar, kontrol VRChat, penyuntingan
 
 Kawaii Posing Tool berisi pustaka pose, alat konfigurasi, dan prasetel penyesuaian avatar. Penginstal mengaktifkan lisensi lokal produk yang sudah ada; tidak diperlukan kolom kunci lisensi Gumroad baru. Jangan pernah memposting file penginstal atau data lisensi dalam permintaan dukungan publik.
 
-Preferensi bahasa disimpan melalui Unity EditorPrefs untuk pengguna OS saat ini dan digunakan bersama antarproyek Unity pada komputer ini. Jika belum ada preferensi tersimpan, penginstal mengikuti bahasa OS; bahasa yang tidak didukung menggunakan bahasa Inggris. Lisensi produk mempertahankan penyimpanan yang ada: kunci registri `Software/UnisakiStudio` pengguna saat ini di Windows dan file lisensi per pengguna di macOS/Linux. Mengubah bahasa tidak menghapus lisensi.
+Preferensi bahasa disimpan melalui Unity EditorPrefs untuk pengguna OS saat ini dan digunakan bersama antarproyek Unity pada komputer ini. Jika belum ada preferensi tersimpan, penginstal mengikuti bahasa OS; bahasa yang tidak didukung menggunakan bahasa Inggris. Lisensi produk mempertahankan penyimpanan yang ada: kunci registri `Software/UnisakiStudio` pengguna saat ini di Windows dan file lisensi per pengguna di macOS/Linux. Mengubah bahasa tidak menghapus lisensi. Semua alat pose dan avatar menggunakan bahasa yang sama. Mengubahnya di Inspector alat mana pun memperbarui preferensi bersama; pilihan bahasa per avatar diabaikan. Tombol bahasa hanya muncul pada konfirmasi pemasangan awal jika belum ada bahasa yang disimpan. Perubahan bahasa berikutnya dilakukan di Inspector.
 
 ## 2. Menambahkan alat ke avatar
 

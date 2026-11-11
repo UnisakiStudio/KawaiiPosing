@@ -28,7 +28,7 @@ Diese Anleitung beschreibt Installation, Avatareinrichtung, VRChat-Steuerung, Po
 
 Kawaii Posing enthält Posenbibliothek, Einstellungswerkzeuge und Avataranpassungsvoreinstellungen. Der Installer aktiviert die bestehende lokale Produktlizenz; es gibt kein neues Feld für Gumroad-Lizenzschlüssel. Veröffentliche niemals Installerdateien oder Lizenzdaten in öffentlichen Supportanfragen.
 
-Sprachpräferenzen werden für den aktuellen Betriebssystembenutzer in Unity EditorPrefs gespeichert und zwischen Projekten dieses Computers geteilt. Ohne Auswahl folgt der Installer der Systemsprache; nicht unterstützte Sprachen verwenden Englisch. Produktlizenzen behalten ihre Speicherung im benutzerbezogenen Registry-Schlüssel `Software/UnisakiStudio` unter Windows beziehungsweise in Lizenzdateien unter macOS/Linux. Ein Sprachwechsel löscht keine Lizenz.
+Sprachpräferenzen werden für den aktuellen Betriebssystembenutzer in Unity EditorPrefs gespeichert und zwischen Projekten dieses Computers geteilt. Ohne Auswahl folgt der Installer der Systemsprache; nicht unterstützte Sprachen verwenden Englisch. Produktlizenzen behalten ihre Speicherung im benutzerbezogenen Registry-Schlüssel `Software/UnisakiStudio` unter Windows beziehungsweise in Lizenzdateien unter macOS/Linux. Ein Sprachwechsel löscht keine Lizenz. Alle Posenwerkzeuge und Avatare verwenden dieselbe Sprache. Eine Änderung im Inspector eines beliebigen Werkzeugs aktualisiert die gemeinsame Einstellung; avatarbezogene Sprachauswahlen werden ignoriert. Die Sprachschaltfläche erscheint nur bei der ersten Installationsbestätigung, wenn noch keine Sprache gespeichert ist. Spätere Sprachänderungen erfolgen im Inspector.
 
 ## 2. Werkzeug einem Avatar hinzufügen
 
