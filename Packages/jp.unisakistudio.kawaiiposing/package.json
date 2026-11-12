@@ -19,6 +19,6 @@
     "jp.unisakistudio.posingsystem": "3.2.0"
   },
   "vpmDependencies": {
-    "jp.unisakistudio.posingsystem": "3.2.0"
+    "jp.unisakistudio.posingsystem": "^3.2.0"
   }
 }
