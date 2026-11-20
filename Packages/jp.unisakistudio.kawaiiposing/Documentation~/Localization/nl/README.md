@@ -55,7 +55,7 @@ Avatarinstellingen bevat ook Achterwaartse kniebuiging voorkomen en de details M
 5. Selecteer Kawaii Posing in de avatar en stel functies/poses in.
 6. Upload normaal.
 
-Vereist: Unity 2022.3, VRChat Avatars SDK 3.10.4+, Modular Avatar 1.x vanaf 1.15.1 en NDMF 1.x vanaf 1.14.0. Werk benodigde pakketten samen bij met VCC/ALCOM.
+Vereist: Unity 2022.3, VRChat Avatars SDK 3.10.4+, Modular Avatar 1.x vanaf 1.16.2 en NDMF 1.x vanaf 1.14.8. Werk benodigde pakketten samen bij met VCC/ALCOM.
 
 ## Bijwerken vanaf oudere versies
 

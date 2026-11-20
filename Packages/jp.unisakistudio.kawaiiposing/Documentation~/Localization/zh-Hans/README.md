@@ -55,7 +55,7 @@
 5. 选中添加到虚拟形象内的“可愛いポーズ”，在Inspector中设置所需功能和姿势。
 6. 按普通流程上传虚拟形象。
 
-所需环境为Unity 2022.3、VRChat Avatars SDK 3.10.4或更高版本、Modular Avatar 1.15.1或更高版本的1.x系列，以及NDMF 1.14.0或更高版本的1.x系列。请通过VCC或ALCOM一同更新所需软件包。
+所需环境为Unity 2022.3、VRChat Avatars SDK 3.10.4或更高版本、Modular Avatar 1.16.2或更高版本的1.x系列，以及NDMF 1.14.8或更高版本的1.x系列。请通过VCC或ALCOM一同更新所需软件包。
 
 ## 从旧版本更新
 

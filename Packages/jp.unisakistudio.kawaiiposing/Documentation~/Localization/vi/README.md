@@ -55,7 +55,7 @@ Bạn có thể dùng hiệu chỉnh chi tự động đi kèm, nhưng không ph
 5. Chọn “可愛いポーズ” (Kawaii Posing) được thêm trong avatar và thiết lập tính năng/tư thế muốn dùng ở Inspector.
 6. Tải avatar lên như thường.
 
-Yêu cầu Unity 2022.3, VRChat Avatars SDK 3.10.4 trở lên, Modular Avatar dòng 1.x phiên bản 1.15.1 trở lên và NDMF dòng 1.x phiên bản 1.14.0 trở lên. Cập nhật các gói cần thiết cùng nhau qua VCC hoặc ALCOM.
+Yêu cầu Unity 2022.3, VRChat Avatars SDK 3.10.4 trở lên, Modular Avatar dòng 1.x phiên bản 1.16.2 trở lên và NDMF dòng 1.x phiên bản 1.14.8 trở lên. Cập nhật các gói cần thiết cùng nhau qua VCC hoặc ALCOM.
 
 ## Cập nhật từ phiên bản cũ
 

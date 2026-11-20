@@ -7,7 +7,7 @@ Ta instrukcja opisuje instalację, konfigurację awatara, sterowanie VRChat, edy
 ## Zanim zaczniesz
 
 - Użyj projektu **awatara** VRChat w Unity 2022.3 utworzonego lub zarządzanego przez VRChat Creator Companion (VCC) albo ALCOM.
-- Wymagane pakiety: VRChat Avatars SDK 3.10.4 lub nowszy; Modular Avatar 1.x w wersji co najmniej 1.15.1; NDMF 1.x w wersji co najmniej 1.14.0.
+- Wymagane pakiety: VRChat Avatars SDK 3.10.4 lub nowszy; Modular Avatar 1.x w wersji co najmniej 1.16.2; NDMF 1.x w wersji co najmniej 1.14.8.
 - Narzędzie jest przeznaczone do awatarów Humanoid w trybie pulpitu i trzypunktowym VR (gogle i dwa kontrolery). Blokada poz przy aktywnym pełnym śledzeniu ciała nie jest obsługiwana.
 - Przed instalacją lub aktualizacją wykonaj kopię zapasową projektu. Najpierw usuń istniejące błędy kompilacji Unity.
 - Instalator pobiera produkt i zależności z ich repozytoriów pakietów. Wymaga internetu. Modele awatarów, VRChat SDK, Modular Avatar i NDMF nie są dołączone do tego ZIP.

@@ -7,7 +7,7 @@ Bu kılavuz kurulum, avatar ayarı, VRChat kontrolleri, poz düzenleme, güncell
 ## Başlamadan önce
 
 - VRChat Creator Companion (VCC) veya ALCOM ile oluşturulan ya da yönetilen Unity 2022.3 VRChat **avatar** projesi kullanın.
-- Gereken paketler: VRChat Avatars SDK 3.10.4 veya sonrası; Modular Avatar 1.x, 1.15.1 veya sonrası; NDMF 1.x, 1.14.0 veya sonrası.
+- Gereken paketler: VRChat Avatars SDK 3.10.4 veya sonrası; Modular Avatar 1.x, 1.16.2 veya sonrası; NDMF 1.x, 1.14.8 veya sonrası.
 - Araç masaüstünde ve üç noktalı VR’de (başlık ve iki kontrolör) Humanoid avatarlar içindir. Tam vücut takibi etkin olduğunda poz kilitleme desteklenmez.
 - Kurmadan veya güncellemeden önce mevcut projeyi yedekleyin. Önce Unity’deki mevcut derleme hatalarını giderin.
 - Kurucu ürünü ve bağımlılıkları paket depolarından indirir. İnternet gerekir. Avatar modelleri, VRChat SDK, Modular Avatar ve NDMF bu ZIP’te bulunmaz.

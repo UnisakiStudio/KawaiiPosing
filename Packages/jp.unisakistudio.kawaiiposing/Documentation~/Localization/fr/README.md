@@ -55,7 +55,7 @@ L’ajustement automatique des membres fourni est disponible, mais toutes les po
 5. Sélectionnez l’objet Kawaii Posing ajouté dans l’avatar et réglez les fonctions et poses voulues dans l’Inspector.
 6. Envoyez l’avatar normalement.
 
-Environnement requis : Unity 2022.3, VRChat Avatars SDK 3.10.4 ou ultérieur, Modular Avatar 1.x à partir de 1.15.1 et NDMF 1.x à partir de 1.14.0. Mettez également à jour les dépendances nécessaires dans VCC ou ALCOM.
+Environnement requis : Unity 2022.3, VRChat Avatars SDK 3.10.4 ou ultérieur, Modular Avatar 1.x à partir de 1.16.2 et NDMF 1.x à partir de 1.14.8. Mettez également à jour les dépendances nécessaires dans VCC ou ALCOM.
 
 ## Mise à jour depuis une ancienne version
 

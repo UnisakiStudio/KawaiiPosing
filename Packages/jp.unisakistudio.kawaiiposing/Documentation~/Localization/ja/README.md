@@ -55,7 +55,7 @@ README・変更履歴・使い方は同梱の[言語一覧](../index.html)から
 5. アバターの中に追加された「可愛いポーズ」を選び、Inspectorで使いたい機能とポーズを設定します。
 6. 通常どおりアバターをアップロードします。
 
-必要環境はUnity 2022.3、VRChat Avatars SDK 3.10.4以上、Modular Avatar 1.15.1以上の1.x系、NDMF 1.14.0以上の1.x系です。VCCやALCOMで必要なパッケージを併せて更新してください。
+必要環境はUnity 2022.3、VRChat Avatars SDK 3.10.4以上、Modular Avatar 1.16.2以上の1.x系、NDMF 1.14.8以上の1.x系です。VCCやALCOMで必要なパッケージを併せて更新してください。
 
 ## 以前のバージョンから更新する場合
 

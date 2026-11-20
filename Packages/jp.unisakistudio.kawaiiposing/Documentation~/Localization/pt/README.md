@@ -55,7 +55,7 @@ Configuração do avatar também tem Impedir flexão inversa dos joelhos e o det
 5. Selecione Kawaii Posing no avatar e configure funções e poses no Inspector.
 6. Envie normalmente.
 
-Requisitos: Unity 2022.3, VRChat Avatars SDK 3.10.4 ou posterior, Modular Avatar 1.x desde 1.15.1 e NDMF 1.x desde 1.14.0. Atualize os pacotes necessários em conjunto com VCC ou ALCOM.
+Requisitos: Unity 2022.3, VRChat Avatars SDK 3.10.4 ou posterior, Modular Avatar 1.x desde 1.16.2 e NDMF 1.x desde 1.14.8. Atualize os pacotes necessários em conjunto com VCC ou ALCOM.
 
 ## Atualizar versões anteriores
 

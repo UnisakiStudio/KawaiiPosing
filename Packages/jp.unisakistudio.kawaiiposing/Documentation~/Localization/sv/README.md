@@ -55,7 +55,7 @@ Under ”Avatarinställningar” finns även ”Förhindra bakåtböjda knän”
 5. Välj tillagda ”可愛いポーズ” i avataren och ange önskade funktioner och poser i Inspector.
 6. Ladda upp avataren som vanligt.
 
-Kräver Unity 2022.3, VRChat Avatars SDK 3.10.4 eller senare, Modular Avatar 1.x från 1.15.1 och NDMF 1.x från 1.14.0. Uppdatera nödvändiga paket tillsammans i VCC eller ALCOM.
+Kräver Unity 2022.3, VRChat Avatars SDK 3.10.4 eller senare, Modular Avatar 1.x från 1.16.2 och NDMF 1.x från 1.14.8. Uppdatera nödvändiga paket tillsammans i VCC eller ALCOM.
 
 ## Uppdatering från tidigare versioner
 

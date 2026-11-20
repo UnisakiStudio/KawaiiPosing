@@ -7,7 +7,7 @@ Hướng dẫn này gồm cài đặt, thiết lập avatar, điều khiển VRC
 ## Trước khi bắt đầu
 
 - Dùng dự án **avatar** VRChat Unity 2022.3 được tạo hoặc quản lý bằng VRChat Creator Companion (VCC) hay ALCOM.
-- Gói yêu cầu: VRChat Avatars SDK 3.10.4 trở lên; Modular Avatar 1.x, phiên bản 1.15.1 trở lên; NDMF 1.x, phiên bản 1.14.0 trở lên.
+- Gói yêu cầu: VRChat Avatars SDK 3.10.4 trở lên; Modular Avatar 1.x, phiên bản 1.16.2 trở lên; NDMF 1.x, phiên bản 1.14.8 trở lên.
 - Công cụ dành cho avatar Humanoid ở chế độ máy tính và VR ba điểm (kính và hai bộ điều khiển). Không hỗ trợ khóa tư thế khi theo dõi toàn thân đang bật.
 - Sao lưu dự án hiện có trước cài/cập nhật. Xử lý hết lỗi biên dịch Unity trước.
 - Trình cài tải sản phẩm và gói phụ thuộc từ kho gói tương ứng, cần internet. Mô hình avatar, VRChat SDK, Modular Avatar và NDMF không nằm trong ZIP này.

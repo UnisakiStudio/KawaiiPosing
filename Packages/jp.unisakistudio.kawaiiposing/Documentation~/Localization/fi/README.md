@@ -55,7 +55,7 @@ Avatarin asetuksissa ovat myös ”Estä polvien taittuminen taakse” ja sen li
 5. Valitse avatariin lisätty ”可愛いポーズ (Kawaii Posing)” ja määritä haluamasi toiminnot ja asennot Inspectorissa.
 6. Lataa avatar palveluun tavalliseen tapaan.
 
-Vaatimukset ovat Unity 2022.3, VRChat Avatars SDK 3.10.4 tai uudempi, Modular Avatar 1.x vähintään 1.15.1 ja NDMF 1.x vähintään 1.14.0. Päivitä tarvittavat paketit yhdessä VCC:llä tai ALCOMilla.
+Vaatimukset ovat Unity 2022.3, VRChat Avatars SDK 3.10.4 tai uudempi, Modular Avatar 1.x vähintään 1.16.2 ja NDMF 1.x vähintään 1.14.8. Päivitä tarvittavat paketit yhdessä VCC:llä tai ALCOMilla.
 
 ## Päivittäminen vanhemmasta versiosta
 

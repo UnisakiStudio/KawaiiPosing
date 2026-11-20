@@ -7,7 +7,7 @@ Panduan ini mencakup pemasangan, pengaturan avatar, kontrol VRChat, penyuntingan
 ## Sebelum memulai
 
 - Gunakan proyek **avatar** VRChat Unity 2022.3 yang dibuat atau dikelola dengan VRChat Creator Companion (VCC) atau ALCOM.
-- Paket yang diperlukan: VRChat Avatars SDK 3.10.4 atau lebih baru; Modular Avatar 1.x, versi 1.15.1 atau lebih baru; dan NDMF 1.x, versi 1.14.0 atau lebih baru.
+- Paket yang diperlukan: VRChat Avatars SDK 3.10.4 atau lebih baru; Modular Avatar 1.x, versi 1.16.2 atau lebih baru; dan NDMF 1.x, versi 1.14.8 atau lebih baru.
 - Alat ini ditujukan untuk avatar Humanoid dalam mode desktop dan VR tiga titik (headset dan dua pengontrol). Penguncian pose saat pelacakan seluruh tubuh aktif tidak didukung.
 - Cadangkan proyek yang ada sebelum pemasangan atau pembaruan. Selesaikan terlebih dahulu kesalahan kompilasi Unity yang masih ada.
 - Penginstal mengunduh produk dan dependensi dari repositori paketnya. Diperlukan koneksi internet. Model avatar, VRChat SDK, Modular Avatar, dan NDMF tidak disertakan dalam ZIP ini.

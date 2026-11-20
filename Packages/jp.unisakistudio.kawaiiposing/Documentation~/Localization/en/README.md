@@ -55,7 +55,7 @@ Avatar Setup also provides Prevent reverse knee bending and its detailed Minimum
 5. Select the added 可愛いポーズ object inside the avatar and configure the desired features and poses in the Inspector.
 6. Upload the avatar normally.
 
-Requires Unity 2022.3, VRChat Avatars SDK 3.10.4 or later, Modular Avatar 1.x version 1.15.1 or later, and NDMF 1.x version 1.14.0 or later. Update the required packages together in VCC or ALCOM.
+Requires Unity 2022.3, VRChat Avatars SDK 3.10.4 or later, Modular Avatar 1.x version 1.16.2 or later, and NDMF 1.x version 1.14.8 or later. Update the required packages together in VCC or ALCOM.
 
 ## Updating from an earlier version
 

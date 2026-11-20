@@ -7,7 +7,7 @@ Tato příručka popisuje instalaci, nastavení avatara, ovládání VRChat, úp
 ## Než začnete
 
 - Použijte projekt **avatara** VRChat v Unity 2022.3 vytvořený nebo spravovaný přes VRChat Creator Companion (VCC) či ALCOM.
-- Požadované balíčky: VRChat Avatars SDK 3.10.4 nebo novější; Modular Avatar 1.x od verze 1.15.1; NDMF 1.x od verze 1.14.0.
+- Požadované balíčky: VRChat Avatars SDK 3.10.4 nebo novější; Modular Avatar 1.x od verze 1.16.2; NDMF 1.x od verze 1.14.8.
 - Nástroj je určen pro avatary Humanoid v režimu plochy a tříbodovém VR (headset a dva ovladače). Zamykání póz při aktivním celotělovém sledování není podporováno.
 - Před instalací nebo aktualizací zálohujte existující projekt. Nejprve vyřešte chyby kompilace Unity.
 - Instalátor stahuje produkt a závislosti z jejich repozitářů balíčků. Je nutné připojení k internetu. Modely avatarů, VRChat SDK, Modular Avatar ani NDMF nejsou v tomto ZIP obsaženy.

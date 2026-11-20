@@ -7,7 +7,7 @@ Tämä ohje kattaa asennuksen, avatarin asetukset, VRChat-ohjaimet, asentojen mu
 ## Ennen aloittamista
 
 - Käytä Unity 2022.3:n VRChat-**avatar**projektia, joka on luotu tai jota hallitaan VRChat Creator Companionilla (VCC) tai ALCOMilla.
-- Vaaditut paketit: VRChat Avatars SDK 3.10.4 tai uudempi; Modular Avatar 1.x, vähintään 1.15.1; ja NDMF 1.x, vähintään 1.14.0.
+- Vaaditut paketit: VRChat Avatars SDK 3.10.4 tai uudempi; Modular Avatar 1.x, vähintään 1.16.2; ja NDMF 1.x, vähintään 1.14.8.
 - Työkalu on tarkoitettu Humanoid-avatareille työpöytätilassa ja kolmen pisteen VR-seurannassa (lasit ja kaksi ohjainta). Asennon lukitusta aktiivisessa kokovartaloseurannassa ei tueta.
 - Varmuuskopioi olemassa oleva projekti ennen asennusta tai päivitystä. Korjaa ensin Unityn nykyiset käännösvirheet.
 - Asennusohjelma lataa tuotteen ja riippuvuudet pakettirepositorioista. Internet-yhteys tarvitaan. Avatarimallit, VRChat SDK, Modular Avatar ja NDMF eivät sisälly tähän ZIP-pakettiin.

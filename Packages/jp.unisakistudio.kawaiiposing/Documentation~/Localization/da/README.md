@@ -55,7 +55,7 @@ Den medfølgende automatiske lemjustering kan bruges, men alle positurer behøve
 5. Vælg tilføjede ”可愛いポーズ” i avataren og konfigurér funktioner og positurer i Inspector.
 6. Upload avataren normalt.
 
-Kræver Unity 2022.3, VRChat Avatars SDK 3.10.4 eller nyere, Modular Avatar 1.x fra 1.15.1 og NDMF 1.x fra 1.14.0. Opdatér nødvendige pakker sammen i VCC eller ALCOM.
+Kræver Unity 2022.3, VRChat Avatars SDK 3.10.4 eller nyere, Modular Avatar 1.x fra 1.16.2 og NDMF 1.x fra 1.14.8. Opdatér nødvendige pakker sammen i VCC eller ALCOM.
 
 ## Opdatering fra tidligere versioner
 

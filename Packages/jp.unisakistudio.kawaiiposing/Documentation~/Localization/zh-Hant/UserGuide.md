@@ -7,7 +7,7 @@ Kawaii Posing為桌面和3點VR提供85種姿勢：15種站姿、20種半蹲/椅
 ## 開始前
 
 - 使用通過VRChat Creator Companion（VCC）或ALCOM建立、管理的Unity 2022.3 VRChat**虛擬化身**專案。
-- 所需套件：VRChat Avatars SDK 3.10.4或更高版本；Modular Avatar 1.x，版本1.15.1或更高；NDMF 1.x，版本1.14.0或更高。
+- 所需套件：VRChat Avatars SDK 3.10.4或更高版本；Modular Avatar 1.x，版本1.16.2或更高；NDMF 1.x，版本1.14.8或更高。
 - 工具適用於桌面模式和3點VR（頭顯與兩個控制器）的Humanoid虛擬化身。不支援全身追蹤啟用期間的姿勢固定。
 - 安裝或更新前請備份現有專案，並先解決Unity中所有編譯錯誤。
 - 安裝程式會從套件儲存庫下載商品及相依套件，需要網際網路連線。此ZIP不包含虛擬化身模型、VRChat SDK、Modular Avatar或NDMF。

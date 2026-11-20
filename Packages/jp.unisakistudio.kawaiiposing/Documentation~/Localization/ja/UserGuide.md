@@ -7,7 +7,7 @@
 ## はじめに
 
 - VRChat Creator Companion（VCC）またはALCOMで作成・管理した、Unity 2022.3のVRChat **アバター** 用プロジェクトを使用してください。
-- 必要パッケージは、VRChat Avatars SDK 3.10.4以上、Modular Avatar 1.xの1.15.1以上、NDMF 1.xの1.14.0以上です。
+- 必要パッケージは、VRChat Avatars SDK 3.10.4以上、Modular Avatar 1.xの1.16.2以上、NDMF 1.xの1.14.8以上です。
 - Humanoidアバターのデスクトップモードと3点VR（ヘッドセットとコントローラー2個）向けです。フルボディトラッキング中の姿勢固定には対応していません。
 - 導入・更新前に既存プロジェクトをバックアップし、Unityのコンパイルエラーを先に解消してください。
 - インストーラーは商品と依存パッケージを各配布元からダウンロードするため、インターネット接続が必要です。アバターモデル、VRChat SDK、Modular Avatar、NDMFはこのZIPに含みません。

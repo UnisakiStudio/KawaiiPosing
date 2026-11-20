@@ -55,7 +55,7 @@ Anda dapat menggunakan penyesuaian anggota tubuh otomatis bawaan, tetapi tidak s
 5. Pilih “可愛いポーズ” (Kawaii Posing) yang ditambahkan di dalam avatar, lalu atur fitur dan pose yang diinginkan di Inspector.
 6. Unggah avatar seperti biasa.
 
-Persyaratan: Unity 2022.3, VRChat Avatars SDK 3.10.4 atau lebih baru, Modular Avatar seri 1.x versi 1.15.1 atau lebih baru, dan NDMF seri 1.x versi 1.14.0 atau lebih baru. Perbarui juga paket yang diperlukan melalui VCC atau ALCOM.
+Persyaratan: Unity 2022.3, VRChat Avatars SDK 3.10.4 atau lebih baru, Modular Avatar seri 1.x versi 1.16.2 atau lebih baru, dan NDMF seri 1.x versi 1.14.8 atau lebih baru. Perbarui juga paket yang diperlukan melalui VCC atau ALCOM.
 
 ## Memperbarui dari versi sebelumnya
 
