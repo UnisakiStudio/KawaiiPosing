@@ -1,6 +1,6 @@
 # Değişiklik geçmişi
 
-## [3.2.0] - Yayınlanmadı
+## [3.2.0] - 2026-11-22
 
 ### Eklenenler
 

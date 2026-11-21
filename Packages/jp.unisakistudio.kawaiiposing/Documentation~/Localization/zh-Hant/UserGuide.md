@@ -24,7 +24,7 @@ Kawaii Posing為桌面和3點VR提供85種姿勢：15種站姿、20種半蹲/椅
 
 ### 此下載會安裝什麼
 
-**Kawaii Posing Tool 3.2.0與Unisaki Posing System 3.2.0。**此版本正在開發，尚未發佈。它為安裝對話框、Unity Inspector與選單、標準姿勢名、遊戲內選單和離線文件新增30種語言。發佈日期尚未確定。可通過Inspector頂部的語言選擇器切換工具語言。發佈後，安裝程式將從VPM儲存庫下載這些版本及其相容的相依套件。本機發佈準備不會公開這些套件。
+**Kawaii Posing Tool 3.2.0與Unisaki Posing System 3.2.0。**此版本為安裝對話框、Unity Inspector與選單、標準姿勢名、遊戲內選單和離線文件新增30種語言。可通過Inspector頂部的語言選擇器切換工具語言。安裝程式會從VPM儲存庫下載這些版本及其相容的相依套件。
 
 Kawaii Posing Tool包含姿勢庫、設定工具和虛擬化身調整預設。安裝程式會啟用商品現有的本機授權，不需要新增的Gumroad授權金鑰輸入欄。請勿在公開支援請求中上傳安裝程式檔案或授權資料。
 

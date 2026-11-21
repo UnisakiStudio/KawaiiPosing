@@ -24,7 +24,7 @@ Ce guide décrit l’installation, la configuration de l’avatar, les commandes
 
 ### Contenu installé par ce téléchargement
 
-**Kawaii Posing 3.2.0 avec Unisaki Posing System 3.2.0.** Cette version est en développement et n’a pas été publiée. Elle ajoute les dialogues d’installation, l’Inspector et les menus Unity, les noms de poses standards, les menus du jeu et la documentation hors ligne en trente langues. La date de sortie n’est pas encore fixée. Changez la langue avec le sélecteur en haut de l’Inspector. Après publication, l’installateur téléchargera ces versions et leurs dépendances compatibles depuis les dépôts VPM. Préparer une version localement ne publie pas ces packages.
+**Kawaii Posing 3.2.0 avec Unisaki Posing System 3.2.0.** Cette version ajoute les dialogues d’installation, l’Inspector et les menus Unity, les noms de poses standards, les menus du jeu et la documentation hors ligne en trente langues. Changez la langue avec le sélecteur en haut de l’Inspector. L’installateur télécharge ces versions et leurs dépendances compatibles depuis les dépôts VPM.
 
 Kawaii Posing comprend la bibliothèque de poses, les outils de configuration et les préréglages d’ajustement d’avatar. L’installateur active la licence locale existante du produit, sans nouveau champ de clé de licence Gumroad. Ne publiez jamais les fichiers de l’installateur ou les données de licence dans une demande d’assistance publique.
 

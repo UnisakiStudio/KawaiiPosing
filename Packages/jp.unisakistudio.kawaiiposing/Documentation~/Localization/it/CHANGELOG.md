@@ -1,6 +1,6 @@
 # Cronologia delle modifiche
 
-## [3.2.0] - Non pubblicata
+## [3.2.0] - 2026-11-22
 
 ### Aggiunte
 

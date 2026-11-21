@@ -1,6 +1,6 @@
 # Histórico de alterações
 
-## [3.2.0] - Não lançado
+## [3.2.0] - 2026-11-22
 
 ### Adicionado
 

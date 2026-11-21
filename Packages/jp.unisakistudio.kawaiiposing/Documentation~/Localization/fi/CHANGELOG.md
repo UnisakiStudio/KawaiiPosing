@@ -1,6 +1,6 @@
 # Muutosloki
 
-## [3.2.0] - Julkaisematon
+## [3.2.0] - 2026-11-22
 
 ### Lisätty
 

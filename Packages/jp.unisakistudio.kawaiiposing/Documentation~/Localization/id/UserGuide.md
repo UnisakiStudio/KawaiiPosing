@@ -24,7 +24,7 @@ Panduan ini mencakup pemasangan, pengaturan avatar, kontrol VRChat, penyuntingan
 
 ### Yang dipasang oleh unduhan ini
 
-**Kawaii Posing Tool 3.2.0 dengan Unisaki Posing System 3.2.0.** Versi ini masih dikembangkan dan belum dirilis. Versi ini menambahkan dialog pemasangan, Inspector dan menu Unity, nama pose standar, menu dalam permainan, serta dokumentasi luring dalam tiga puluh bahasa. Tanggal rilis belum ditentukan. Gunakan pemilih bahasa di bagian atas Inspector untuk mengganti bahasa alat. Setelah dipublikasikan, penginstal akan mengunduh versi tersebut beserta dependensi yang kompatibel dari repositori VPM. Persiapan rilis lokal tidak memublikasikan paket tersebut.
+**Kawaii Posing Tool 3.2.0 dengan Unisaki Posing System 3.2.0.** Versi ini menambahkan dialog pemasangan, Inspector dan menu Unity, nama pose standar, menu dalam permainan, serta dokumentasi luring dalam tiga puluh bahasa. Gunakan pemilih bahasa di bagian atas Inspector untuk mengganti bahasa alat. Penginstal mengunduh versi tersebut beserta dependensi yang kompatibel dari repositori VPM.
 
 Kawaii Posing Tool berisi pustaka pose, alat konfigurasi, dan prasetel penyesuaian avatar. Penginstal mengaktifkan lisensi lokal produk yang sudah ada; tidak diperlukan kolom kunci lisensi Gumroad baru. Jangan pernah memposting file penginstal atau data lisensi dalam permintaan dukungan publik.
 

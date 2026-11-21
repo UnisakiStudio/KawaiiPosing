@@ -24,7 +24,7 @@ Tato příručka popisuje instalaci, nastavení avatara, ovládání VRChat, úp
 
 ### Co tento soubor instaluje
 
-**Kawaii Posing Tool 3.2.0 s Unisaki Posing System 3.2.0.** Tato verze se vyvíjí a dosud nebyla vydána. Přidává instalační dialogy, Inspector a nabídky Unity, standardní názvy póz, herní nabídky a offline dokumentaci ve 30 jazycích. Datum vydání nebylo stanoveno. Jazyk nástroje změníte volbou nahoře v Inspectoru. Po zveřejnění instalátor stáhne tyto verze a kompatibilní závislosti z repozitářů VPM. Místní příprava vydání balíčky nezveřejňuje.
+**Kawaii Posing Tool 3.2.0 s Unisaki Posing System 3.2.0.** Tato verze přidává instalační dialogy, Inspector a nabídky Unity, standardní názvy póz, herní nabídky a offline dokumentaci ve 30 jazycích. Jazyk nástroje změníte volbou nahoře v Inspectoru. Instalátor stahuje tyto verze a kompatibilní závislosti z repozitářů VPM.
 
 Kawaii Posing Tool zahrnuje knihovnu póz, nástroje nastavení a předvolby přizpůsobení avatarů. Instalátor aktivuje dosavadní místní licenci produktu; nevyžaduje nové pole pro licenční klíč Gumroad. Nikdy nezveřejňujte instalační soubory ani licenční data ve veřejném požadavku na podporu.
 

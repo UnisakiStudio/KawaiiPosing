@@ -2,7 +2,7 @@
 
 Et positurlåsværktøj til VRChat med søde siddende og liggende positurer, også med 3-punktssporing eller på skrivebordet. Indeholder i alt 85 positurer: 15 stående, 20 i hug, 17 siddende, 16 på maven og 17 på ryggen.
 
-Denne README gælder v3.2.0 under udvikling. Endelig udgivelsesdato er ikke fastsat. Installeret version vises øverst i Inspector.
+Denne README gælder v3.2.0. Installeret version vises øverst i Inspector.
 
 - [Produktside på BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Ændringshistorik](CHANGELOG.md)

@@ -1,6 +1,6 @@
 # Änderungsverlauf
 
-## [3.2.0] - Unveröffentlicht
+## [3.2.0] - 2026-11-22
 
 ### Hinzugefügt
 

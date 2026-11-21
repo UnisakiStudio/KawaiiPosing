@@ -2,7 +2,7 @@
 
 Herramienta de poses para VRChat con posturas sentadas y tumbadas adorables, utilizables con seguimiento de 3 puntos o escritorio. Incluye 85 poses: 15 de pie, 20 agachadas, 17 sentadas, 16 boca abajo y 17 boca arriba.
 
-Este README corresponde a v3.2.0 en desarrollo. La fecha oficial no está fijada. La versión instalada aparece arriba del Inspector.
+Este README corresponde a v3.2.0. La versión instalada aparece arriba del Inspector.
 
 - [Página del producto en BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Historial de cambios](CHANGELOG.md)

@@ -24,7 +24,7 @@ Este manual cobre instalação, configuração do avatar, controles VRChat, edi�
 
 ### O que este download instala
 
-**Kawaii Posing 3.2.0 com Unisaki Posing System 3.2.0.** Está em desenvolvimento e ainda não foi lançado. Acrescenta diálogos de instalação, Inspector/menus Unity, nomes padrão, menus no jogo e documentação offline em trinta idiomas. Não há data definida. Escolha o idioma no topo do Inspector. Após publicação, o instalador baixa essas versões e dependências compatíveis por VPM. Preparação local não publica pacotes.
+**Kawaii Posing 3.2.0 com Unisaki Posing System 3.2.0.** Esta versão acrescenta diálogos de instalação, Inspector/menus Unity, nomes padrão, menus no jogo e documentação offline em trinta idiomas. Escolha o idioma no topo do Inspector. O instalador baixa essas versões e dependências compatíveis por VPM.
 
 Kawaii Posing inclui biblioteca de poses, ferramentas de configuração e predefinições do avatar. O instalador ativa a licença local existente; não exige novo campo de chave Gumroad. Não publique arquivos do instalador ou dados de licença em pedidos públicos de suporte.
 

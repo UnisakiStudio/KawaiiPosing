@@ -24,7 +24,7 @@ Hướng dẫn này gồm cài đặt, thiết lập avatar, điều khiển VRC
 
 ### Bản tải này cài những gì
 
-**Kawaii Posing Tool 3.2.0 với Unisaki Posing System 3.2.0.** Phiên bản đang phát triển và chưa phát hành. Bổ sung hộp thoại cài đặt, Inspector/menu Unity, tên tư thế chuẩn, menu trò chơi và tài liệu ngoại tuyến bằng ba mươi ngôn ngữ. Chưa xác định ngày phát hành. Dùng bộ chọn ngôn ngữ đầu Inspector để đổi ngôn ngữ công cụ. Sau công bố, trình cài sẽ tải các phiên bản này và phụ thuộc tương thích từ kho VPM. Chuẩn bị phát hành cục bộ không công bố các gói đó.
+**Kawaii Posing Tool 3.2.0 với Unisaki Posing System 3.2.0.** Phiên bản này bổ sung hộp thoại cài đặt, Inspector/menu Unity, tên tư thế chuẩn, menu trò chơi và tài liệu ngoại tuyến bằng ba mươi ngôn ngữ. Dùng bộ chọn ngôn ngữ đầu Inspector để đổi ngôn ngữ công cụ. Trình cài tải các phiên bản này và phụ thuộc tương thích từ kho VPM.
 
 Kawaii Posing Tool gồm thư viện tư thế, công cụ cấu hình và thiết lập sẵn hiệu chỉnh avatar. Trình cài kích hoạt giấy phép cục bộ hiện có; không yêu cầu ô khóa giấy phép Gumroad mới. Không bao giờ đăng tệp trình cài hoặc dữ liệu giấy phép trong yêu cầu hỗ trợ công khai.
 

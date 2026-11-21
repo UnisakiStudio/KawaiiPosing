@@ -24,7 +24,7 @@ Ta instrukcja opisuje instalację, konfigurację awatara, sterowanie VRChat, edy
 
 ### Co instaluje ten plik do pobrania
 
-**Kawaii Posing Tool 3.2.0 z Unisaki Posing System 3.2.0.** Ta wersja jest w przygotowaniu i nie została wydana. Dodaje okna instalacji, Inspector i menu Unity, standardowe nazwy poz, menu gry oraz dokumentację offline w 30 językach. Data wydania nie została ustalona. Użyj selektora u góry Inspectora, aby zmienić język narzędzia. Po publikacji instalator pobierze te wersje i zgodne zależności z repozytoriów VPM. Lokalne przygotowanie wydania nie publikuje pakietów.
+**Kawaii Posing Tool 3.2.0 z Unisaki Posing System 3.2.0.** Ta wersja dodaje okna instalacji, Inspector i menu Unity, standardowe nazwy poz, menu gry oraz dokumentację offline w 30 językach. Użyj selektora u góry Inspectora, aby zmienić język narzędzia. Instalator pobiera te wersje i zgodne zależności z repozytoriów VPM.
 
 Kawaii Posing Tool zawiera bibliotekę poz, narzędzia konfiguracji i presety dopasowania awatarów. Instalator aktywuje dotychczasową lokalną licencję produktu i nie wymaga nowego pola klucza licencyjnego Gumroad. Nigdy nie publikuj plików instalatora ani danych licencji w otwartym zgłoszeniu wsparcia.
 

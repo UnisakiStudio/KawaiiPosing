@@ -2,7 +2,7 @@
 
 Alat pengunci pose untuk VRChat yang memungkinkan pose duduk dan berbaring imut, termasuk dengan pelacakan 3 titik atau desktop. Berisi total 85 pose: 15 berdiri, 20 setengah jongkok, 17 duduk, 16 tidur tengkurap, dan 17 tidur telentang.
 
-README ini ditujukan untuk v3.2.0 yang sedang dikembangkan. Tanggal rilis resmi belum ditentukan. Versi terpasang dapat diperiksa di bagian atas Inspector.
+README ini ditujukan untuk v3.2.0. Versi terpasang dapat diperiksa di bagian atas Inspector.
 
 - [Halaman produk BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Riwayat perubahan](CHANGELOG.md)

@@ -2,7 +2,7 @@
 
 Outil de poses pour VRChat permettant d’utiliser de jolies poses assises ou allongées avec le suivi à 3 points ou en mode bureau. Il comprend 85 poses : 15 debout, 20 accroupies, 17 assises, 16 couchées sur le ventre et 17 sur le dos.
 
-Ce README concerne la version v3.2.0 en développement. La date de sortie officielle n’est pas encore fixée. La version installée apparaît en haut de l’Inspector.
+Ce README concerne la version v3.2.0. La version installée apparaît en haut de l’Inspector.
 
 - [Page du produit sur BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Historique des modifications](CHANGELOG.md)

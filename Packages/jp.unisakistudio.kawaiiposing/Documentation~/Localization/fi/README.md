@@ -2,7 +2,7 @@
 
 VRChatin asentojen lukitustyökalu, jolla voit käyttää söpöjä istuma- ja makuuasentoja myös 3 pisteen seurannassa ja työpöytätilassa. Mukana on yhteensä 85 asentoa: 15 seisoma-asentoa, 20 kyykkyasentoa, 17 istuma-asentoa, 16 vatsamakuuasentoa ja 17 selinmakuuasentoa.
 
-Tämä README koskee kehitteillä olevaa versiota v3.2.0. Virallista julkaisupäivää ei ole päätetty. Asennetun version näet Inspectorin yläosasta.
+Tämä README koskee versiota v3.2.0. Asennetun version näet Inspectorin yläosasta.
 
 - [BOOTH-tuotesivu](https://yunisaki.booth.pm/items/5479202)
 - [Muutosloki](CHANGELOG.md)

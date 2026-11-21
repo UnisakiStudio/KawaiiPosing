@@ -2,7 +2,7 @@
 
 Strumento per bloccare le pose in VRChat, con graziose posizioni sedute e sdraiate utilizzabili con tracciamento a 3 punti o in desktop. Include 85 pose: 15 in piedi, 20 accovacciate, 17 sedute, 16 prone e 17 supine.
 
-Questo README riguarda la versione v3.2.0 in sviluppo. La data di uscita ufficiale non è stabilita. La versione installata compare in alto nell’Inspector.
+Questo README riguarda la versione v3.2.0. La versione installata compare in alto nell’Inspector.
 
 - [Pagina del prodotto su BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Cronologia delle modifiche](CHANGELOG.md)

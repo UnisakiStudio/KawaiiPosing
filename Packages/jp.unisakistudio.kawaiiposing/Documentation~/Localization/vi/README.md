@@ -2,7 +2,7 @@
 
 Công cụ khóa tư thế VRChat cho phép dùng dáng ngồi/nằm dễ thương cả với theo dõi 3 điểm và chế độ máy tính. Gồm tổng 85 tư thế: 15 đứng, 20 khom, 17 ngồi, 16 nằm sấp và 17 nằm ngửa.
 
-README này dành cho v3.2.0 đang phát triển. Chưa xác định ngày phát hành chính thức. Xem phiên bản đã cài ở đầu Inspector.
+README này dành cho v3.2.0. Xem phiên bản đã cài ở đầu Inspector.
 
 - [Trang sản phẩm BOOTH](https://yunisaki.booth.pm/items/5479202)
 - [Lịch sử thay đổi](CHANGELOG.md)

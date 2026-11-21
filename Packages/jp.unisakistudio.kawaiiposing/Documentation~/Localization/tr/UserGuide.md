@@ -24,7 +24,7 @@ Bu kılavuz kurulum, avatar ayarı, VRChat kontrolleri, poz düzenleme, güncell
 
 ### Bu indirme neleri kurar?
 
-**Kawaii Posing Tool 3.2.0 ve Unisaki Posing System 3.2.0.** Bu sürüm geliştirme aşamasındadır ve yayınlanmamıştır. Otuz dilde kurulum iletişimleri, Unity Inspector ve menüleri, standart poz adları, oyun menüleri ve çevrimdışı belgeler ekler. Yayın tarihi belirlenmemiştir. Aracın dilini Inspector’ın üstündeki seçiciden değiştirin. Yayınlandıktan sonra kurucu bu sürümleri ve uyumlu bağımlılıklarını VPM depolarından indirecektir. Yerel yayın hazırlığı paketleri yayınlamaz.
+**Kawaii Posing Tool 3.2.0 ve Unisaki Posing System 3.2.0.** Bu sürüm otuz dilde kurulum iletişimleri, Unity Inspector ve menüleri, standart poz adları, oyun menüleri ve çevrimdışı belgeler ekler. Aracın dilini Inspector’ın üstündeki seçiciden değiştirin. Kurucu bu sürümleri ve uyumlu bağımlılıklarını VPM depolarından indirir.
 
 Kawaii Posing Tool; poz kitaplığı, ayar araçları ve avatar düzeltme ön ayarlarını içerir. Kurucu ürünün mevcut yerel lisansını etkinleştirir; yeni bir Gumroad lisans anahtarı alanı gerektirmez. Kurulum dosyalarını veya lisans verilerini hiçbir zaman herkese açık destek iletilerine koymayın.
 

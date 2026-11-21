@@ -24,7 +24,7 @@ Veiledningen dekker installasjon, avataroppsett, VRChat-betjening, positurredige
 
 ### Hva denne nedlastingen installerer
 
-**Kawaii Posing Tool 3.2.0 med Unisaki Posing System 3.2.0.** Versjonen er under utvikling og ikke utgitt. Den legger til installasjonsdialoger, Unity Inspector og menyer, standardnavn, spillmenyer og offlinedokumentasjon på tretti språk. Utgivelsesdato er ikke fastsatt. Bruk språkvelgeren øverst i Inspector. Etter publisering laster installasjonen ned disse versjonene og kompatible avhengigheter fra VPM-repositorier. Lokal klargjøring publiserer ikke pakkene.
+**Kawaii Posing Tool 3.2.0 med Unisaki Posing System 3.2.0.** Versjonen legger til installasjonsdialoger, Unity Inspector og menyer, standardnavn, spillmenyer og offlinedokumentasjon på tretti språk. Bruk språkvelgeren øverst i Inspector. Installasjonen laster ned disse versjonene og kompatible avhengigheter fra VPM-repositorier.
 
 Kawaii Posing Tool inkluderer positurbibliotek, oppsettverktøy og avatarjusteringsforhåndsinnstillinger. Installasjonen aktiverer eksisterende lokal produktlisens, uten nytt Gumroad-lisensnøkkelfelt. Del aldri installasjonsfiler eller lisensdata i offentlig støtteforespørsel.
 

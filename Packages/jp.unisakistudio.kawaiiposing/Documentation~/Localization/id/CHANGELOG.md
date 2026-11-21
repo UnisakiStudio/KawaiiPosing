@@ -1,6 +1,6 @@
 # Riwayat perubahan
 
-## [3.2.0] - Belum dirilis
+## [3.2.0] - 2026-11-22
 
 ### Ditambahkan
 
